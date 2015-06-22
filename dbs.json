@@ -1,0 +1,619 @@
+{"databases": [
+   
+                 {
+        "name":"Literary Reference Center Plus",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "ebooks", "scholarly-journals", "reference", "magazines"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=plus",
+        "proxy": "yes",
+        "description": "Contains full-text literary reference books/works, journals and magazines, contemporary literature titles from Salem Press, literary study guides and videos.",
+        "category": [
+                     "literature"
+                     ],
+                     "onesearch": "yes"
+        },  
+   
+                                       {
+        "name":"PsycARTICLES",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pdh",
+        "proxy": "yes",
+        "description": "Provides full text, peer-reviewed scholarly and scientific articles from journals published by the American Psychological Association (APA) and related imprints.",
+        "category": [
+                     "psychology"
+                     ],
+                     "onesearch": "yes"
+        },  
+
+        {
+        "name":"America: History and Life with Full Text",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": ["scholarly-journals"],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=31h",
+        "proxy": "yes",
+        "description": "Provides full-text scholarly publications covering the history and culture of the United States and Canada, from prehistory to the present.",
+        "category": [
+                     "history"
+                     ],
+                     "onesearch": "yes"
+        },
+                {
+        "name":"Criminal Justice Abstracts with Full Text",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": ["scholarly-journals",
+                 "trade-publications"],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=i3h",
+        "proxy": "yes",
+        "description": "Contains more than 200,000 records selected from the most important sources within the discipline. Subject areas covered include: criminology; criminal justice; criminal law and procedure; corrections and prisons; police and policing; criminal investigation; forensic sciences and investigation; history of crime; substance abuse and addiction; probation and parole.",
+        "category": [
+                     "criminal-justice", "sociology"
+                     ],
+                     "onesearch": "yes"
+        },
+                        {
+        "name":"SocINDEX with Full Text",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": ["scholarly-journals",
+                 "trade-publications"],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=sih",
+        "proxy": "yes",
+        "description": "This database features more than 2.1 million records with subject headings from a 20,000+ term sociological thesaurus designed by subject experts and expert lexicographers.SocINDEX with Full Text contains full text for more than 860 journals dating back to 1908. This database also includes full text for more than 830 books and monographs, and full text for over 16,800 conference papers.",
+        "category": [
+                     "criminal-justice", "sociology", "psychology"
+                     ],
+                     "onesearch": "yes"
+        },
+
+        {
+        "name":"Artstor",
+        "vendor": "Artstor",
+        "top": "yes",
+        "type": ["images"],
+        "urlRoot": "library.artstor.org",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Nearly 500,000 images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
+        "category": [
+                     "art-history"
+                     ],
+                     "onesearch": "yes"
+        },
+        {
+        "name":"Auto Repair Reference Center",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=autorefctr",
+        "proxy": "yes",
+        "description": "Auto Repair Reference Center (ARRC) contains repair and maintenance information on most major manufacturers of domestic and imported vehicles. New repair procedures, TSBs and updates are added to the product on a regular basis.",
+        "category": [
+                     "automotive"
+                     ],
+                     "onesearch": "no"
+        },
+        {
+        "name":"Business Source Complete",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals", "reports",
+                 "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=bsc",
+        "proxy": "yes",
+        "description": "Contains scholarly business journals, financial data, books, monographs, major reference works, book digests, conference proceedings, case studies, investment research reports, industry reports, market research reports, country reports, company profiles, SWOT analyses and more.",
+        "category": [
+                     "business"
+                     ],
+                     "onesearch": "yes"
+        },
+        {
+        "name":"CINAHL Plus with Full Text",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=rzh",
+        "proxy": "yes",
+        "description": "Providing full text and careful subject indexing for more than 640 journals in Nursing and other Allied Health fields, Also includes reports on evidenced-based practice.",
+        "category": [
+                     "health-&amp;-life-sciences"
+                     ],
+                     "onesearch": "yes"
+        },
+                {
+        "name":"Communication &amp; Mass Media Complete",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals", "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ufh",
+        "proxy": "yes",
+        "description": "Offers cover-to-cover indexing and abstracts for more than 440 journals in Communication and related fields, and selected (priority) coverage of nearly 200 more. Furthermore, this database includes full text for 326 journals.",
+        "category": [
+                     "communication"
+                     ],
+                     "onesearch": "yes"
+        },
+                {
+        "name":"Consumer Health Complete",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "magazines",
+                 "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=chc",
+        "proxy": "yes",
+        "description": "Designed for the everyday consumer of healthcare information, provides convenient access to easily understandable health and medical information.",
+        "category": [
+                     "health-&amp;-life-sciences"
+                     ],
+                     "onesearch": "yes"
+        },
+                        {
+        "name":"Opposing Viewpoints in Context",
+        "vendor": "Gale",
+        "top": "no",
+        "type": [
+            "magazines", "essays", "news", "ebooks"
+                ],
+        "urlRoot": "infotrac.galegroup.com",
+        "urlPath": "itweb/?db=OVIC",
+        "proxy": "yes",
+        "description": "With its content drawn from the social issues series from Greenhaven Press as well as content from other Gale sources, this database contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
+        "category": [
+                     "controversial-topics", "communication", "current-events"
+                     ],
+                     "onesearch": "yes"
+        },
+        
+                {
+        "name":"CountryWatch",
+        "vendor": "CountryWatch",
+        "top": "yes",
+        "type": [
+            "reports", "news"
+                ],
+        "urlRoot": "www.countrywatch.com",
+        "urlPath": "ip",
+        "proxy": "yes",
+        "description": "Contains information on specific countries including an overview of the country, political and economic conditions, environmental issues, and wire service stories. ",
+        "category": [
+                      "political-science", "geography", "current-events"
+                     ],
+                     "onesearch": "no"
+        },
+
+
+                                       {
+        "name":"Education Research Complete",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals", "trade-publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
+        "proxy": "yes",
+        "description": "Articles covering all levels of education from early childhood to higher education, and all educational specialties, such as multilingual education, health education, and testing.",
+        "category": [
+                     "education"
+                     ],
+                     "onesearch": "yes"
+        },
+                                               {
+        "name":"Environment Complete",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals", "trade-publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
+        "proxy": "yes",
+        "description": "Covers agriculture, ecosystem ecology, energy, sustainability, and affiliated areas of study. ",
+        "category": [
+                     "environmental-science"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                       {
+        "name":"ERIC",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "trade-publications", "reports"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eric",
+        "proxy": "yes",
+        "description": "Maintained by the US Department of Education, the Educational Resource Information Center (ERIC) contains more than 1,194,000 records related to the field of education. ",
+        "category": [
+                     "education"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                              {
+        "name":"Gale Virtual Reference Library",
+        "vendor": "Gale",
+        "top": "no",
+        "type": [
+            "encyclopedias", "reference", "ebooks"
+                ],
+       "urlRoot": "infotrac.galegroup.com",
+        "urlPath": "itweb?db=GVRL",
+        "proxy": "yes",
+        "description": "Specialized encyclopedias and other reference sources.",
+        "category": [
+                     "education", "history", "music", "environmental-science", "business", "literature", "sociology"
+                     ],
+                     "onesearch": "yes"
+        }, 
+        
+        {
+        "name":"PubMed",
+        "vendor": "US National Library of Medicine",
+        "top": "yes",
+        "type": [
+            "scholarly-journals"
+                ],
+        "urlRoot": "www.ncbi.nlm.nih.gov",
+        "urlPath": "pubmed?myncbishare=casccllib",
+        "proxy": "yes",
+        "description": "PubMed comprises more than 23 million citations for biomedical literature from MEDLINE, life science journals, and online books. Using the special link on this page, you can limit your search results to those that are held in library databases or available for free elsewhere. ",
+        "category": [
+                     "health-&amp;-life-sciences", "psychology"
+                     ],
+                     "onesearch": "partial"
+        },
+
+        
+        
+  
+        {
+                        
+        
+        "name": "LexisNexis Academic",
+        "vendor": "LexisNexis",
+        "top": "no",
+        "type": [
+            "legal-research",
+            "scholarly-journals",
+            "news"
+                ],
+        "urlRoot": "www.lexisnexis.com",
+        "urlPath": "hottopics/lnacademic/",
+        "proxy": "yes",
+        "description": "<strong>Use is restricted to student and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, selected to meet academic research needs, including: National and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789  Business news journals, company financial information, SEC filings and reports, and industry and market news. ",
+        "category": [
+                     "criminal-justice",
+                     "business",
+                     "law"
+                     ],
+                     "onesearch": "partial"
+        },
+
+                       {
+        "name":"Health Source: Consumer Edition",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "magazines", "reports",
+                 "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hxh",
+        "proxy": "yes",
+        "description": "Contains a collection of consumer health information, including the medical sciences, food sciences and nutrition, childcare, sports medicine and general health.",
+        "category": [
+                     "health-&amp;-life-sciences"
+                     ],
+                     "onesearch": "yes"
+        },
+                       {
+        "name":"Health Source: Nursing/Academic Edition",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "reference",
+                 "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hch",
+        "proxy": "yes",
+        "description": "Provides full-text journals, including peer-reviewed, focused on many medical disciplines. Also features the Lexi-PAL Drug Guide, which includes 1,300 generic drug patient education sheets with more than 4,700 brand names.",
+        "category": [
+                     "health-&amp;-life-sciences"
+                     ],
+                     "onesearch": "yes"
+        },
+                               {
+        "name":"International Bibliography of Theatre & Dance with Full Text",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "magazines",
+                 "trade-publications", "ebooks"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
+        "proxy": "yes",
+        "description": "This database was initiated by the American Society for Theatre Research, and since 1984, the Theatre Research Data Center (TRDC) at Brooklyn College has published 14 volumes of the IBTD. These volumes comprise a fully indexed, cross-referenced and annotated databank of over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries.International Bibliography of Theatre & Dance with Full Text contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books & monographs.",
+        "category": [
+                     "theatre-&amp;-performing-arts", "literature"
+                     ],
+                     "onesearch": "yes"
+        },
+                       {
+        "name":"MEDLINE",
+        "vendor": "EBSCO",
+        "top": "yes",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=cmedm",
+        "proxy": "yes",
+        "description": "Contains authoritative medical information on medicine, nursing, dentistry, veterinary medicine, the health care system, pre-clinical sciences, and much more. Created by the National Library of Medicine, it uses MeSH (Medical Subject Headings) indexing with tree.",
+        "category": [
+                     "health-&amp;-life-sciences"
+                     ],
+                     "onesearch": "yes"
+        },
+        
+                       {
+        "name":"Military &amp; Government Collection",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "trade-publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=mth",
+        "proxy": "yes",
+        "description": "Offers periodicals, academic journals, and other content pertinent to all branches of the military and government to the increasing needs of those sites.",
+        "category": [
+                     ""
+                     ],
+                     "onesearch": "yes"
+        },
+        
+                               {
+        "name":"ScienceDirect",
+        "vendor": "Elsevier",
+        "top": "no",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "www.sciencedirect.com",
+        "urlPath": "science?_ob=MiamiSearchURL&_method=requestForm&_temp=search.tmpl&md5=be86fcf199953fc3d5e2cd09e0389370&Subscribed=1",
+        "proxy": "yes",
+        "description": "Offers over 2,000 full-text journal titles, primarily in the health and life sciences. Los Rios subscribes to College Edition - Health &amp; Life Sciences Collection.",
+        "category": [
+                     "health-&amp;-life-sciences", "psychology"
+                     ],
+                     "onesearch": "yes"
+        },
+                               {
+        "name":"Oxford English Dictionary",
+        "vendor": "Oxford University Press",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "www.oed.com",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "A guide to the meaning, history, and pronunciation of over half a million words, both present and past.",
+        "category": [
+                     "literature"
+                     ],
+                     "onesearch": "no"
+        },
+                       {
+        "name":"Naxos Music Library",
+        "vendor": "Naxos Digital Services ",
+        "top": "no",
+        "type": [
+            "streaming-audio"
+                ],
+        "urlRoot": "losrios.naxosmusiclibrary.com",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Music listening service with over 256,000 tracks of classical and modern music, including complete liner notes.",
+        "category": [
+                     "music"
+                     ],
+                     "onesearch": "yes"
+        },
+        
+                               {
+        "name":"Naxos Music Library Jazz Collection",
+        "vendor": "Naxos Digital Services ",
+        "top": "no",
+        "type": [
+            "streaming-audio"
+                ],
+        "urlRoot": "losrios.naxosmusiclibrary.com",
+        "urlPath": "jazz",
+        "proxy": "yes",
+        "description": "Offers an extensive range of over 1,500 jazz recordings.",
+        "category": [
+                     "music"
+                     ],
+                     "onesearch": "yes"
+        },
+                       {
+        "name":"Newspaper Source Plus",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "news"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=n5h",
+        "proxy": "yes",
+        "description": "Contains 700 full-text newspapers. Also features more than 757,000 television and radio news transcripts.",
+        "category": [
+                     "current-events"
+                     ],
+                     "onesearch": "yes"
+        },
+                                        {
+        "name":"Religion &amp; Philosophy Collection",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=rlh",
+        "proxy": "yes",
+        "description": "Coverage of such topics as world religions, major denominations, biblical studies, religious history, epistemology, political philosophy, philosophy of language, moral philosophy and the history of philosophy.",
+        "category": [
+                     "philosophy-&amp;-religion"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                {
+        "name":"RAHFS Consumer Medication Information",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=l0h",
+        "proxy": "yes",
+        "description": "Published by the American Society of Health-System Pharmacists, AHFS includes more than a thousand drug information monographs written in lay language for consumers and has been a Top Ten Award Winner in the Department of Health and Human Services National Consumer Education Materials Contest. This content is updated monthly.",
+        "category": [
+                     "health-&amp;-life-sciences"
+                     ],
+                     "onesearch": "no"
+        },
+                    {
+        "name":"eBook Collection",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ebooks&defaultdb=nlebk",
+        "proxy": "yes",
+        "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more.",
+        "category": [
+                     "art-history", "business", "education", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     ],
+                     "onesearch": "yes"
+        },
+            {
+        "name":"Academic Search Complete",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": ["scholarly-journals", "magazines",
+                 "trade-publications"],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=a9h",
+        "proxy": "yes",
+        "description": "Provides full-text for scholarly publications, most of them peer-reviewed. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
+        "category": [
+                     "general", "art-history", "economics", "communication", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion"
+                     ],
+                     "onesearch": "yes"
+        },
+                        {
+        "name":"CQ Researcher",
+        "vendor": "CQ Press",
+        "top": "no",
+        "type": [
+            "reports"
+                ],
+        "urlRoot": "library.cqpress.com",
+        "urlPath": "cqresearcher/",
+        "proxy": "yes",
+        "description": "This full-text database provides detailed reports that include background, a chronology, current and future trends, related topics and a bibliography on current and controversial topics. This is an excellent place to start research on a controversial or hot topic.",
+        "category": [
+                     "general","controversial-topics", "current-events"
+                     ],
+                     "onesearch": "yes"
+        },
+
+        
+                {
+        "name":"JSTOR",
+        "vendor": "JSTOR",
+        "top": "no",
+        "type": [
+            "scholarly-journals"
+                ],
+        "urlRoot": "www.jstor.org",
+        "urlPath": "action/showAdvancedSearch",
+        "proxy": "yes",
+        "description": "Core journals from the humanities, social sciences, education and other fields. Full-text coverage is provided from the earliest issues to within a few years of the current publication. Los Rios subscribes to JSTOR Arts & Sciences Collections I, II, III and IV.",
+        "category": [
+                     "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
+                     ],
+                     "onesearch": "yes"
+        },
+           
+        
+                               {
+        "name":"Google Scholar",
+        "vendor": "Google",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "legal-research"
+                ],
+        "urlRoot": "scholar.google.com",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Links to articles, abstracts, books, patents, and legal materials. Links to full-text are displayed to the right of the search result entry. Entering via this link will allow you to also find links to content in other databases.",
+        "category": [
+                     "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
+                     ],
+                     "onesearch": "no"
+        },
+              {
+        "name":"MasterFILE Premier",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "magazines"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f5h",
+        "proxy": "yes",
+        "description": "Designed specifically for public libraries, this multidisciplinary database provides full text for more than 1,750 general reference publications with full text information dating as far back as 1975. Covering virtually every subject area of general interest, MasterFILE Premier also includes nearly 500 full text reference books, full text from 86,019 biographies, 105,787 full text primary source documents, and an Image Collection of 293,480 photos, maps and flags. This database is updated daily via EBSCOhost.  ",
+        "category": [
+                     "general"
+                     ],
+                     "onesearch": "yes"
+        }
+        ]
+}

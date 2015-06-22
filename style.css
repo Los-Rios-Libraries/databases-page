@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, figure, figcaption, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 63%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {font-family:"Open Sans", "Helvetica Neue", Verdana, sans-serif; padding:20px 50px; }
+.hidden {display:none;}
+ a {text-decoration:none;}
+ h1, h2, h3 {font-weight:normal;}
+ header {padding-bottom:20px; text-align:center;}
+ h1 {font-size:2.4em; color:#3D3D3D; width:50%; padding-bottom:8px; border-bottom: 1px solid #ccc; margin:0 auto;}
+ #tagline {font-size:1.5em;}
+ #main {width:50%; margin-left:25%; float:left; padding-right:18px; min-height:500px; margin-bottom:50px; position:relative;}
+ #main nav {font-size:1.5em;}
+  #primary-nav {margin:0 0 20px 0;  padding-left:0; display:inline;}
+ #primary-nav li {display:inline;}
+ #primary-nav li:first-child {border-right: 1px solid #ccc; padding-right:1em;}
+ #primary-nav li:last-child { padding-left:1em;}
+  .active-page a:link, .active-page a:visited {color:#3D3D3D; font-weight:bold;}
+ .active-page a:hover, .active-page a:focus {color:#3D3D3D; cursor: default;}
+ .alternative a:link, .alternative a:visited {color:#E74700; text-decoration:underline;}
+ .alternative a:link, .alternative a:visited {color:#E74700;}
+ #open-search {border:none; cursor: pointer; position:absolute; right:10px; font-size:1em;  margin-bottom:4px; top:-14px; background:#fff; color:#1499D3; }
+ #open-search:hover {color:#E74700;}
+ #search-options input:checked + label {font-weight:bold;}
+ #multi-search { background:#4D6684; color:#fff; padding:2em; border-radius:4px 4px 0 0;}
+#multi-search input[type=submit] {margin-top:8px; padding: 4px; font-size:1em; cursor:pointer; border-radius:4px; border:1px solid #ddd;}
+#dbpage-query {display:block; width:50%; border-radius:4px; border:1px solid #ccc;}
+#radio-intro {font-style:italic;}
+.search-exp {margin-left:2em; box-shadow: inset 0px 1px 10px -3px #000000; padding:.2em .5em;}
+.category {margin-bottom: 1em;}
+.category:first-of-type{clear:both;}
+ .category h2 {font-size:1.4em; text-transform:uppercase; background:#83AA30; color:#fff; padding-left:10px;}
+ .category ul {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
+
+.db-entry {margin-bottom:1.2em;}
+.db-name {font-family:Georgia, Palatino, serif; font-weight:bold; font-size:1.1em;}
+
+.vendor {font-weight:normal; font-size:1em;}
+.db-desc {font-size:.9em;}
+ .db-name:link, .db-name:visited {color:#1499D3;}
+.db-name:hover, .db-name:focus {color:#E74700;}
+.internal-links { font-size:.8em; margin-top:1em;}
+.internal-links dt {font-weight:bold;}
+.categories, .formats, .desc-category, .desc-format, .cat-list, .format-list {display:inline;}
+.categories, .formats {padding:0 !important;}
+.db-cat, .db-format {display:inline-block; padding: 0 .5em 0 .5em; border-right:1px solid #ccc; }
+.db-format:last-of-type, .last-dd {border:none;} /* there is a javascript that completes this... */
+.db-cat a:focus, .db-cat a:hover, .db-format a:focus, .db-format a:hover {text-decoration:underline;}
+ .desc-category:link, .desc-category:visited, .desc-format:link, .desc-format:visited {color:#83AA30;}
+.format-list::before { content:"\A"; white-space:pre; }
+  #general .internal-links {display:none;} /* to keep initial view more tidy */
+
+ #nav {position:absolute; width:16%; margin-right:15px; background:#f5f5f5; border:1px solid #e3e3e3; border-radius:4px;}
+
+  #main-nav {padding:0; margin-bottom:0;}
+    #main-nav li {color:#4D6684; list-style-type:none; border-bottom:1px solid #ccc; }
+    #main-nav li:first-of-type {padding-top:10px;}
+  #main-nav li:last-of-type {border-bottom:none;}
+  #main-nav a {display:block; width:90%; padding-left:10%; font-size:120%;}
+  #main-nav a:link, #main-nav a:visited {color:#4D6684;}
+  #main-nav a:hover, #main-nav a:focus {color:#fff; background: #1499D3;}
+    #nav-label {background-image:url(icons-36-black.png); background-repeat:no-repeat; padding:2px 0 2px 34px; font-size:1.5em; line-height:30px; cursor:pointer;}
+
+
+
+
+ #all-formats {display:block;}
+ .alpha-nav {text-transform:uppercase;}
+ /*.top-pick {border:1px solid #ccc; margin-bottom:4px; border-radius:4px;}
+ #general .top-pick {border:none;} */
+ #subject-all {display:block;}
+
+#nav.fixed {position:fixed;}
+/* #filters.scrolled {position:fixed;right:0;} */
+#show-all {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border-radius:8px; display:inline-block; }
+#show-all:hover, #show-all:focus {background:#4D6684; }
+/* .tinynav { display: none; } */
+input[type="radio"] {display:inline-block;}
+ @media screen and (max-width:1100px) {
+/* #filters, #filters.scrolled {
+
+  position: fixed;
+  bottom: 0;
+padding:0;
+width:100%;
+  background: #fff;
+  
+ } */
+ #main {width:75%;}
+ #filters {width:80%; margin:0 auto 10px; margin-top:20px;}
+ }
+  #type-filter button {margin-bottom:4px; font-size:.7em;}
+ #type-filter button.active {font-weight:bold; font-size:120%;}
+ #filters {width:15%; float:right; border:1px solid #ccc; border-radius:4px; padding:8px;}
+ 
+ @media screen and (max-width: 780px)
+ {
+  h1 {border:none;width:100%;}
+
+  header {text-align:left;}
+ 
+  #main {width:100%; margin:0 auto 100px;  float:none;}
+ 
+#filters {width:90%; float:none;}
+  body {margin:0 4px; padding:0;}
+   #primary-nav { font-size:1em;}
+ #primary-nav li {display:block;}
+ #primary-nav li:first-child {border:none; padding-right:0;}
+ #primary-nav li:last-child { padding:0;}
+ /*  #filters, #filters.scrolled {position:relative;}
+  #main-nav {display:none;}
+ .tinynav { display: block; margin-top:-10px;}
+  .nav h2 {display:none;} */
+  header {padding-bottom:0;}
+  #nav {float:none; width:100%; position:static;}
+  #open-search {position:static;}
+#dbpage-query {width:100%;}
+
+
+
+  .alpha-nav a{text-align:center;}
+ }
