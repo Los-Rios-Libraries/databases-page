@@ -56,7 +56,7 @@ function dbsByAlpha($letter) {
  global $format;
  global $query;
  global $alphaShowAll;
- echo "<div id class=\"alpha category\"><h2>" .$letter . "</h2>\n";
+ echo "<div class=\"alpha category\"><h2>" .$letter . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
   include('makeURL.php');

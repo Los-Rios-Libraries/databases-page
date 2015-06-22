@@ -129,7 +129,7 @@ echo "</div>\n";
 
   <nav>
   
-    <button id="open-search"><img src="search-icon.png" height="32">Search</button>
+    <button id="open-search"><img alt="" src="search-icon.png" height="32">Search</button>
   <ul id="primary-nav">
 <?php echo $pageLabel; ?>
 
