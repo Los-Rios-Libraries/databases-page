@@ -1,6 +1,7 @@
-<form class="hidden" action="search.php" method="post" id="multi-search">
- <label for="dbpage-query">Search for online library resources:</label>
- <input type="text" name="find" id="dbpage-query">
+<form id="multi-search" action="search.php" method="post">
+ <label for="dbpage-query">Search</label>
+<input type="text" name="find" id="dbpage-query">
+ <div id="form-remainder" class="hidden">
  <div id="radio-intro">What are you looking for?</div>
  <div id="search-options">
  <div>
@@ -20,4 +21,7 @@
   <div class="search-exp hidden">Use OneSearch to find articles, ebooks &amp; more across a large number of databases</div>
    </div>
   <input type="submit" value="search">
+     <button id="form-closer">X Close</button>
+</div>
+
 </form>
