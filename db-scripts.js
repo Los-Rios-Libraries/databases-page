@@ -1,3 +1,4 @@
+$(function() {
 // contract nav by default on small screens
 var navList = $('#main-nav');
 var navLabel = $('#nav-label');
@@ -6,12 +7,12 @@ if ($(window).width() < 781) {
 }
 
 navLabel.on('click', (function() {
-
-  if (navList.hasClass('hidden')) {
-    navList.removeClass('hidden');
-  } else navList.addClass('hidden');
-
+navList.toggleClass('hidden');
 }));
+
+});
+
+$(function() {
 // filters -- probably should not use this
 var typeButtons = $('#type-filter button');
 typeButtons.on('click', function() {
@@ -29,8 +30,9 @@ typeButtons.on('click', function() {
       e.addClass('hidden');
     }
   });
+  
 
-  // if heading has no items listed, hide the entire section
+  // if heading has no items listed, hide the entire section - keep this even if getting rid of filters.
   var category = $('.category');
   category.each(function() {
     var e = $(this);
@@ -47,47 +49,38 @@ typeButtons.on('click', function() {
   checkZeros();
 
 });
+});
 $('.alpha').each(function() {
   if ($(this).find('li').length === 0) {
     $(this).addClass('hidden');
   }
 });
 
-
+$(function() { // need to do this on every page load.
 checkZeros();
-
+});
 function checkZeros() { // if there are no entries at all, show suggestions.
   if ($('#main .active').length === 0) {
     //   $('.category').removeClass('hidden').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
     $('#main').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
   }
 }
-// fix borders in last item of lists--can't do this in pure css because of structure of description list
-$(function() {
+
+$(function() { // fix borders in last item of lists--can't do this in pure css because of structure of description list
   $('dt').prev('dd').addClass('last-dd');
 });
 
-function searchFeature() {
-
- //   if (search.parent('body')) {
-        //code
-    var element = $('#source-search').detach();
-    element.css('float', 'none');
-    element.css('width', '80%');
-    $('#main nav').append(element);
-    
-//}
-}
+$(function() {
 // show hints for different search options
 $('#open-search').on('click', function() {
 //   var button = $(this);
  //   var searchForm = $('#multi-search');
    showSearch($('#multi-search'), $(this));
-  
-   
-   
-    
+ 
 });
+});
+
+// make search button toggle the search form
 function showSearch(form, but) {
 
     form.slideDown().removeClass('hidden');
@@ -107,7 +100,7 @@ function hideSearch(form, but) {
 }
 
 $('#multi-search input[type=radio]').on('click', function() {
-//   $('<p>whatever</p>').fadeIn().insertAfter($(this).next());
+
 $('.search-exp').each(function() {
     e = $(this);
     if (!(e.hasClass('hidden'))) {
