@@ -91,7 +91,7 @@ if (!isset($alpha)) {
 $subjectsClass = 'active-page';
 $alphaClass = 'alternative';
 $responMenuLabel = 'subjects';
-$pageLabel = '<li class="active-page"><a href="index.php">By Subject</a></li><li class="alternative"><a href="index.php?az=all">Alphabetical List</a></li>';
+$pageLabel = '<li class="active-page"><a href="index.php">Databases by Subject</a></li><li class="alternative"><a href="index.php?az">View Alphabetical List</a></li>';
 echo "<div id=\"subject-nav\" class=\"nav\">\n";
 echo "<h2 id=\"nav-label\">Subject Areas</h2>\n";
 echo "<ul id=\"main-nav\">\n";
@@ -118,7 +118,7 @@ else {
 $subjectsClass = 'alternative';
 $responMenuLabel = 'A-Z';
 $alphaClass = 'active-page';
-$pageLabel = '<li class="active-page"><a href="index.php?az=all">Alphabetical List</a></li><li class="alternative"><a href="index.php">By Subject</a></li>';
+$pageLabel = '<li class="active-page"><a href="index.php?az">Alphabetical List</a></li><li class="alternative"><a href="index.php">View by Subject</a></li>';
 echo "<div id=\"alpha-nav\" class=\"nav\">\n";
 echo "<h2 id=\"nav-label\">A-to-Z</h2>\n";
 echo "<ul id=\"main-nav\">\n";
