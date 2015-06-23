@@ -309,7 +309,7 @@
         "urlRoot": "www.lexisnexis.com",
         "urlPath": "hottopics/lnacademic/",
         "proxy": "yes",
-        "description": "<strong>Use is restricted to student and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, selected to meet academic research needs, including: National and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789  Business news journals, company financial information, SEC filings and reports, and industry and market news. ",
+        "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, selected to meet academic research needs, including: National and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789  Business news journals, company financial information, SEC filings and reports, and industry and market news. ",
         "category": [
                      "criminal-justice",
                      "business",
@@ -353,7 +353,7 @@
                      "onesearch": "yes"
         },
                                {
-        "name":"International Bibliography of Theatre & Dance with Full Text",
+        "name":"International Bibliography of Theatre &amp; Dance with Full Text",
         "vendor": "EBSCO",
         "top": "no",
         "type": [
@@ -366,6 +366,23 @@
         "description": "This database was initiated by the American Society for Theatre Research, and since 1984, the Theatre Research Data Center (TRDC) at Brooklyn College has published 14 volumes of the IBTD. These volumes comprise a fully indexed, cross-referenced and annotated databank of over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries.International Bibliography of Theatre & Dance with Full Text contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books & monographs.",
         "category": [
                      "theatre-&amp;-performing-arts", "literature"
+                     ],
+                     "onesearch": "yes"
+        },
+                                       {
+        "name":"Psychology &amp; Behavioral Sciences Collection",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals",
+                 "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pbh",
+        "proxy": "yes",
+        "description": "Covers topics such as emotional and behavioral characteristics, psychiatry and psychology, mental processes, anthropology, and observational and experimental methods.",
+        "category": [
+                     "psychology"
                      ],
                      "onesearch": "yes"
         },
@@ -435,6 +452,38 @@
                      ],
                      "onesearch": "no"
         },
+                                       {
+        "name":"Salem Press",
+        "vendor": "Salem Press",
+        "top": "no",
+        "type": [
+            "ebooks", "reference"
+                ],
+       "urlRoot": "online.salempress.com",
+        "urlPath": "home.do",
+        "proxy": "yes",
+        "description": "Includes the complete content of several history, health, science, and literature reference sets.",
+        "category": [
+                     "health-&amp;-life-sciences", "history", "literature"
+                     ],
+                     "onesearch": "no"
+        },
+                                               {
+        "name":"GreenFILE",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "magazines", "scholarly-journals", "trade-publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=8gh",
+        "proxy": "yes",
+        "description": "offers well-researched information covering all aspects of human impact to the environment, including global warming, green building, pollution, sustainable agriculture, renewable energy, and recycling.",
+        "category": [
+                     "environmental-science"
+                     ],
+                     "onesearch": "yes"
+        },
                        {
         "name":"Naxos Music Library",
         "vendor": "Naxos Digital Services ",
@@ -484,6 +533,60 @@
                      ],
                      "onesearch": "yes"
         },
+                                                                     {
+        "name":"Professional Development Collection",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals",
+            "reports",
+            "trade publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tfh",
+        "proxy": "yes",
+        "description": "Provides 520 education journals, including nearly 350 peer-reviewed titles. Also contains more than 200 educational reports",
+        "category": [
+                     "education"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                                             {
+        "name":"Library, Information Science &amp; Technology Abstracts",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals",
+            "reports",
+            "trade publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lxh",
+        "proxy": "yes",
+        "description": "Provides indexing for more than 600 publications on librarianship, classification, cataloging, bibliometrics, online information retrieval, information management and more.",
+        "category": [
+                     "social-sciences"
+                     ],
+                     "onesearch": "yes"
+        },
+               
+                                                                             {
+        "name":"Teacher Reference Center ",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals",
+            "trade publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=trh",
+        "proxy": "yes",
+        "description": "Provides indexing and abstracts for 280 teacher and administrator journals and magazines.",
+        "category": [
+                     "education"
+                     ],
+                     "onesearch": "yes"
+        },
                                         {
         "name":"Religion &amp; Philosophy Collection",
         "vendor": "EBSCO",
@@ -497,6 +600,58 @@
         "description": "Coverage of such topics as world religions, major denominations, biblical studies, religious history, epistemology, political philosophy, philosophy of language, moral philosophy and the history of philosophy.",
         "category": [
                      "philosophy-&amp;-religion"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                             {
+        "name":"Small Business Reference Center",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "ebooks",
+            "magazines",
+            "trade publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
+        "proxy": "yes",
+        "description": "Offers information on small business and entrepreneurial subject areas, common business types, a help and advice section, and provides information on how to create business plans.",
+        "category": [
+                     "business"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                        {
+        "name":"Regional Business News",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "news"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bwh",
+        "proxy": "yes",
+        "description": "Full text coverage of 75 business journals, newspapers and newswires from various metropolitan and rural areas within the United States. This database is updated daily.",
+        "category": [
+                     "business"
+                     ],
+                     "onesearch": "yes"
+        },
+                                                {
+        "name":"MAS Ultra: School Edition",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "magazines",
+            "primary-sources",
+            "reference"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ulh",
+        "proxy": "yes",
+        "description": "Contains full text for more than 500 popular, high school magazines, more than 360 full text reference books, 85,639 biographies, 104,481 primary source documents, and an Image Collection of 285,912 photos, maps & flags.",
+        "category": [
+                     ""
                      ],
                      "onesearch": "yes"
         },
@@ -516,6 +671,22 @@
                      ],
                      "onesearch": "no"
         },
+                                                        {
+        "name":"BIR Entertainment",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kfh",
+        "proxy": "yes",
+        "description": "Provides information, such as publisher, producer, and track listing or cast, on about 450,000 music titles and 200,000 DVD/video titles.",
+        "category": [
+                     "music"
+                     ],
+                     "onesearch": "no"
+        },
                     {
         "name":"eBook Collection",
         "vendor": "EBSCO",
@@ -528,7 +699,7 @@
         "proxy": "yes",
         "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more.",
         "category": [
-                     "art-history", "business", "education", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     "art-history", "business", "education", "communication", "computer-information-science", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
                      ],
                      "onesearch": "yes"
         },
@@ -543,7 +714,7 @@
         "proxy": "yes",
         "description": "Provides full-text for scholarly publications, most of them peer-reviewed. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
         "category": [
-                     "general", "art-history", "economics", "communication", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion"
+                     "general", "art-history", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion"
                      ],
                      "onesearch": "yes"
         },
@@ -575,7 +746,7 @@
         "urlRoot": "www.jstor.org",
         "urlPath": "action/showAdvancedSearch",
         "proxy": "yes",
-        "description": "Core journals from the humanities, social sciences, education and other fields. Full-text coverage is provided from the earliest issues to within a few years of the current publication. Los Rios subscribes to JSTOR Arts & Sciences Collections I, II, III and IV.",
+        "description": "Core journals from the humanities, social sciences, education and other fields. Full-text coverage is provided from the earliest issues to within a few years of the current publication. Los Rios subscribes to JSTOR Arts & Sciences Collections I, II, III and V.",
         "category": [
                      "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
