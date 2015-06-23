@@ -58,7 +58,24 @@ include_once('functions.php');
 </head>
 <body>
  <header>
-  
+  <nav id="head-nav">
+<?php include 'search-form.php';
+?>
+<ul>
+<li class="headnav">
+<a href="http://www.arc.losrios.edu/arclibrary.htm">ARC</a>
+</li>
+<li class="headnav" >
+<a href="http://www.crc.losrios.edu/library">CRC</a>
+</li>
+<li class="headnav" >
+<a href="http://www.flc.losrios.edu/libraries">FLC</a>
+</li>
+<li class="headnav">
+<a href="http://www.scc.losrios.edu/library">SCC</a>
+</li>
+</ul>
+</nav>
 
  <h1>Research  Databases<?php echo $pageTitle; ?></h1>
 <div id="tagline">Los Rios Libraries</div>
@@ -95,9 +112,9 @@ echo "</div>\n";
 
 }
 else {
-		if(isset($query)) {
+/*		if(isset($query)) {
 		echo '<script>window.onload= function() { document.getElementById("multi-search").removeAttribute("class"); document.getElementById("dbpage-query").value="' .$query .'"; document.getElementsByClassName("db-name")[0].scrollIntoView();} </script>';
-	}
+	} */
 $subjectsClass = 'alternative';
 $responMenuLabel = 'A-Z';
 $alphaClass = 'active-page';
@@ -129,7 +146,7 @@ echo "</div>\n";
 
   <nav>
   
-    <button id="open-search"><img alt="" src="search-icon.png" height="32">Search</button>
+ <!--   <button id="open-search"><img alt="" src="search-icon.png" height="32">Search</button> -->
   <ul id="primary-nav">
 <?php echo $pageLabel; ?>
 
@@ -137,7 +154,7 @@ echo "</div>\n";
 
  </nav>
 <?php
-include 'search-form.php';
+// include 'search-form.php';
 // echo "<button onclick=\"location.href='index.php';\">Subject Areas</button>\n";
 // echo "<button onclick=\"location.href='index.php?az=all';\">A to Z</button>\n";
 
