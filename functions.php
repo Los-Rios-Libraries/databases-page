@@ -71,11 +71,13 @@ function dbsByAlpha($letter) {
      elseif (isset($query)) {
       $vendorLower = strtolower($db -> vendor);
       $query = strtolower($query);
-//      $types = implode(' ', $db -> type);
-//      $categories = implode(' ', $db -> category);
+      $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);
+       $query = preg_replace('/j\s*stor.*/', 'jstor', $query);
+     $types = implode(' ', $db -> type);
+     $categories = implode(' ', $db -> category);
  //(strpos($categories, $query > -1)) || (strpos($types, $query > -1))  many false positives...     
       
-      if ((strpos($dbLower, $query) > -1) || (strpos($vendorLower, $query) > -1))  {
+      if ((strpos($dbLower, $query) > -1) || (strpos($categories, $query) > -1) || (strpos($types, $query) > -1) ||(strpos($vendorLower, $query) > -1))  {
       include('writeDBInfo.php');
       }
       
