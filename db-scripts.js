@@ -16,6 +16,7 @@ $(function() {
 // filters -- probably should not use this
 var typeButtons = $('#type-filter button');
 typeButtons.on('click', function() {
+    $('#zero-notice').remove();
   typeButtons.removeClass('active'); // reset all before doing it. This is a toggle, not a progressive limit. Set is too small for hta tto make sense.
   $(this).prop('class', 'active');
   var buttonText = $(this).text();
@@ -60,6 +61,7 @@ $(function() { // need to do this on every page load.
 checkZeros();
 });
 function checkZeros() { // if there are no entries at all, show suggestions.
+
   if ($('#main .active').length === 0) {
     //   $('.category').removeClass('hidden').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
     $('#main').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
