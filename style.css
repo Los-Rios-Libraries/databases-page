@@ -23,10 +23,7 @@ padding-bottom: 2px;
 #multi-search label {position:relative; z-index:500;}
 #dbpage-query { position:relative; z-index: 500; width:10em; padding:0 8px; border-radius:4px; margin-left:1em; height:14px;  -webkit-transition: width .5  s;}
 .form-emphasis { height:2em !important; width:18em !important; font-size: 1.2em; transition: width .4s;-webkit-transition: width .4s;}
-#form-remainder { position:absolute; z-index:400; left:1em; background: #3d3d3d; margin-top:-1.4em; padding:3em; border-radius:0 0 8px 8px;
--webkit-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);}
+#form-remainder { position:absolute; z-index:400; left:1em; background: #3d3d3d; margin-top:-1.4em; width:80%; max-width: 500px; padding:3em; border-radius:0 0 8px 8px; -webkit-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);}
 
  #search-options input:checked + label {font-weight:bold;}
 
@@ -38,6 +35,7 @@ input[type="radio"] {display:inline-block;}
 .search-exp {margin-left:2em; box-shadow: inset 0px 1px 10px -3px #000000; padding:.2em .5em;}
 #form-closer {position:absolute; bottom:4px; right:4px; cursor: pointer;}
 #head-nav ul {text-align: right; }
+#head-nav ul, .headnav {padding: 4px 0;} /* this gets tricky... */
 .headnav {display:inline; border-right:1px solid #ccc;  width:4em; }
 .headnav:last-of-type {border:none;}
 .headnav a {display:inline-block; width:100%; width:4em; text-align: center;}
@@ -47,11 +45,10 @@ input[type="radio"] {display:inline-block;}
  h1 { clear:both; font-size:2.4em;  width:50%; padding-bottom:8px; border-bottom: 1px solid #ccc; margin:0 auto;}
  #tagline {font-size:1.5em;}
  #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:500px; margin-bottom:50px; position:relative;}
- #main nav {font-size:1.5em;}
-  #primary-nav {margin:0 0 20px 0;  padding-left:0; display:inline;}
+ #main nav {font-size:1.5em; margin-bottom:10px;}
+  #primary-nav { display:inline;}
  #primary-nav li {display:inline;}
- #primary-nav li:first-child {border-right: 1px solid #ccc; padding-right:1em;}
- #primary-nav li:last-child { padding-left:1em;}
+.alternative {float:right;}
   .active-page a:link, .active-page a:visited {color:#3D3D3D; font-weight:bold;}
  .active-page a:hover, .active-page a:focus {color:#3D3D3D; cursor: default;}
  .alternative a:link, .alternative a:visited {color:#E74700; text-decoration:underline;}
@@ -71,7 +68,7 @@ input[type="radio"] {display:inline-block;}
  .db-name:link, .db-name:visited {color:#1499D3;}
 .db-name:hover, .db-name:focus {color:#E74700;}
 .internal-links { font-size:.8em; margin-top:1em;}
-.internal-links dt {font-weight:bold;}
+.internal-links dt {font-weight:bold; color:#3d3d3d;}
 .categories, .formats, .desc-category, .desc-format, .cat-list, .format-list {display:inline;}
 .categories, .formats {padding:0 !important;}
 .db-cat, .db-format {display:inline-block; padding: 0 .5em 0 .5em; border-right:1px solid #ccc; }
@@ -87,7 +84,7 @@ input[type="radio"] {display:inline-block;}
     #main-nav li {color:#4D6684; list-style-type:none; border-bottom:1px solid #ccc; }
     #main-nav li:first-of-type {padding-top:10px;}
   #main-nav li:last-of-type {border-bottom:none;}
-  #main-nav a {display:block; width:90%; padding-left:10%; font-size:120%;}
+  #main-nav a {display:block; width:90%; padding-left:10%; font-size:1.2em;}
   #main-nav a:link, #main-nav a:visited {color:#4D6684;}
   #main-nav a:hover, #main-nav a:focus {color:#fff; background: #1499D3;}
     #nav-label {background-image:url(icons-36-black.png); background-repeat:no-repeat; padding:2px 0 2px 34px; font-size:1.5em; line-height:30px; cursor:pointer;}
