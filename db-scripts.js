@@ -72,29 +72,34 @@ $(function() { // fix borders in last item of lists--can't do this in pure css b
 
 $(function() {
 // show hints for different search options
-$('#open-search').on('click', function() {
+$('#dbpage-query').on('focus', function() {
 //   var button = $(this);
  //   var searchForm = $('#multi-search');
-   showSearch($('#multi-search'), $(this));
+   showSearch($('#form-remainder'), $(this));
  
 });
 });
 
 // make search button toggle the search form
-function showSearch(form, but) {
-
+function showSearch(form, input) {
+input.addClass('form-emphasis');
     form.slideDown().removeClass('hidden');
-    $('#dbpage-query').focus();
-     but.unbind();
-   but.on('click', function() {
-    hideSearch(form, but);
-   });
+//    $('#dbpage-query').focus();
+     input.unbind();
+     $('#form-closer').on('click', (function(e) {
+        e.preventDefault();
+        hideSearch(form,input);
+        
+     }));
+//   but.on('click', function() {
+//    hideSearch(form, but);
+ //  });
 }
-function hideSearch(form, but) {
+function hideSearch(form, input) {
     form.slideUp().addClass('hidden');
-    but.unbind();
-    but.on('click', function() {
-        showSearch(form, but);
+    input.removeClass('form-emphasis');
+    input.on('click', function() {
+        showSearch(form, input);
     });
     
 }
