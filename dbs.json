@@ -127,7 +127,7 @@
                      "onesearch": "yes"
         },
         {
-        "name":"CINAHL Plus with Full Text",
+        "name":"Cinahl Plus with Full Text",
         "vendor": "EBSCO",
         "top": "yes",
         "type": [
@@ -243,7 +243,7 @@
                      "onesearch": "yes"
         },
                                                        {
-        "name":"ERIC",
+        "name":"Eric",
         "vendor": "EBSCO",
         "top": "no",
         "type": [
@@ -387,7 +387,7 @@
                      "onesearch": "yes"
         },
                        {
-        "name":"MEDLINE",
+        "name":"Medline",
         "vendor": "EBSCO",
         "top": "yes",
         "type": [
@@ -688,7 +688,7 @@
                      "onesearch": "no"
         },
                     {
-        "name":"eBook Collection",
+        "name":"Ebook Collection",
         "vendor": "EBSCO",
         "top": "no",
         "type": [
@@ -719,7 +719,7 @@
                      "onesearch": "yes"
         },
                         {
-        "name":"CQ Researcher",
+        "name":"Cq Researcher",
         "vendor": "CQ Press",
         "top": "no",
         "type": [
