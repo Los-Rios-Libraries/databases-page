@@ -21,7 +21,7 @@
   <div class="search-exp hidden">We'll send your keywords to OneSearch, which helps you find articles, ebooks &amp; more across a large number of databases</div>
    </div>
   <input type="submit" value="search">
-     <button id="form-closer">X Close</button>
+     <button type="button" id="form-closer">X Close</button>
 </div>
 
 </form>
