@@ -1,3 +1,12 @@
+
+$('.db-name').each(function() { // correct capitalization while preserving php's sorting
+    $(this).text($(this).text().replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
+
+    
+});
+
+
+
 $(function() {
 // contract nav by default on small screens
 var navList = $('#main-nav');
@@ -116,4 +125,30 @@ $('.search-exp').each(function() {
     });
 $(this).parent().next().slideDown().removeClass('hidden');
     
+});
+$('.db-name').on('click', function() {
+    var a = $(this).text();
+  ga('send', 'event', 'databases', 'click', a);
+});
+
+$('#subject-nav a').on('click', function() {
+  ga('send', 'event', 'navigation', 'limit', 'subject');
+});
+$('#alpha-nav a').on('click', function() {
+  ga('send', 'event', 'navigation', 'limit', 'alpha');
+});
+$('#show-all').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'show all');
+});
+$('#type-filter button').on('click', function() {
+    var a = $(this).text();
+  ga('send', 'event', 'filters', 'click', a);
+});
+$('#dbpage-query').on('focus', function() {
+  ga('send', 'event', 'search form', 'activate');
+});
+
+$('#multi-search').on('submit', function() {
+    var a = $('input[name="search-type"]:checked').val();
+  ga('send', 'event', 'search', 'submit', a);
 });
