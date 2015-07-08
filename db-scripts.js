@@ -1,10 +1,26 @@
+$(function() {
+var dbNo = $('.db-name').length;
+var numberDisplay = $('#show-db-no');
+
+if (dbNo < 70) {
+
+dbNoS = dbNo.toString();
+$('#db-no').text(dbNoS);
+if (dbNo === 1) {
+  numberDisplay.text(numberDisplay.text().replace('Databases', 'Database'));  
+}
+numberDisplay.attr('class', 'show');
+}
+else {
+  numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
+}
 
 $('.db-name').each(function() { // correct capitalization while preserving php's sorting
     $(this).text($(this).text().replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
 
     
 });
-
+});
 
 
 $(function() {
@@ -23,6 +39,7 @@ navList.toggleClass('hidden');
 
 $(function() {
 // filters -- probably should not use this
+/*
 var typeButtons = $('#type-filter button');
 typeButtons.on('click', function() {
     $('#zero-notice').remove();
@@ -40,7 +57,7 @@ typeButtons.on('click', function() {
       e.addClass('hidden');
     }
   });
-  
+*/
 
   // if heading has no items listed, hide the entire section - keep this even if getting rid of filters.
   var category = $('.category');
@@ -58,7 +75,7 @@ typeButtons.on('click', function() {
   });
   checkZeros();
 
-});
+// });
 });
 $('.alpha').each(function() {
   if ($(this).find('li').length === 0) {
@@ -70,10 +87,18 @@ $(function() { // need to do this on every page load.
 checkZeros();
 });
 function checkZeros() { // if there are no entries at all, show suggestions.
-
+ $('#zero-notice').remove();
   if ($('#main .active').length === 0) {
     //   $('.category').removeClass('hidden').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
-    $('#main').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
+    var a = $('#main');
+
+
+    
+    a.append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry!</div>');
+
+    a.append($('#multi-search'));
+ //   $('#form-remainder').prop('class', 'opened');
+ $('#form-remainder').removeClass('hidden');
   }
 }
 
@@ -115,6 +140,25 @@ function hideSearch(form, input) {
     
 }
 
+// highlight current page in nav where applicable
+$('#main-nav li a').each(function() {
+    var a = $('#title-cat').text();
+    var b = $('#title-alpha').text().toLowerCase();
+    var c = $(this);
+    var d = c.text();
+    if ((a === d) || (b === d)) {
+        c.addClass('current');
+    }
+    });
+
+// do same with format links
+$('.format-links').each(function() {
+   var a = $(this);
+   if (a.find('a').text() === $('#title-format').text()) {
+    a.addClass('current');
+   }
+   
+});
 $('#multi-search input[type=radio]').on('click', function() {
 
 $('.search-exp').each(function() {
@@ -126,6 +170,8 @@ $('.search-exp').each(function() {
 $(this).parent().next().slideDown().removeClass('hidden');
     
 });
+
+// google analytics events
 $('.db-name').on('click', function() {
     var a = $(this).text();
   ga('send', 'event', 'databases', 'click', a);
