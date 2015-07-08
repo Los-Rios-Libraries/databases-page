@@ -3,25 +3,32 @@ $category=$_GET['category'];
 $alpha = $_GET['az'];
 $format = $_GET['format'];
 $query = $_GET['query'];
-$categoryPretty = str_replace('-', ' ', $category);
-$categoryPretty = ucwords($categoryPretty);
-$alphaPretty = ucwords($alpha);
 
-$formatPretty = str_replace('-', ' ', $format);
-$formatPretty = ucwords($formatPretty);
+
+
 $alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a>';
 if (isset($format)) {
+$formatPretty = str_replace('-', ' ', $format);
+$formatPretty = ucwords($formatPretty);
  $metaTitle = $formatPretty . ' - ';
- $pageTitle = ': ' .$formatPretty;
+ $pageTitle = ': <span id="title-format">' .$formatPretty. '</span>';
 }
 
 elseif((isset($alpha)) && (!empty($alpha))) {
+	$alphaPretty = ucwords($alpha);
  $metaTitle = $alphaPretty .' - ';
- $pageTitle = ': ' .$alphaPretty;
+ $pageTitle = ': <span id="title-alpha">' .$alphaPretty . '</span>';
 }
 elseif (isset($category)) {
+	$categoryPretty = str_replace('-', ' ', $category);
+$categoryPretty = ucwords($categoryPretty);
  $metaTitle = $categoryPretty  .' - ';
- $pageTitle = ': ' .$categoryPretty;
+ $pageTitle = ': <span id="title-cat">' .$categoryPretty . '</span>';
+}
+elseif (isset($query)) {
+	$queryPretty = ucwords($query);
+	$metaTitle = $queryPretty .' - ';
+	$pageTitle = ': <span id="title-query">Search Results for ' .$queryPretty . '</span>';
 }
 else {
  $metaTitle = '';
@@ -41,6 +48,7 @@ include_once('functions.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 <meta charset="utf-8" >
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
@@ -61,6 +69,7 @@ include_once('functions.php');
 </script>
 </head>
 <body>
+	<a href="#main" id="skip">Skip to main content</a>
  <header>
   <nav id="head-nav">
 <?php include 'search-form.php';
@@ -81,7 +90,7 @@ include_once('functions.php');
 </ul>
 </nav>
 
- <h1>Research  Databases<?php echo $pageTitle; ?></h1>
+ <h1><a href="index.php">Research  Databases</a><?php echo $pageTitle; ?></h1>
 <div id="tagline">Los Rios Libraries</div>
  </header>
 <nav id="nav">
@@ -97,17 +106,17 @@ $alphaClass = 'alternative';
 $responMenuLabel = 'subjects';
 $pageLabel = '<li class="active-page"><a href="index.php">Databases by Subject</a></li><li class="alternative"><a href="index.php?az">View Alphabetical List</a></li>';
 echo "<div id=\"subject-nav\" class=\"nav\">\n";
-echo "<h2 id=\"nav-label\">Subject Areas</h2>\n";
+echo "<h2 id=\"nav-label\" role=\"button\">Subject Areas</h2>\n";
 echo "<ul id=\"main-nav\">\n";
 echo "<li> \n";
 echo "<a id=\"subject-all\" href=\"index.php\">Show All</a>\n"; 
 echo "</li>\n";
-
+// this will be the list that displays in the nav. Does not need to be every category listed in the json file.
 $dbCats = array('General', 'Art History', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice', 'Current Events', 'Education', 'Environmental Science', 'Health &amp; Life Sciences', 'History', 'Literature', 'Music', 'Philosophy &amp; Religion', 'Political Science', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts' );
     
     $dbCatsNo = count($dbCats);
     for ($i = 0; $i < $dbCatsNo; $i++){
-     makeNavLinks($dbCats[$i]);
+     makeNavLinks($dbCats[$i]); // located in functions.php
     }
     
 
@@ -116,15 +125,13 @@ echo "</div>\n";
 
 }
 else {
-/*		if(isset($query)) {
-		echo '<script>window.onload= function() { document.getElementById("multi-search").removeAttribute("class"); document.getElementById("dbpage-query").value="' .$query .'"; document.getElementsByClassName("db-name")[0].scrollIntoView();} </script>';
-	} */
+
 $subjectsClass = 'alternative';
 $responMenuLabel = 'A-Z';
 $alphaClass = 'active-page';
 $pageLabel = '<li class="active-page"><a href="index.php?az">Alphabetical List</a></li><li class="alternative"><a href="index.php">View by Subject</a></li>';
 echo "<div id=\"alpha-nav\" class=\"nav\">\n";
-echo "<h2 id=\"nav-label\">A-to-Z</h2>\n";
+echo "<h2 id=\"nav-label\" role=\"button\">A-to-Z</h2>\n";
 echo "<ul id=\"main-nav\">\n";
 echo "<li><a href=\"index.php?az=all\">All</a></li>\n";
 
@@ -146,7 +153,7 @@ echo "</div>\n";
  
 
 
-<section id="main">
+<section id="main" tabindex="0">
 
   <nav>
   
@@ -155,7 +162,7 @@ echo "</div>\n";
 <?php echo $pageLabel; ?>
 
   </ul>
-
+<p id="show-db-no" class="no-show" aria-hidden="false">Showing <span id="db-no"> </span> Databases</p>
  </nav>
 <?php
 // include 'search-form.php';
@@ -212,38 +219,22 @@ else {
 
    <aside id="filters">
  
-     <h3>Filter by format</h3>
+     <h3>Databases by type</h3>
     <div id="type-filter">
 <?php
-echo "<button id=\"all-formats\" onclick='location.reload();'>All Formats</button>\n";
+echo "<ul id=\"format-nav\">\n<li class=\"format-links\" id=\"all-formats\"><a href=\"index.php?az\">All Formats</a></li>\n";
 $formats = array('Scholarly Journals', 'Ebooks', 'Magazines', 'Reports', 'Images', 'News', 'Encyclopedias', 'Reference', 'Streaming Audio', 'Trade Publications', 'Legal Research' );
 for ($k = 0; $k < count($formats); $k++) {
+	$formatEnc = strtolower($formats[$k]);
+	$formatEnc = str_replace(' ', '-', $formatEnc);
 
- echo "<button>" . $formats[$k] ."</button>\n";
+     echo "<li class=\"format-links\"><a href=\"index.php?az&amp;format=" . $formatEnc ."\">" . $formats[$k] ."</a></li>\n";
+     
 }
-echo "</div>\n";
+echo "</ul></div>\n";
 echo "</aside>\n";
 ?>
-<!-- <script src="res/jquery.slicknav.min.js"></script>
-<script>
-	$(function(){
-		$('#main-nav').slicknav({
-                 label: '<?php // echo $responMenuLabel; ?>'
-                });
-	});
-</script> 
-<script src="res/jquery.smartmenus.min.js"></script>
-<script>
-$(function() {
-  $('#main-nav').smartmenus();
-});
-</script>
-<script src="res/tinynav.min.js"></script>
-<script>
-  $(function () {
-    $("#main-nav").tinyNav({ header: 'Navigation'});
-  });
-</script> -->
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="db-scripts.js">
