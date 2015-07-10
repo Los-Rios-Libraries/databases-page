@@ -195,6 +195,7 @@ $('#dbpage-query').on('focus', function() {
 });
 
 $('#multi-search').on('submit', function() {
-    var a = $('input[name="search-type"]:checked').val();
-  ga('send', 'event', 'search', 'submit', a);
+  var a = $('input[name="search-type"]:checked').val();
+  var searchTerm = $('#dbpage-query').val();
+  ga('send', 'event', 'search', 'submit - ' + a, searchTerm);
 });
