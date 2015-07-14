@@ -199,3 +199,53 @@ $('#multi-search').on('submit', function() {
   var searchTerm = $('#dbpage-query').val();
   ga('send', 'event', 'search', 'submit - ' + a, searchTerm);
 });
+
+
+// cookies
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = 'expires='+d.toUTCString();
+    document.cookie = cname + '=' + cvalue + '; ' + expires;
+}
+
+$('.headnav a').on('click', function() { // set home library cookie when people click to their college.
+    var lib = $(this).text().toLowerCase();
+   setCookie('homeLibrary', lib, 10);
+   alert(lib);
+});
+
+
+function getCookie(cname) {
+    var name = cname + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) === 0) return c.substring(name.length,c.length);
+    }
+    return '';
+}
+
+function checkCookie() {
+    var homeLibrary=getCookie('homeLibrary');
+    if (homeLibrary==='arc') {
+
+      $('#arc-link').addClass('homelib');
+      }
+      else if (homeLibrary === 'scc') {
+      $('#scc-link').addClass('homelib');
+      }
+      else if (homeLibrary === 'crc') {
+      $('#crc-link').addClass('homelib');
+      }
+      else if (homeLibrary === 'flc') {
+      $('flc-link').addClass('homelib');
+      }
+      else{
+        
+    }
+    console.log(homeLibrary);
+
+}
+checkCookie();
