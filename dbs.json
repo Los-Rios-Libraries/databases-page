@@ -671,6 +671,22 @@
                      ],
                      "onesearch": "no"
         },
+{
+        "name":"Book Index With Reviews",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kdh",
+        "proxy": "yes",
+        "description": "Provides information on over 5 million book titles, along with almost 800,000 full-text searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist and others.",
+        "category": [
+                     ""
+                     ],
+                     "onesearch": "no"
+        },
                                                         {
         "name":"BIR Entertainment",
         "vendor": "EBSCO",
@@ -782,7 +798,7 @@
         "proxy": "yes",
         "description": "Designed specifically for public libraries, this multidisciplinary database provides full text for more than 1,750 general reference publications with full text information dating as far back as 1975. Covering virtually every subject area of general interest, MasterFILE Premier also includes nearly 500 full text reference books, full text from 86,019 biographies, 105,787 full text primary source documents, and an Image Collection of 293,480 photos, maps and flags. This database is updated daily via EBSCOhost.  ",
         "category": [
-                     "general"
+                     ""
                      ],
                      "onesearch": "yes"
         }
