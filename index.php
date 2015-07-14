@@ -1,12 +1,50 @@
 <?php
+/*
+// show errors for debugging
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
+*/
 $category=$_GET['category'];
 $alpha = $_GET['az'];
 $format = $_GET['format'];
 $query = $_GET['query'];
+$referrer = $_SERVER['HTTP_REFERER'];
+// echo $referrer;
+
+function setHomeLib($s){
+	setcookie('homeLibrary', $s,  time() + (86400 * 10)); // cookie expires after 10 days. May want to lengthen it.
+	
+}
+// most often people will be clicking from library website or libguides. So set the cookie that way if possible.
+$ar = 'arc';
+$cr = 'crc';
+$fl = 'flc';
+$sc = 'scc';
+if (strpos($referrer, $ar) > -1) {
+	setHomeLib($ar);
+}
+elseif (strpos($referrer, $sc) > -1) {
+	setHomeLib($sc);
+}
+elseif (strpos($referrer, $cr) > -1) {
+	setHomeLib($cr);
+}
+elseif (strpos($referrer, $fl) > -1) {
+	setHomeLib($fl);
+}
+
+
+if (!isset($_COOKIE['homeLibrary'])) {
+	// otherwise, look at IP address. They may be on campus, coming from databases or elsewhere.
+	include('ipToHomeLibrary.php');
+	
+}
 
 
 
-$alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a>';
+
+$alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a></div>';
 if (isset($format)) {
 $formatPretty = str_replace('-', ' ', $format);
 $formatPretty = ucwords($formatPretty);
@@ -48,7 +86,7 @@ include_once('functions.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 <meta charset="utf-8" >
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
@@ -75,16 +113,16 @@ include_once('functions.php');
 <?php include 'search-form.php';
 ?>
 <ul>
-<li class="headnav">
+<li id="arc-link" class="headnav">
 <a href="http://www.arc.losrios.edu/arclibrary.htm">ARC</a>
 </li>
-<li class="headnav" >
+<li id="crc-link" class="headnav" >
 <a href="http://www.crc.losrios.edu/library">CRC</a>
 </li>
-<li class="headnav" >
+<li id="flc-link" class="headnav" >
 <a href="http://www.flc.losrios.edu/libraries">FLC</a>
 </li>
-<li class="headnav">
+<li id="scc-link" class="headnav">
 <a href="http://www.scc.losrios.edu/library">SCC</a>
 </li>
 </ul>
@@ -171,7 +209,7 @@ echo "</div>\n";
 
 if (isset($category)) {
     dbsByCat($category);
-    echo "<div><a id=\"show-all\" href=\"index.php\">Show All</a>";
+    echo "<div><a id=\"show-all\" href=\"index.php\">Show All</a></div>\n";
 // if necessary - responsive menu means it probably isn't    echo "<script>$(document).ready(function() {if ( $(window).width() < 739) {document.getElementById('main').scrollIntoView();}});</script>";
 }
 elseif (isset($alpha)) {
@@ -232,6 +270,14 @@ for ($k = 0; $k < count($formats); $k++) {
      
 }
 echo "</ul></div>\n";
+echo "</aside>\n";
+echo "<aside id=\"library-help\">\n";
+
+$homeLibrary = $_COOKIE['homeLibrary'];
+
+// echo 'home library is '.$homeLibrary;
+include('library-help-' .$homeLibrary . '.php');
+
 echo "</aside>\n";
 ?>
 
