@@ -1,45 +1,50 @@
-$(function() {
-var dbNo = $('.db-name').length;
-var numberDisplay = $('#show-db-no');
+/* globals for autocomplete */
+// db autocomplete
+var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "ERIC", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "News", "ScienceDirect", "Scholarly Journals"];
 
-if (dbNo < 70) {
-
-dbNoS = dbNo.toString();
-$('#db-no').text(dbNoS);
-if (dbNo === 1) {
-  numberDisplay.text(numberDisplay.text().replace('Databases', 'Database'));  
-}
-numberDisplay.attr('class', 'show');
-}
-else {
-  numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
-}
-
-$('.db-name').each(function() { // correct capitalization while preserving php's sorting
-    $(this).text($(this).text().replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
-
-    
-});
-});
 
 
 $(function() {
-// contract nav by default on small screens
-var navList = $('#main-nav');
-var navLabel = $('#nav-label');
-if ($(window).width() < 781) {
-  navList.addClass('hidden');
-}
+  var dbNo = $('.db-name').length;
+  var numberDisplay = $('#show-db-no');
 
-navLabel.on('click', (function() {
-navList.toggleClass('hidden');
-}));
+  if (dbNo < 70) {
+
+    dbNoS = dbNo.toString();
+    $('#db-no').text(dbNoS);
+    if (dbNo === 1) {
+      numberDisplay.text(numberDisplay.text().replace('Databases', 'Database'));
+    }
+    numberDisplay.attr('class', 'show');
+  } else {
+    numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
+  }
+
+  $('.db-name').each(function() { // correct capitalization while preserving php's sorting
+    $(this).text($(this).text().replace('Acls', 'ACLS').replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
+
+
+  });
+});
+
+
+$(function() {
+  // contract nav by default on small screens
+  var navList = $('#main-nav');
+  var navLabel = $('#nav-label');
+  if ($(window).width() < 781) {
+    navList.addClass('hidden');
+  }
+
+  navLabel.on('click', (function() {
+    navList.toggleClass('hidden');
+  }));
 
 });
 
 $(function() {
-// filters -- probably should not use this
-/*
+  // filters -- probably should not use this
+  /*
 var typeButtons = $('#type-filter button');
 typeButtons.on('click', function() {
     $('#zero-notice').remove();
@@ -75,7 +80,7 @@ typeButtons.on('click', function() {
   });
   checkZeros();
 
-// });
+  // });
 });
 $('.alpha').each(function() {
   if ($(this).find('li').length === 0) {
@@ -84,21 +89,23 @@ $('.alpha').each(function() {
 });
 
 $(function() { // need to do this on every page load.
-checkZeros();
+  checkZeros();
 });
+
 function checkZeros() { // if there are no entries at all, show suggestions.
- $('#zero-notice').remove();
+  $('#zero-notice').remove();
   if ($('#main .active').length === 0) {
     //   $('.category').removeClass('hidden').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
     var a = $('#main');
 
 
-    
+
     a.append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry!</div>');
 
     a.append($('#multi-search'));
- //   $('#form-remainder').prop('class', 'opened');
- $('#form-remainder').removeClass('hidden');
+    $('#dbpage-query').addClass('form-emphasis');
+    //   $('#form-remainder').prop('class', 'opened');
+    $('#form-remainder').removeClass('hidden');
   }
 }
 
@@ -106,74 +113,116 @@ $(function() { // fix borders in last item of lists--can't do this in pure css b
   $('dt').prev('dd').addClass('last-dd');
 });
 
-$(function() {
-// show hints for different search options
+
+
 $('#dbpage-query').on('focus', function() {
-//   var button = $(this);
- //   var searchForm = $('#multi-search');
-   showSearch($('#form-remainder'), $(this));
- 
+  //   var button = $(this);
+  //   var searchForm = $('#multi-search');
+  showSearch($('#form-remainder'), $(this));
+
 });
-});
+
 
 // make search button toggle the search form
 function showSearch(form, input) {
-input.addClass('form-emphasis');
-    form.slideDown().removeClass('hidden');
-//    $('#dbpage-query').focus();
-     input.unbind();
-     $('#form-closer').on('click', (function(e) {
-        e.preventDefault();
-        hideSearch(form,input);
-        
-     }));
-//   but.on('click', function() {
-//    hideSearch(form, but);
- //  });
+  input.addClass('form-emphasis');
+  form.slideDown().removeClass('hidden');
+  //    $('#dbpage-query').focus();
+  //     input.off(input, 'focus', showSearch);
+  $('#form-closer').on('click', (function(e) {
+    e.preventDefault();
+    hideSearch(form, input);
+
+  }));
+  //   but.on('click', function() {
+  //    hideSearch(form, but);
+  //  });
+
+
+  $("#dbpage-query").autocomplete({
+    source: function(request, response) {
+      var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
+      response($.grep(dbNames, function(item) {
+        return matcher.test(item);
+      }));
+    },
+    select: function(event, ui) {
+      if (ui.item) {
+        $(this).val(ui.item.value);
+      }
+      $('#multi-search').submit();
+    }
+  });
 }
+
 function hideSearch(form, input) {
-    form.slideUp().addClass('hidden');
-    input.removeClass('form-emphasis');
-    input.on('click', function() {
-        showSearch(form, input);
-    });
-    
+  form.slideUp().addClass('hidden');
+  input.removeClass('form-emphasis');
+  input.on('click', function() {
+    showSearch(form, input);
+  });
+
 }
 
 // highlight current page in nav where applicable
 $('#main-nav li a').each(function() {
-    var a = $('#title-cat').text();
-    var b = $('#title-alpha').text().toLowerCase();
-    var c = $(this);
-    var d = c.text();
-    if ((a === d) || (b === d)) {
-        c.addClass('current');
-    }
-    });
+  var a = $('#title-cat').text();
+  var b = $('#title-alpha').text().toLowerCase();
+  var c = $(this);
+  var d = c.text();
+  if ((a === d) || (b === d)) {
+    c.addClass('current');
+  }
+});
 
 // do same with format links
 $('.format-links').each(function() {
-   var a = $(this);
-   if (a.find('a').text() === $('#title-format').text()) {
+  var a = $(this);
+  if (a.find('a').text() === $('#title-format').text()) {
     a.addClass('current');
-   }
-   
+  }
+
 });
+
+// show hints for different search options
 $('#multi-search input[type=radio]').on('click', function() {
 
-$('.search-exp').each(function() {
+  $('.search-exp').each(function() {
     e = $(this);
     if (!(e.hasClass('hidden'))) {
-        e.slideUp().addClass('hidden');
+      e.slideUp().addClass('hidden');
     }
+  });
+  a = $(this);
+
+  b = $('#dbpage-query');
+  if (a.is('#search-db')) {
+    b.autocomplete({
+      disabled: false,
+      source: dbNames,
+      select: function(event, ui) {
+        if (ui.item) {
+          b.val(ui.item.value);
+        }
+        alert('hello');
+        $('#multi-search').submit();
+      }
     });
-$(this).parent().next().slideDown().removeClass('hidden');
-    
+  } else {
+    b.autocomplete({
+      disabled: true
+    });
+  }
+  a.parent().next().slideDown().removeClass('hidden');
 });
 
 // google analytics events
 $('.db-name').on('click', function() {
-    var a = $(this).text();
+  if (!($(this).attr('target') === '_blank')) {
+    $('#loader').removeClass('hidden');
+  }
+
+  var a = $(this).text();
   ga('send', 'event', 'databases', 'click', a);
 });
 
@@ -187,7 +236,7 @@ $('#show-all').on('click', function() {
   ga('send', 'event', 'button', 'click', 'show all');
 });
 $('#type-filter button').on('click', function() {
-    var a = $(this).text();
+  var a = $(this).text();
   ga('send', 'event', 'filters', 'click', a);
 });
 $('#dbpage-query').on('focus', function() {
@@ -203,49 +252,105 @@ $('#multi-search').on('submit', function() {
 
 // cookies
 function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = 'expires='+d.toUTCString();
-    document.cookie = cname + '=' + cvalue + '; ' + expires;
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = 'expires=' + d.toUTCString();
+  document.cookie = cname + '=' + cvalue + '; ' + expires;
 }
 
 $('.headnav a').on('click', function() { // set home library cookie when people click to their college.
-    var lib = $(this).text().toLowerCase();
-   setCookie('homeLibrary', lib, 10);
-   alert(lib);
+  var lib = $(this).text().toLowerCase();
+  alert(lib);
+  setCookie('homeLibrary', lib, 10);
 });
 
 
 function getCookie(cname) {
-    var name = cname + '=';
-    var ca = document.cookie.split(';');
-    for(var i=0; i<ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) === 0) return c.substring(name.length,c.length);
-    }
-    return '';
+  var name = cname + '=';
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1);
+    if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+  }
+  return '';
+}
+function homeLibEls(col) {
+    $('#' + col +'-link').addClass('homelib');
+    $.get('help/' + col +'.php', function(data) {
+      $('#library-help-content').html(data);
+    }, 'html');    
+    
 }
 
-function checkCookie() {
-    var homeLibrary=getCookie('homeLibrary');
-    if (homeLibrary==='arc') {
+function checkCookies() { 
+  var homeLibrary = getCookie('homeLibrary');
 
-      $('#arc-link').addClass('homelib');
-      }
-      else if (homeLibrary === 'scc') {
-      $('#scc-link').addClass('homelib');
-      }
-      else if (homeLibrary === 'crc') {
-      $('#crc-link').addClass('homelib');
-      }
-      else if (homeLibrary === 'flc') {
-      $('flc-link').addClass('homelib');
-      }
-      else{
-        
-    }
-    console.log(homeLibrary);
+  if (homeLibrary === 'arc') {
+homeLibEls('arc');
+  } else if (homeLibrary === 'scc') {
+homeLibEls('scc');
+  } else if (homeLibrary === 'crc') {
+homeLibEls('crc');
+  } else if (homeLibrary === 'flc') {
+homeLibEls('flc');
+  } else {
+    $.get("help/unknown.php", function(data) {
+      $('#library-help-content').html(data);
+    }, 'html');
+  }
+  console.log(homeLibrary);
+
+  var newWins = getCookie('newWindowLinks');
+  if (newWins === 'yes') {
+    $('#newwin-check').prop('checked', true);
+    $('.db-name').attr('target', '_blank');
+  }
 
 }
-checkCookie();
+
+
+$('#newwin-check').on('click', function() {
+  var a = $(this);
+  var b = $('.db-name');
+  if (a.is(':checked')) {
+    setCookie('newWindowLinks', 'yes', 30);
+    b.attr('target', '_blank');
+  } else {
+    setCookie('newWindowLinks', 'no', 1);
+    b.removeAttr('target');
+
+
+  }
+});
+
+checkCookies();
+
+
+
+$('#choose-library button').on('click', (function() {
+  var library = $(this).text();
+  $.get("help/" + library + ".php", function(data) {
+    $("#library-help-content").html(data);
+  }, 'html');
+  setCookie('homeLibrary', library, 20);
+}));
+
+
+var currentURL = location.href;
+// var pagePath = '/tools/databases/library/tools/databases';
+if (currentURL.match('college=')) {
+  currentURL = currentURL.replace(/(\?|&)college.*/, '');
+  replaceURL = currentURL.replace(/.*losrios.edu\//, '');
+  history.replaceState(currentURL, document.title, currentURL);
+}
+
+/*
+// to be used if we do a "read more" thing
+$('.desc-readmore').on('click', function() {
+    var a = $(this);
+    a.next('.desc-remainder').removeClass('hidden');
+    a.addClass('hidden');
+    
+});
+*/
