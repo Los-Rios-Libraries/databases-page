@@ -1,15 +1,17 @@
 <?php
-/*
+
 // show errors for debugging
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
-*/
+
 $category=$_GET['category'];
 $alpha = $_GET['az'];
 $format = $_GET['format'];
 $query = $_GET['query'];
 $referrer = $_SERVER['HTTP_REFERER'];
+$college = $_GET['college'];
+$newWins = $_COOKIE['newWindowLinks'];
 // echo $referrer;
 
 function setHomeLib($s){
@@ -21,16 +23,16 @@ $ar = 'arc';
 $cr = 'crc';
 $fl = 'flc';
 $sc = 'scc';
-if (strpos($referrer, $ar) > -1) {
+if ((strpos($referrer, $ar) > -1) || ($college === $ar) ) {
 	setHomeLib($ar);
 }
-elseif (strpos($referrer, $sc) > -1) {
+elseif ((strpos($referrer, $sc) > -1) || ($college === $sc) ) {
 	setHomeLib($sc);
 }
-elseif (strpos($referrer, $cr) > -1) {
+elseif ((strpos($referrer, $cr) > -1) || ($college === $cr) ) {
 	setHomeLib($cr);
 }
-elseif (strpos($referrer, $fl) > -1) {
+elseif ((strpos($referrer, $fl) > -1) || ($college === $fl) ) {
 	setHomeLib($fl);
 }
 
@@ -40,9 +42,12 @@ if (!isset($_COOKIE['homeLibrary'])) {
 	include('ipToHomeLibrary.php');
 	
 }
-
-
-
+if (isset($_COOKIE['homeLibrary'])) {
+	$homeLibrary = $_COOKIE['homeLibrary'];
+}
+else {
+	$homeLibrary = 'unknown';
+}
 
 $alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a></div>';
 if (isset($format)) {
@@ -92,6 +97,7 @@ include_once('functions.php');
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
 <link rel="stylesheet" href="style.css" >
+<link rel="stylesheet" href="res/jquery-ui.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
 
@@ -219,8 +225,11 @@ elseif (isset($alpha)) {
      for ($k = 0; $k < $azLinksNo; $k++) {
     
      dbsByAlpha($azLinks[$k], $format);
+     
      }
-  
+     if ((isset($format)) || (isset($query))){
+           echo $alphaShowAll; 
+     }
     }
 
     else {
@@ -254,10 +263,14 @@ else {
 }
 ?>
 </section>
-
+<aside id="new-windows" style="
+    
+">
+  <form><input type="checkbox" id="newwin-check" <?php echo $linkCheck; ?>> <label for="newwin-check">Open links in new windows</label></form>
+</aside>
    <aside id="filters">
  
-     <h3>Databases by type</h3>
+     <h2>Databases by type</h2>
     <div id="type-filter">
 <?php
 echo "<ul id=\"format-nav\">\n<li class=\"format-links\" id=\"all-formats\"><a href=\"index.php?az\">All Formats</a></li>\n";
@@ -272,19 +285,27 @@ for ($k = 0; $k < count($formats); $k++) {
 echo "</ul></div>\n";
 echo "</aside>\n";
 echo "<aside id=\"library-help\">\n";
-
-$homeLibrary = $_COOKIE['homeLibrary'];
+echo "<h2>From Your Library</h2>\n";
+echo "<div class=\"hidden\">" . $homeLibrary . "</div>\n";
+echo "<div id=\"library-help-content\">\n";
 
 // echo 'home library is '.$homeLibrary;
-include('library-help-' .$homeLibrary . '.php');
-
-echo "</aside>\n";
+// include('help/' .$homeLibrary . '.php');
+echo "</div>\n";
 ?>
+<div id="choose-library">
+	<button>arc</button> <button>crc</button> <button>flc</button> <button>scc</button>
+</div>
+</aside>
 
+<img id="loader" alt="loading" src="loader.gif" class="hidden">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="res/jquery-ui.min.js"></script>
 <script src="db-scripts.js">
  
 </script>
+
+
 </body>
 </html>
