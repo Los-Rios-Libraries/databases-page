@@ -23,7 +23,7 @@ background: #3d3d3d;
 padding-bottom: 2px;
 }
 #multi-search label {position:relative; z-index:500;}
-#dbpage-query { position:relative; z-index: 500; width:10em; padding:0 8px; border-radius:4px; margin-left:1em; height:14px;  -webkit-transition: width .5  s;}
+#dbpage-query { position:relative; z-index: 500; width:10em; padding:0 8px; border:1px solid #ccc; border-radius:4px; margin-left:1em; height:14px;  -webkit-transition: width .5  s;}
 .form-emphasis { height:2em !important; width:18em !important; font-size: 1.2em; transition: width .4s;-webkit-transition: width .4s;}
 #form-remainder { position:absolute; z-index:400; left:1em; background: #3d3d3d; margin-top:-1.4em; width:80%; max-width: 500px; padding:3em; border-radius:0 0 8px 8px; -webkit-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);}
 
@@ -50,6 +50,7 @@ input[type="radio"] {display:inline-block;}
 .headnav a:link, .headnav a:visited {color:#fff;}
  h1 { clear:both; font-size:2.4em;  width:50%; padding-bottom:8px; border-bottom: 1px solid #ccc; margin:0 auto;}
  #tagline {font-size:1.5em;}
+ #title-query {display:block; font-size:.8em;}
  #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:500px; margin-bottom:50px; position:relative;}
  h1 a:link, h1 a:visited {color:#fff;}
  #main nav {font-size:1.5em; margin-bottom:10px;}
@@ -65,7 +66,7 @@ input[type="radio"] {display:inline-block;}
 .no-show {color:#fff !important;}
 .category {margin-bottom: 1em;   box-shadow: 0px 2px 6px -3px rgba(0,0,0,0.75);}
 .category:first-of-type{clear:both;}
- .category h2 {font-size:1.4em; text-transform:uppercase; background:#83AA30; color:#fff; padding-left:10px;}
+ .category h2 {font-size:1.4em; text-transform:uppercase; background:#4D6684; color:#fff; padding-left:10px;}
  .category ul {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
 
 .db-entry {margin-bottom:1.2em;}
@@ -113,8 +114,12 @@ input[type="radio"] {display:inline-block;}
 #show-all:hover, #show-all:focus {background:#4D6684; }
 
 
- #filters {margin-right:50px;}
+ #filters, #new-windows, #library-help {width:15%; float:right; padding:8px; margin-right:50px;}
+ #filters, #library-help { border:1px solid #ccc; border-radius:4px; margin-bottom:8px;}
+ aside h2, aside h3 {font-weight:bold;}
  #format-nav {text-align: center;}
+   #type-filter li {margin-bottom:4px; font-size:.7em;}
+ #type-filter li.active {font-weight:bold; font-size:120%;}
   #all-formats {display:block;}
   .format-links {display:inline-block; list-style-type:none; border:1px solid #ccc; border-radius:4px; background:#F5F5F5; margin:0 .5em 1.5em .5em;}
   .format-links:hover, .format-links:focus {background:#fff;}
@@ -122,6 +127,8 @@ input[type="radio"] {display:inline-block;}
   .format-links a:link, .format-links a:visited {color:#000;}
   .format-links a:hover, .format-links a:focus {color:#E74700;}
   #format-nav .current {font-weight:bold; font-size:.8em;}
+  #loader {position: fixed; top:50%; left:50%; margin-top:-32px; margin-left:-32px; width:64px; height:64px;}
+
 
  @media screen and (max-width:1100px) {
 /* #filters, #filters.scrolled {
@@ -134,11 +141,12 @@ width:100%;
   
  } */
  #main {width:75%;}
- #filters {width:80%; margin:0 auto 10px; margin-top:20px;}
- }
-  #type-filter li {margin-bottom:4px; font-size:.7em;}
- #type-filter li.active {font-weight:bold; font-size:120%;}
- #filters {width:15%; float:right; border:1px solid #ccc; border-radius:4px; padding:8px;}
+ #filters {width:30%; margin:0 auto 10px; margin-top:20px;clear:both; margin-top:0;}
+
+ #library-help {width:30%; }
+ #new-windows {text-align:right; width:80%; margin:0 auto;}
+
+/* #filters {width:15%; float:right; border:1px solid #ccc; border-radius:4px; padding:8px;} */
  
  @media screen and (max-width: 780px)
  {
@@ -149,7 +157,8 @@ width:100%;
  
   #main {width:100%; margin:0 auto 100px;  float:none;}
  
-#filters {width:90%; float:none;}
+#filters, #new-windows, #library-help {width:90%; float:none;}
+#library-help {margin-left:auto; margin-right:auto;}
   body {margin:0 4px; padding:0;}
    #primary-nav { font-size:1em;}
    #primary-nav li {display: block;}
