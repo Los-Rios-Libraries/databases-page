@@ -4,9 +4,17 @@ $topPick = '';
 if (strpos($db->top, 'yes') !== false) {
  $topPick = 'top-pick';
 }
+$description = $db -> description;
+/*
+// automatically inserts a read more button after first period... only make sense if descriptions are longer. Maybe better approach is to have separate field in json file.
+if (preg_match('/\. /', $description)) {
+$descParts = preg_split('/\. /', $description, 2);
+$description = $descParts[0] . ". <button class=\"desc-readmore\">Read more</button><span class=\"hidden desc-remainder\">" .$descParts[1] . "</span>";
+}
+*/
 echo "<li class=\"db-entry active " .$formatList . " " . $topPick . "\">\n";
 echo "<h3><a class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
-echo "<p class=\"db-desc\">" .$db ->description . "</p>\n";
+echo "<p class=\"db-desc\">" . $description . "</p>\n";
 echo "<dl class=\"internal-links\">\n";
 echo "<dt class=\"cat-list\">Categories:</dt> ";
 $dbCategories = $db -> category;
