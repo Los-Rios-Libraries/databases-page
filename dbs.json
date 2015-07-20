@@ -713,12 +713,61 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ebooks&defaultdb=nlebk",
         "proxy": "yes",
-        "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more.",
+        "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more. Content may be read within the browser or, in most cases, downloaded to a computer or tablet for limited periods.",
         "category": [
                      "art-history", "business", "education", "communication", "computer-information-science", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
                      ],
                      "onesearch": "yes"
         },
+                            {
+        "name":"Acls Humanities E-Book",
+        "vendor": "American Council of Learned Societies",
+        "top": "no",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "quod.lib.umich.edu",
+        "urlPath": "cgi/t/text/text-idx?c=acls;rgn=full%20text;page=simple",
+        "proxy": "yes",
+        "description": "Contains approximately 4,300 high-quality academic titles in the humanities. Fields currently covered include Archaeology, American Studies, Art and Architectural History, Biblical Studies, Film and Media Studies, Folklore, Linguistics, Literary Criticism, Musicology, Performance Studies (theater, music, dance), Philosophy, Political Science, Religion, and Sociology.",
+        "category": [
+                     "art-history", "business", "education", "communication", "computer-information-science", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     ],
+                     "onesearch": "yes"
+        },
+                       {
+        "name":"Newswires",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "news"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nsm",
+        "proxy": "yes",
+        "description": "News items from Associated Press, United Press International, PR Newswire, Xinhua, CNN Wire, and Business Wire from the last 30 days.",
+        "category": [
+                     "current-events"
+                     ],
+                     "onesearch": "yes"
+        },  
+               {
+        "name":"Web News",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "news"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nmr",
+        "proxy": "yes",
+        "description": "Includes over 14,000 feeds covering a range of business and general news topics. Click the title to go directly to the online source.",
+        "category": [
+                     "current-events"
+                     ],
+                     "onesearch": "yes"
+        },       
+        
             {
         "name":"Academic Search Complete",
         "vendor": "EBSCO",
@@ -782,7 +831,7 @@
         "proxy": "yes",
         "description": "Links to articles, abstracts, books, patents, and legal materials. Links to full-text are displayed to the right of the search result entry. Entering via this link will allow you to also find links to content in other databases.",
         "category": [
-                     "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
+                     "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
                      "onesearch": "no"
         },
@@ -799,6 +848,22 @@
         "description": "Designed specifically for public libraries, this multidisciplinary database provides full text for more than 1,750 general reference publications with full text information dating as far back as 1975. Covering virtually every subject area of general interest, MasterFILE Premier also includes nearly 500 full text reference books, full text from 86,019 biographies, 105,787 full text primary source documents, and an Image Collection of 293,480 photos, maps and flags. This database is updated daily via EBSCOhost.  ",
         "category": [
                      ""
+                     ],
+                     "onesearch": "yes"
+        },
+                      {
+        "name":"OneSearch",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "books", "ebooks", "trade-publications", "magazines", "legal-research", "reports", "images", "streaming-audio"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=eds",
+        "proxy": "yes",
+        "description": "Provides access to the content of nearly every database held by Los Rios Libraries from a single interface. Also provides access to books, videos, and other content from library shelves.",
+        "category": [
+                      "general", "art-history", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-life-sciences", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
         }
