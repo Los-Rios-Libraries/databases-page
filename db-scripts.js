@@ -1,6 +1,6 @@
 /* globals for autocomplete */
 // db autocomplete
-var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "ERIC", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "News", "ScienceDirect", "Scholarly Journals"];
+var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "Environment Complete", "ERIC", "Explora", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "MasterFILE Premier", "MEDLINE", "Military & Government Collection", "Naxos Music Library", "Naxos Music Library Jazz Collection", "News", "Newspaper Source Plus", "OneSearch", "Opposing Viewpoints in Context", "Oxford English Dictionary", "PsycARTICLES", "Psychology & Behavioral Sciences Collection", "PubMed", "Regional Business News", "Religion & Philosophy Collection", "Salem Press", "Small Business Reference Center", "ScienceDirect", "Scholarly Journals", "SocINDEX with Full Text", "Trade Publications"];
 
 
 
@@ -82,6 +82,8 @@ typeButtons.on('click', function() {
 
   // });
 });
+
+
 $('.alpha').each(function() {
   if ($(this).find('li').length === 0) {
     $(this).addClass('hidden');
@@ -141,17 +143,24 @@ function showSearch(form, input) {
 
   $("#dbpage-query").autocomplete({
     source: function(request, response) {
+        var results = $.ui.autocomplete.filter(dbNames, request.term);
+
+        response(results.slice(0, 5));
+    },
+/*    source: function(request, response) {
       var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
       response($.grep(dbNames, function(item) {
         return matcher.test(item);
       }));
-    },
+    },*/
     select: function(event, ui) {
       if (ui.item) {
         $(this).val(ui.item.value);
       }
       $('#multi-search').submit();
-    }
+    } 
+
+
   });
 }
 
@@ -186,7 +195,7 @@ $('.format-links').each(function() {
 
 // show hints for different search options
 $('#multi-search input[type=radio]').on('click', function() {
-
+var form = $('#multi-search');
   $('.search-exp').each(function() {
     e = $(this);
     if (!(e.hasClass('hidden'))) {
@@ -196,7 +205,13 @@ $('#multi-search input[type=radio]').on('click', function() {
   a = $(this);
 
   b = $('#dbpage-query');
+  checkCookies();
+   var newWins = getCookie('newWindowLinks');
+  if (newWins === 'yes') {
+    form.attr('target', '_blank');
+  }
   if (a.is('#search-db')) {
+    form.removeAttr('target');
     b.autocomplete({
       disabled: false,
       source: dbNames,
@@ -204,8 +219,8 @@ $('#multi-search input[type=radio]').on('click', function() {
         if (ui.item) {
           b.val(ui.item.value);
         }
-        alert('hello');
-        $('#multi-search').submit();
+  //      alert('hello');
+        form.submit();
       }
     });
   } else {
@@ -260,7 +275,7 @@ function setCookie(cname, cvalue, exdays) {
 
 $('.headnav a').on('click', function() { // set home library cookie when people click to their college.
   var lib = $(this).text().toLowerCase();
-  alert(lib);
+//  alert(lib);
   setCookie('homeLibrary', lib, 10);
 });
 
@@ -279,12 +294,17 @@ function homeLibEls(col) {
     $('#' + col +'-link').addClass('homelib');
     $.get('help/' + col +'.php', function(data) {
       $('#library-help-content').html(data);
-    }, 'html');    
+    }, 'html');
+    var colUpper = col.toUpperCase();
+    $('#library-help h2').html('From the '+colUpper + ' Library');
     
 }
 
-function checkCookies() { 
-  var homeLibrary = getCookie('homeLibrary');
+function checkCookies(a) {
+    if (a === 'homeLibrary') {
+       
+    
+  var homeLibrary = getCookie(a);
 
   if (homeLibrary === 'arc') {
 homeLibEls('arc');
@@ -300,31 +320,42 @@ homeLibEls('flc');
     }, 'html');
   }
   console.log(homeLibrary);
+}
+else if (a === 'newWindowLinks') {
+    
 
-  var newWins = getCookie('newWindowLinks');
+  var newWins = getCookie(a);
   if (newWins === 'yes') {
     $('#newwin-check').prop('checked', true);
-    $('.db-name').attr('target', '_blank');
-  }
+    $('.db-name, .headnav a').attr('target', '_blank');
+    setTimeout(function() {
+        $('#library-help-content a').attr('target', '_blank');
+    }, 1000);
 
+  }
+}
 }
 
 
 $('#newwin-check').on('click', function() {
   var a = $(this);
-  var b = $('.db-name');
+  var b = $('.db-name, .search-one-db, #library-help-content a');
   if (a.is(':checked')) {
     setCookie('newWindowLinks', 'yes', 30);
     b.attr('target', '_blank');
+        if ($('#search-db').prop('checked', false)) {
+        $('#multi-search').attr('target', '_blank');
+    }
   } else {
     setCookie('newWindowLinks', 'no', 1);
     b.removeAttr('target');
-
+$('#multi-search').removeAttr('target');
 
   }
 });
 
-checkCookies();
+checkCookies('homeLibrary');
+checkCookies('newWindowLinks');
 
 
 
@@ -334,6 +365,8 @@ $('#choose-library button').on('click', (function() {
     $("#library-help-content").html(data);
   }, 'html');
   setCookie('homeLibrary', library, 20);
+  var colUpper = library.toUpperCase();
+    $('#library-help h2').html('From the '+colUpper + ' Library');
 }));
 
 
@@ -354,3 +387,50 @@ $('.desc-readmore').on('click', function() {
     
 });
 */
+$('.open-db-search').on('click', function() {
+  var searchButton = $(this);
+  var target = '';
+  var winSetting = getCookie('newWindowLinks');
+  if (winSetting === 'yes') {
+    target = ' target="_blank" ';
+  }
+var dbName = searchButton.nextAll('h3').find('.db-name');
+var dbNameText = dbName.text().toLowerCase();
+dbNameText = dbNameText.replace(/ /g, '-');
+var vendor = searchButton.nextAll('h3').find('.vendor').text().toLowerCase();
+vendor = vendor.replace(/[\(\):]/g, '');
+vendor = vendor.replace(/ /g, '-');
+var dbEl = document.getElementById(dbNameText);
+$('.open-db-search').removeClass('hidden');
+var searchForms = $('.search-one-db');
+if (!dbEl) {  // this is causing problem on main categories page when database is listed twice... if one is used and then you try another, the element already exists but elsewhere. Does it matter?
+
+  searchForms.hide();
+    var dbURL = dbName.attr('href');
+    var ehost = '';
+    if (dbURL.indexOf('ehost') > -1) {
+      var ebCode = dbURL.split(/[= ]+/).pop();
+      ehost = '<input type="hidden" name="ehost" value="' + ebCode + '">';
+    }
+var searchDB = '<form class="search-one-db" method="post" action="search-db.php" ' + target + '><label class="search-one-db-l" for="' + dbNameText + '">Keywords</label><input name="query" id="' + dbNameText + '" type="text"><input type="hidden" name="vendor" value="' +vendor + '"><input type="hidden" name="db-name" value="' +dbNameText + '">' + ehost + '<button class="search-btn" type="submit"><img height="16" width="16" src="search.png" alt="search"></button></form>';
+searchButton.addClass('hidden');
+searchButton.after(searchDB);
+searchButton.next(searchForms).fadeIn();
+searchButton.next(searchForms).find(':text').focus();
+}
+else {
+searchButton.addClass('hidden');
+  searchForms.hide();
+  searchButton.next(searchForms).fadeIn();
+  document.getElementById(dbNameText).focus();
+}
+});
+
+// hide crc chat
+function hideZ() {
+  $('.zopim').addClass('hidden');
+}
+
+function showZ() {
+  $('.zopim').removeClass('hidden');
+}
