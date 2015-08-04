@@ -57,7 +57,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=i3h",
         "proxy": "yes",
-        "description": "Contains more than 200,000 records selected from the most important sources within the discipline. Subject areas covered include: criminology; criminal justice; criminal law and procedure; corrections and prisons; police and policing; criminal investigation; forensic sciences and investigation; history of crime; substance abuse and addiction; probation and parole.",
+        "description": "Scholarly and other professional literature from areas including: criminology; criminal law and procedure; corrections; police and policing; criminal investigation; forensic sciences and investigation; substance abuse and addiction; probation and parole.",
         "category": [
                      "criminal-justice", "sociology"
                      ],
@@ -72,7 +72,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=sih",
         "proxy": "yes",
-        "description": "This database features more than 2.1 million records with subject headings from a 20,000+ term sociological thesaurus designed by subject experts and expert lexicographers.SocINDEX with Full Text contains full text for more than 860 journals dating back to 1908. This database also includes full text for more than 830 books and monographs, and full text for over 16,800 conference papers.",
+        "description": "Contains full text for more than 860 journals in sociology and related fields, including full text for more than 830 books and monographs and over 16,000 conference papers. Content is organized according to subject headings from a 20,000+ term sociological thesaurus.",
         "category": [
                      "criminal-justice", "sociology", "psychology"
                      ],
@@ -87,7 +87,7 @@
         "urlRoot": "library.artstor.org",
         "urlPath": "",
         "proxy": "yes",
-        "description": "Nearly 500,000 images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
+        "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
         "category": [
                      "art-history"
                      ],
@@ -103,7 +103,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=autorefctr",
         "proxy": "yes",
-        "description": "Auto Repair Reference Center (ARRC) contains repair and maintenance information on most major manufacturers of domestic and imported vehicles. New repair procedures, TSBs and updates are added to the product on a regular basis.",
+        "description": "Contains repair and maintenance information on most major manufacturers of domestic and imported vehicles. New repair procedures, TSBs and updates are added to the product on a regular basis.",
         "category": [
                      "automotive"
                      ],
@@ -152,7 +152,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ufh",
         "proxy": "yes",
-        "description": "Offers cover-to-cover indexing and abstracts for more than 440 journals in Communication and related fields, and selected (priority) coverage of nearly 200 more. Furthermore, this database includes full text for 326 journals.",
+        "description": "Offers cover-to-cover indexing and abstracts for more than 440 journals in Communication and related fields, and selected (priority) coverage of nearly 200 more. Includes full text for 326 journals.",
         "category": [
                      "communication"
                      ],
@@ -185,7 +185,7 @@
         "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb/?db=OVIC",
         "proxy": "yes",
-        "description": "With its content drawn from the social issues series from Greenhaven Press as well as content from other Gale sources, this database contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
+        "description": "Contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
         "category": [
                      "controversial-topics", "communication", "current-events"
                      ],
@@ -220,7 +220,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
         "proxy": "yes",
-        "description": "Articles covering all levels of education from early childhood to higher education, and all educational specialties, such as multilingual education, health education, and testing.",
+        "description": "Articles covering all levels of education from early childhood to higher education, and educational specialties such as multilingual education, health education, and testing.",
         "category": [
                      "education"
                      ],
@@ -236,7 +236,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
         "proxy": "yes",
-        "description": "Covers agriculture, ecosystem ecology, energy, sustainability, and affiliated areas of study. ",
+        "description": "Covers agriculture, ecosystem ecology, energy, sustainability, and related areas of study. ",
         "category": [
                      "environmental-science"
                      ],
@@ -258,22 +258,7 @@
                      ],
                      "onesearch": "yes"
         },
-                                                              {
-        "name":"Gale Virtual Reference Library",
-        "vendor": "Gale",
-        "top": "no",
-        "type": [
-            "encyclopedias", "reference", "ebooks"
-                ],
-       "urlRoot": "infotrac.galegroup.com",
-        "urlPath": "itweb?db=GVRL",
-        "proxy": "yes",
-        "description": "Specialized encyclopedias and other reference sources.",
-        "category": [
-                     "education", "history", "music", "environmental-science", "business", "literature", "sociology"
-                     ],
-                     "onesearch": "yes"
-        }, 
+
         
         {
         "name":"PubMed",
@@ -309,7 +294,7 @@
         "urlRoot": "www.lexisnexis.com",
         "urlPath": "hottopics/lnacademic/",
         "proxy": "yes",
-        "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, selected to meet academic research needs, including: National and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789  Business news journals, company financial information, SEC filings and reports, and industry and market news. ",
+        "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, including: national and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources; U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information; Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789; business news journals, company financial information, SEC filings and reports, and industry and market news. ",
         "category": [
                      "criminal-justice",
                      "business",
@@ -363,7 +348,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
         "proxy": "yes",
-        "description": "This database was initiated by the American Society for Theatre Research, and since 1984, the Theatre Research Data Center (TRDC) at Brooklyn College has published 14 volumes of the IBTD. These volumes comprise a fully indexed, cross-referenced and annotated databank of over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries.International Bibliography of Theatre & Dance with Full Text contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books & monographs.",
+        "description": "Indexes over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries. Also contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books &amp; monographs.",
         "category": [
                      "theatre-&amp;-performing-arts", "literature"
                      ],
@@ -396,7 +381,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=cmedm",
         "proxy": "yes",
-        "description": "Contains authoritative medical information on medicine, nursing, dentistry, veterinary medicine, the health care system, pre-clinical sciences, and much more. Created by the National Library of Medicine, it uses MeSH (Medical Subject Headings) indexing with tree.",
+        "description": "Contains authoritative medical information on medicine, nursing, dentistry, veterinary medicine, the health care system, pre-clinical sciences, and much more. Created by the National Library of Medicine, it uses MeSH (Medical Subject Headings) indexing.",
         "category": [
                      "health-&amp;-life-sciences"
                      ],
@@ -430,12 +415,28 @@
        "urlRoot": "www.sciencedirect.com",
         "urlPath": "science?_ob=MiamiSearchURL&_method=requestForm&_temp=search.tmpl&md5=be86fcf199953fc3d5e2cd09e0389370&Subscribed=1",
         "proxy": "yes",
-        "description": "Offers over 2,000 full-text journal titles, primarily in the health and life sciences. Los Rios subscribes to College Edition - Health &amp; Life Sciences Collection.",
+        "description": "Offers over 2,000 full-text journal titles from a leading academic publisher, primarily in the health and life sciences.",
         "category": [
                      "health-&amp;-life-sciences", "psychology"
                      ],
                      "onesearch": "yes"
         },
+                                                              {
+        "name":"Gale Virtual Reference Library",
+        "vendor": "Gale",
+        "top": "no",
+        "type": [
+            "encyclopedias", "reference", "ebooks"
+                ],
+       "urlRoot": "infotrac.galegroup.com",
+        "urlPath": "itweb?db=GVRL",
+        "proxy": "yes",
+        "description": "Specialized encyclopedias and other reference sources.",
+        "category": [
+                     "education", "history", "music", "environmental-science", "business", "literature", "sociology"
+                     ],
+                     "onesearch": "yes"
+        }, 
                                {
         "name":"Oxford English Dictionary",
         "vendor": "Oxford University Press",
@@ -615,7 +616,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
         "proxy": "yes",
-        "description": "Offers information on small business and entrepreneurial subject areas, common business types, a help and advice section, and provides information on how to create business plans.",
+        "description": "Offers information on small business and entrepreneurial subject areas, common business types, a help and advice section, and provides information on how to create business plans. Provides full-text access to a number of Nolo Press titles.",
         "category": [
                      "business"
                      ],
@@ -731,7 +732,7 @@
         "proxy": "yes",
         "description": "Contains approximately 4,300 high-quality academic titles in the humanities. Fields currently covered include Archaeology, American Studies, Art and Architectural History, Biblical Studies, Film and Media Studies, Folklore, Linguistics, Literary Criticism, Musicology, Performance Studies (theater, music, dance), Philosophy, Political Science, Religion, and Sociology.",
         "category": [
-                     "art-history", "business", "education", "communication", "computer-information-science", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     "art-history", "communication", "history", "literature", "philosophy-&amp;-religion"
                      ],
                      "onesearch": "yes"
         },
@@ -779,7 +780,7 @@
         "proxy": "yes",
         "description": "Provides full-text for scholarly publications, most of them peer-reviewed. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
         "category": [
-                     "general", "art-history", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion"
+                     "general", "art-history", "criminal-justice", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion"
                      ],
                      "onesearch": "yes"
         },
@@ -851,6 +852,23 @@
                      ],
                      "onesearch": "yes"
         },
+{
+        "name":"Explora",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "magazines",
+                 "trade-publications", "news"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=src_ic",
+        "proxy": "yes",
+        "description": "Beginner-friendly alternative interface to a number of EBSCOhost databases. Search results contain mostly magazine and newspaper content, with fewer scholarly sources.",
+        "category": [
+                     ""
+                     ],
+                     "onesearch": "no"
+        },
                       {
         "name":"OneSearch",
         "vendor": "EBSCO",
@@ -861,9 +879,9 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=eds",
         "proxy": "yes",
-        "description": "Provides access to the content of nearly every database held by Los Rios Libraries from a single interface. Also provides access to books, videos, and other content from library shelves.",
+        "description": "Provides access to the content of nearly every database held by Los Rios Libraries. Also provides access to books, videos, and other content from library shelves.",
         "category": [
-                      "general", "art-history", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-life-sciences", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
+                      "general", "art-history", "criminal-justice", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-life-sciences", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
         }
