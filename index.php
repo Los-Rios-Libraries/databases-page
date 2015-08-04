@@ -1,14 +1,18 @@
 <?php
+/*
 
 // show errors for debugging
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
+*/
 
 $category=$_GET['category'];
 $alpha = $_GET['az'];
 $format = $_GET['format'];
 $query = $_GET['query'];
+$query = urldecode($query);
+$query = str_replace('&', '&amp;', $query);
 $referrer = $_SERVER['HTTP_REFERER'];
 $college = $_GET['college'];
 $newWins = $_COOKIE['newWindowLinks'];
@@ -68,7 +72,7 @@ $categoryPretty = ucwords($categoryPretty);
  $metaTitle = $categoryPretty  .' - ';
  $pageTitle = ': <span id="title-cat">' .$categoryPretty . '</span>';
 }
-elseif (isset($query)) {
+elseif ((isset($query)) && (!(empty($query)))) {
 	$queryPretty = ucwords($query);
 	$metaTitle = $queryPretty .' - ';
 	$pageTitle = ': <span id="title-query">Search Results for ' .$queryPretty . '</span>';
@@ -120,16 +124,16 @@ include_once('functions.php');
 ?>
 <ul>
 <li id="arc-link" class="headnav">
-<a href="http://www.arc.losrios.edu/arclibrary.htm">ARC</a>
+<abbr title="American River College"><a href="http://www.arc.losrios.edu/arclibrary.htm">ARC</a></abbr>
 </li>
 <li id="crc-link" class="headnav" >
-<a href="http://www.crc.losrios.edu/library">CRC</a>
+<abbr title="Cosumnes River College"><a href="http://www.crc.losrios.edu/library">CRC</a></abbr>
 </li>
 <li id="flc-link" class="headnav" >
-<a href="http://www.flc.losrios.edu/libraries">FLC</a>
+<abbr title="Folsom Lake College"><a href="http://www.flc.losrios.edu/libraries">FLC</a></abbr>
 </li>
 <li id="scc-link" class="headnav">
-<a href="http://www.scc.losrios.edu/library">SCC</a>
+<abbr title="Sacramento City College"><a href="http://www.scc.losrios.edu/library">SCC</a></abbr>
 </li>
 </ul>
 </nav>
@@ -152,9 +156,12 @@ $pageLabel = '<li class="active-page"><a href="index.php">Databases by Subject</
 echo "<div id=\"subject-nav\" class=\"nav\">\n";
 echo "<h2 id=\"nav-label\" role=\"button\">Subject Areas</h2>\n";
 echo "<ul id=\"main-nav\">\n";
+/*
+// no longer needed because of Show All buttons
 echo "<li> \n";
 echo "<a id=\"subject-all\" href=\"index.php\">Show All</a>\n"; 
 echo "</li>\n";
+*/
 // this will be the list that displays in the nav. Does not need to be every category listed in the json file.
 $dbCats = array('General', 'Art History', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice', 'Current Events', 'Education', 'Environmental Science', 'Health &amp; Life Sciences', 'History', 'Literature', 'Music', 'Philosophy &amp; Religion', 'Political Science', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts' );
     
@@ -177,7 +184,7 @@ $pageLabel = '<li class="active-page"><a href="index.php?az">Alphabetical List</
 echo "<div id=\"alpha-nav\" class=\"nav\">\n";
 echo "<h2 id=\"nav-label\" role=\"button\">A-to-Z</h2>\n";
 echo "<ul id=\"main-nav\">\n";
-echo "<li><a href=\"index.php?az=all\">All</a></li>\n";
+// echo "<li><a href=\"index.php?az=all\">All</a></li>\n";
 
      $azLinks = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
      $azLinksNo = count($azLinks);
@@ -219,15 +226,14 @@ if (isset($category)) {
 // if necessary - responsive menu means it probably isn't    echo "<script>$(document).ready(function() {if ( $(window).width() < 739) {document.getElementById('main').scrollIntoView();}});</script>";
 }
 elseif (isset($alpha)) {
-    if (($alpha === 'all') | (empty($alpha))) {
-    
+    if (($alpha === 'all') || (empty($alpha))) {
 
      for ($k = 0; $k < $azLinksNo; $k++) {
     
      dbsByAlpha($azLinks[$k], $format);
      
      }
-     if ((isset($format)) || (isset($query))){
+     if ((isset($format)) || ((isset($query)) && (!(empty($query))))){
            echo $alphaShowAll; 
      }
     }
@@ -238,7 +244,7 @@ elseif (isset($alpha)) {
         
     }
 }
-    elseif (isset($query)) {
+    elseif ((isset($query)) && (!(empty($query)))){
 echo '<script>location.replace("' .$urlRoot .'index.php?az&query=' .$query .'")</script>';
  //    dbsByName($query);
      
@@ -263,17 +269,16 @@ else {
 }
 ?>
 </section>
-<aside id="new-windows" style="
-    
-">
-  <form><input type="checkbox" id="newwin-check" <?php echo $linkCheck; ?>> <label for="newwin-check">Open links in new windows</label></form>
+<aside id="new-windows">
+  <form><input type="checkbox" id="newwin-check"> <label for="newwin-check">Open links in new windows</label></form>
 </aside>
    <aside id="filters">
  
      <h2>Databases by type</h2>
     <div id="type-filter">
 <?php
-echo "<ul id=\"format-nav\">\n<li class=\"format-links\" id=\"all-formats\"><a href=\"index.php?az\">All Formats</a></li>\n";
+echo "<ul id=\"format-nav\">\n";
+// echo "<ul id=\"format-nav\">\n<li class=\"format-links\" id=\"all-formats\"><a href=\"index.php?az\">All Formats</a></li>\n";
 $formats = array('Scholarly Journals', 'Ebooks', 'Magazines', 'Reports', 'Images', 'News', 'Encyclopedias', 'Reference', 'Streaming Audio', 'Trade Publications', 'Legal Research' );
 for ($k = 0; $k < count($formats); $k++) {
 	$formatEnc = strtolower($formats[$k]);
@@ -291,16 +296,18 @@ echo "<div id=\"library-help-content\">\n";
 
 // echo 'home library is '.$homeLibrary;
 // include('help/' .$homeLibrary . '.php');
+
 echo "</div>\n";
 ?>
+<hr>
 <div id="choose-library">
-	<button>arc</button> <button>crc</button> <button>flc</button> <button>scc</button>
+	<button><abbr title="American River College">arc</abbr></button> <button><abbr title="Cosumnes River College">crc</abbr></button> <button><abbr title="Folsom Lake College">flc</abbr></button> <button><abbr title="Sacramento City College">scc</abbr></button>
 </div>
 </aside>
 
 <img id="loader" alt="loading" src="loader.gif" class="hidden">
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
 <script src="db-scripts.js">
  
