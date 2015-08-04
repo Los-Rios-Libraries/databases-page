@@ -4,14 +4,14 @@ $resource = $_POST['search-type'];
 
 switch ($resource){
 case 'dbpage':
-    $url = 'http://scc.losrios.edu/library/tools/databases/index.php?az&query=' .$query;
+    $url = 'http://scc.losrios.edu/library/tools/databases/index.php?az&query=' .urlencode($query);
     break;
 
 case 'az':
-    $url = 'http://atoz.ebsco.com/Titles/SearchResults/9823?SearchType=Contains&Find='.$query . '&GetResourcesBy=QuickSearch';
+    $url = 'http://atoz.ebsco.com/Titles/SearchResults/9823?SearchType=Contains&Find='. urlencode($query) . '&GetResourcesBy=QuickSearch';
     break;
 case 'onesearch':
-    $url = 'http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&groupid=main&profile=eds&direct=true&site=eds-live&bquery=' .$query;
+    $url = 'http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&groupid=main&profile=eds&direct=true&site=eds-live&bquery=' . urlencode($query);
     break;
     }
 header('Location: ' .$url);
