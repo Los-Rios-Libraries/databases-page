@@ -1,14 +1,16 @@
 <style>
+    #services {margin-top:8px;}
     .service {margin-bottom:10px;}
-    .service img {clear:both; float:left; padding-bottom:20px;}
-    #flc-hours {width:90%; margin:8px auto;}
-    
+    .service p {margin-left:38px;}
+    .service img {clear:both; float:left; padding:.5em .5em 0 0;}
+
 </style>
+<div id="flc-help">
 <p>The FLC Librarians can help you with your research in variety of ways.</p>
 <p><em>We are always happy to help!</em></p>
 <div id="services">
     <div class="service">
-        <img alt="Chat" src="http://lgimages.s3.amazonaws.com/data/imagemanager/43489/chat01.png" height="29" width="29">
+        <a href="http://www.flc.losrios.edu/libraries/ask-a-librarian"><img alt="Chat" src="http://lgimages.s3.amazonaws.com/data/imagemanager/43489/chat01.png" height="29" width="29"></a>
         <h3>Ask A Librarian</h3>
         <p>    <a href="http://www.flc.losrios.edu/libraries/ask-a-librarian">Online Help Form</a></p>
     </div>
@@ -25,11 +27,25 @@
     </div>
 </div>
 <hr>
-<h2>Research Help Hours</h2>
-<table id="flc-hours">
-<tr><td>M - Th</td>
+<h3>Research Help Hours</h3>
+<table id="library-hours">
+<tr><td>M-Th</td>
 <td>8 a.m. - 8 p.m.</td>
 </tr>
-<tr><td>Fri</td>
-<td>8 a.m. - 4:30 p.m.</td>
+<tr>
+    <td>Fri</td>
+    <td>8 a.m. - 4:30 p.m.</td>
+</tr>
 </table>
+</div>
+<script>
+/*    (function() { // hide crc chat widget if
+    var crcChat = document.querySelector('.zopim');
+    if (crcChat) {
+        crcChat.className += ' hidden';
+
+    }
+    })(); */
+hideZ();
+checkCookies('newWindowLinks');
+</script>
