@@ -13,8 +13,17 @@ $description = $descParts[0] . ". <button class=\"desc-readmore\">Read more</but
 }
 */
 echo "<li class=\"db-entry active " .$formatList . " " . $topPick . "\">\n";
+$searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
+
+$name = $db -> name;
+// if ((strpos($name, 'Auto') > -1) || (strpos($name, 'Artstor') > -1) || (strpos($name, 'Lexis') > -1) || (strpos($name, 'Country') > -1) ) {
+ if (preg_match('/Auto|Artstor|Lexis|Country|Gale|Opposing|ScienceDirect/', $name) === 1) {
+ $searchButton = '';
+}
+echo $searchButton;
 echo "<h3><a class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
 echo "<p class=\"db-desc\">" . $description . "</p>\n";
+if ((isset($format)) || (isset($query))) {
 echo "<dl class=\"internal-links\">\n";
 echo "<dt class=\"cat-list\">Categories:</dt> ";
 $dbCategories = $db -> category;
@@ -47,6 +56,7 @@ echo $formatString;
 
 
 echo "</dl>\n";
-echo "</li>\n";
+}
 
+echo "</li>\n";
 ?>
