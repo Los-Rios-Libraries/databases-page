@@ -68,7 +68,7 @@ function dbsByAlpha($letter) {
      
      }
      }
-     elseif (isset($query)) {
+     elseif ((isset($query)) && (!(empty($query)))) {
       $vendorLower = strtolower($db -> vendor);
       $query = strtolower($query);
       $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);
@@ -77,11 +77,9 @@ function dbsByAlpha($letter) {
      $types = str_replace('-', ' ', $types);
      $categories = implode(' ', $db -> category);
  //(strpos($categories, $query > -1)) || (strpos($types, $query > -1))  many false positives...     
-      
       if ((strpos($dbLower, $query) > -1) || (strpos($categories, $query) > -1) || (strpos($types, $query) > -1) ||(strpos($vendorLower, $query) > -1))  {
       include('writeDBInfo.php');
       }
-  
      }
  
      else {
