@@ -9,7 +9,7 @@
   <label for="search-db" >A database</label>
  </div>
  <div class="search-exp hidden">We'll check this site to see if the library provides access to a certain database</div>
- <div> <input type="radio" name="search-type" value="az" id="search-journal">
+ <div class="hidden" > <input type="radio" name="search-type" value="az" id="search-journal">
  <label for="search-journal" >A journal, magazine or other publication</label>
  </div>
  <div class="search-exp hidden">We'll send your keywords to the A-to-Z Service, which tells you which database contains a particular publication</div>
