@@ -1,6 +1,6 @@
 <?php
-/*
 
+/*
 // show errors for debugging
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
@@ -13,9 +13,10 @@ $format = $_GET['format'];
 $query = $_GET['query'];
 $query = urldecode($query);
 $query = str_replace('&', '&amp;', $query);
-$referrer = $_SERVER['HTTP_REFERER'];
+// $referrer = $_SERVER['HTTP_REFERER']; this is not working
 $college = $_GET['college'];
 $newWins = $_COOKIE['newWindowLinks'];
+$profile = $_GET['profile'];
 // echo $referrer;
 
 function setHomeLib($s){
@@ -27,26 +28,26 @@ $ar = 'arc';
 $cr = 'crc';
 $fl = 'flc';
 $sc = 'scc';
-if ((strpos($referrer, $ar) > -1) || ($college === $ar) ) {
+if ($college === $ar) {
 	setHomeLib($ar);
 }
-elseif ((strpos($referrer, $sc) > -1) || ($college === $sc) ) {
+elseif ($college === $sc) {
 	setHomeLib($sc);
 }
-elseif ((strpos($referrer, $cr) > -1) || ($college === $cr) ) {
+elseif ($college === $cr) {
 	setHomeLib($cr);
 }
-elseif ((strpos($referrer, $fl) > -1) || ($college === $fl) ) {
+elseif ($college === $fl) {
 	setHomeLib($fl);
 }
 
 
-if (!isset($_COOKIE['homeLibrary'])) {
+elseif (!isset($_COOKIE['homeLibrary'])) {
 	// otherwise, look at IP address. They may be on campus, coming from databases or elsewhere.
 	include('ipToHomeLibrary.php');
 	
 }
-if (isset($_COOKIE['homeLibrary'])) {
+elseif (isset($_COOKIE['homeLibrary'])) {
 	$homeLibrary = $_COOKIE['homeLibrary'];
 }
 else {
@@ -100,9 +101,9 @@ include_once('functions.php');
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
-<link rel="stylesheet" href="style.css" >
+<link rel="stylesheet" href="style.css?0826a" >
 <link rel="stylesheet" href="res/jquery-ui.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
 
 <script>
@@ -111,7 +112,7 @@ include_once('functions.php');
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-44798235-8', 'auto');
+  ga('create', 'UA-44798235-7', 'auto');
   ga('send', 'pageview');
 
 </script>
@@ -309,7 +310,7 @@ echo "</div>\n";
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-<script src="db-scripts.js">
+<script src="db-scripts.js?0826">
  
 </script>
 
