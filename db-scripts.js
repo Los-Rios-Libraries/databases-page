@@ -95,6 +95,9 @@ $(function() { // need to do this on every page load.
 });
 
 function checkZeros() { // if there are no entries at all, show suggestions.
+  if (!($('.problem-description').length)) {
+
+  
   $('#zero-notice').remove();
   if ($('#main .active').length === 0) {
     //   $('.category').removeClass('hidden').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
@@ -108,6 +111,7 @@ function checkZeros() { // if there are no entries at all, show suggestions.
     $('#dbpage-query').addClass('form-emphasis');
     //   $('#form-remainder').prop('class', 'opened');
     $('#form-remainder').removeClass('hidden');
+  }
   }
 }
 
@@ -339,7 +343,7 @@ else if (a === 'newWindowLinks') {
 
 $('#newwin-check').on('click', function() {
   var a = $(this);
-  var b = $('.db-name, .search-one-db, #library-help-content a');
+  var b = $('.db-name, .search-one-db, #library-help-content a, .headnav a');
   if (a.is(':checked')) {
     setCookie('newWindowLinks', 'yes', 30);
     b.attr('target', '_blank');
