@@ -84,9 +84,9 @@
         "vendor": "Artstor",
         "top": "yes",
         "type": ["images"],
-        "urlRoot": "www.library.losrios.edu",
-        "urlPath": "resources/databases/links/artstor.php",
-        "proxy": "no",
+        "urlRoot": "library.artstor.org",
+        "urlPath": "",
+        "proxy": "yes",
         "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
         "category": [
                      "art-history"
@@ -182,10 +182,10 @@
         "type": [
             "magazines", "essays", "news", "ebooks"
                 ],
-        "urlRoot": "www.library.losrios.edu",
-        "urlPath": "resources/databases/links/opposing-viewpoints.php",
-        "proxy": "no",
-        "description": "<strong>Currently unavailable off-campus because of system issues.</strong> Contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
+        "urlRoot": "infotrac.galegroup.com",
+        "urlPath": "itweb/?db=OVIC",
+        "proxy": "yes",
+        "description": "Contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
         "category": [
                      "controversial-topics", "communication", "current-events"
                      ],
@@ -234,7 +234,7 @@
             "scholarly-journals", "trade-publications"
                 ],
        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eih",
         "proxy": "yes",
         "description": "Covers agriculture, ecosystem ecology, energy, sustainability, and related areas of study. ",
         "category": [
