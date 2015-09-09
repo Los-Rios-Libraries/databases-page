@@ -101,7 +101,7 @@ include_once('functions.php');
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
-<link rel="stylesheet" href="style.css?0826a" >
+<link rel="stylesheet" href="style.css?0909" >
 <link rel="stylesheet" href="res/jquery-ui.css">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
@@ -141,6 +141,8 @@ include_once('functions.php');
 
  <h1><a href="index.php">Research  Databases</a><?php echo $pageTitle; ?></h1>
 <div id="tagline">Los Rios Libraries</div>
+
+<div id="pubfinder"><a title="Check Library Holdings of Individual Periodicals" href="http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1">Find a Journal</a></div>
  </header>
 <nav id="nav">
  
@@ -310,7 +312,7 @@ echo "</div>\n";
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-<script src="db-scripts.js?0826">
+<script src="db-scripts.js?0909a">
  
 </script>
 
