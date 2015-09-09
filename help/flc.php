@@ -10,7 +10,7 @@
 <p><em>We are always happy to help!</em></p>
 <div id="services">
     <div class="service">
-        <a href="http://www.flc.losrios.edu/libraries/ask-a-librarian"><img alt="Chat" src="http://lgimages.s3.amazonaws.com/data/imagemanager/43489/chat01.png" height="29" width="29"></a>
+        <a href="http://www.flc.losrios.edu/libraries/ask-a-librarian"><img alt="Online Help Form" src="http://lgimages.s3.amazonaws.com/data/imagemanager/43489/chat01.png" height="29" width="29"></a>
         <h3>Ask A Librarian</h3>
         <p>    <a href="http://www.flc.losrios.edu/libraries/ask-a-librarian">Online Help Form</a></p>
     </div>
