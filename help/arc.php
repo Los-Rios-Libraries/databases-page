@@ -6,27 +6,27 @@
 
 <div id="services">
     <div class="service">
-        <a href="http://www.arc.losrios.edu/arclibrary/Hours_and_Contact_Info.htm"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/clock_40.png" alt="hours"></a>
+        <a href="http://www.arc.losrios.edu/arclibrary/Hours_and_Contact_Info.htm"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/clock_40.png" alt="Hours"></a>
                                                                    
         <a href="http://www.arc.losrios.edu/arclibrary/Hours_and_Contact_Info.htm"><p>Hours</p></a>
     </div>
     <div class="service">
-        <a href="http://www.arc.losrios.edu/arclibrary/Hours_and_Contact_Info.htm#phone"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/phone_39.png" alt="phone"></a>
+        <a href="http://www.arc.losrios.edu/arclibrary/Hours_and_Contact_Info.htm#phone"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/phone_39.png" alt="Phone"></a>
                                                                    
         <a href="http://www.arc.losrios.edu/arclibrary/Hours_and_Contact_Info.htm#phone"><p>Phone</p></a>
     </div>
     <div class="service">
-        <a href="http://www.arc.losrios.edu/arclibrary/Get_Help.htm#askalibrarian"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/email_40.png" alt="email"></a>
+        <a href="http://www.arc.losrios.edu/arclibrary/Get_Help.htm#askalibrarian"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/email_40.png" alt="Email"></a>
                                                                    
         <a href="http://www.arc.losrios.edu/arclibrary/Get_Help.htm#askalibrarian"><p>Email</p></a>
     </div>
     <div class="service">
-        <a href="http://www.arc.losrios.edu/arclibrary/Get_Help.htm#askalibrarian"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/SMS_39.png" alt="text"></a>
+        <a href="http://www.arc.losrios.edu/arclibrary/Get_Help.htm#askalibrarian"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/SMS_39.png" alt="Text"></a>
                                                                    
         <a href="http://www.arc.losrios.edu/arclibrary/Get_Help.htm#askalibrarian"><p>Text</p></a>
     </div>
     <div class="service" id="arc-appt">
-        <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/Calendar_40.png" alt="Appointments"></a>
+        <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><img src="http://www.arc.losrios.edu/Images/Images-arc/Library/Calendar_40.png" alt="Research Appointments"></a>
                                                                    
         <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><p>Research Appointments</p></a>
     </div>
