@@ -90,12 +90,12 @@ elseif (strpos($vendor, 'google') > -1) {
     }
 }
 elseif (strpos($vendor, 'jstor') > -1) {
-    $urlBase = 'http://0-www.jstor.org.lasiii.losrios.edu/action/showAdvancedSearch';
+    $urlBase = 'http://0-www.jstor.org.lasiii.losrios.edu/action/';
     if ($query !== '') {
-        $url = $urlBase . '&q0=' .$query;
+        $url = $urlBase . 'doAdvancedSearch?q0=' .$query;
         }
     else {
-        $url = $urlBase;
+        $url = $urlBase . 'showAdvancedSearch';
     }
 }
 elseif (strpos($dbName, 'pubmed') > -1) {
