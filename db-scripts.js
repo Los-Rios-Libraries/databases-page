@@ -254,13 +254,20 @@ $('#alpha-nav a').on('click', function() {
 $('#show-all').on('click', function() {
   ga('send', 'event', 'button', 'click', 'show all');
 });
-$('#type-filter button').on('click', function() {
+$('.format-links a').on('click', function() {
+  ga('send', 'event', 'navigation', 'limit', 'type');
+  });
+$('#pubfinder a').on('click', function() {
+  ga('send', 'event', 'link', 'click', 'Publication Finder');
+  });
+$('#type-filter button').on('click', function() { // is this needed anymore? don't think so
   var a = $(this).text();
   ga('send', 'event', 'filters', 'click', a);
 });
 $('#dbpage-query').on('focus', function() {
   ga('send', 'event', 'search form', 'activate');
 });
+
 
 $('#multi-search').on('submit', function() {
   var a = $('input[name="search-type"]:checked').val();
@@ -295,13 +302,53 @@ function getCookie(cname) {
   return '';
 }
 function homeLibEls(col) {
+  var cust;
+  switch (col) {
+    case 'arc':
+      cust = 'amerriv';
+      break;
+    case 'scc':
+      cust = 'sacram';
+      break;
+    case 'crc':
+      cust = 'cosum';
+      break;
+    case 'flc':
+      cust = 'ns015092';
+      break;
+    default:
+      cust = '';
+  }
     $('#' + col +'-link').addClass('homelib');
     $.get('help/' + col +'.php', function(data) {
       $('#library-help-content').html(data);
     }, 'html');
     var colUpper = col.toUpperCase();
     $('#library-help h2').html('From the '+colUpper + ' Library');
-    
+    $('#pubfinder a').attr('href', 'http://search.ebscohost.com/login.aspx?authtype=ip,guest&direct=true&custid=' + cust +'&db=edspub&groupid=main&profile=eds&plp=1');
+    setTimeout(function() {
+  $('#library-help-content a').on('click', function() {
+  var a = $(this);
+  var label;
+  if (a.text().length) {
+    label = a.text();
+  }
+  else if (a.find('img').length) {
+    b = a.find('img');
+    if (b.attr('alt').length) {
+      label = b.attr('alt');
+    }
+    else {
+      label = '';
+    }
+  }
+  else {
+    label = '';
+  }
+  alert(label);
+  ga('send', 'event', '' + col +' box', 'click', label);
+  });  
+    }, 800);
 }
 
 function checkCookies(a) {
@@ -331,7 +378,7 @@ else if (a === 'newWindowLinks') {
   var newWins = getCookie(a);
   if (newWins === 'yes') {
     $('#newwin-check').prop('checked', true);
-    $('.db-name, .headnav a').attr('target', '_blank');
+    $('.db-name, .headnav a, #pubfinder a').attr('target', '_blank');
     setTimeout(function() {
         $('#library-help-content a').attr('target', '_blank');
     }, 1000);
@@ -343,7 +390,7 @@ else if (a === 'newWindowLinks') {
 
 $('#newwin-check').on('click', function() {
   var a = $(this);
-  var b = $('.db-name, .search-one-db, #library-help-content a, .headnav a');
+  var b = $('.db-name, .search-one-db, #library-help-content a, .headnav a, #pubfinder a');
   if (a.is(':checked')) {
     setCookie('newWindowLinks', 'yes', 30);
     b.attr('target', '_blank');
@@ -365,12 +412,16 @@ checkCookies('newWindowLinks');
 
 $('#choose-library button').on('click', (function() {
   var library = $(this).text();
+  
+  /*
   $.get("help/" + library + ".php", function(data) {
     $("#library-help-content").html(data);
   }, 'html');
   setCookie('homeLibrary', library, 20);
   var colUpper = library.toUpperCase();
     $('#library-help h2').html('From the '+colUpper + ' Library');
+    */
+  homeLibEls(library);
 }));
 
 
@@ -399,12 +450,13 @@ $('.open-db-search').on('click', function() {
     target = ' target="_blank" ';
   }
 var dbName = searchButton.nextAll('h3').find('.db-name');
-var dbNameText = dbName.text().toLowerCase();
-dbNameText = dbNameText.replace(/ /g, '-');
+var dbNameText = dbName.text();
+var dbNameLower = dbNameText.toLowerCase();
+dbNameLower = dbNameLower.replace(/ /g, '-');
 var vendor = searchButton.nextAll('h3').find('.vendor').text().toLowerCase();
 vendor = vendor.replace(/[\(\):]/g, '');
 vendor = vendor.replace(/ /g, '-');
-var dbEl = document.getElementById(dbNameText);
+var dbEl = document.getElementById(dbNameLower);
 $('.open-db-search').removeClass('hidden');
 var searchForms = $('.search-one-db');
 if (!dbEl) {  // this is causing problem on main categories page when database is listed twice... if one is used and then you try another, the element already exists but elsewhere. Does it matter?
@@ -416,7 +468,7 @@ if (!dbEl) {  // this is causing problem on main categories page when database i
       var ebCode = dbURL.split(/[= ]+/).pop();
       ehost = '<input type="hidden" name="ehost" value="' + ebCode + '">';
     }
-var searchDB = '<form class="search-one-db" method="post" action="search-db.php" ' + target + '><label class="search-one-db-l" for="' + dbNameText + '">Keywords</label><input name="query" id="' + dbNameText + '" type="text"><input type="hidden" name="vendor" value="' +vendor + '"><input type="hidden" name="db-name" value="' +dbNameText + '">' + ehost + '<button class="search-btn" type="submit"><img height="16" width="16" src="search.png" alt="search"></button></form>';
+var searchDB = '<form onsubmit="ga(\'send\', \'event\', \'quick search\', \'submit\', \'' + dbNameText + '\');" class="search-one-db" method="post" action="search-db.php" ' + target + '><label class="search-one-db-l" for="' + dbNameLower + '">Search ' + dbNameText +'</label><input name="query" id="' + dbNameLower + '" type="text"><input type="hidden" name="vendor" value="' +vendor + '"><input type="hidden" name="db-name" value="' +dbNameLower + '">' + ehost + '<button class="search-btn" type="submit"><img height="16" width="16" src="search.png" alt="search"></button></form>';
 searchButton.addClass('hidden');
 searchButton.after(searchDB);
 searchButton.next(searchForms).fadeIn();
@@ -426,7 +478,7 @@ else {
 searchButton.addClass('hidden');
   searchForms.hide();
   searchButton.next(searchForms).fadeIn();
-  document.getElementById(dbNameText).focus();
+  document.getElementById(dbNameLower).focus();
 }
 });
 
