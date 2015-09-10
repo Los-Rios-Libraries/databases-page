@@ -345,7 +345,7 @@ function homeLibEls(col) {
   else {
     label = '';
   }
-  alert(label);
+  // alert(label);
   ga('send', 'event', '' + col +' box', 'click', label);
   });  
     }, 800);
