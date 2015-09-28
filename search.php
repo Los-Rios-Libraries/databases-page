@@ -4,7 +4,7 @@ $resource = $_POST['search-type'];
 
 switch ($resource){
 case 'dbpage':
-    $url = 'http://scc.losrios.edu/library/tools/databases/index.php?az&query=' .urlencode($query);
+    $url = 'index.php?az&query=' .urlencode($query);
     break;
 
 case 'az':
