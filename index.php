@@ -101,7 +101,7 @@ include_once('functions.php');
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
-<link rel="stylesheet" href="style.css?0910" >
+<link rel="stylesheet" href="style.css?1001" >
 <link rel="stylesheet" href="res/jquery-ui.css">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
@@ -253,7 +253,7 @@ echo '<script>location.replace("' .$urlRoot .'index.php?az&query=' .$query .'")<
      
     }
 elseif (isset($format)) {
- $urlRoot = 'http://scc.losrios.edu/library/tools/databases/';
+ $urlRoot = 'http://www.library.losrios.edu/resources/databases/';
 // dbsByFormat($format);
 echo '<script>location.replace("' .$urlRoot .'index.php?az&format=' .$format .'")</script>';
 }
@@ -275,6 +275,19 @@ else {
 <aside id="new-windows">
   <form><input type="checkbox" id="newwin-check"> <label for="newwin-check">Open links in new windows</label></form>
 </aside>
+<?php
+if (strpos($json_file, 'trial') > -1) {
+?>
+<aside id="trial-dbs">
+	<h2>Trial Databases</h2>
+	<?php
+	trialDbs();
+	?>
+	
+</aside>
+<?php
+}
+?>
    <aside id="filters">
  
      <h2>Databases by type</h2>
@@ -315,7 +328,7 @@ echo "</div>\n";
 <!-- <script src="db-scripts.js?0909a"> 
  
 </script> -->
-<script src="db-scripts.min.js"></script>
+<script src="db-scripts.min.js?1001"></script>
 
 
 </body>
