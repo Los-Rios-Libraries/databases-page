@@ -5,6 +5,13 @@ if (strpos($db->top, 'yes') !== false) {
  $topPick = 'top-pick';
 }
 $description = $db -> description;
+if (isset($db -> trial)) {
+ $trialclass = 'trial';
+ 
+}
+else {
+ $trialclass = '';
+}
 /*
 // automatically inserts a read more button after first period... only make sense if descriptions are longer. Maybe better approach is to have separate field in json file.
 if (preg_match('/\. /', $description)) {
@@ -12,12 +19,12 @@ $descParts = preg_split('/\. /', $description, 2);
 $description = $descParts[0] . ". <button class=\"desc-readmore\">Read more</button><span class=\"hidden desc-remainder\">" .$descParts[1] . "</span>";
 }
 */
-echo "<li class=\"db-entry active " .$formatList . " " . $topPick . "\">\n";
+echo "<li class=\"db-entry active " .$formatList . " " .$trialclass . " " . $topPick . "\">\n";
 $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
 
 $name = $db -> name;
 // if ((strpos($name, 'Auto') > -1) || (strpos($name, 'Artstor') > -1) || (strpos($name, 'Lexis') > -1) || (strpos($name, 'Country') > -1) ) {
- if (preg_match('/Auto|Artstor|Lexis|Country|Gale|Opposing|ScienceDirect/', $name) === 1) {
+ if (preg_match('/Auto|Artstor|Lexis|Country|Gale|Opposing|ScienceDirect|Statista/', $name) === 1) {
  $searchButton = '';
 }
 echo $searchButton;
