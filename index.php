@@ -166,7 +166,7 @@ echo "<a id=\"subject-all\" href=\"index.php\">Show All</a>\n";
 echo "</li>\n";
 */
 // this will be the list that displays in the nav. Does not need to be every category listed in the json file.
-$dbCats = array('General', 'Art History', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice', 'Current Events', 'Education', 'Environmental Science', 'Health &amp; Life Sciences', 'History', 'Literature', 'Music', 'Philosophy &amp; Religion', 'Political Science', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts' );
+$dbCats = array('General', 'Art History', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice &amp; Law', 'Current Events', 'Education', 'Environmental Science', 'Health &amp; Life Sciences', 'History', 'Literature', 'Music', 'Philosophy &amp; Religion', 'Political Science', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts' );
     
     $dbCatsNo = count($dbCats);
     for ($i = 0; $i < $dbCatsNo; $i++){
@@ -325,10 +325,10 @@ echo "</div>\n";
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-<!-- <script src="db-scripts.js?0909a"> 
+<!--  <script src="db-scripts.js?0909a"> 
  
 </script> -->
-<script src="db-scripts.min.js?1001"></script>
+<script src="db-scripts.min.js?1002"></script>
 
 
 </body>

@@ -59,7 +59,7 @@
         "proxy": "yes",
         "description": "Scholarly and other professional literature from areas including: criminology; criminal law and procedure; corrections; police and policing; criminal investigation; forensic sciences and investigation; substance abuse and addiction; probation and parole.",
         "category": [
-                     "criminal-justice", "sociology"
+                     "criminal-justice-&amp;-law", "sociology"
                      ],
                      "onesearch": "yes"
         },
@@ -74,7 +74,7 @@
         "proxy": "yes",
         "description": "Contains full text for more than 860 journals in sociology and related fields, including full text for more than 830 books and monographs and over 16,000 conference papers. Content is organized according to subject headings from a 20,000+ term sociological thesaurus.",
         "category": [
-                     "criminal-justice", "sociology", "psychology"
+                     "criminal-justice-&amp;-law", "sociology", "psychology"
                      ],
                      "onesearch": "yes"
         },
@@ -296,7 +296,7 @@
         "proxy": "yes",
         "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, including: national and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources; U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information; Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789; business news journals, company financial information, SEC filings and reports, and industry and market news. ",
         "category": [
-                     "criminal-justice",
+                     "criminal-justice-&amp;-law",
                      "current-events",
                      "business",
                      "law",
@@ -784,7 +784,7 @@
         "proxy": "yes",
         "description": "Provides full text for scholarly publications, most of them peer-reviewed, as well as popular magazines. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
         "category": [
-                     "general", "art-history", "criminal-justice", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
+                     "general", "art-history", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
                      ],
                      "onesearch": "yes"
         },
@@ -900,7 +900,7 @@
         "proxy": "yes",
         "description": "Provides access to the content of nearly every database held by Los Rios Libraries. Also provides access to books, videos, and other content from library shelves.",
         "category": [
-                      "general", "art-history", "criminal-justice", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-life-sciences", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
+                      "general", "art-history", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-life-sciences", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
         }
