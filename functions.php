@@ -90,7 +90,18 @@ function dbsByAlpha($letter) {
       echo "</ul></div>\n"; 
       }
 
-
+function trialDbs() {
+ 
+ global $dbs;
+  echo "<ul>\n";
+ foreach($dbs as $db) {
+  include('makeURL.php'); // wasn't clear to me  how to make this works as a function, so including instead.
+  if (array_key_exists('trial', $db)) {
+   include('writeDBInfo.php');
+   }
+   }
+   echo "</ul>\n";
+}
 function makeNavLinks($term) {
  $encTerm = strtolower($term);
  $encTerm = str_replace(' ', '-', $encTerm);
