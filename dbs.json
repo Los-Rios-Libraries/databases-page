@@ -1,5 +1,5 @@
 {"databases": [
-   
+ 
                  {
         "name":"Literary Reference Center Plus",
         "vendor": "EBSCO",
@@ -84,9 +84,9 @@
         "vendor": "Artstor",
         "top": "yes",
         "type": ["images"],
-        "urlRoot": "library.artstor.org",
-        "urlPath": "",
-        "proxy": "yes",
+        "urlRoot": "www.library.losrios.edu/resources/databases",
+        "urlPath": "links/artstor.php",
+        "proxy": "no",
         "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
         "category": [
                      "art-history"
@@ -304,6 +304,23 @@
                      ],
                      "onesearch": "partial"
         },
+                           {
+        "name":"Statista",
+        "vendor": "Statista Inc.",
+        "top": "yes",
+        "type": [
+            "reference"
+                ],
+        "urlRoot": "www.statista.com",
+        "urlPath": "login/corporate/FordM%40CRC.losrios.edu/df7b00e08dd2932853e833fe9f830ec179e8c354c71f37142873c5f42ec9a2d4b6b36867354a9939934a415d71e8d43351243fef04ddeaa6ed186c7076f8fef6",
+        "proxy": "no",
+        "description": "Statistical data on a wide variety of business topics and social issues from a range of international sources. Data may be exported as spreadsheets, charts or graphs. <em>Available through December 17.</em>",
+        "category": [
+                     "business", "sociology", "communication"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        }, 
 
                        {
         "name":"Health Source: Consumer Edition",
@@ -765,9 +782,9 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=a9h",
         "proxy": "yes",
-        "description": "Provides full-text for scholarly publications, most of them peer-reviewed. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
+        "description": "Provides full text for scholarly publications, most of them peer-reviewed, as well as popular magazines. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
         "category": [
-                     "general", "art-history", "criminal-justice", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion"
+                     "general", "art-history", "criminal-justice", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
                      ],
                      "onesearch": "yes"
         },
