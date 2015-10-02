@@ -5,7 +5,7 @@ var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: H
 
 
 $(function() {
-  var dbNo = $('.db-name').length;
+  var dbNo = $('#main .db-name').length;
   var numberDisplay = $('#show-db-no');
 
   if (dbNo < 70) {
@@ -284,7 +284,7 @@ function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + '=' + cvalue + '; ' + expires;
 }
 
-$('.headnav a').on('click', function() { // set home library cookie when people click to their college.
+$('.headnav a, #choose-library button').on('click', function() { // set home library cookie when people click to their college or select college from menu in box.
   var lib = $(this).text().toLowerCase();
 //  alert(lib);
   setCookie('homeLibrary', lib, 10);
