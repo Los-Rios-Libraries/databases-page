@@ -321,6 +321,41 @@
                      "onesearch": "no",
                      "trial": "yes"
         }, 
+                          {
+        "name":"Data-Planet Statistical Datasets",
+        "vendor": "Conquest Systems, Inc.",
+        "top": "yes",
+        "type": [
+            "reference"
+                ],
+        "urlRoot": "statisticaldatasets.data-planet.com",
+        "urlPath": "dataplanet/",
+        "proxy": "yes",
+        "description": "Makes available billions of charts, maps, views, rankings, time series and tables. Data sets come from over 70 sources. <em>Available through December 17.</em>",
+        "category": [
+                     "business", "sociology", "communication", "political-science"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        },
+                                  {
+        "name":"Data-Planet Statistical Ready Reference",
+        "vendor": "Conquest Systems, Inc.",
+        "top": "yes",
+        "type": [
+            "reference"
+                ],
+        "urlRoot": "readyreference.data-planet.com",
+        "urlPath": "dataplanet/",
+        "proxy": "yes",
+        "description": "Simplified interface for the Data-Planet repository of standardized and structured statistical data. <em>Available through December 17.</em>",
+        "category": [
+                     "business", "sociology", "communication", "political-science"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        }, 
+
 
                        {
         "name":"Health Source: Consumer Edition",
@@ -459,7 +494,7 @@
         },
                                        {
         "name":"Salem Press",
-        "vendor": "Salem Press",
+        "vendor": "Salem Online",
         "top": "no",
         "type": [
             "ebooks", "reference"
@@ -649,7 +684,7 @@
         "type": [
             "magazines",
             "primary-sources",
-            "reference"
+            "reference", "images"
                 ],
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ulh",
@@ -860,12 +895,12 @@
         "vendor": "EBSCO",
         "top": "no",
         "type": [
-            "magazines"
+            "magazines", "images"
                 ],
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f5h",
         "proxy": "yes",
-        "description": "Designed specifically for public libraries, this multidisciplinary database provides full text for more than 1,750 general reference publications with full text information dating as far back as 1975. Covering virtually every subject area of general interest, MasterFILE Premier also includes nearly 500 full text reference books, full text from 86,019 biographies, 105,787 full text primary source documents, and an Image Collection of 293,480 photos, maps and flags. This database is updated daily via EBSCOhost.  ",
+        "description": "Provides full text for more than 1,750 general reference publications with full text information dating as far back as 1975. Also includes large number of popular magazines, nearly 500 full text reference books, full text from 86,019 biographies, 105,787 full text primary source documents, and an Image Collection of 293,480 photos, maps and flags. ",
         "category": [
                      ""
                      ],
