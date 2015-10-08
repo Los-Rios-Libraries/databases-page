@@ -24,14 +24,15 @@ $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"
 
 $name = $db -> name;
 // if ((strpos($name, 'Auto') > -1) || (strpos($name, 'Artstor') > -1) || (strpos($name, 'Lexis') > -1) || (strpos($name, 'Country') > -1) ) {
- if (preg_match('/Auto|Artstor|Lexis|Country|Gale|Opposing|ScienceDirect|Statista/', $name) === 1) {
+ if (preg_match('/Auto|Artstor|Lexis|Country|Gale|Opposing|ScienceDirect|Statista|Planet/', $name) === 1) {
  $searchButton = '';
 }
 echo $searchButton;
 echo "<h3><a class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
 echo "<p class=\"db-desc\">" . $description . "</p>\n";
-if ((isset($format)) || (isset($query))) {
+if ((isset($format)) || (isset($query)) || (isset($category))) {
 echo "<dl class=\"internal-links\">\n";
+if (!isset($category)) {
 echo "<dt class=\"cat-list\">Categories:</dt> ";
 $dbCategories = $db -> category;
 for ($m = 0; $m < count($dbCategories); $m++) {
@@ -45,6 +46,7 @@ echo $catString;
 
 
 };
+}
 // echo "</dt> \n";
  
 echo "<dt class=\"format-list\">Types:</dt>\n";
