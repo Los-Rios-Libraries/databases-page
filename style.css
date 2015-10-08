@@ -54,7 +54,7 @@ input[type="radio"] {display:inline-block;}
  #pubfinder {position:absolute; right:50px; bottom:10px;}
  #pubfinder a:link, #pubfinder a:visited {color:#fff; border-bottom:1px solid #fff; font-size:1em; }
  #pubfinder a:hover, #pubfinder a:focus {text-decoration:none;}
- #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:500px; margin-bottom:50px; position:relative;}
+ #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:800px; margin-bottom:50px; position:relative;}
  h1 a:link, h1 a:visited {color:#fff;}
  #main nav {font-size:1.5em; margin-bottom:10px;}
   #primary-nav { display:inline;}
@@ -86,8 +86,9 @@ input[type="radio"] {display:inline-block;}
 .db-desc {font-size:.8em;}
  .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited {color:#1499D3;}
 .db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus {color:#E74700;}
-.internal-links { font-size:.8em; margin-top:1em;}
+.internal-links { font-size:.8em; margin-top:-1em;}
 .internal-links dt {font-weight:bold; color:#3d3d3d;}
+.alpha .internal-links, #format .internal-links {margin-top:.5em;}
 .categories, .formats, .desc-category, .desc-format, .cat-list, .format-list {display:inline;}
 .categories, .formats {padding:0 !important;}
 .db-cat, .db-format {display:inline-block; padding: 0 .5em 0 .5em; border-right:1px solid #ccc; }
@@ -96,7 +97,8 @@ input[type="radio"] {display:inline-block;}
  .desc-category:link, .desc-category:visited, .desc-format:link, .desc-format:visited {color:#83AA30;}
 .format-list::before { content:"\A"; white-space:pre; }
   #general .internal-links {display:none;} /* to keep initial view more tidy */
-
+  .current-issue {margin-bottom: 1em; box-shadow: 0px 2px 6px -3px rgba(0, 0, 0, 0.75);}
+.current-issue p {margin-bottom:10px;}
  #nav {position:absolute; left:50px; width:16%; margin-right:15px; background:#f5f5f5; border:1px solid #e3e3e3; border-radius:4px;}
 
   #main-nav {padding:0; margin-bottom:0;}
@@ -120,7 +122,14 @@ input[type="radio"] {display:inline-block;}
 
 
  #filters, #new-windows, #library-help, #trial-dbs {width:15%; float:right; padding:0 0 8px 0; margin-right:50px;}
+ #trial-dbs h2 {background:#E74700; color:#fff;}
  #trial-dbs ul {padding-left:8px;}
+ #trial-dbs li {margin-bottom:.5em;}
+ #trial-dbs .db-name {font-family: "Open Sans", "Helvetica Neue", Verdana, sans-serif; font-size:.9em;}
+ #trial-dbs .vendor {display:none;}
+ #trial-dbs .db-desc {display:none;}
+ .trial-desc-exp {border:none; background:transparent; color:#E74700; text-decoration: underline; padding:0; font-style: italic; }
+ .trial-desc-exp:hover, .trial-desc-exp:focus {cursor: pointer;}
  #new-windows {font-size:.8em;}
  #filters, #library-help, #trial-dbs { border:1px solid #ccc; border-radius:4px; margin-bottom:8px;}
  aside h2, aside h3 {font-weight:bold;}
@@ -145,6 +154,7 @@ input[type="radio"] {display:inline-block;}
   .format-links a:hover, .format-links a:focus {color:#E74700;}
   #format-nav .current {font-weight:bold; font-size:.8em;}
   #loader {position: fixed; top:50%; left:50%; margin-top:-32px; margin-left:-32px; width:64px; height:64px;}
+  .current-issue {background:#f5f5f5; padding:2em;}
 .problem-description p {margin-bottom:10px;}
 
  @media screen and (max-width:1100px) {
@@ -157,8 +167,9 @@ width:100%;
   background: #fff;
   
  } */
- #main {width:75%;}
+ #main {width:75%; min-height: 100px;}
  #pubfinder {right:10px;}
+ #trial-dbs { width:70%; margin:0 auto 10px;}
  #filters {width:30%; margin:0 auto 10px; margin-top:20px;clear:both; margin-top:0;}
 
  #library-help {width:30%; }
