@@ -101,7 +101,7 @@ include_once('functions.php');
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
-<link rel="stylesheet" href="style.css?1001" >
+<link rel="stylesheet" href="style.css?1007" >
 <link rel="stylesheet" href="res/jquery-ui.css">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
@@ -228,7 +228,7 @@ if (isset($category)) {
     echo "<div><a id=\"show-all\" href=\"index.php\">Show All</a></div>\n";
 // if necessary - responsive menu means it probably isn't    echo "<script>$(document).ready(function() {if ( $(window).width() < 739) {document.getElementById('main').scrollIntoView();}});</script>";
 }
-elseif (isset($alpha)) {
+elseif ((isset($alpha)) && (!isset($format)) ) {
     if (($alpha === 'all') || (empty($alpha))) {
 
      for ($k = 0; $k < $azLinksNo; $k++) {
@@ -253,9 +253,9 @@ echo '<script>location.replace("' .$urlRoot .'index.php?az&query=' .$query .'")<
      
     }
 elseif (isset($format)) {
- $urlRoot = 'http://www.library.losrios.edu/resources/databases/';
-// dbsByFormat($format);
-echo '<script>location.replace("' .$urlRoot .'index.php?az&format=' .$format .'")</script>';
+// $urlRoot = 'http://www.library.losrios.edu/resources/databases/';
+ dbsByFormat($format);
+// echo '<script>location.replace("' .$urlRoot .'index.php?az&format=' .$format .'")</script>';
 }
 else {
 
@@ -325,11 +325,10 @@ echo "</div>\n";
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-<!--  <script src="db-scripts.js?0909a"> 
+<!-- <script src="db-scripts.js?0909a"> 
  
-</script> -->
-<script src="db-scripts.min.js?1002"></script>
-
+</script>      -->
+<script src="db-scripts.min.js?1007"></script> 
 
 </body>
 </html>
