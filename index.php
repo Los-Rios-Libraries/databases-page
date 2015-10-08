@@ -20,7 +20,7 @@ $profile = $_GET['profile'];
 // echo $referrer;
 
 function setHomeLib($s){
-	setcookie('homeLibrary', $s,  time() + (86400 * 10)); // cookie expires after 10 days. May want to lengthen it.
+	setcookie('homeLibrary', $s,  time() + (86400 * 10), '/', 'losrios.edu'); // cookie expires after 10 days. May want to lengthen it.
 	
 }
 // most often people will be clicking from library website or libguides. So set the cookie that way if possible.
@@ -41,12 +41,14 @@ elseif ($college === $fl) {
 	setHomeLib($fl);
 }
 
-
+/*
+// our ips are not working out so well...
 elseif (!isset($_COOKIE['homeLibrary'])) {
 	// otherwise, look at IP address. They may be on campus, coming from databases or elsewhere.
 	include('ipToHomeLibrary.php');
 	
 }
+*/
 elseif (isset($_COOKIE['homeLibrary'])) {
 	$homeLibrary = $_COOKIE['homeLibrary'];
 }
@@ -325,10 +327,10 @@ echo "</div>\n";
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-<!-- <script src="db-scripts.js?0909a"> 
+<!--<script src="db-scripts.js?1008a"> 
  
 </script>      -->
-<script src="db-scripts.min.js?1007"></script> 
+ <script src="db-scripts.min.js?1008"></script> 
 
 </body>
 </html>
