@@ -1,6 +1,12 @@
 <?php
+function cmp($a, $b) // http://stackoverflow.com/a/4282423
+{
+    return strcmp($a->name, $b->name);
+}
+
 function dbsByCat($dbcat) {
  global $dbs;
+ global $category;
  $heading = str_replace('-', ' ', $dbcat);
  echo "<div id=\"" .$dbcat . "\" class=\"category\">\n";
  echo "<h2>" .$heading . "</h2>\n";
@@ -14,9 +20,12 @@ function dbsByCat($dbcat) {
    echo "</ul>\n";
    echo "</div>\n";
 }
-function dbsByFormat($format) { // not really needed - we are redirecting to get better layout
+function dbsByFormat($format) { 
  global $dbs;
- echo "<div id=\"format\" class=\"format category\"><h2>" .$format ."</h2>\n";
+// sort($dbs);
+ usort($dbs, 'cmp');
+ $formatHead = str_replace('-', ' ', $format);
+ echo "<div id=\"format\" class=\"format category\"><h2>" .$formatHead ."</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
   include('makeURL.php');
@@ -52,7 +61,8 @@ function dbsByName($name) {
 
 function dbsByAlpha($letter) {
  global $dbs;
- sort($dbs);
+// sort($dbs);
+ usort($dbs, 'cmp');
  global $format;
  global $query;
  global $alphaShowAll;
