@@ -126,8 +126,7 @@ input[type="radio"] {display:inline-block;}
  #trial-dbs ul {padding-left:8px;}
  #trial-dbs li {margin-bottom:.5em;}
  #trial-dbs .db-name {font-family: "Open Sans", "Helvetica Neue", Verdana, sans-serif; font-size:.9em;}
- #trial-dbs .vendor {display:none;}
- #trial-dbs .db-desc {display:none;}
+ #trial-dbs .vendor, #trial-dbs .db-desc, #trial-dbs .open-db-search {display:none;}
  .trial-desc-exp {border:none; background:transparent; color:#E74700; text-decoration: underline; padding:0; font-style: italic; }
  .trial-desc-exp:hover, .trial-desc-exp:focus {cursor: pointer;}
  #new-windows {font-size:.8em;}
