@@ -557,6 +557,23 @@
                      ],
                      "onesearch": "yes"
         },
+                                       {
+        "name":"Naxos Music Library World",
+        "vendor": "Naxos Digital Services ",
+        "top": "no",
+        "type": [
+            "streaming-audio"
+                ],
+        "urlRoot": "losrios.naxosmusiclibrary.com",
+        "urlPath": "world",
+        "proxy": "yes",
+        "description": "Offers a world music catalog of over 47,000 tracks from over 1,500 cultural groups, from legendary historical musical performances to contemporary world music. Recordings of over 32,000 artists are represented. <em>Available through November 30.</em>",
+        "category": [
+                     "music"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        },
                        {
         "name":"Newspaper Source Plus",
         "vendor": "EBSCO",
@@ -755,7 +772,7 @@
         "proxy": "yes",
         "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more. Content may be read within the browser or, in most cases, downloaded to a computer or tablet for limited periods.",
         "category": [
-                     "art-history", "business", "education", "communication", "computer-information-science", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     "art-history", "business", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
                      ],
                      "onesearch": "yes"
         },
@@ -851,7 +868,7 @@
         "proxy": "yes",
         "description": "Specialized encyclopedias and other reference sources.",
         "category": [
-                     "general", "education", "history", "music", "environmental-science", "business", "literature", "sociology"
+                     "general", "criminal-justice-&amp;-law", "education", "history", "music", "environmental-science", "business", "literature", "sociology"
                      ],
                      "onesearch": "yes"
         }, 
@@ -884,7 +901,7 @@
         "urlRoot": "scholar.google.com",
         "urlPath": "",
         "proxy": "yes",
-        "description": "Articles, abstracts, books, patents, and legal materials from academic publishers, nonprofits and government sources. Links to full text, including links to Los Rios-subscribed content, are displayed to the right of the search result entry.",
+        "description": "Articles, abstracts, books, patents, and legal materials from academic publishers, nonprofits and government sources. Links to full text, including links to Los Rios-subscribed content, are displayed to the right of the search result entry. <strong>Note: links to Los Rios Full Text are currently not working. Go to OneSearch and enter the article title to find the content.</strong>",
         "category": [
                      "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
@@ -918,6 +935,22 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=src_ic",
         "proxy": "yes",
         "description": "Beginner-friendly alternative interface to a number of EBSCOhost databases. Search results contain mostly magazine and newspaper content, with fewer scholarly sources.",
+        "category": [
+                     ""
+                     ],
+                     "onesearch": "no"
+        },
+        {
+        "name":"CollegeSource Online",
+        "vendor": "CollegeSource, Inc.",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+        "urlRoot": "www.collegesource.org",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Provides access to digital college catalogs, institution profiles, transcript keys, and other resources.",
         "category": [
                      ""
                      ],
