@@ -103,7 +103,7 @@ include_once('functions.php');
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
-<link rel="stylesheet" href="style.css?1007" >
+<link rel="stylesheet" href="style.css?1028" >
 <link rel="stylesheet" href="res/jquery-ui.css">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
@@ -329,8 +329,8 @@ echo "</div>\n";
 <script src="res/jquery-ui.min.js"></script>
 <!--<script src="db-scripts.js?1008a"> 
  
-</script>      -->
- <script src="db-scripts.min.js?1008"></script> 
+</script>       -->
+ <script src="db-scripts.min.js?1104"></script>
 
 </body>
 </html>
