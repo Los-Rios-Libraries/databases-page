@@ -1,3 +1,6 @@
+     // db autocomplete
+      var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "Criminal Justice Abstracts with Full Text", "Data-Planet", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "Environment Complete", "ERIC", "Explora", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "MasterFILE Premier", "MEDLINE", "Military & Government Collection", "Naxos Music Library", "Naxos Music Library Jazz Collection", "News", "Newspaper Source Plus", "OneSearch", "Opposing Viewpoints in Context", "Oxford English Dictionary", "PsycARTICLES", "Psychology & Behavioral Sciences Collection", "PubMed", "Regional Business News", "Religion & Philosophy Collection", "Salem Press", "Small Business Reference Center", "ScienceDirect", "Scholarly Journals", "SocINDEX with Full Text", "Statista", "Trade Publications"];
+
 $(function ()
 {
   var dbNo = $('#main .db-name').length;
@@ -113,12 +116,13 @@ function showSearch(form, input)
   //   but.on('click', function() {
   //    hideSearch(form, but);
   //  });
+  $('#search-db').on('click', function() {
   $("#dbpage-query").autocomplete(
   {
+    
     source: function (request, response)
     {
-      // db autocomplete
-      var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "Environment Complete", "ERIC", "Explora", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "MasterFILE Premier", "MEDLINE", "Military & Government Collection", "Naxos Music Library", "Naxos Music Library Jazz Collection", "News", "Newspaper Source Plus", "OneSearch", "Opposing Viewpoints in Context", "Oxford English Dictionary", "PsycARTICLES", "Psychology & Behavioral Sciences Collection", "PubMed", "Regional Business News", "Religion & Philosophy Collection", "Salem Press", "Small Business Reference Center", "ScienceDirect", "Scholarly Journals", "SocINDEX with Full Text", "Statista", "Trade Publications"];
+ 
       var results = $.ui.autocomplete.filter(dbNames, request.term);
       response(results.slice(0, 5));
     },
@@ -136,6 +140,7 @@ function showSearch(form, input)
       }
       $('#multi-search').submit();
     }
+  });
   });
 }
 
@@ -385,7 +390,7 @@ function checkCookies(a)
     if (newWins === 'yes')
     {
       $('#newwin-check').prop('checked', true);
-      $('.db-name, .headnav a, #pubfinder a').attr('target', '_blank');
+      $('.db-name, .headnav a, #pubfinder a, #multi-search').attr('target', '_blank');
       setTimeout(function ()
       {
         $('#library-help-content a').attr('target', '_blank');
