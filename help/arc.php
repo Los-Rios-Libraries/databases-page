@@ -34,9 +34,6 @@
         <a href="https://www.facebook.com/arclibrary"><img src="help/arc-img/Facebook_39.png" alt="Facebook"></a>
                                                                    
         <a href="https://www.facebook.com/arclibrary"><p>Facebook</p></a>
-    </div>
-    <iframe frameborder="1" height="240" src="https://libraryh3lp.com/chat/asklibrarian@chat.libraryh3lp.com?skin=12216&amp;sounds=true" style="height: 275px; width: 190px; border: #333333 1px inset;" width="320"></iframe>
-</div>
 
 <!-- Place this div in your web page where you want your chat widget to appear. -->
 <div class="needs-js">chat loading...</div>
@@ -48,4 +45,16 @@
     x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?8699";
     var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
   })();
+</script>
+
+<script>
+    hideZ();
+    checkCookies('newWindowLinks');
+    var arcSched = document.querySelectorAll('#arc-appt a');
+    for (var i=0; i<arcSched.length; i++) {
+    arcSched[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open('http://arc.losrios.libcal.com/scheduler.php?iid=525&u=4411&t=Make an appointment!', 'sched','width=660,height=400,left=100,top=100').focus();
+        });
+    }
 </script>
