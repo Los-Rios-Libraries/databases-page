@@ -34,7 +34,8 @@
         <a href="https://www.facebook.com/arclibrary"><img src="help/arc-img/Facebook_39.png" alt="Facebook"></a>
                                                                    
         <a href="https://www.facebook.com/arclibrary"><p>Facebook</p></a>
-
+     </div>
+</div>
 <!-- Place this div in your web page where you want your chat widget to appear. -->
 <div class="needs-js">chat loading...</div>
 
@@ -48,7 +49,6 @@
 </script>
 
 <script>
-    hideZ();
     checkCookies('newWindowLinks');
     var arcSched = document.querySelectorAll('#arc-appt a');
     for (var i=0; i<arcSched.length; i++) {
