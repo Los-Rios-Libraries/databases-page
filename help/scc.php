@@ -39,7 +39,7 @@ style="display: none;">
 </table>
 </div>
 <script>
-    hideZ();
+  //  hideZ();
 checkCookies('newWindowLinks');
 
     // libraryh3lp presence

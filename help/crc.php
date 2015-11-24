@@ -30,11 +30,11 @@ Phone</h3> <p>(916) 691-7266</p>
 
 </div>
 
-<!--Start of Zopim Live Chat Script--><script type="text/javascript">
- <!--//--><![CDATA[// ><!--
-// added: if crc chat as been hidden, will show it
+<!--Start of Zopim Live Chat Script--><script>
+ 
+// added: if crc chat as been hidden, will show it -- now not using
 
-showZ();
+// showZ();
 
 
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -46,5 +46,5 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 
 checkCookies('newWindowLinks');
 
-//--><!]]>
+
 </script><!--End of Zopim Live Chat Script-->
