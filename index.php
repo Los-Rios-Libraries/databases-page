@@ -327,10 +327,10 @@ echo "</div>\n";
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-<!--<script src="db-scripts.js?1008a"> 
+<!--  <script src="db-scripts.js?1123a"> 
  
-</script>       -->
- <script src="db-scripts.min.js?1104"></script>
+</script>      -->
+ <script src="db-scripts.min.js?1123"></script> 
 
 </body>
 </html>
