@@ -422,6 +422,8 @@ checkCookies('homeLibrary');
 checkCookies('newWindowLinks');
 $('#choose-library button').on('click', (function ()
 {
+    $('script[src*="libraryh3lp"]').remove();
+    $('.zopim').remove();
   var library = $(this).text();
   /*
   $.get("help/" + library + ".php", function(data) {
@@ -493,6 +495,7 @@ $('.open-db-search').on('click', function ()
     document.getElementById(dbNameLower).focus();
   }
 });
+/*
 // hide crc chat
 function hideZ()
 {
@@ -503,3 +506,4 @@ function showZ()
 {
   $('.zopim').removeClass('hidden');
 }
+*/
