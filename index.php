@@ -103,7 +103,7 @@ include_once('functions.php');
  <meta name=viewport content="width=device-width, initial-scale=1">
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
 
-<link rel="stylesheet" href="style.css?1028" >
+<link rel="stylesheet" href="style.css?1217" >
 <link rel="stylesheet" href="res/jquery-ui.css">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
  
@@ -152,14 +152,14 @@ include_once('functions.php');
 
 
 <?php
+$activeClass = 'class="active-page"';
+$altClass = 'class="alternative"';
+$showDB = '<p id="show-db-no" class="no-show" aria-hidden="false">Showing <span id="db-no"> </span> Databases</p>';
 if (!isset($alpha)) {
-
-$subjectsClass = 'active-page';
-$alphaClass = 'alternative';
 $responMenuLabel = 'subjects';
-$pageLabel = '<li class="active-page"><a href="index.php">Databases by Subject</a></li><li class="alternative"><a href="index.php?az">View Alphabetical List</a></li>';
+$pageLabel = '<li ' . $activeClass . '><a href="index.php">Browse by Category</a></li><li ' . $altClass . '><a href="index.php?az">Browse by Title</a></li>';
 echo "<div id=\"subject-nav\" class=\"nav\">\n";
-echo "<h2 id=\"nav-label\" role=\"button\">Subject Areas</h2>\n";
+echo "<h2 id=\"nav-label\" role=\"button\">Categories</h2>\n";
 echo "<ul id=\"main-nav\">\n";
 /*
 // no longer needed because of Show All buttons
@@ -168,7 +168,7 @@ echo "<a id=\"subject-all\" href=\"index.php\">Show All</a>\n";
 echo "</li>\n";
 */
 // this will be the list that displays in the nav. Does not need to be every category listed in the json file.
-$dbCats = array('General', 'Art History', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice &amp; Law', 'Current Events', 'Education', 'Environmental Science', 'Health &amp; Life Sciences', 'History', 'Literature', 'Music', 'Philosophy &amp; Religion', 'Political Science', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts' );
+$dbCats = array('General', 'Art', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice &amp; Law', 'Ebooks', 'Education', 'Encyclopedias, Dictionaries, Reference', 'Environmental Science', 'Health &amp; Medicine', 'History', 'Literature', 'Music', 'News', 'Philosophy &amp; Religion', 'Political Science', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts' );
     
     $dbCatsNo = count($dbCats);
     for ($i = 0; $i < $dbCatsNo; $i++){
@@ -184,8 +184,8 @@ else {
 
 $subjectsClass = 'alternative';
 $responMenuLabel = 'A-Z';
-$alphaClass = 'active-page';
-$pageLabel = '<li class="active-page"><a href="index.php?az">Alphabetical List</a></li><li class="alternative"><a href="index.php">View by Subject</a></li>';
+// $alphaClass = 'active-page';
+$pageLabel = '<li ' . $altClass .  '><a href="index.php">Browse by Category</a></li><li ' . $activeClass .'><a href="index.php?az">Browse by Title</a></li>';
 echo "<div id=\"alpha-nav\" class=\"nav\">\n";
 echo "<h2 id=\"nav-label\" role=\"button\">A-to-Z</h2>\n";
 echo "<ul id=\"main-nav\">\n";
@@ -201,8 +201,10 @@ echo "<ul id=\"main-nav\">\n";
  echo "</ul>\n";
 echo "</div>\n";
 
+
 }
 ?>
+ 
 </div>
 </nav>
 
@@ -218,9 +220,9 @@ echo "</div>\n";
 <?php echo $pageLabel; ?>
 
   </ul>
-<p id="show-db-no" class="no-show" aria-hidden="false">Showing <span id="db-no"> </span> Databases</p>
  </nav>
 <?php
+echo $showDB . "\n";
 // include 'search-form.php';
 // echo "<button onclick=\"location.href='index.php';\">Subject Areas</button>\n";
 // echo "<button onclick=\"location.href='index.php?az=all';\">A to Z</button>\n";
@@ -289,24 +291,6 @@ if (strpos($json_file, 'trial') > -1) {
 </aside>
 <?php
 }
-?>
-   <aside id="filters">
- 
-     <h2>Databases by type</h2>
-    <div id="type-filter">
-<?php
-echo "<ul id=\"format-nav\">\n";
-// echo "<ul id=\"format-nav\">\n<li class=\"format-links\" id=\"all-formats\"><a href=\"index.php?az\">All Formats</a></li>\n";
-$formats = array('Scholarly Journals', 'Ebooks', 'Magazines', 'Reports', 'Images', 'News', 'Encyclopedias', 'Reference', 'Streaming Audio', 'Trade Publications', 'Legal Research' );
-for ($k = 0; $k < count($formats); $k++) {
-	$formatEnc = strtolower($formats[$k]);
-	$formatEnc = str_replace(' ', '-', $formatEnc);
-
-     echo "<li class=\"format-links\"><a href=\"index.php?az&amp;format=" . $formatEnc ."\">" . $formats[$k] ."</a></li>\n";
-     
-}
-echo "</ul></div>\n";
-echo "</aside>\n";
 echo "<aside id=\"library-help\">\n";
 echo "<h2>From Your Library</h2>\n";
 echo "<div class=\"hidden\">" . $homeLibrary . "</div>\n";
