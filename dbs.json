@@ -89,7 +89,7 @@
         "proxy": "yes",
         "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
         "category": [
-                     "art-history"
+                     "art"
                      ],
                      "onesearch": "yes"
         },
@@ -105,7 +105,7 @@
         "proxy": "yes",
         "description": "Contains repair and maintenance information on most major manufacturers of domestic and imported vehicles. New repair procedures, TSBs and updates are added to the product on a regular basis.",
         "category": [
-                     "automotive"
+                     "automotive", "encyclopedias,-dictionaries,-reference"
                      ],
                      "onesearch": "no"
         },
@@ -138,7 +138,7 @@
         "proxy": "yes",
         "description": "Providing full text and careful subject indexing for more than 640 journals in Nursing and other Allied Health fields, Also includes reports on evidenced-based practice.",
         "category": [
-                     "health-&amp;-life-sciences"
+                     "health-&amp;-medicine"
                      ],
                      "onesearch": "yes"
         },
@@ -171,44 +171,10 @@
         "proxy": "yes",
         "description": "Designed for the everyday consumer of healthcare information, provides convenient access to easily understandable health and medical information.",
         "category": [
-                     "health-&amp;-life-sciences"
+                     "health-&amp;-medicine"
                      ],
                      "onesearch": "yes"
         },
-                        {
-        "name":"Opposing Viewpoints in Context",
-        "vendor": "Gale",
-        "top": "no",
-        "type": [
-            "magazines", "essays", "news", "ebooks"
-                ],
-        "urlRoot": "infotrac.galegroup.com",
-        "urlPath": "itweb/?db=OVIC",
-        "proxy": "yes",
-        "description": "Contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
-        "category": [
-                     "controversial-topics", "communication", "current-events"
-                     ],
-                     "onesearch": "yes"
-        },
-        
-                {
-        "name":"CountryWatch",
-        "vendor": "CountryWatch",
-        "top": "yes",
-        "type": [
-            "reports", "news"
-                ],
-        "urlRoot": "www.countrywatch.com",
-        "urlPath": "ip",
-        "proxy": "yes",
-        "description": "Contains information on specific countries including an overview of the country, political and economic conditions, environmental issues, and wire service stories. ",
-        "category": [
-                      "political-science", "geography", "current-events"
-                     ],
-                     "onesearch": "no"
-        },
-
 
                                        {
         "name":"Education Research Complete",
@@ -272,13 +238,11 @@
         "proxy": "yes",
         "description": "PubMed comprises more than 23 million citations for biomedical literature from MEDLINE, life science journals, and online books. Using the special link on this page, you can limit your search results to those that are held in library databases or available for free elsewhere. ",
         "category": [
-                     "health-&amp;-life-sciences", "psychology"
+                     "health-&amp;-medicine", "psychology"
                      ],
                      "onesearch": "partial"
         },
-
-        
-        
+  
   
         {
                         
@@ -297,13 +261,31 @@
         "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, including: national and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources; U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information; Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789; business news journals, company financial information, SEC filings and reports, and industry and market news. ",
         "category": [
                      "criminal-justice-&amp;-law",
-                     "current-events",
+                     "news",
                      "business",
                      "law",
                      "political-science"
                      ],
                      "onesearch": "partial"
         },
+        
+                        {
+        "name":"CountryWatch",
+        "vendor": "CountryWatch",
+        "top": "yes",
+        "type": [
+            "reports", "news"
+                ],
+        "urlRoot": "www.countrywatch.com",
+        "urlPath": "ip",
+        "proxy": "yes",
+        "description": "Contains information on specific countries including an overview of the country, political and economic conditions, environmental issues, and wire service stories. ",
+        "category": [
+                      "political-science", "geography", "news"
+                     ],
+                     "onesearch": "no"
+        },
+        
                            {
         "name":"Statista",
         "vendor": "Statista Inc.",
@@ -316,7 +298,7 @@
         "proxy": "no",
         "description": "Statistical data on a wide variety of business topics and social issues from a range of international sources. Data may be exported as spreadsheets, charts or graphs. <em>Available through December 17.</em>",
         "category": [
-                     "business", "sociology", "communication"
+                     "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
                      ],
                      "onesearch": "no",
                      "trial": "yes"
@@ -333,7 +315,7 @@
         "proxy": "yes",
         "description": "Makes available billions of charts, maps, views, rankings, time series and tables. Data sets come from over 70 sources. <em>Available through December 17.</em>",
         "category": [
-                     "business", "sociology", "communication", "political-science"
+                     "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication", "political-science"
                      ],
                      "onesearch": "no",
                      "trial": "yes"
@@ -350,7 +332,7 @@
         "proxy": "yes",
         "description": "Simplified interface for the Data-Planet repository of standardized and structured statistical data. <em>Available through December 17.</em>",
         "category": [
-                     "business", "sociology", "communication", "political-science"
+                     "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication", "political-science"
                      ],
                      "onesearch": "no",
                      "trial": "yes"
@@ -370,7 +352,7 @@
         "proxy": "yes",
         "description": "Contains a collection of consumer health information, including the medical sciences, food sciences and nutrition, childcare, sports medicine and general health.",
         "category": [
-                     "health-&amp;-life-sciences"
+                     "health-&amp;-medicine"
                      ],
                      "onesearch": "yes"
         },
@@ -387,27 +369,11 @@
         "proxy": "yes",
         "description": "Provides full-text journals, including peer-reviewed, focused on many medical disciplines. Also features the Lexi-PAL Drug Guide, which includes 1,300 generic drug patient education sheets with more than 4,700 brand names.",
         "category": [
-                     "health-&amp;-life-sciences"
+                     "health-&amp;-medicine"
                      ],
                      "onesearch": "yes"
         },
-                               {
-        "name":"International Bibliography of Theatre &amp; Dance with Full Text",
-        "vendor": "EBSCO",
-        "top": "no",
-        "type": [
-            "scholarly-journals", "magazines",
-                 "trade-publications", "ebooks"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
-        "proxy": "yes",
-        "description": "Indexes over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries. Also contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books &amp; monographs.",
-        "category": [
-                     "theatre-&amp;-performing-arts", "literature"
-                     ],
-                     "onesearch": "yes"
-        },
+
                                        {
         "name":"Psychology &amp; Behavioral Sciences Collection",
         "vendor": "EBSCO",
@@ -437,7 +403,7 @@
         "proxy": "yes",
         "description": "Contains authoritative medical information on medicine, nursing, dentistry, veterinary medicine, the health care system, pre-clinical sciences, and much more. Created by the National Library of Medicine, it uses MeSH (Medical Subject Headings) indexing.",
         "category": [
-                     "health-&amp;-life-sciences"
+                     "health-&amp;-medicine"
                      ],
                      "onesearch": "yes"
         },
@@ -471,7 +437,7 @@
         "proxy": "yes",
         "description": "Offers over 2,000 full-text journal titles from a leading academic publisher, primarily in the health and life sciences.",
         "category": [
-                     "health-&amp;-life-sciences", "psychology"
+                     "health-&amp;-medicine", "psychology"
                      ],
                      "onesearch": "yes"
         },
@@ -488,7 +454,7 @@
         "proxy": "yes",
         "description": "A guide to the meaning, history, and pronunciation of over half a million words, both present and past.",
         "category": [
-                     "literature"
+                     "encyclopedias,-dictionaries,-reference", "literature"
                      ],
                      "onesearch": "no"
         },
@@ -504,7 +470,7 @@
         "proxy": "yes",
         "description": "Includes the complete content of several history, health, science, and literature reference sets.",
         "category": [
-                     "health-&amp;-life-sciences", "history", "literature"
+                     "ebooks", "health-&amp;-medicine", "history", "literature"
                      ],
                      "onesearch": "no"
         },
@@ -557,23 +523,7 @@
                      ],
                      "onesearch": "yes"
         },
-                                       {
-        "name":"Naxos Music Library World",
-        "vendor": "Naxos Digital Services ",
-        "top": "no",
-        "type": [
-            "streaming-audio"
-                ],
-        "urlRoot": "losrios.naxosmusiclibrary.com",
-        "urlPath": "world",
-        "proxy": "yes",
-        "description": "Offers a world music catalog of over 47,000 tracks from over 1,500 cultural groups, from legendary historical musical performances to contemporary world music. Recordings of over 32,000 artists are represented. <em>Available through November 30.</em>",
-        "category": [
-                     "music"
-                     ],
-                     "onesearch": "no",
-                     "trial": "yes"
-        },
+
                        {
         "name":"Newspaper Source Plus",
         "vendor": "EBSCO",
@@ -586,7 +536,7 @@
         "proxy": "yes",
         "description": "Contains 700 full-text newspapers. Also features more than 757,000 television and radio news transcripts.",
         "category": [
-                     "current-events"
+                     "news"
                      ],
                      "onesearch": "yes"
         },
@@ -660,24 +610,7 @@
                      ],
                      "onesearch": "yes"
         },
-                                                             {
-        "name":"Small Business Reference Center",
-        "vendor": "EBSCO",
-        "top": "no",
-        "type": [
-            "ebooks",
-            "magazines",
-            "trade publications"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
-        "proxy": "yes",
-        "description": "Offers information on small business and entrepreneurial subject areas, common business types, a help and advice section, and provides information on how to create business plans. Provides full-text access to a number of Nolo Press titles.",
-        "category": [
-                     "business"
-                     ],
-                     "onesearch": "yes"
-        },
+
                                                         {
         "name":"Regional Business News",
         "vendor": "EBSCO",
@@ -724,7 +657,7 @@
         "proxy": "yes",
         "description": "Published by the American Society of Health-System Pharmacists, AHFS includes more than a thousand drug information monographs written in lay language for consumers and has been a Top Ten Award Winner in the Department of Health and Human Services National Consumer Education Materials Contest. This content is updated monthly.",
         "category": [
-                     "health-&amp;-life-sciences"
+                     "encyclopedias,-dictionaries,-reference", "health-&amp;-medicine"
                      ],
                      "onesearch": "no"
         },
@@ -740,7 +673,7 @@
         "proxy": "yes",
         "description": "Provides information on over 5 million book titles, along with almost 800,000 full-text searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist and others.",
         "category": [
-                     ""
+                     "encyclopedias,-dictionaries,-reference"
                      ],
                      "onesearch": "no"
         },
@@ -756,7 +689,7 @@
         "proxy": "yes",
         "description": "Provides information, such as publisher, producer, and track listing or cast, on about 450,000 music titles and 200,000 DVD/video titles.",
         "category": [
-                     "music"
+                     "encyclopedias,-dictionaries,-reference", "music"
                      ],
                      "onesearch": "no"
         },
@@ -772,7 +705,7 @@
         "proxy": "yes",
         "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more. Content may be read within the browser or, in most cases, downloaded to a computer or tablet for limited periods.",
         "category": [
-                     "art-history", "business", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-life-sciences", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     "art", "business", "ebooks", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-medicine", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
                      ],
                      "onesearch": "yes"
         },
@@ -788,7 +721,60 @@
         "proxy": "yes",
         "description": "Contains approximately 4,300 high-quality academic titles in the humanities. Fields currently covered include Archaeology, American Studies, Art and Architectural History, Biblical Studies, Film and Media Studies, Folklore, Linguistics, Literary Criticism, Musicology, Performance Studies (theater, music, dance), Philosophy, Political Science, Religion, and Sociology.",
         "category": [
-                     "art-history", "communication", "history", "literature", "philosophy-&amp;-religion"
+                     "art", "communication", "ebooks", "history", "literature", "philosophy-&amp;-religion"
+                     ],
+                     "onesearch": "yes"
+        },
+        
+                                                                     {
+        "name":"Small Business Reference Center",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "ebooks",
+            "magazines",
+            "trade publications"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
+        "proxy": "yes",
+        "description": "Offers information on small business and entrepreneurial subject areas, common business types, a help and advice section, and provides information on how to create business plans. Provides full-text access to a number of Nolo Press titles.",
+        "category": [
+                     "business", "ebooks"
+                     ],
+                     "onesearch": "yes"
+        },
+                                       {
+        "name":"International Bibliography of Theatre &amp; Dance with Full Text",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "magazines",
+                 "trade-publications", "ebooks"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
+        "proxy": "yes",
+        "description": "Indexes over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries. Also contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books &amp; monographs.",
+        "category": [
+                     "theatre-&amp;-performing-arts", "literature"
+                     ],
+                     "onesearch": "yes"
+        },
+        
+         {
+        "name":"Opposing Viewpoints in Context",
+        "vendor": "Gale",
+        "top": "no",
+        "type": [
+            "magazines", "essays", "news", "ebooks"
+                ],
+        "urlRoot": "infotrac.galegroup.com",
+        "urlPath": "itweb/?db=OVIC",
+        "proxy": "yes",
+        "description": "Contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
+        "category": [
+                     "controversial-topics", "communication"
                      ],
                      "onesearch": "yes"
         },
@@ -804,7 +790,7 @@
         "proxy": "yes",
         "description": "News items from Associated Press, United Press International, PR Newswire, Xinhua, CNN Wire, and Business Wire from the last 30 days.",
         "category": [
-                     "current-events"
+                     "news"
                      ],
                      "onesearch": "yes"
         },  
@@ -820,7 +806,7 @@
         "proxy": "yes",
         "description": "Includes over 14,000 feeds covering a range of business and general news topics. Click the title to go directly to the online source.",
         "category": [
-                     "current-events"
+                     "news"
                      ],
                      "onesearch": "yes"
         },       
@@ -836,7 +822,7 @@
         "proxy": "yes",
         "description": "Provides full text for scholarly publications, most of them peer-reviewed, as well as popular magazines. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
         "category": [
-                     "general", "art-history", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
+                     "general", "art", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
                      ],
                      "onesearch": "yes"
         },
@@ -852,7 +838,7 @@
         "proxy": "yes",
         "description": "This full-text database provides detailed reports that include background, a chronology, current and future trends, related topics and a bibliography on current and controversial topics. This is an excellent place to start research on a controversial or hot topic.",
         "category": [
-                     "general","controversial-topics", "current-events"
+                     "general","controversial-topics"
                      ],
                      "onesearch": "yes"
         },
@@ -868,7 +854,7 @@
         "proxy": "yes",
         "description": "Specialized encyclopedias and other reference sources.",
         "category": [
-                     "general", "criminal-justice-&amp;-law", "education", "history", "music", "environmental-science", "business", "literature", "sociology"
+                     "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
                      ],
                      "onesearch": "yes"
         }, 
@@ -885,7 +871,7 @@
         "proxy": "yes",
         "description": "Core journals from the humanities, social sciences, education and other fields. Full-text coverage is provided from the earliest issues to within a few years of the current publication. Los Rios subscribes to JSTOR Arts & Sciences Collections I, II, III and V.",
         "category": [
-                     "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
+                     "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
                      "onesearch": "yes"
         },
@@ -903,7 +889,7 @@
         "proxy": "yes",
         "description": "Articles, abstracts, books, patents, and legal materials from academic publishers, nonprofits and government sources. Links to full text, including links to Los Rios-subscribed content, are displayed to the right of the search result entry.",
         "category": [
-                     "general", "art-history", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
+                     "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
                      "onesearch": "no"
         },
@@ -952,7 +938,7 @@
         "proxy": "yes",
         "description": "Provides access to digital college catalogs, institution profiles, transcript keys, and other resources.",
         "category": [
-                     ""
+                     "encyclopedias,-dictionaries,-reference"
                      ],
                      "onesearch": "no"
         },
@@ -968,7 +954,7 @@
         "proxy": "yes",
         "description": "Provides access to the content of nearly every database held by Los Rios Libraries. Also provides access to books, videos, and other content from library shelves.",
         "category": [
-                      "general", "art-history", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-life-sciences", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
+                      "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
         }
