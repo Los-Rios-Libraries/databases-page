@@ -116,6 +116,7 @@ include_once('functions.php');
 
   ga('create', 'UA-44798235-7', 'auto');
   ga('send', 'pageview');
+  ga('set', 'anonymizeIp', true);
 
 </script>
 </head>
@@ -282,7 +283,7 @@ else {
 <?php
 if (strpos($json_file, 'trial') > -1) {
 ?>
-<aside id="trial-dbs">
+<aside id="trial-dbs" class="gen-aside">
 	<h2>Trial Databases</h2>
 	<?php
 	trialDbs();
@@ -291,7 +292,7 @@ if (strpos($json_file, 'trial') > -1) {
 </aside>
 <?php
 }
-echo "<aside id=\"library-help\">\n";
+echo "<aside id=\"library-help\" class=\"gen-aside\">\n";
 echo "<h2>From Your Library</h2>\n";
 echo "<div class=\"hidden\">" . $homeLibrary . "</div>\n";
 echo "<div id=\"library-help-content\">\n";
