@@ -294,50 +294,15 @@
             "reference"
                 ],
         "urlRoot": "www.statista.com",
-        "urlPath": "login/corporate/FordM%40CRC.losrios.edu/df7b00e08dd2932853e833fe9f830ec179e8c354c71f37142873c5f42ec9a2d4b6b36867354a9939934a415d71e8d43351243fef04ddeaa6ed186c7076f8fef6",
-        "proxy": "no",
+        "urlPath": "",
+        "proxy": "yes",
         "description": "Statistical data on a wide variety of business topics and social issues from a range of international sources. Data may be exported as spreadsheets, charts or graphs. <em>Available through December 17.</em>",
         "category": [
                      "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
                      ],
-                     "onesearch": "no",
-                     "trial": "yes"
+                     "onesearch": "no"
         }, 
-                          {
-        "name":"Data-Planet Statistical Datasets",
-        "vendor": "Conquest Systems, Inc.",
-        "top": "yes",
-        "type": [
-            "reference"
-                ],
-        "urlRoot": "statisticaldatasets.data-planet.com",
-        "urlPath": "dataplanet/",
-        "proxy": "yes",
-        "description": "Makes available billions of charts, maps, views, rankings, time series and tables. Data sets come from over 70 sources. <em>Available through December 17.</em>",
-        "category": [
-                     "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication", "political-science"
-                     ],
-                     "onesearch": "no",
-                     "trial": "yes"
-        },
-                                  {
-        "name":"Data-Planet Statistical Ready Reference",
-        "vendor": "Conquest Systems, Inc.",
-        "top": "yes",
-        "type": [
-            "reference"
-                ],
-        "urlRoot": "readyreference.data-planet.com",
-        "urlPath": "dataplanet/",
-        "proxy": "yes",
-        "description": "Simplified interface for the Data-Planet repository of standardized and structured statistical data. <em>Available through December 17.</em>",
-        "category": [
-                     "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication", "political-science"
-                     ],
-                     "onesearch": "no",
-                     "trial": "yes"
-        }, 
-
+                         
 
                        {
         "name":"Health Source: Consumer Edition",
@@ -506,24 +471,6 @@
                      ],
                      "onesearch": "yes"
         },
-        
-                               {
-        "name":"Naxos Music Library Jazz Collection",
-        "vendor": "Naxos Digital Services ",
-        "top": "no",
-        "type": [
-            "streaming-audio"
-                ],
-        "urlRoot": "losrios.naxosmusiclibrary.com",
-        "urlPath": "jazz",
-        "proxy": "yes",
-        "description": "Offers an extensive range of over 1,500 jazz recordings.",
-        "category": [
-                     "music"
-                     ],
-                     "onesearch": "yes"
-        },
-
                        {
         "name":"Newspaper Source Plus",
         "vendor": "EBSCO",
