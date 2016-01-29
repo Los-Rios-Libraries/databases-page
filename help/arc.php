@@ -1,8 +1,3 @@
-<style>
-    .service {margin-bottom:10px; clear:both;}
-    .service img {clear:both; float:left; padding:0 .5em 20px 0; width:24px; height:auto;}
-
-</style>
 <!-- alt text for images should match text in all elements, to aid with Google Analytics tracking -->
 <div>
 	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt=“ARC Library Hours" width="136" src="https://www.library.losrios.edu/resources/databases/help/arc-img/Hours.png"></a> </p>
