@@ -1,18 +1,19 @@
 <!-- alt text for images should match text in all elements, to aid with Google Analytics tracking -->
+<div id="arc-help">
 <div>
-	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt=“ARC Library Hours" width="136" src="https://www.library.losrios.edu/resources/databases/help/arc-img/Hours.png"></a> </p>
+	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>
 	</div>
 <div>
-    <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="161" src="https://www.library.losrios.edu/resources/databases/help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
+    <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="161" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
 </div>
     <div id="arc-appt">
-        <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><img width="136" src="https://www.library.losrios.edu/resources/databases/help/arc-img/ResearchAppts.png" alt="Research Appointments"></a>
+        <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><img width="136" src="help/arc-img/ResearchAppts.png" alt="Research Appointments"></a>
     </div>
     
 </div>
 <!-- Place this div in your web page where you want your chat widget to appear. -->
 <div class="needs-js">chat loading...</div>
-
+</div>
 <!-- Place this script as near to the end of your BODY as possible. -->
 <script type="text/javascript">
   (function() {
