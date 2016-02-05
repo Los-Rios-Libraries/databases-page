@@ -296,13 +296,12 @@
         "urlRoot": "www.statista.com",
         "urlPath": "",
         "proxy": "yes",
-        "description": "Statistical data on a wide variety of business topics and social issues from a range of international sources. Data may be exported as spreadsheets, charts or graphs. <em>Available through December 17.</em>",
+        "description": "Statistical data on a wide variety of business topics and social issues from a range of international sources. Data may be exported as spreadsheets, charts or graphs.",
         "category": [
                      "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
                      ],
                      "onesearch": "no"
-        }, 
-                         
+                     },                  
 
                        {
         "name":"Health Source: Consumer Edition",
