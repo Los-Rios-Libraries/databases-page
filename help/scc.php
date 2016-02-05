@@ -22,7 +22,7 @@ style="display: none;">
 <div id="ask-block-inactive" class="ask-block"><a href="http://www.scc.losrios.edu/library/services/ask-librarian/"><img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian"></a><p>Chat is offline. <a href="http://www.scc.losrios.edu/library/services/ask-librarian/">Leave a message</a> or call us at 916&ndash;558&ndash;2461.</p></div>
 </div>
 <hr>
-<h3>Library Hours, Fall 2015</h3>
+<h3>Library Hours, Spring 2016</h3>
 <table id="library-hours">
     <tr>
         <td>M-Th</td>
