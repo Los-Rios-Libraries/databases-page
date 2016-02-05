@@ -1,5 +1,5 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, figure, figcaption, footer, header, hgroup, menu, nav, section, .patFunc {margin: 0; padding: 0; border: 0; font-size: 63%;font: inherit; vertical-align: baseline;text-decoration:none; border:none;}
-body {font-family:"Open Sans", "Helvetica Neue", Verdana, sans-serif; padding:0;  }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, figure, figcaption, footer, header, hgroup, menu, nav, section, .patFunc {margin: 0; padding: 0; border: 0; font-size: 63%;font: inherit; vertical-align: baseline;text-decoration:none; border:none; clear:none;}
+body {font-family:"Open Sans", "Helvetica Neue", Verdana, sans-serif; padding:0; background:#fff;  }
 em {font-style:italic;}
 .hidden {display:none;}
  a {text-decoration:none;}
@@ -56,6 +56,7 @@ input[type="radio"] {display:inline-block;}
  #pubfinder a:hover, #pubfinder a:focus {text-decoration:none;}
  #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:800px; margin-bottom:50px; position:relative;}
  h1 a:link, h1 a:visited {color:#fff;}
+ #lr-sign-in label {font-size:1.3em;}
  #main nav {font-size:1.2em; display:table;}
   #primary-nav { display:inline;}
  #primary-nav li {display:inline; float:left;}
@@ -67,7 +68,7 @@ input[type="radio"] {display:inline-block;}
  .active-page a:hover, .active-page a:focus {color:#fff; cursor: default;}
  .alternative a:link, .alternative a:visited {color:#4D6684; }
  .alternative a:hover, .alternative a:focus {color:#E74700;}
-
+.lead {font-size:1.4em;}
 #show-db-no {font-size:.8em; color:#fff; text-align: right; position:absolute; right:2em;}
 .no-show {color:#fff !important;}
 .category {margin-bottom: 1em;   box-shadow: 0px 2px 6px -3px rgba(0,0,0,0.75);}
@@ -89,8 +90,9 @@ input[type="radio"] {display:inline-block;}
 .vendor {font-weight:normal; font-size:.9em;}
 #main .trial .vendor::after {content:"trial"; font-size:.9em; background:#83AA30;  margin-left:1em; padding:1px 6px; color:#fff; font-weight:bold;}
 .db-desc {font-size:.8em;}
- .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited {color:#1499D3;}
-.db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus {color:#E74700;}
+ .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited, #auth-help a:link, #auth-help a:visited, .my-record-blurb a:link, #my-record-blurb a:visited {color:#1499D3;}
+.db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus, #auth-help a:hover, #auth-help a:focus, .my-record-blurb a:hover, #my-record-blurb a:focus {color:#E74700;}
+#auth-help a, .my-record-blurb a {font-weight:bold;}
 .internal-links { font-size:.8em; margin-top:-1em;}
 .internal-links dt {font-weight:bold; color:#3d3d3d;}
 .alpha .internal-links, #format .internal-links {margin-top:.5em;}
@@ -119,7 +121,9 @@ input[type="radio"] {display:inline-block;}
  /*.top-pick {border:1px solid #ccc; margin-bottom:4px; border-radius:4px;}
  #general .top-pick {border:none;} */
  #subject-all {display:block;}
-
+.my-record-blurb p {padding:10px 8%;}
+.my-record-blurb h3 {padding:0 8%; font-weight:bold;}
+.my-record-blurb ul {padding: 6px 12%; list-style-type: disc;}
 #nav.fixed {position:fixed;}
 /* #filters.scrolled {position:fixed;right:0;} */
 #show-all {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border-radius:8px; display:inline-block; }
@@ -137,7 +141,7 @@ input[type="radio"] {display:inline-block;}
  #new-windows {font-size:.8em;}
  .gen-aside { border:1px solid #ccc; border-radius:4px; margin-bottom:8px;}
  aside h2, aside h3 {font-weight:bold;}
- aside h2 {background:#F5F5F5; border-bottom:1px solid #ccc; padding-left:1em; margin-bottom:10px;}
+ aside h2, .patFuncHeaders {background:#F5F5F5; border-bottom:1px solid #ccc; padding-left:1em; margin-bottom:10px;}
  #library-help-content, #patNameAddress div {padding-left:1em; font-size: .9em;}
  #library-help hr, #library-help-content hr { border: 0; height: 1px; margin:1em 0 1em 0; background: #ccc;}
  #library-help-content hr {margin-left:-1em;}
@@ -145,8 +149,22 @@ input[type="radio"] {display:inline-block;}
  #choose-library {text-align: center;}
  #choose-library button {background:#4D6684; border:none; color:#fff; font-weight:bold; padding:4px; border-radius:4px;}
  #choose-library button:hover {cursor: pointer; text-decoration: underline;}
- 
- 
+ #arc-help {text-align: center;margin-left:-1em;}
+#auth-help {float:right; width:50%;}
+#auth-help h2 {text-transform:uppercase; background:#4D6684; color:#fff; padding-left:4px; font-size:1.2em;}
+ 	#auth-help {float:right; width:50%;}
+	#auth-help h2 {text-transform:uppercase; background:#4D6684; color:#fff; padding-left:4px; font-size:1.2em;}
+/*	#main a:link, #main a:visited {color: #1499D3; font-weight:bold;}
+	#main a:hover, #main a:focus {color:#E74700;}
+	*/
+	.explanation, #auth-help p {margin-bottom:1em;}
+	#lr-sign-in { background:#F5F5F5; width:40%; float:left; padding:1em; border:1px solid #ccc; border-radius:4px;}
+	#lr-sign-in input, #proxy-sign label {font-size:140%;}
+	.errormessage {background:#E74700; padding:1em; border:1px solid #ccc; color:#fff; font-weight:bold; width:80%; margin:1em auto;}
+        .error {margin:-1em 0 1em; font-weight:bold; color:#E74700;}
+	#lr-sign-in input {margin-bottom:1em; width:90%; font-weight:normal; }
+	#lr-sign-in input[type=submit] { background: #1499D3;padding: 8px;color: #fff;font-weight: bold;border-radius: 8px; border:none; border-right:2px solid #4D6684; border-bottom: 2px solid #4D6684;}
+	#lr-sign-in input[type=submit]:hover, input[type=submit]:focus {background:#4D6684;}
  #format-nav {text-align: center;}
    #type-filter li {margin-bottom:4px; font-size:.7em;}
  #type-filter li.active {font-weight:bold; font-size:120%;}
@@ -160,7 +178,13 @@ input[type="radio"] {display:inline-block;}
   #loader {position: fixed; top:50%; left:50%; margin-top:-32px; margin-left:-32px; width:64px; height:64px;}
   .current-issue {background:#f5f5f5; padding:2em;}
 .problem-description p {margin-bottom:10px;}
-
+table.patFunc {border-collapse: collapse;}
+.patFuncHeaders {font-weight:bold; color:#000 !important;text-align:left; font-size:110%; background:#fff;}
+.patFuncHeaders a {display:block; }
+.patFuncHeaders a::after {content: ' \2193';}
+.patFuncEntry {background: #F5F5F5; border-top: 1px solid #ccc;}
+.patFuncFinesEntryTitle {background:#F5F5F5; font-size:1.4em; border-bottom:2px solid #ccc;}
+.patFuncFinesEntryDetail td {border-bottom:none;}
  @media screen and (max-width:1100px) {
 /* #filters, #filters.scrolled {
 
@@ -188,7 +212,7 @@ width:100%;
 
   header {text-align:left;}
   #pubfinder {right:8px; bottom:8px; }
-  #main {width:100%; margin:0 auto 100px;  float:none;}
+  #main {width:100%; margin:0 auto 100px !important;  float:none;}
   
  
 aside {width:90% !important; float:none !important;}
@@ -208,7 +232,7 @@ aside {width:90% !important; float:none !important;}
   #nav-label {background-image:url(icons-36-black.png); background-repeat:no-repeat; padding-left:34px;}
   #dbpage-query, #form-remainder {max-width:240px;}
 #main #multi-search {width:100%;}
-
+#auth-help, #lr-sign-in {float:none; width:auto;}
 
 
 
