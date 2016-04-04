@@ -1,5 +1,5 @@
 {"databases": [
- 
+
                  {
         "name":"Literary Reference Center Plus",
         "vendor": "EBSCO",
@@ -93,6 +93,23 @@
                      ],
                      "onesearch": "yes"
         },
+                                      {
+        "name":"Grove Art Online",
+        "vendor": "Oxford University Press",
+        "top": "no",
+        "type": [
+            "reference", "images"
+                ],
+       "urlRoot": "www.oxfordartonline.com",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Features articles about Western and non-Western art, bibliographies for further research, and thousands of searchable images from museums, galleries, and other arts organizations. Also includes The Concise Oxford Dictionary of Art Terms, Encyclopedia of Aesthetics, and the Companion to Western Art. <strong>Available through May 19.</strong>",
+        "category": [
+                     "art", "encyclopedias,-dictionaries,-reference", "literature"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        },
         {
         "name":"Auto Repair Reference Center",
         "vendor": "EBSCO",
@@ -136,7 +153,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=rzh",
         "proxy": "yes",
-        "description": "Providing full text and careful subject indexing for more than 640 journals in Nursing and other Allied Health fields, Also includes reports on evidenced-based practice.",
+        "description": "Provides full text and careful subject indexing for more than 640 journals in Nursing and other Allied Health fields. Also includes reports on evidence-based practice.",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -422,6 +439,9 @@
                      ],
                      "onesearch": "no"
         },
+ 
+
+        
                                        {
         "name":"Salem Press",
         "vendor": "Salem Online",
@@ -591,6 +611,44 @@
                      ],
                      "onesearch": "yes"
         },
+        
+      
+                                                {
+        "name":"Dentistry &amp; Oral Sciences Source",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ddh",
+        "proxy": "yes",
+        "description": "Includes more than 250 full-text dental science journals. <strong>Available through May 31.</strong>",
+        "category": [
+                     "health-&amp;-medicine"
+                     ],
+                     "onesearch": "yes",
+                     "trial": "yes"
+        },          
+  
+         
+                                                {
+        "name":"Rehabilitation Reference Center",
+        "vendor": "EBSCO",
+        "top": "no",
+        "type": [
+            "reference", "images"
+                ],
+       "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip,uid&profile=rrc",
+        "proxy": "yes",
+        "description": "Includes more than 500 clinical reviews, more than 150 research instruments, information from AHFS on over 11,700 drugs and their manufacturers, more than 9,800 exercise images, reference handbooks, guidelines from the National Guidelines Clearinghouse, nearly 1,500  patient education topics in both English & Spanish, and news and clinical updates. <strong>Available through May 31.</strong>",
+        "category": [
+                     "encyclopedias,-dictionaries,-reference", "health-&amp;-medicine"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        },         
                                                 {
         "name":"RAHFS Consumer Medication Information",
         "vendor": "EBSCO",
@@ -785,6 +843,23 @@
         "description": "This full-text database provides detailed reports that include background, a chronology, current and future trends, related topics and a bibliography on current and controversial topics. This is an excellent place to start research on a controversial or hot topic.",
         "category": [
                      "general","controversial-topics"
+                     ],
+                     "onesearch": "yes"
+        },
+                                {
+        "name":"Films on Demand",
+        "vendor": "Infobase",
+        "top": "no",
+        "type": [
+            "video"
+                ],
+        "urlRoot": "fod.infobase.com",
+        "urlPath": "PortalPlayLists.aspx?wid=107590",
+        "proxy": "yes",
+        "description": "Over 20,000 full-length videos available for streaming from a range of devices. Trial includes the Master Academic Package, Master Career &amp; Tech Ed Package, Archival Films &amp; Newsreels Collection, Nursing Video Collection, and World Cinema Collection. <strong>Available through May 4.</strong>",
+        "trial": "yes",
+        "category": [
+                     "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
                      "onesearch": "yes"
         },
