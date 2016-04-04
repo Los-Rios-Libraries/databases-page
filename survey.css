@@ -1,0 +1,9 @@
+#survey {position:fixed; width:540px; height:70px; margin:0 auto; padding:2em 4em; top:30%; left:50%; margin-top:-70px; margin-left:-270px; background:#fff; border:8px solid #E74700; border-radius:8px; -webkit-box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.75); -moz-box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.75); box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.75);}
+#close-survey {position:absolute;right:0; top:0;}
+#survey-buttons {text-align:center; margin-top:.5em;}
+.survey-button {margin-right:1em;}
+#survey-link {border:none; font-size: .8em; text-align:right;}
+@media screen and (max-width: 1100px) {
+    #survey {width:auto; height:auto; margin-left:0; left:0;}
+    
+}
