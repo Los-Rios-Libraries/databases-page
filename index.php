@@ -7,6 +7,7 @@ ini_set('display_startup_errors',1);
 error_reporting(-1);
 */
 
+
 $category=$_GET['category'];
 $alpha = $_GET['az'];
 $format = $_GET['format'];
@@ -93,32 +94,11 @@ $data = json_decode($json_file);
 $dbs = $data->databases;
 
 include_once('functions.php');
+include_once('head.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-<meta charset="utf-8" >
- <meta name=viewport content="width=device-width, initial-scale=1">
+
 <title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
-
-<link rel="stylesheet" href="style.css?1217" >
-<link rel="stylesheet" href="res/jquery-ui.css">
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
- 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-44798235-7', 'auto');
-  ga('send', 'pageview');
-  ga('set', 'anonymizeIp', true);
-
-</script>
 </head>
 <body>
 	<a href="#main" id="skip">Skip to main content</a>
@@ -145,7 +125,7 @@ include_once('functions.php');
  <h1><a href="index.php">Research  Databases</a><?php echo $pageTitle; ?></h1>
 <div id="tagline">Los Rios Libraries</div>
 
-<div id="pubfinder"><a title="Check Library Holdings of Individual Periodicals" href="http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1">Find a Journal</a></div>
+<div id="pubfinder"><a title="Check Library Holdings of Individual Periodicals" href="http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1">Periodicals by Title</a></div>
  </header>
 <nav id="nav">
  
@@ -281,6 +261,7 @@ else {
   <form><input type="checkbox" id="newwin-check"> <label for="newwin-check">Open links in new windows</label></form>
 </aside>
 <?php
+if ((!isset($category)) && (empty($alpha)) ) {
 if (strpos($json_file, 'trial') > -1) {
 ?>
 <aside id="trial-dbs" class="gen-aside">
@@ -291,6 +272,7 @@ if (strpos($json_file, 'trial') > -1) {
 	
 </aside>
 <?php
+}
 }
 echo "<aside id=\"library-help\" class=\"gen-aside\">\n";
 echo "<h2>From Your Library</h2>\n";
@@ -315,7 +297,8 @@ echo "</div>\n";
 <!--  <script src="db-scripts.js?1123a"> 
  
 </script>      -->
- <script src="db-scripts.min.js?1123"></script> 
+ <script src="db-scripts.min.js?1123"></script>
+  <script src="survey.js?1123"></script> 
 
 </body>
 </html>
