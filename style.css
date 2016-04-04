@@ -121,14 +121,25 @@ input[type="radio"] {display:inline-block;}
  /*.top-pick {border:1px solid #ccc; margin-bottom:4px; border-radius:4px;}
  #general .top-pick {border:none;} */
  #subject-all {display:block;}
+ .confirmationprompt {font-size:1.4em; color:#E74700 }
+#renewfailmsg h2 {background:transparent; color:#fff; text-transform:none; font-size:110%; }
+.my-record-blurb.expanded {position:relative; padding-bottom:2em;}
 .my-record-blurb p {padding:10px 8%;}
 .my-record-blurb h3 {padding:0 8%; font-weight:bold;}
-.my-record-blurb ul {padding: 6px 12%; list-style-type: disc;}
+.my-record-blurb ul {padding: 6px 12%; list-style-type: disc; background:#fff;}
+.panel-toggle {cursor: pointer;}
+.expanded {display:block !important; width:100%;  -webkit-transition: width .1s; transition: width .1s; float:none; }
+.contracted {display:block !important; width:50%; float:right; margin-bottom:0; -webkit-transition: width .2s; transition: width .2s;}
+.panel-toggle abbr {text-transform: none;  position:relative; }
+abbr[title="Show"] {top:8px; text-shadow: 2px 2px #4D6684;}
+abbr[title="Hide"] {bottom:10px; text-shadow: -2px -2px #4D6684;}
+.close-blurb {float:left; background: transparent; color:#fff; border:none; font-weight:bold; cursor:pointer;}
 #nav.fixed {position:fixed;}
 /* #filters.scrolled {position:fixed;right:0;} */
-#show-all {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border-radius:8px; display:inline-block; }
-#show-all:hover, #show-all:focus {background:#4D6684; }
-
+#show-all, .panel-closer {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border:none; border-radius:8px; display:inline-block; }
+#show-all:hover, #show-all:focus, .panel-closer:hover, .panel-closer:focus {background:#4D6684; }
+.panel-closer {text-align:right;}
+.panel-closer {position:absolute; right:4px; bottom:4px;}
 
  #filters, #new-windows, .gen-aside, #logout {width:15%; float:right; padding:0 0 8px 0; margin-right:50px;}
  #trial-dbs h2 {background:#E74700; color:#fff;}
@@ -139,6 +150,7 @@ input[type="radio"] {display:inline-block;}
  .trial-desc-exp {border:none; background:transparent; color:#E74700; text-decoration: underline; padding:0; font-style: italic; }
  .trial-desc-exp:hover, .trial-desc-exp:focus {cursor: pointer;}
  #new-windows {font-size:.8em;}
+ .patFuncArea {border:none;}
  .gen-aside { border:1px solid #ccc; border-radius:4px; margin-bottom:8px;}
  aside h2, aside h3 {font-weight:bold;}
  aside h2, .patFuncHeaders {background:#F5F5F5; border-bottom:1px solid #ccc; padding-left:1em; margin-bottom:10px;}
@@ -160,8 +172,11 @@ input[type="radio"] {display:inline-block;}
 	.explanation, #auth-help p {margin-bottom:1em;}
 	#lr-sign-in { background:#F5F5F5; width:40%; float:left; padding:1em; border:1px solid #ccc; border-radius:4px;}
 	#lr-sign-in input, #proxy-sign label {font-size:140%;}
-	.errormessage {background:#E74700; padding:1em; border:1px solid #ccc; color:#fff; font-weight:bold; width:80%; margin:1em auto;}
+	.errormessage {background:#E74700; padding:1em; border:1px solid #ccc; color:#fff; font-weight:bold; width:80%; margin:1em auto; text-align:center;}
         .error {margin:-1em 0 1em; font-weight:bold; color:#E74700;}
+        #submit-anyway {border:none; background:transparent; font-style:italic; cursor:pointer;  text-decoration: underline;}
+        #submit-anyway:hover, #submit-anyway:focus {color:#83AA30;}
+        
 	#lr-sign-in input {margin-bottom:1em; width:90%; font-weight:normal; }
 	#lr-sign-in input[type=submit] { background: #1499D3;padding: 8px;color: #fff;font-weight: bold;border-radius: 8px; border:none; border-right:2px solid #4D6684; border-bottom: 2px solid #4D6684;}
 	#lr-sign-in input[type=submit]:hover, input[type=submit]:focus {background:#4D6684;}
@@ -202,7 +217,7 @@ width:100%;
 
  #library-help {width:30%; }
  #new-windows {text-align:right; width:80%; margin:0 auto;}
-
+#logout button {position:absolute; top:3em; right:1em;}
 /* #filters {width:15%; float:right; border:1px solid #ccc; border-radius:4px; padding:8px;} */
  
  @media screen and (max-width: 780px)
