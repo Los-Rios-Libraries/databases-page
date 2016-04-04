@@ -1,0 +1,35 @@
+      {
+        "name":"R2 Digital Library",
+        "vendor": "Rittenhouse Book Distributors, Inc",
+        "top": "no",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "www.r2library.com",
+        "urlPath": "Browse#include=1&type=disciplines",
+        "proxy": "yes",
+        "description": "Features thousands of health sciences ebooks from leading publishers. <strong>Available through March 23.</strong>",
+        "category": [
+                     "ebooks", "health-&amp;-medicine"
+                     ],
+                     "onesearch": "yes",
+                     "trial": "yes"
+        },
+        
+                                     {
+        "name":"Grove Art Online",
+        "vendor": "Oxford University Press",
+        "top": "no",
+        "type": [
+            "reference", "images"
+                ],
+       "urlRoot": "www.oxfordartonline.com",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Features articles about Western and non-Western art, bibliographies for further research, and thousands of searchable images from museums, galleries, and other arts organizations. Also includes The Concise Oxford Dictionary of Art Terms, Encyclopedia of Aesthetics, and the Companion to Western Art. <strong>Available through March 20.</strong>",
+        "category": [
+                     "art", "encyclopedias,-dictionaries,-reference", "literature"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        }
