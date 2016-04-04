@@ -7,6 +7,7 @@ error_reporting(-1);
 */
 $dbName = $_POST['db-name'];
  $query = $_POST['query'];
+ $query = urlencode($query);
 $vendor = $_POST['vendor'];
 $ehostCode = $_POST['ehost'];
 $url = '';
@@ -52,6 +53,14 @@ if ($vendor === 'ebsco') {
         }
         else {
             $url = $ebscoBase . '&profile=plus';
+        }
+    }
+       elseif (strpos($dbName, 'rehabilitation') > -1) {
+        if ($query !== '') {
+        $url = $ebscoBase . '&direct=true&db=nrcn&db=rrc&bquery=' . $query .'&site=rrc-live&scope=site';
+        }
+        else {
+            $url = $ebscoBase . '&profile=rrc';
         }
     }
     elseif(strpos($dbName, 'consumer') > -1) {
@@ -118,13 +127,33 @@ else {
 }
 
 }
-elseif (strpos($vendor, 'oxford') > -1) {
+elseif (strpos($dbName, 'oxford') > -1) {
     $urlBase = 'http://0-www.oed.com.lasiii.losrios.edu/';
     if ($query !== '') {
     $url = $urlBase . 'search?searchType=dictionary&q=' . $query;
     }
     else {
         $url = $urlBase;
+    }
+    
+}
+elseif (strpos($dbName, 'grove') > -1) {
+    $urlBase = 'http://0-www.oxfordartonline.com.lasiii.losrios.edu/';
+    if ($query !== '') {
+    $url = $urlBase . 'subscriber/search_results?q=' . $query;
+    }
+    else {
+        $url = $urlBase;
+    }
+    
+}
+elseif (strpos($dbName, 'r2') > -1) {
+    $urlBase = 'http://0-www.r2library.com.lasiii.losrios.edu/';
+    if ($query !== '') {
+    $url = $urlBase . 'Search?q=' . $query . '#include=1';
+    }
+    else {
+        $url = $urlBase . '/Browse#include=1&type=disciplines';
     }
     
 }
