@@ -80,14 +80,18 @@ function dbsByAlpha($letter) {
      }
      elseif ((isset($query)) && (!(empty($query)))) {
       $vendorLower = strtolower($db -> vendor);
+      $altNames = implode(' ', $db -> altname);
+      $altNames = str_replace('-', ' ', $altNames);
+      $altNames = strtolower($altNames);
       $query = strtolower($query);
       $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);
        $query = preg_replace('/j\s*stor.*/', 'jstor', $query);
      $types = implode(' ', $db -> type);
      $types = str_replace('-', ' ', $types);
      $categories = implode(' ', $db -> category);
+ //    echo '<p>altNames: ' . $altNames . '</p>';
  //(strpos($categories, $query > -1)) || (strpos($types, $query > -1))  many false positives...     
-      if ((strpos($dbLower, $query) > -1) || (strpos($categories, $query) > -1) || (strpos($types, $query) > -1) ||(strpos($vendorLower, $query) > -1))  {
+      if ((strpos($dbLower, $query) > -1) || (strpos($altNames, $query) > -1) ||(strpos($categories, $query) > -1) || (strpos($types, $query) > -1) ||(strpos($vendorLower, $query) > -1))  {
       include('writeDBInfo.php');
       }
      }
