@@ -76,7 +76,7 @@ input[type="radio"] {display:inline-block;}
 .category:first-of-type h2 {padding-top:10px;}
  .category h2, th.patFuncTitle {font-size:1.4em; text-transform:uppercase; background:#4D6684; color:#fff; padding-left:10px;}
  
- .category ul {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
+ .category ul, .special p {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
 
 .db-entry {margin-bottom:1.2em; list-style-type:none;}
 .open-db-search, .search-one-db {float:right;}
@@ -90,9 +90,10 @@ input[type="radio"] {display:inline-block;}
 .vendor {font-weight:normal; font-size:.9em;}
 #main .trial .vendor::after {content:"trial"; font-size:.9em; background:#83AA30;  margin-left:1em; padding:1px 6px; color:#fff; font-weight:bold;}
 .db-desc {font-size:.8em;}
- .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited, #auth-help a:link, #auth-help a:visited, .my-record-blurb a:link, #my-record-blurb a:visited {color:#1499D3;}
-.db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus, #auth-help a:hover, #auth-help a:focus, .my-record-blurb a:hover, #my-record-blurb a:focus {color:#E74700;}
-#auth-help a, .my-record-blurb a {font-weight:bold;}
+ .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited, #auth-help a:link, #auth-help a:visited, .my-record-blurb a:link, #my-record-blurb a:visited, .special a:link, .special a:visited {color:#1499D3;}
+.db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus, #auth-help a:hover, #auth-help a:focus, .my-record-blurb a:hover, #my-record-blurb a:focus, .special a:hover, .special a:focus {color:#E74700;}
+.special a:hover, .special a:focus {text-decoration: underline;}
+#auth-help a, .my-record-blurb a, .special a {font-weight:bold;}
 .internal-links { font-size:.8em; margin-top:-1em;}
 .internal-links dt {font-weight:bold; color:#3d3d3d;}
 .alpha .internal-links, #format .internal-links {margin-top:.5em;}
