@@ -1,5 +1,23 @@
 {"databases": [
 
+ {
+        "name":"Ebook Central",
+        "vendor": "ProQuest",
+        "top": "no",
+        "type": [
+            "ebooks"
+                ],
+        "urlRoot": "ebookcentral.proquest.com",
+        "urlPath": "lib/losrios/",
+        "proxy": "yes",
+        "description": "Provides over 100,000 ebooks in dozens of fields from a various publishers. Content may be viewed online. To download chapters or in some cases full ebooks, create a free Ebook Central account. <strong>Available through May 4.</strong>",
+        "category": [
+                      "art", "business", "ebooks", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-medicine", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     ],
+                     "onesearch": "no",
+                     "trial": "yes"
+        },  
+
                  {
         "name":"Literary Reference Center Plus",
         "vendor": "EBSCO",
@@ -105,10 +123,11 @@
         "proxy": "yes",
         "description": "Features articles about Western and non-Western art, bibliographies for further research, and thousands of searchable images from museums, galleries, and other arts organizations. Also includes The Concise Oxford Dictionary of Art Terms, Encyclopedia of Aesthetics, and the Companion to Western Art. <strong>Available through May 19.</strong>",
         "category": [
-                     "art", "encyclopedias,-dictionaries,-reference", "literature"
+                     "art", "encyclopedias,-dictionaries,-reference"
                      ],
                      "onesearch": "no",
-                     "trial": "yes"
+                     "trial": "yes",
+                     "altname": ["Oxford-Art-Online"]
         },
         {
         "name":"Auto Repair Reference Center",
