@@ -147,13 +147,15 @@ elseif (strpos($dbName, 'grove') > -1) {
     }
     
 }
-elseif (strpos($dbName, 'r2') > -1) {
-    $urlBase = 'http://0-www.r2library.com.lasiii.losrios.edu/';
+elseif (strpos($dbName, 'films') > -1) {
+    $urlBase = 'http://0-digital.films.com.lasiii.losrios.edu/PortalPlaylists.aspx?wid=107590';
     if ($query !== '') {
-    $url = $urlBase . 'Search?q=' . $query . '#include=1';
+    $url = $urlBase . '&rd=a&q=' . $query;
+//    echo $url;
+//    exit;
     }
     else {
-        $url = $urlBase . '/Browse#include=1&type=disciplines';
+        $url = $urlBase;
     }
     
 }
