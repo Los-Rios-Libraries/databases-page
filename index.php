@@ -102,31 +102,9 @@ include_once('head.php');
 </head>
 <body>
 	<a href="#main" id="skip">Skip to main content</a>
- <header>
-  <nav id="head-nav">
-<?php include 'search-form.php';
+<?php
+include_once('header.php');
 ?>
-<ul>
-<li id="arc-link" class="headnav">
-<abbr title="American River College"><a href="http://www.arc.losrios.edu/arclibrary.htm">ARC</a></abbr>
-</li>
-<li id="crc-link" class="headnav" >
-<abbr title="Cosumnes River College"><a href="http://www.crc.losrios.edu/library">CRC</a></abbr>
-</li>
-<li id="flc-link" class="headnav" >
-<abbr title="Folsom Lake College"><a href="http://www.flc.losrios.edu/libraries">FLC</a></abbr>
-</li>
-<li id="scc-link" class="headnav">
-<abbr title="Sacramento City College"><a href="http://www.scc.losrios.edu/library">SCC</a></abbr>
-</li>
-</ul>
-</nav>
-
- <h1><a href="index.php">Research  Databases</a><?php echo $pageTitle; ?></h1>
-<div id="tagline">Los Rios Libraries</div>
-
-<div id="pubfinder"><a title="Check Library Holdings of Individual Periodicals" href="http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1">Periodicals by Title</a></div>
- </header>
 <nav id="nav">
  
  <div id="tabs">
@@ -257,39 +235,9 @@ else {
 }
 ?>
 </section>
-<aside id="new-windows">
-  <form><input type="checkbox" id="newwin-check"> <label for="newwin-check">Open links in new windows</label></form>
-</aside>
 <?php
-if ((!isset($category)) && (empty($alpha)) ) {
-if (strpos($json_file, 'trial') > -1) {
+include_once('asides.php');
 ?>
-<aside id="trial-dbs" class="gen-aside">
-	<h2>Trial Databases</h2>
-	<?php
-	trialDbs();
-	?>
-	
-</aside>
-<?php
-}
-}
-echo "<aside id=\"library-help\" class=\"gen-aside\">\n";
-echo "<h2>From Your Library</h2>\n";
-echo "<div class=\"hidden\">" . $homeLibrary . "</div>\n";
-echo "<div id=\"library-help-content\">\n";
-
-// echo 'home library is '.$homeLibrary;
-// include('help/' .$homeLibrary . '.php');
-
-echo "</div>\n";
-?>
-<hr>
-<div id="choose-library">
-	<button><abbr title="American River College">arc</abbr></button> <button><abbr title="Cosumnes River College">crc</abbr></button> <button><abbr title="Folsom Lake College">flc</abbr></button> <button><abbr title="Sacramento City College">scc</abbr></button>
-</div>
-</aside>
-
 <img id="loader" alt="loading" src="loader.gif" class="hidden">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -297,7 +245,7 @@ echo "</div>\n";
 <!--  <script src="db-scripts.js?1123a"> 
  
 </script>      -->
- <script src="db-scripts.min.js?1123"></script>
+ <script src="db-scripts.min.js?0404"></script>
   <script src="survey.js?1123"></script> 
 
 </body>
