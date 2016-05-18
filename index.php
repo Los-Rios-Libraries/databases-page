@@ -246,7 +246,7 @@ include_once('asides.php');
  
 </script>      -->
  <script src="db-scripts.min.js?0404"></script>
-  <script src="survey.js?1123"></script> 
+
 
 </body>
 </html>
