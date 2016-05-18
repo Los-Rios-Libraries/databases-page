@@ -1,4 +1,5 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, hr, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, figure, figcaption, footer, header, hgroup, menu, nav, section, .patFunc {margin: 0; padding: 0; border: 0; font-size: 63%;font: inherit; vertical-align: baseline;text-decoration:none; border:none; clear:none;}
+html {position:relative; min-height: 100%;}
 body {font-family:"Open Sans", "Helvetica Neue", Verdana, sans-serif; padding:0; background:#fff;  }
 em {font-style:italic;}
 .hidden {display:none;}
@@ -54,7 +55,7 @@ input[type="radio"] {display:inline-block;}
  #pubfinder {position:absolute; right:50px; bottom:10px;}
  #pubfinder a:link, #pubfinder a:visited {color:#fff; border-bottom:1px solid #fff; font-size:1em; }
  #pubfinder a:hover, #pubfinder a:focus {text-decoration:none;}
- #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:800px; margin-bottom:50px; position:relative;}
+ #main { width:50%; margin-left:25%; float:left; padding-right:18px; /* min-height:800px; */ margin-bottom:200px; position:relative;}
  h1 a:link, h1 a:visited {color:#fff;}
  #lr-sign-in label {font-size:1.3em;}
  #main nav {font-size:1.2em; display:table;}
@@ -76,7 +77,7 @@ input[type="radio"] {display:inline-block;}
 .category:first-of-type h2 {padding-top:10px;}
  .category h2, th.patFuncTitle {font-size:1.4em; text-transform:uppercase; background:#4D6684; color:#fff; padding-left:10px;}
  
- .category ul, .special p {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
+ .category ul, .special p, #hide-message {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
 
 .db-entry {margin-bottom:1.2em; list-style-type:none;}
 .open-db-search, .search-one-db {float:right;}
@@ -91,15 +92,14 @@ input[type="radio"] {display:inline-block;}
 #main .trial .vendor::after {content:"trial"; font-size:.9em; background:#83AA30;  margin-left:1em; padding:1px 6px; color:#fff; font-weight:bold;}
 .db-desc {font-size:.8em;}
  .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited, #auth-help a:link, #auth-help a:visited, .my-record-blurb a:link, #my-record-blurb a:visited, .special a:link, .special a:visited {color:#1499D3;}
-.db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus, #auth-help a:hover, #auth-help a:focus, .my-record-blurb a:hover, #my-record-blurb a:focus, .special a:hover, .special a:focus {color:#E74700;}
-.special a:hover, .special a:focus {text-decoration: underline;}
-#auth-help a, .my-record-blurb a, .special a {font-weight:bold;}
-.internal-links { font-size:.8em; margin-top:-1em;}
+.db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus, #auth-help a:hover, #auth-help a:focus, .my-record-blurb a:hover, #my-record-blurb a:focus, .special a:focus, .special a:hover {color:#E74700;}
+#auth-help a, .my-record-blurb a {font-weight:bold;}
+.internal-links { font-size:.8em; line-height:1em;}
 .internal-links dt {font-weight:bold; color:#3d3d3d;}
 .alpha .internal-links, #format .internal-links {margin-top:.5em;}
 .categories, .formats, .desc-category, .desc-format, .cat-list, .format-list {display:inline;}
 .categories, .formats {padding:0 !important;}
-.db-cat, .db-format {display:inline-block; padding: 0 .5em 0 .5em; border-right:1px solid #ccc; }
+.db-cat, .db-format {display:inline-block; padding: 0 .5em 0 .5em; border-right:1px solid #ccc; line-height:1.2em; }
 .db-format:last-of-type, .last-dd {border:none;} /* there is a javascript that completes this... */
 .db-cat a:focus, .db-cat a:hover, .db-format a:focus, .db-format a:hover {text-decoration:underline;}
  .desc-category:link, .desc-category:visited, .desc-format:link, .desc-format:visited {color:#83AA30;}
@@ -137,8 +137,8 @@ abbr[title="Hide"] {bottom:10px; text-shadow: -2px -2px #4D6684;}
 .close-blurb {float:left; background: transparent; color:#fff; border:none; font-weight:bold; cursor:pointer;}
 #nav.fixed {position:fixed;}
 /* #filters.scrolled {position:fixed;right:0;} */
-#show-all, .panel-closer {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border:none; border-radius:8px; display:inline-block; }
-#show-all:hover, #show-all:focus, .panel-closer:hover, .panel-closer:focus {background:#4D6684; }
+#show-all, .panel-closer, #hide-page {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border:none; border-radius:8px; display:inline-block; }
+#show-all:hover, #show-all:focus, .panel-closer:hover, .panel-closer:focus, #hide-page:hover, #hide-page:focus {background:#4D6684; }
 .panel-closer {text-align:right;}
 .panel-closer {position:absolute; right:4px; bottom:4px;}
 
@@ -201,26 +201,30 @@ table.patFunc {border-collapse: collapse;}
 .patFuncEntry {background: #F5F5F5; border-top: 1px solid #ccc;}
 .patFuncFinesEntryTitle {background:#F5F5F5; font-size:1.4em; border-bottom:2px solid #ccc;}
 .patFuncFinesEntryDetail td {border-bottom:none;}
+/* footer */
+    footer#lr-footer {clear:both; width: 100%; color: #fff;position: absolute; bottom: 10px; margin: 0 auto; font-size:80%;   }
+#ft-content-container {display: table; width: 100%;max-width:1100px; margin: 0 auto; /* background: #3d3d3d;  */ padding: 5px; border-top: 2px solid #3d3d3d; /* border-radius: 4px 4px 0 0; */ color:#3d3d3d;}
+#col-container {    width:90%;    margin:0 auto;    text-align:center;}
+#ft-head {text-align: center;font-size: 1.4em;border-bottom: 1px solid #fff; width: 50%; margin: 0 auto 20px;}
+.foot-col {text-align:left;float: left; width: 21%; padding: 0 2% 0 2%;}
+#ft-content-container a:link, #ft-content-container a:visited {color: #3d3d3d; text-decoration: underline;}
+#ft-content-container a:hover, #ft-content-container a:focus {color:#E74700; text-decoration:none;}
  @media screen and (max-width:1100px) {
-/* #filters, #filters.scrolled {
 
-  position: fixed;
-  bottom: 0;
-padding:0;
-width:100%;
-  background: #fff;
-  
- } */
- #main {width:75%; min-height: 100px;}
+ #main {width:75%; /* min-height: 100px; */ margin-bottom:10px !important;}
  #pubfinder {right:10px;}
  #trial-dbs { width:70%; margin:0 auto 10px;}
  #filters {width:30%; margin:0 auto 10px; margin-top:20px;clear:both; margin-top:0;}
 
  #library-help {width:30%; }
- #new-windows {text-align:right; width:80%; margin:0 auto;}
+ #new-windows {display:inline-block; width:auto;}
 #logout button {position:absolute; top:3em; right:1em;}
 /* #filters {width:15%; float:right; border:1px solid #ccc; border-radius:4px; padding:8px;} */
- 
+aside {float:none !important; margin-left:50px; width:auto !important; display:inline-block; padding:4px;}
+    aside:last-of-type {margin-bottom:200px;}
+   #patNameAddress {display:table; margin-left:25%;} 
+    #ft-content-container {border-radius:0;}
+ }
  @media screen and (max-width: 780px)
  {
     #head-nav ul {clear:left;}
@@ -231,7 +235,7 @@ width:100%;
   #main {width:100%; margin:0 auto 100px !important;  float:none;}
   
  
-aside {width:90% !important; float:none !important;}
+aside { float:none !important;}
 .gen-aside {margin-left:auto; margin-right:auto;}
   body {margin:0 4px; padding:0;}
    #primary-nav { font-size:.8em; width:100%;}
@@ -253,4 +257,14 @@ aside {width:90% !important; float:none !important;}
 
 
   .alpha-nav a{text-align:center;}
+   #lr-footer {position:static !important;}
+    aside:last-of-type {margin-bottom:10px;}
  }
+   @media screen and (max-width: 560px) {
+    .foot-col {float:none;
+    width:100%; margin-bottom:20px;}
+    #lr-footer {position:static !important;}
+    aside:last-of-type {margin-bottom:10px;}
+    #ft-head {text-align:left;margin:0 0 10px 0; width:100%;}
+    
+  }
