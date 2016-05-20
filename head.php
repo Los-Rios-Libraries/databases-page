@@ -5,7 +5,7 @@
 <meta charset="utf-8" >
  <meta name=viewport content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="style.css?0427" >
+<link rel="stylesheet" href="style.css?0519" >
 <link rel="stylesheet" href="res/jquery-ui.css">
 
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
