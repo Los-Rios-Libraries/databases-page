@@ -5,9 +5,13 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 */
-
 $url = $_GET['url'];
 $pTitle = $_GET['pageTitle'];
+$skipCookie = $_COOKIE["skipPage-" . $pTitle];
+if ($skipCookie === 'skip') {
+	header('Location: '. $url);
+	
+}
 
 if (isset($_COOKIE['homeLibrary'])) {
 	$homeLibrary = $_COOKIE['homeLibrary'];
@@ -52,6 +56,7 @@ include_once('asides.php');
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
+<!--
  <script src="db-scripts.js?1123a"> 
   -->
 </script>     
