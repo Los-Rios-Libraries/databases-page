@@ -26,7 +26,7 @@ style="display: none;">
 <table id="library-hours">
     <tr>
         <td>M-Th</td>
-        <td>9 am &ndash; 6 pm</td>
+        <td>8 am &ndash; 6 pm</td>
     </tr>
     <tr>
         <td>Fri &ndash; Sun</td>
