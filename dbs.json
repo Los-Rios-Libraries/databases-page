@@ -93,24 +93,6 @@
                      ],
                      "onesearch": "yes"
         },
-                                      {
-        "name":"Grove Art Online",
-        "vendor": "Oxford University Press",
-        "top": "no",
-        "type": [
-            "reference", "images"
-                ],
-       "urlRoot": "www.oxfordartonline.com",
-        "urlPath": "",
-        "proxy": "yes",
-        "description": "Features articles about Western and non-Western art, bibliographies for further research, and thousands of searchable images from museums, galleries, and other arts organizations. Also includes The Concise Oxford Dictionary of Art Terms, Encyclopedia of Aesthetics, and the Companion to Western Art. <strong>Available through May 19.</strong>",
-        "category": [
-                     "art", "encyclopedias,-dictionaries,-reference"
-                     ],
-                     "onesearch": "no",
-                     "trial": "yes",
-                     "altname": ["Oxford-Art-Online"]
-        },
         {
         "name":"Auto Repair Reference Center",
         "vendor": "EBSCO",
