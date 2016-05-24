@@ -33,6 +33,7 @@ style="display: none;">
         <td>Closed</td>
     </tr>
 </table>
+<p><a href="http://www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
 </div>
 <script>
   //  hideZ();
