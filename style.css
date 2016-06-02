@@ -118,7 +118,8 @@ input[type="radio"] {display:inline-block;}
   #main-nav li:last-of-type {border-bottom:none;}
   #main-nav a {display:block; width:90%; padding-left:10%; font-size:1em; line-height: 1.6em;}
   #main-nav a:link, #main-nav a:visited {color:#4D6684;}
-  #main-nav a:hover, #main-nav a:focus, .current {color:#fff !important; background: #1499D3; cursor:initial;}
+  #main-nav a:hover, #main-nav a:focus, .current {color:#fff !important; background: #1499D3;}
+  .current {cursor:default;}
     #nav-label {padding:2px 0 2px 10px; font-size:1.5em; line-height:30px; cursor:pointer;}
 
  .alpha-nav {text-transform:uppercase;}
