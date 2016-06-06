@@ -197,6 +197,7 @@ abbr[title="Hide"] {bottom:10px; text-shadow: -2px -2px #4D6684;}
   #format-nav .current {font-weight:bold; font-size:.8em;}
   #loader {position: fixed; top:50%; left:50%; margin-top:-32px; margin-left:-32px; width:64px; height:64px;}
   .current-issue {background:#f5f5f5; padding:2em;}
+  .current-issue ul {margin-left:2em;}
 .problem-description p {margin-bottom:10px;}
 table.patFunc {border-collapse: collapse;}
 .patFuncHeaders {font-weight:bold; color:#000 !important;text-align:left; font-size:110%; background:#fff;}
