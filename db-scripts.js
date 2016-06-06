@@ -297,19 +297,24 @@ function getCookie(cname)
 function homeLibEls(col)
 {
   var cust;
+  var fod;
   switch (col)
   {
   case 'arc':
     cust = 'amerriv';
+    fod = '240535';
     break;
   case 'scc':
     cust = 'sacram';
+    fod = '106093';
     break;
   case 'crc':
     cust = 'cosum';
+    fod = '237206';
     break;
   case 'flc':
     cust = 'ns015092';
+    fod = '237742';
     break;
   default:
     cust = '';
@@ -322,6 +327,7 @@ function homeLibEls(col)
   var colUpper = col.toUpperCase();
   $('#library-help h2').html('From the ' + colUpper + ' Library');
   $('#pubfinder a').attr('href', 'http://search.ebscohost.com/login.aspx?authtype=ip,guest&direct=true&custid=' + cust + '&db=edspub&groupid=main&profile=eds&plp=1');
+  $('.db-name:contains(Films on Demand)').attr('href', 'http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' + fod);
   setTimeout(function ()
   {
     $('#library-help-content a').on('click', function ()
