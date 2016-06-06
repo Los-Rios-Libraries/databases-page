@@ -66,7 +66,7 @@ if(isset($_COOKIE[$cName])) {
 </li>
 </ul>
 </nav>
- <h1><a href="../index.php">Research  Databases</a>: Google Scholar</h1>
+ <h1><a href="../index.php">Research  Databases</a>: Films on Demand</h1>
 <div id="tagline">Los Rios Libraries</div>
  </header>
  
