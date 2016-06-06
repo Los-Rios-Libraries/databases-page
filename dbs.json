@@ -798,11 +798,10 @@
         "type": [
             "video"
                 ],
-        "urlRoot": "fod.infobase.com",
-        "urlPath": "PortalPlayLists.aspx?wid=107590",
-        "proxy": "yes",
-        "description": "Over 20,000 full-length videos available for streaming from a range of devices. Trial includes the Master Academic Package, Master Career &amp; Tech Ed Package, Archival Films &amp; Newsreels Collection, Nursing Video Collection, and World Cinema Collection. <strong>Available through May 25.</strong>",
-        "trial": "yes",
+        "urlRoot": "www.library.losrios.edu",
+        "urlPath": "databases/links/films-on-demand.php",
+        "proxy": "no",
+        "description": "Over 20,000 full-length videos available for streaming from a range of devices. Includes the Master Academic Package, Master Career &amp; Tech Ed Package, and Archival Films &amp; Newsreels Collection.",
         "category": [
                      "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
