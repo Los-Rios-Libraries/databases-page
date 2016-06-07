@@ -798,8 +798,8 @@
         "type": [
             "video"
                 ],
-        "urlRoot": "www.library.losrios.edu",
-        "urlPath": "databases/links/films-on-demand.php",
+        "urlRoot": "",
+        "urlPath": "special.php?pageTitle=films-on-demand",
         "proxy": "no",
         "description": "Over 20,000 full-length videos available for streaming from a range of devices. Includes the Master Academic Package, Master Career &amp; Tech Ed Package, and Archival Films &amp; Newsreels Collection.",
         "category": [
