@@ -148,7 +148,24 @@ elseif (strpos($dbName, 'grove') > -1) {
     
 }
 elseif (strpos($dbName, 'films') > -1) {
-    $urlBase = 'http://0-digital.films.com.lasiii.losrios.edu/PortalPlaylists.aspx?wid=107590';
+    $homeLibrary = $_COOKIE['homeLibrary'];
+    switch ($homeLibrary) {
+        case 'arc':
+        $wID = '240535';
+        break;
+      case 'scc':
+        $wID = '106093';
+        break;
+      case 'crc':
+        $wID = '237206';
+        break;
+      case 'flc':
+        $wID = '237742';
+        break;
+      default:
+       $wID = '107590'; 
+  }
+    $urlBase = 'http://0-digital.films.com.lasiii.losrios.edu/PortalPlaylists.aspx?wid=' .$wID;
     if ($query !== '') {
     $url = $urlBase . '&rd=a&q=' . $query;
 //    echo $url;
