@@ -19,7 +19,10 @@ if (isset($_COOKIE['homeLibrary'])) {
 else {
 	$homeLibrary = 'unknown';
 }
-
+if ($pTitle === 'films-on-demand') {
+	include_once('special/fod-scripts.php');
+	
+}
 if((isset($pTitle)) && (!empty($pTitle))) {
     $pTitlePretty = str_replace('-', ' ', $pTitle);
 	$pTitlePretty = ucwords($pTitlePretty);
