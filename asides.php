@@ -2,6 +2,7 @@
   <form><input type="checkbox" id="newwin-check"> <label for="newwin-check">Open links in new windows</label></form>
 </aside>
 <?php
+if (isset($json_file)) {
 if ((!isset($category)) && (empty($alpha)) ) {
 if (strpos($json_file, 'trial') > -1) {
 ?>
@@ -13,6 +14,7 @@ if (strpos($json_file, 'trial') > -1) {
 	
 </aside>
 <?php
+}
 }
 }
 echo "<aside id=\"library-help\" class=\"gen-aside\">\n";
