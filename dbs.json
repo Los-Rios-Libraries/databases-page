@@ -78,7 +78,23 @@
                      ],
                      "onesearch": "yes"
         },
-
+                                      {
+        "name":"Oxford Art Online",
+        "vendor": "Oxford University Press",
+        "top": "no",
+        "type": [
+            "reference", "images"
+                ],
+       "urlRoot": "www.oxfordartonline.com",
+        "urlPath": "",
+        "proxy": "yes",
+        "description": "Features articles about Western and non-Western art, bibliographies for further research, and thousands of searchable images from museums, galleries, and other arts organizations. Includes Grove Art Online, The Concise Oxford Dictionary of Art Terms, Encyclopedia of Aesthetics, and the Companion to Western Art.",
+        "category": [
+                     "art", "encyclopedias,-dictionaries,-reference"
+                     ],
+                     "onesearch": "yes",
+                     "altname": ["Grove-Art-Online"]
+        },
         {
         "name":"Artstor",
         "vendor": "Artstor",
