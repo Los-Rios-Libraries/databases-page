@@ -22,15 +22,19 @@ style="display: none;">
 <div id="ask-block-inactive" class="ask-block"><a href="http://www.scc.losrios.edu/library/services/ask-librarian/"><img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian"></a><p>Chat is offline. <a href="http://www.scc.losrios.edu/library/services/ask-librarian/">Leave a message</a> or call us at 916&ndash;558&ndash;2461.</p></div>
 </div>
 <hr>
-<h3>Library Hours, Summer 2016</h3>
+<h3>Library Hours, Fall 2016</h3>
 <table id="library-hours">
     <tr>
         <td>M-Th</td>
-        <td>8 am &ndash; 6 pm</td>
+        <td>7:30 am &ndash; 9:30 pm</td>
     </tr>
     <tr>
-        <td>Fri &ndash; Sun</td>
-        <td>Closed</td>
+        <td>Fri</td>
+        <td>7:30 am &ndash; 5 pm</td>
+    </tr>
+    <tr>
+        <td>Sat</td>
+        <td>9 am &ndash; 3 pm</td>
     </tr>
 </table>
 <p><a href="http://www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
