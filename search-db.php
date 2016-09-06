@@ -127,7 +127,7 @@ else {
 }
 
 }
-elseif (strpos($dbName, 'oxford') > -1) {
+elseif (strpos($dbName, 'oxford-english') > -1) {
     $urlBase = 'http://0-www.oed.com.lasiii.losrios.edu/';
     if ($query !== '') {
     $url = $urlBase . 'search?searchType=dictionary&q=' . $query;
@@ -137,7 +137,7 @@ elseif (strpos($dbName, 'oxford') > -1) {
     }
     
 }
-elseif (strpos($dbName, 'grove') > -1) {
+elseif (strpos($dbName, 'oxford-art') > -1) {
     $urlBase = 'http://0-www.oxfordartonline.com.lasiii.losrios.edu/';
     if ($query !== '') {
     $url = $urlBase . 'subscriber/search_results?q=' . $query;
