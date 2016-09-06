@@ -938,6 +938,20 @@
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
+        },
+        {
+            "name": "Resources for College Libraries",
+            "vendor": "ProQuest",
+            "top": "no",
+            "type": [],
+            "urlRoot": "www.rclweb.net",
+            "urlPath": "",
+            "proxy": "yes",
+            "description": "Provides reviews and information about print and electronic resources for academic libraries, featuring over 85,000 titles in 117 subjects.",
+            "category": ["library-science"],
+            "onesearch": "no",
+            "altname": ["RCL"]
+            
         }
         ]
 }
