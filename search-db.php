@@ -147,6 +147,17 @@ elseif (strpos($dbName, 'oxford-art') > -1) {
     }
     
 }
+
+  elseif (strpos($dbName, 'resources') > -1) {
+    $urlBase = 'http://0-www.rclweb.net.lasiii.losrios.edu/';
+    if ($query !== '') {
+    $url = $urlBase . 'Search/Results?q=rcl-searchall%3A[' . $query . ']&op=1&qs=1';
+    }
+    else {
+        $url = $urlBase;
+    }
+    
+}
 elseif (strpos($dbName, 'films') > -1) {
     $homeLibrary = $_COOKIE['homeLibrary'];
     switch ($homeLibrary) {
