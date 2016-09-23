@@ -403,6 +403,14 @@ function checkCookies(a)
       }, 1000);
     }
   }
+  else if (a === 'lrGAOptOut') {
+    var userPref = getCookie(a);
+    if (userPref === 'y') {
+      $('#ga-status').prepend(' You have opted out of tracking. ' );
+      var optLink = $('#ga-opt-out');
+      optLink.html(optLink.html().replace(' &amp; opt out', ''));
+    }
+  }
 }
 $('#newwin-check').on('click', function ()
 {
@@ -426,6 +434,7 @@ $('#newwin-check').on('click', function ()
 });
 checkCookies('homeLibrary');
 checkCookies('newWindowLinks');
+checkCookies('lrGAOptOut');
 $('#choose-library button').on('click', (function ()
 {
     $('script[src*="libraryh3lp"]').remove();
@@ -502,3 +511,15 @@ $('.open-db-search').on('click', function ()
   }
 });
 
+$('#ga-opt-out').on('click', function(e) {
+  e.preventDefault();
+  var sHeight = screen.availHeight;
+  var winHeight = sHeight * .7;
+  var topOffset = sHeight * .15;
+  var sWidth = screen.width;
+  var winWidth = 700;
+  var leftOffset = (sWidth/2) - (winWidth/2);
+  var optPage = $(this).attr('href');
+  var optOutWin = window.open(optPage, 'optOut', 'height=' + winHeight + ', width=' + winWidth + ', menubar=no, left='+ leftOffset + ', top=' + topOffset + '');
+  optOutWin.focus();
+  });

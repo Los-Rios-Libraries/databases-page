@@ -32,3 +32,6 @@ echo "</div>\n";
 	<button><abbr title="American River College">arc</abbr></button> <button><abbr title="Cosumnes River College">crc</abbr></button> <button><abbr title="Folsom Lake College">flc</abbr></button> <button><abbr title="Sacramento City College">scc</abbr></button>
 </div>
 </aside>
+<aside id="ga-notice" class="gen-aside">
+  <p class="special">The Library uses Google Analytics to track activity on this site. <span id="ga-status"><a target="blank" id="ga-opt-out" href="../notes/google-analytics.php">Read more &amp; opt out.</a></span></p>
+</aside>
