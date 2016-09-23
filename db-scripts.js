@@ -501,15 +501,4 @@ $('.open-db-search').on('click', function ()
     document.getElementById(dbNameLower).focus();
   }
 });
-/*
-// hide crc chat
-function hideZ()
-{
-  $('.zopim').addClass('hidden');
-}
 
-function showZ()
-{
-  $('.zopim').removeClass('hidden');
-}
-*/
