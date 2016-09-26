@@ -3,6 +3,21 @@ function cmp($a, $b) // http://stackoverflow.com/a/4282423
 {
     return strcmp($a->name, $b->name);
 }
+function makeURL($root, $path,$proxy) {
+    $path = str_replace('&', '&amp;', $path);
+        if ($root !== '') {
+        if($proxy === 'yes') {
+            $url = 'http://0-' .$root . '.lasiii.losrios.edu/' .$path;
+        }   
+        else {
+            $url = 'http://' .$root .'/'.$path;
+        }
+    }
+    else {
+        $url = $path;
+    }
+    return $url;
+}
 
 function dbsByCat($dbcat) {
  global $dbs;
@@ -12,7 +27,7 @@ function dbsByCat($dbcat) {
  echo "<h2>" .$heading . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  include('makeURL.php'); // wasn't clear to me  how to make this works as a function, so including instead.
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
   if (in_array($dbcat, $db ->category)) {
    include('writeDBInfo.php');
    }
@@ -28,7 +43,7 @@ function dbsByFormat($format) {
  echo "<div id=\"format\" class=\"format category\"><h2>" .$formatHead ."</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  include('makeURL.php');
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
   if (in_array($format, $db ->type)) {
    include('writeDBInfo.php');
   }
@@ -46,7 +61,7 @@ function dbsByName($name) {
  echo "<div id=\"search-results\" class=\"category\">\n";
   echo "<ul>\n";
   foreach($dbs as $db) {
-  include('makeURL.php');
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
   $dbLower = strtolower($db -> name);
   if (strpos($dbLower, $query)> -1) {
 
@@ -69,7 +84,7 @@ function dbsByAlpha($letter) {
  echo "<div class=\"alpha category\"><h2>" .$letter . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  include('makeURL.php');
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
   $dbLower = strtolower($db -> name);
   if (strpos($dbLower, $letter) === 0) {
    if (isset($format)) {
