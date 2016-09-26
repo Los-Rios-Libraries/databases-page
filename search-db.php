@@ -200,34 +200,14 @@ elseif (strpos($vendor, 'salem') > -1) {
 
 elseif (strpos($vendor, 'naxos') > -1) {
     $urlBase = 'http://0-losrios.naxosmusiclibrary.com.lasiii.losrios.edu/';
-    $jazz = '';
     $remainderNax = 'google/searchgoogle.asp?googletext=' . $query;
-    if (strpos($dbName, 'jazz') > -1) {
-        $jazz = 'jazz/';
-    }
-    elseif (strpos($dbName, 'world') > -1) {
-        $jazz = 'world/';
-    }
     if ($query !== '') {
-    $url = $urlBase . $jazz . $remainderNax;
-    }
-    else {
-        $url = $urlBase . $jazz;
-    }
-    }
-elseif (strpos($vendor, 'conquest') > -1) {
-    if (strpos($dbName, 'ready') > -1) {
-
-    $urlBase = 'http://0-readyreference.data-planet.com.lasiii.losrios.edu/dataplanet/';
-    
-    }
-    if ($query !== '') {
-    $url = $urlBase . 'result-list/collections:DP-DATAPLANET/fullRecord:' . $query . '/';
+    $url = $urlBase .  $remainderNax;
     }
     else {
         $url = $urlBase;
     }
-}
+    }
 
 
 ?>
