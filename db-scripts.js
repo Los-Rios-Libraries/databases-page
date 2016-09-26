@@ -86,7 +86,7 @@ $('.alpha').each(function ()
 
 function checkZeros()
 { // if there are no entries at all, show suggestions.
-  if ((!($('.problem-description').length)) && (!($('.special').length)))
+  if ((!($('.problem-description').length)) && (!($('#main .special').length)))
   {
     $('#zero-notice').remove();
     if ($('#main .active').length === 0)
