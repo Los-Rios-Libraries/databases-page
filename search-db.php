@@ -116,7 +116,32 @@ elseif (strpos($dbName, 'pubmed') > -1) {
         $url = $urlBase . '?myncbishare=casccllib';
     }
 }
-
+elseif (strpos($dbName, 'gale-virtual') > -1) {
+    $urlBase = 'http://0-go.galegroup.com.lasiii.losrios.edu';
+    if ($query !== '') {
+        $homeLibrary = $_COOKIE['homeLibrary'];
+        switch ($homeLibrary) {
+            case 'arc':
+                $galeID = 'sacr22807';
+                break;
+            case 'scc':
+                $galeID = 'cclc_sac';
+                break;
+            case 'crc':
+                $galeID = 'sacr73031';
+                break;
+            case 'flc':
+                $galeID = 'sacr88293';
+                break;
+            default:
+                $galeID = 'sacr28903';
+            }
+        $url = $urlBase . '/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1';
+    }
+    else {
+        $url = 'http://0-infotrac.galegroup.com.lasiii.losrios.edu/itweb?db=GVRL';
+    }
+}
 elseif (strpos($vendor, 'american') > -1) {
     $urlBase = 'http://0-quod.lib.umich.edu.lasiii.losrios.edu/cgi/t/text/text-idx?c=acls';
     if ($query !== '') {
