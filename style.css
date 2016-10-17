@@ -263,6 +263,7 @@ aside { float:none !important;}
   #dbpage-query, #form-remainder {max-width:240px;}
 #main #multi-search {width:100%;}
 #auth-help, #lr-sign-in {float:none; width:auto;}
+#trial-dbs {display:table-cell;}
 
 
 
