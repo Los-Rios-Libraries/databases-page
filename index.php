@@ -218,6 +218,7 @@ echo '<script>location.replace("' .$urlRoot .'index.php?az&query=' .$query .'")<
 elseif (isset($format)) {
 // $urlRoot = 'http://www.library.losrios.edu/resources/databases/';
  dbsByFormat($format);
+ echo $alphaShowAll;
 // echo '<script>location.replace("' .$urlRoot .'index.php?az&format=' .$format .'")</script>';
 }
 else {
