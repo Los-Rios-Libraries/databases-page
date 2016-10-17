@@ -16,7 +16,23 @@
                      ],
                      "onesearch": "yes"
         },  
-   
+                  {
+        "name":"Safari Books Online",
+        "vendor": "ProQuest",
+        "top": "yes",
+        "type": [
+            "ebooks"
+                ],
+        "urlRoot": "trials.proquest.com",
+        "urlPath": "trials/trialSummary.action?view=subject&trialBean.token=36X7Q9INQ1S01U1HT1UH",
+        "proxy": "no",
+        "trial": "yes",
+        "description": "Provides over 40,000 technology, digital media, and business books and videos. Publishers include O'Reilly, Prentice Hall, Wiley, Adobe Press, and Peachpit. <strong>Trial access expires November 13.</strong>",
+        "category": [
+                     "ebooks", "computer-science", "business"
+                     ],
+                     "onesearch": "no"
+        },    
                                        {
         "name":"PsycARTICLES",
         "vendor": "EBSCO",

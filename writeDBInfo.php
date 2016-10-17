@@ -24,7 +24,7 @@ $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"
 
 $name = $db -> name;
 // if ((strpos($name, 'Auto') > -1) || (strpos($name, 'Artstor') > -1) || (strpos($name, 'Lexis') > -1) || (strpos($name, 'Country') > -1) ) {
- if (preg_match('/Auto|Artstor|Lexis|Country|Opposing|ScienceDirect|Statista|CollegeSource/', $name) === 1) {
+ if (preg_match('/Auto|Artstor|Lexis|Country|Opposing|Safari|ScienceDirect|Statista|CollegeSource/', $name) === 1) {
  $searchButton = '';
 }
 echo $searchButton;
