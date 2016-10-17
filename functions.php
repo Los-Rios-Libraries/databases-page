@@ -3,14 +3,19 @@ function cmp($a, $b) // http://stackoverflow.com/a/4282423
 {
     return strcmp($a->name, $b->name);
 }
-function makeURL($root, $path,$proxy) {
+function makeURL($root, $path,$proxy, $ssl) {
     $path = str_replace('&', '&amp;', $path);
+    $pro = 'http';
         if ($root !== '') {
         if($proxy === 'yes') {
-            $url = 'http://0-' .$root . '.lasiii.losrios.edu/' .$path;
+            if ($ssl === 'yes') {
+                $root = str_replace('.', '-', $root);
+                $pro = 'https';
+            }
+            $url = $pro . '://0-' .$root . '.lasiii.losrios.edu/' .$path;
         }   
         else {
-            $url = 'http://' .$root .'/'.$path;
+            $url = $pro . '://' .$root .'/'.$path;
         }
     }
     else {
