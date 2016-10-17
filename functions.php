@@ -32,7 +32,7 @@ function dbsByCat($dbcat) {
  echo "<h2>" .$heading . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   if (in_array($dbcat, $db ->category)) {
    include('writeDBInfo.php');
    }
@@ -48,7 +48,7 @@ function dbsByFormat($format) {
  echo "<div id=\"format\" class=\"format category\"><h2>" .$formatHead ."</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   if (in_array($format, $db ->type)) {
    include('writeDBInfo.php');
   }
@@ -66,7 +66,7 @@ function dbsByName($name) {
  echo "<div id=\"search-results\" class=\"category\">\n";
   echo "<ul>\n";
   foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   $dbLower = strtolower($db -> name);
   if (strpos($dbLower, $query)> -1) {
 
@@ -89,7 +89,7 @@ function dbsByAlpha($letter) {
  echo "<div class=\"alpha category\"><h2>" .$letter . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy);
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   $dbLower = strtolower($db -> name);
   if (strpos($dbLower, $letter) === 0) {
    if (isset($format)) {
@@ -129,7 +129,7 @@ function trialDbs() {
  global $dbs;
   echo "<ul>\n";
  foreach($dbs as $db) {
-  include('makeURL.php'); // wasn't clear to me  how to make this works as a function, so including instead.
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   if (array_key_exists('trial', $db)) {
    include('writeDBInfo.php');
    }
