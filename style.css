@@ -55,7 +55,7 @@ input[type="radio"] {display:inline-block;}
  #pubfinder {position:absolute; right:50px; bottom:10px;}
  #pubfinder a:link, #pubfinder a:visited {color:#fff; border-bottom:1px solid #fff; font-size:1em; }
  #pubfinder a:hover, #pubfinder a:focus {text-decoration:none;}
- #main { width:50%; margin-left:25%; float:left; padding-right:18px; /* min-height:800px; */ margin-bottom:200px; position:relative;}
+ #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:600px; margin-bottom:200px; position:relative;}
  h1 a:link, h1 a:visited {color:#fff;}
  #lr-sign-in label {font-size:1.3em;}
  #main nav {font-size:1.2em; display:table;}
@@ -220,9 +220,9 @@ table.patFunc {border-collapse: collapse;}
 #ft-content-container a:hover, #ft-content-container a:focus {color:#E74700; text-decoration:none;}
  @media screen and (max-width:1100px) {
 
- #main {width:75%; /* min-height: 100px; */ margin-bottom:10px !important;}
+ #main {width:75%;  min-height: initial; margin-bottom:10px !important;}
  #pubfinder {right:10px;}
- #trial-dbs { width:70%; margin:0 auto 10px;}
+ #trial-dbs { width:70%; margin:0 auto 10px; vertical-align:top;}
  #filters {width:30%; margin:0 auto 10px; margin-top:20px;clear:both; margin-top:0;}
 .fourothree {margin-left:-25%; margin-right:50px;}
  #library-help {width:30%; }
