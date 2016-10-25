@@ -6,7 +6,7 @@ em {font-style:italic;}
  a {text-decoration:none;}
  strong {font-weight:bold;}
  h1, h2, h3 {font-weight:normal;}
- ol {margin-left:2em; margin-bottom:10px;}
+ ol {padding-left:2em; padding-bottom:10px;}
  #skip {position:absolute; left:-99999px;}
  #skip:focus {position:static;}
  header {position:relative; padding:0 0 10px; margin-bottom: 20px; text-align:center; background:#4D6684; color:#fff;}
