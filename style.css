@@ -79,6 +79,7 @@ input[type="radio"] {display:inline-block;}
  .fourothree h3 {font-size:1.3em; padding-left:10px;}
  
  .category ul, .special p, #hide-message {list-style-type:none; padding:10px; background:#f5f5f5; margin-top:0;}
+ .special ol {background:#f5f5f5;}
 .fourothree ul {list-style-type: disc; padding-left:2em }
 .fourothree li {margin-top:1.3em;}
 .fourothree li:first-child {margin-top:0;}
