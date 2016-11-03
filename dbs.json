@@ -208,6 +208,22 @@
                      ],
                      "onesearch": "yes"
         },
+               {
+            "name": "UpToDate",
+            "vendor": "Wolters Kluwer",
+            "top": "no",
+            "type": [
+                "reference", "reports"
+            ],
+            "urlRoot": "www.uptodate.com",
+            "urlPath": "",
+            "proxy": "yes",
+            "trial": "yes",
+            "description": "Evidence-based clinical resource that includes a collection of medical and patient information, access to Lexi-comp drug monographs and drug-to-drug, drug-to-herb and herb-to-herb interactions information, and a number of medical calculators. <strong>Trial access expires November 30</strong>.",
+            "category": ["health-&amp;-medicine"],
+            "onesearch": "no"
+                       
+        },
                 {
         "name":"Consumer Health Complete",
         "vendor": "EBSCO",
