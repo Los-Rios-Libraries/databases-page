@@ -4,7 +4,7 @@
 	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>
 	</div>
 <div>
-    <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="161" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
+    <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="135" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
 </div>
     <div id="arc-appt">
         <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><img width="136" src="help/arc-img/ResearchAppts.png" alt="Research Appointments"></a>
