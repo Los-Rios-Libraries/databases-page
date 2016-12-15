@@ -1,6 +1,7 @@
 <!-- alt text for images should match text in all elements, to aid with Google Analytics tracking -->
 <div id="arc-help">
 <div>
+	<p>>>>If you are enrolled in Winter Intersession course(s) and cannot access the library databases, please call the Circulation desk for assistance at 916.484.8455, during Service Window hours.<<<</p>
 	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>
 	</div>
 <div>
