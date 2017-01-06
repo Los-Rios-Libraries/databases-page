@@ -17,23 +17,6 @@
                      "onesearch": "yes"
         },
         {
-        "name":"NoodleTools",
-        "vendor": "NoodleTools, Inc.",
-        "top": "no",
-        "type": [
-            "citation-management"
-                ],
-        "urlRoot": "",
-        "urlPath": "special.php?pageTitle=noodletools&url=https%3A%2F%2Fmy.noodletools.com%2Flogon%2Fsignin%3Fgroup%3D21577%26code%3D9928",
-        "proxy": "no",
-        "trial": "yes",
-        "description": "Helps you organize your research and cite your sources in MLA, APA, and Chicago styles. Also offers the ability to take notes and create outlines. <strong>Trial access expires December 15.</strong>",
-        "category": [
-                     ""
-                     ],
-                     "onesearch": "no"
-        },  
-                                 {
         "name":"PsycARTICLES",
         "vendor": "EBSCO",
         "top": "yes",
