@@ -212,7 +212,7 @@ table.patFunc {border-collapse: collapse;}
 .patFuncFinesEntryTitle {background:#F5F5F5; font-size:1.4em; border-bottom:2px solid #ccc;}
 .patFuncFinesEntryDetail td {border-bottom:none;}
 /* footer */
-    footer#lr-footer {clear:both; width: 100%; color: #fff;position: absolute; z-index:100; background:#fff; bottom: 10px; margin: 0 auto; font-size:80%;   }
+#lr-footer {clear:both; width: 100%; color: #fff;position: absolute; z-index:100; background:#fff; bottom: 20px; margin: 0 auto; font-size:80%;   }
 #ft-content-container {display: table; width: 100%;max-width:1100px; margin: 0 auto; /* background: #3d3d3d;  */ padding: 5px; border-top: 2px solid #3d3d3d; /* border-radius: 4px 4px 0 0; */ color:#3d3d3d;}
 #col-container {    width:90%;    margin:0 auto;    text-align:center;}
 #ft-head {text-align: center;font-size: 1.4em;border-bottom: 1px solid #fff; width: 50%; margin: 0 auto 20px;}
@@ -233,7 +233,7 @@ table.patFunc {border-collapse: collapse;}
 aside {float:none !important; margin-left:50px; width:auto !important; display:inline-block; padding:4px;}
     aside:last-of-type {margin-bottom:200px;}
    #patNameAddress {display:table; margin-left:25%;}
-    #lr-footer {position:static !important;}
+    #lr-footer {position:static !important; padding-bottom:20px;}
     #ft-content-container {border-radius:0;}
  }
  @media screen and (max-width: 780px)
