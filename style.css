@@ -55,7 +55,7 @@ input[type="radio"] {display:inline-block;}
  #pubfinder {position:absolute; right:50px; bottom:10px;}
  #pubfinder a:link, #pubfinder a:visited {color:#fff; border-bottom:1px solid #fff; font-size:1em; }
  #pubfinder a:hover, #pubfinder a:focus {text-decoration:none;}
- #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:600px; margin-bottom:200px; position:relative;}
+ #main { width:50%; margin-left:25%; float:left; padding-right:18px; min-height:680px; margin-bottom:200px; position:relative;}
  h1 a:link, h1 a:visited {color:#fff;}
  #lr-sign-in label {font-size:1.3em;}
  #main nav {font-size:1.2em; display:table;}
