@@ -257,7 +257,22 @@
                      ],
                      "onesearch": "partial"
         },
-  
+          {
+        "name":"Rehabilitation Reference Center",
+        "vendor": "EBSCO",
+        "type": [
+            "reference"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=rrc",
+        "proxy": "yes",
+        "ssl": "yes",
+        "description": "Includes more than 500 clinical reviews, more than 150 research instruments, information on over 11,700 drugs and their manufacturers, more than 9,800 exercise images, reference handbooks, guidelines from the National Guidelines Clearinghouse, nearly 1,500  patient education topics in both English & Spanish, and news and clinical updates.",
+        "category": [
+                     "health-&amp;-medicine"
+                     ],
+                     "onesearch": "yes"
+        },
   
         {
                         
