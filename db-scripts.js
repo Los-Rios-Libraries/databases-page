@@ -269,10 +269,17 @@ $('#multi-search').on('submit', function ()
 // cookies
 function setCookie(cname, cvalue, exdays)
 {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  var expires = 'expires=' + d.toUTCString();
-  document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/;domain=losrios.edu';
+  var expires;
+  if (exdays === null) {
+    expires = '';
+  }
+  else {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    expires = 'expires=' + d.toUTCString() + '; ';
+  }
+  
+  document.cookie = cname + '=' + cvalue + '; ' + expires + 'path=/;domain=losrios.edu';
 }
 $('.headnav a, #choose-library button').on('click', function ()
 { // set home library cookie when people click to their college or select college from menu in box.
