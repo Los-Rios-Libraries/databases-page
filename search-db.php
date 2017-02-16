@@ -241,6 +241,15 @@ elseif (strpos($vendor, 'naxos') > -1) {
         $url = $urlBase;
     }
     }
+elseif (strpos($vendor, 'kanopy') > -1) {
+    $urlBase = 'https://0-losrios-kanopystreaming-com.lasiii.losrios.edu/';
+    if ($query !== '') {
+    $url = $urlBase .  's?query=' . $query;
+    }
+    else {
+        $url = $urlBase;
+    }
+    }
 
 
 ?>
