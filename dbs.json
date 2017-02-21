@@ -815,6 +815,7 @@
         "urlRoot": "library.cqpress.com",
         "urlPath": "cqresearcher/",
         "proxy": "yes",
+        "ssl": "yes",
         "description": "This full-text database provides detailed reports that include background, a chronology, current and future trends, related topics and a bibliography on current and controversial topics. This is an excellent place to start research on a controversial or hot topic.",
         "category": [
                      "general","controversial-topics"
@@ -880,6 +881,7 @@
         "urlRoot": "www.jstor.org",
         "urlPath": "action/showAdvancedSearch",
         "proxy": "yes",
+        "ssl": "yes",
         "description": "Core journals from the humanities, social sciences, education and other fields. Full-text coverage is provided from the earliest issues to within a few years of the current publication. Los Rios subscribes to JSTOR Arts & Sciences Collections I, II, III and V.",
         "category": [
                      "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
