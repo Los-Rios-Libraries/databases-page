@@ -11,7 +11,7 @@ $(function ()
     $('#db-no').text(dbNoS);
     if (dbNo === 1)
     {
-      numberDisplay.text(numberDisplay.text().replace('Databases', 'Database'));
+      numberDisplay.html(numberDisplay.html().replace('Databases', 'Database'));
     }
     numberDisplay.attr('class', 'show');
   }
