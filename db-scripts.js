@@ -1,9 +1,7 @@
      // db autocomplete
       var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "Environment Complete", "ERIC", "Explora", "Films on Demand", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Grove Art Online", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "Kanopy", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "MasterFILE Premier", "MEDLINE", "Military & Government Collection", "Naxos Music Library", "Naxos Music Library Jazz Collection", "News", "Newspaper Source Plus", "OneSearch", "Opposing Viewpoints in Context", "Oxford Art Online", "Oxford English Dictionary", "PsycARTICLES", "Psychology & Behavioral Sciences Collection", "PubMed", "Regional Business News", "Rehabilitation Reference Center", "Religion & Philosophy Collection", "RCL", "Resources for College Libraries", "Safari Books Online", "Salem Press", "Small Business Reference Center", "ScienceDirect", "Scholarly Journals", "SocINDEX with Full Text", "Statista", "Trade Publications", "Video"];
-
-$(function ()
-{
-  var dbNo = $('#main .db-name').length;
+function showDBNos() {
+  var dbNo = $('#main .db-name:visible').length;
   var numberDisplay = $('#show-db-no');
   if (dbNo < 70)
   {
@@ -19,6 +17,10 @@ $(function ()
   {
     numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
   }
+}
+$(function ()
+{
+
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
     $(this).text($(this).text().replace('Acls', 'ACLS').replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
