@@ -504,6 +504,22 @@
                      "onesearch": "yes"
         },
                        {
+        "name":"INTELECOM",
+        "vendor": "INTELECOM Intelegent Telecommunications",
+        "top": "no",
+        "type": [
+            "video"
+                ],
+        "urlRoot": "searchcenter.intelecomonline.net",
+        "urlPath": "SearchCenter.aspx",
+        "proxy": "yes",
+        "col": "s",
+        "description": "Streaming video from a variety of academic and vocational fields. (Access limited to Sacramento City College.)",
+        "category": [
+                     ],
+                     "onesearch": "yes"
+        },
+        {
         "name":"Newspaper Source Plus",
         "vendor": "EBSCO",
         "top": "no",
