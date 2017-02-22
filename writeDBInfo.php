@@ -19,7 +19,11 @@ $descParts = preg_split('/\. /', $description, 2);
 $description = $descParts[0] . ". <button class=\"desc-readmore\">Read more</button><span class=\"hidden desc-remainder\">" .$descParts[1] . "</span>";
 }
 */
-echo "<li class=\"db-entry active " .$formatList . " " .$trialclass . " " . $topPick . "\">\n";
+$dataCol = '';
+if ($db->col !== null) {
+ $dataCol = ' data-college="' . $db -> col . '" ';
+}
+echo "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " " . $topPick . "\">\n";
 $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
 
 $name = $db -> name;
