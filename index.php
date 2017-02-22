@@ -242,7 +242,7 @@ include_once('footer.php');
 ?>
 <img id="loader" alt="loading" src="loader.gif" class="hidden">
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
 <!--  <script src="db-scripts.js?1123a"> 
  
