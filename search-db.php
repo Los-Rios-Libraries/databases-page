@@ -39,9 +39,17 @@ if ($vendor === 'ebsco') {
             $url = $ebscoBase . '&profile=eds&defaultdb=nlebk';
         }
     }
+        elseif (strpos($dbName, 'small') > -1) {
+        if ($query !== '') {
+        $url = $ebscoBase . '&direct=true&profile=sbrc&bquery=' . $query .'&site=sbrc-live&scope=site';
+        }
+        else {
+        $url = $ebscoBase . '&profile=sbrc';
+        }
+    }
     elseif (strpos($dbName, 'business') > -1) {
         if ($query !== '') {
-        $url = $ebscoBase . '&direct=true&db=bth&bquery=' . $query .'&site=bsi-live&scope=site';
+        $url = $ebscoBase . '&direct=true&bquery=' . $query .'&profile=bsc&site=bsc-live&scope=site';
         }
         else {
         $url = $ebscoBase . '&profile=bsc';
