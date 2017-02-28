@@ -180,16 +180,7 @@ elseif (strpos($dbName, 'oxford-art') > -1) {
     }
     
 }
-elseif (strpos($dbName, 'uptodate') > -1) {
-    $urlBase = 'https://0-www-uptodate-com.lasiii.losrios.edu/';
-    if ($query !== '') {
-        $url = $urlBase . 'contents/search?search=' . $query . '&sp=&searchType=PLAIN_TEXT&source=USER_INPUT&searchControl=TOP_PULLDOWN&searchOffset=1&autoComplete&language=&max=0';
-    }
-    else {
-        $url = $urlBase;
-    }
-}
-  elseif (strpos($dbName, 'resources') > -1) {
+ elseif (strpos($dbName, 'resources') > -1) {
     $urlBase = 'http://0-www.rclweb.net.lasiii.losrios.edu/';
     if ($query !== '') {
     $url = $urlBase . 'Search/Results?q=rcl-searchall%3A[' . $query . ']&op=1&qs=1';
