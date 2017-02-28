@@ -7,8 +7,8 @@ function makeURL($root, $path,$proxy, $ssl) {
     $path = str_replace('&', '&amp;', $path);
     $pro = 'http';
         if ($root !== '') {
-        if($proxy === 'yes') {
-            if ($ssl === 'yes') {
+        if($proxy === true) {
+            if ($ssl === true) {
                 $root = str_replace('.', '-', $root);
                 $pro = 'https';
             }
