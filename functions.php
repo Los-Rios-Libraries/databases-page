@@ -23,7 +23,68 @@ function makeURL($root, $path,$proxy, $ssl) {
     }
     return $url;
 }
-
+function writeDBInfo($db, $url) {
+    global $trial;
+    global $query;
+    global $category;
+    global $format;
+    global $category;
+    $formatList = implode(' ', $db -> type);
+    $topPick = '';
+    if (strpos($db->top, 'yes') !== false) {
+        $topPick = 'top-pick';
+    }
+    $description = $db -> description;
+    if (isset($db -> trial)) {
+        $trialclass = 'trial';
+    }
+    else {
+        $trialclass = '';
+    }
+    $dataCol = '';
+    if ($db->col !== null) {
+        $dataCol = ' data-college="' . $db -> col . '" ';
+    }
+    $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " " . $topPick . "\">\n";
+    $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
+    $name = $db -> name;
+    if (preg_match('/Auto|Artstor|Lexis|Country|CQ|INTELECOM|Opposing|Safari|ScienceDirect|Statista|CollegeSource/', $name) === 1) {
+        $searchButton = '';
+    }
+    $output .= $searchButton;
+    $output .= "<h3><a class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
+    $output .= "<p class=\"db-desc\">" . $description . "</p>\n";
+    if ((isset($format)) || (isset($query)) || (isset($category))) {
+        $output .= "<dl class=\"internal-links\">\n";
+        if (!isset($category)) {
+            $output .= "<dt class=\"cat-list\">Categories:</dt> ";
+            $dbCategories = $db -> category;
+            for ($m = 0; $m < count($dbCategories); $m++) {
+                $dbCategory = $dbCategories[$m];
+                $viewCategory = str_replace('-', ' ', $dbCategory);
+                $viewCategory = ucwords($viewCategory);
+                $dbCategory = str_replace('&amp;', '%26amp%3B', $dbCategory);
+                $catURL = 'index.php?category=' .$dbCategory ;
+                $catString = '<dd class="db-cat"><a class="desc-category" href="' .$catURL .'">' . $viewCategory . '</a></dd>';
+                $output .= $catString;
+            }
+        }
+        $output .= "<dt class=\"format-list\">Types:</dt>\n";
+        $dbFormats = $db -> type;
+        for ($n = 0; $n < count($dbFormats); $n++) {
+            $dbFormat = $dbFormats[$n];
+            $viewFormat = str_replace('-', ' ', $dbFormat);
+            $viewFormat = ucwords($viewFormat);
+            $dbFormat = str_replace('&amp;', '%26amp%3B', $dbFormat);
+            $formatURL = 'index.php?az&amp;format=' .$dbFormat ;
+            $formatString = '<dd class="db-format"><a class="desc-format" href="' .$formatURL .'">' . $viewFormat . '</a></dd>';
+            $output .= $formatString;
+        };
+        $output .= "</dl>\n";
+    }
+    $output .= "</li>\n";
+    return $output;
+}
 function dbsByCat($dbcat) {
  global $dbs;
  global $category;
@@ -34,7 +95,7 @@ function dbsByCat($dbcat) {
  foreach($dbs as $db) {
   $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   if (in_array($dbcat, $db ->category)) {
-   include('writeDBInfo.php');
+   echo writeDBInfo($db, $url);
    }
    }
    echo "</ul>\n";
@@ -50,7 +111,8 @@ function dbsByFormat($format) {
  foreach($dbs as $db) {
   $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   if (in_array($format, $db ->type)) {
-   include('writeDBInfo.php');
+//   include('writeDBInfo.php');
+echo writeDBInfo($db, $url);
   }
  }
  echo "</ul>\n";
@@ -71,7 +133,7 @@ function dbsByName($name) {
   if (strpos($dbLower, $query)> -1) {
 
 
-      include('writeDBInfo.php');
+      echo writeDBInfo($db, $url);
       
       
       }
@@ -94,7 +156,7 @@ function dbsByAlpha($letter) {
   if (strpos($dbLower, $letter) === 0) {
    if (isset($format)) {
     if (in_array($format, $db -> type)) {
-     include ('writeDBInfo.php');
+     echo writeDBInfo($db, $url);
      
      }
      }
@@ -112,12 +174,12 @@ function dbsByAlpha($letter) {
  //    echo '<p>altNames: ' . $altNames . '</p>';
  //(strpos($categories, $query > -1)) || (strpos($types, $query > -1))  many false positives...     
       if ((strpos($dbLower, $query) > -1) || (strpos($altNames, $query) > -1) ||(strpos($categories, $query) > -1) || (strpos($types, $query) > -1) ||(strpos($vendorLower, $query) > -1))  {
-      include('writeDBInfo.php');
+      echo writeDBInfo($db, $url);
       }
      }
  
      else {
-      include('writeDBInfo.php');
+      echo writeDBInfo($db, $url);
       }
       }
       }
@@ -131,7 +193,7 @@ function trialDbs() {
  foreach($dbs as $db) {
   $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   if (array_key_exists('trial', $db)) {
-   include('writeDBInfo.php');
+   echo writeDBInfo($db, $url);
    }
    }
    echo "</ul>\n";
