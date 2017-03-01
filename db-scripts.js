@@ -23,7 +23,7 @@ $(function ()
 
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
-    $(this).text($(this).text().replace('Acls', 'ACLS').replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
+    $(this).text($(this).text().replace('Acls', 'ACLS').replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Crc', 'CRC').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
   });
   // contract nav by default on small screens
   var navList = $('#main-nav');
