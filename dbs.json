@@ -31,6 +31,22 @@
                      "psychology"
                      ],
                      "onesearch": "yes"
+        },
+        {
+        "name":"Crc Handbook of Chemistry and Physics",
+        "vendor": "CRC Press",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "hbcponline.com",
+        "urlPath": "",
+        "proxy": true,
+        "trial": true,
+        "description": "Tables of scientific data, nomenclature, and physical properties in chemistry, geology, physics, and environmental sciences. <strong>Trial access expires March 31.</strong>",
+        "category": [
+                     "chemistry", "physics", "encyclopedias,-dictionaries,-reference", "environmental-science"
+                     ],
+                     "onesearch": "no"
         },  
 
         {
