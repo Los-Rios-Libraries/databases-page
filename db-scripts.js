@@ -163,8 +163,8 @@ $('#multi-search input[type=radio]').on('click', function ()
       e.slideUp().addClass('hidden');
     }
   });
-  a = $(this);
-  b = $('#dbpage-query');
+  var a = $(this);
+  var b = $('#dbpage-query');
   checkCookies();
   var newWins = getCookie('newWindowLinks');
   if (newWins === 'yes')
