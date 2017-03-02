@@ -222,8 +222,13 @@ $('#multi-search input[type=radio]').on('click', function ()
     form.removeAttr('target');
     b.autocomplete(
     {
-      disabled: false,
-      source: dbNames,
+ //     source: dbNames,
+   source: function( request, response ) {
+          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+          response( $.grep( dbNames, function( item ){
+              return matcher.test( item );
+          }) );
+      },
       select: function (event, ui)
       {
         if (ui.item)
