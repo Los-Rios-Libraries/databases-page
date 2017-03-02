@@ -18,9 +18,55 @@ function showDBNos() {
     numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
   }
 }
+function defaultAuto(el) {
+       el.autocomplete(
+{
+  source: function (request, response)
+  {
+    $.getJSON(
+    {
+      url: 'https://widgets.ebscohost.com/prod/simplekey/autocomplete/autocomp.php',
+      data: {
+        q: encodeURIComponent(request.term)
+      }
+    }).done(function (data)
+    {
+      //        console.log(data);
+      data = JSON.parse(data); // turn response into JSON object
+      var array = $.map(data, function (value, index) // convert to array
+      {
+        return [value];
+      });
+      var output = []; // create array of suggested terms, which is what jQuery UI expects
+      var arrayVals = array[2]; // this is where the objects are in EBSCO's response
+      for (var i = 0; i < arrayVals.length; i++)
+      {
+        output.push(arrayVals[i].term); // push suggestions into the array
+        response(output); // sends the array to jQuery ui - needs to be done inside the loop so it updates as you type
+      }
+    })
+    .fail(function(a,b,c) {
+        
+        ga('send', 'event', 'eds autosuggest', 'error', c);
+        });
+  },
+  //   minLength: 2,
+  select: function (event, ui)
+  {
+    if (ui.item)
+        {
+          el.val(ui.item.value);
+        }
+
+        $('#multi-search').submit();
+  }
+});
+    
+    
+  }
 $(function ()
 {
-
+  defaultAuto($('#dbpage-query'));
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
     $(this).text($(this).text().replace('Acls', 'ACLS').replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Crc', 'CRC').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
@@ -191,13 +237,13 @@ $('#multi-search input[type=radio]').on('click', function ()
   }
   else
   {
-    b.autocomplete(
-    {
-      disabled: true
-    });
+    defaultAuto(b);
+
   }
+  
   a.parent().next().slideDown().removeClass('hidden');
 });
+
 // google analytics events
 $('.db-name').on('click', function ()
 {
