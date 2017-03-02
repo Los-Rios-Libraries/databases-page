@@ -118,32 +118,7 @@ function showSearch(form, input)
   //   but.on('click', function() {
   //    hideSearch(form, but);
   //  });
-  $('#search-db').on('click', function() {
-  $("#dbpage-query").autocomplete(
-  {
-    
-    source: function (request, response)
-    {
- 
-      var results = $.ui.autocomplete.filter(dbNames, request.term);
-      response(results.slice(0, 5));
-    },
-    /*    source: function(request, response) {
-      var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(request.term), "i");
-      response($.grep(dbNames, function(item) {
-        return matcher.test(item);
-      }));
-    },*/
-    select: function (event, ui)
-    {
-      if (ui.item)
-      {
-        $(this).val(ui.item.value);
-      }
-      $('#multi-search').submit();
-    }
-  });
-  });
+
 }
 
 function hideSearch(form, input)
