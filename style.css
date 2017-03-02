@@ -36,8 +36,8 @@ padding-bottom: 2px;
 input[type="radio"] {display:inline-block;}
 .search-exp {margin-left:2em; box-shadow: inset 0px 1px 10px -3px #000000; padding:.2em .5em;}
 #form-closer {position:absolute; bottom:4px; right:4px; cursor: pointer;}
-
-.ui-menu-item:hover, .ui-state-focus {background:#4D6684; color:#fff;}
+.ui-menu {border:1px solid #ccc; border-radius: 0 0 4px 4px;}
+.ui-menu-item:hover, .ui-menu-item:focus, .ui-state-focus {background:#4D6684; color:#fff;}
 
 
 #head-nav ul {text-align: right; }
