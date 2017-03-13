@@ -878,7 +878,7 @@
                 ],
         "urlRoot": "losrios.kanopystreaming.com",
         "urlPath": "",
-        "proxy": true,
+        "proxy": false,
         "ssl": true,
         "description": "Provides streaming video, including feature films, documentaries, and educational videos from a variety of publishers. <strong>Trial access expires March 31.</strong>",
         "trial": "yes",
