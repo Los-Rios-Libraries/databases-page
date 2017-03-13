@@ -6,11 +6,13 @@ function cmp($a, $b) // http://stackoverflow.com/a/4282423
 function makeURL($root, $path,$proxy, $ssl) {
     $path = str_replace('&', '&amp;', $path);
     $pro = 'http';
+    if ($ssl === true) {
+        $pro = 'https';
+    }
         if ($root !== '') {
         if($proxy === true) {
             if ($ssl === true) {
                 $root = str_replace('.', '-', $root);
-                $pro = 'https';
             }
             $url = $pro . '://0-' .$root . '.lasiii.losrios.edu/' .$path;
         }   
