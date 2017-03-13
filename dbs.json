@@ -900,7 +900,8 @@
         "category": [
                      "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
                      ],
-                     "onesearch": "yes"
+                     "onesearch": "yes",
+                     "altname": ["GVRL"]
         }, 
         
                 {
