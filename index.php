@@ -105,6 +105,9 @@ include_once('head.php');
 <?php
 include_once('header.php');
 ?>
+<!-- 
+<div id="problem-notification" style="width:80%; margin:10px auto;">text here</div>
+-->
 <nav id="nav">
  
  <div id="tabs">
