@@ -140,6 +140,8 @@ abbr[title="Hide"] {bottom:10px; text-shadow: -2px -2px #4D6684;}
 /* #filters.scrolled {position:fixed;right:0;} */
 #show-all, .panel-closer, #hide-page {background:#1499D3; padding:8px; color: #fff; font-weight:bold; border:none; border-radius:8px; display:inline-block; cursor: pointer; }
 #show-all:hover, #show-all:focus, .panel-closer:hover, .panel-closer:focus, #hide-page:hover, #hide-page:focus {background:#4D6684; }
+#alt-search {margin-top:1em;}
+#check-search-query {font-weight:bold;}
 .panel-closer {text-align:right;}
 .panel-closer {position:absolute; right:4px; bottom:4px;}
 #ga-note p {margin-bottom:1em;}
