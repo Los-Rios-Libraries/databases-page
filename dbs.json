@@ -832,7 +832,7 @@
         "urlRoot": "library.cqpress.com",
         "urlPath": "cqresearcher/",
         "proxy": true,
-        "ssl": true,
+        "ssl": false,
         "description": "This full-text database provides detailed reports that include background, a chronology, current and future trends, related topics and a bibliography on current and controversial topics. This is an excellent place to start research on a controversial or hot topic.",
         "category": [
                      "general","controversial-topics"
