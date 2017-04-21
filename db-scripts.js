@@ -180,6 +180,7 @@ function showSearch(form, input)
   form.slideDown().removeClass('hidden');
   //    $('#dbpage-query').focus();
   //     input.off(input, 'focus', showSearch);
+   $('#dbpage-query-submit').removeClass('hidden');
   $('#form-closer').on('click', (function (e)
   {
     e.preventDefault();
@@ -193,6 +194,7 @@ function showSearch(form, input)
 
 function hideSearch(form, input)
 {
+  $('#dbpage-query-submit').addClass('hidden');
   form.slideUp().addClass('hidden');
   input.removeClass('form-emphasis');
   input.on('click', function ()
