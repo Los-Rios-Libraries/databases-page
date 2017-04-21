@@ -34,23 +34,6 @@
         "altname": ["psycharticles"]
         },
         {
-        "name":"Crc Handbook of Chemistry and Physics",
-        "vendor": "CRC Press",
-        "type": [
-            "reference"
-                ],
-       "urlRoot": "hbcponline.com",
-        "urlPath": "",
-        "proxy": true,
-        "trial": true,
-        "description": "Tables of scientific data, nomenclature, and physical properties in chemistry, geology, physics, and environmental sciences. <strong>Trial access expires March 31.</strong>",
-        "category": [
-                     "chemistry", "physics", "encyclopedias,-dictionaries,-reference", "environmental-science"
-                     ],
-                     "onesearch": "no"
-        },  
-
-        {
         "name":"America: History and Life with Full Text",
         "vendor": "EBSCO",
         "top": "yes",
@@ -869,22 +852,6 @@
         "description": "Over 20,000 full-length videos available for streaming from a range of devices. Includes the Master Academic Package, Master Career &amp; Tech Ed Package, and Archival Films &amp; Newsreels Collection.",
         "category": [
                      "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
-                     ],
-                     "onesearch": "yes"
-        },
-                              {
-        "name":"Kanopy",
-        "vendor": "Kanopy",
-        "type": [
-            "video"
-                ],
-        "urlRoot": "losrios.kanopystreaming.com",
-        "urlPath": "",
-        "proxy": false,
-        "ssl": true,
-        "description": "Provides streaming video, including feature films, documentaries, and educational videos from a variety of publishers. <strong>Trial access expires March 31.</strong>",
-        "trial": "yes",
-        "category": [
                      ],
                      "onesearch": "yes"
         },
