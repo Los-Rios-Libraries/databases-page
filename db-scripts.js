@@ -536,54 +536,8 @@ $('.open-db-search').on('click', function ()
 $('#ga-opt-out').on('click', function(e) {
   e.preventDefault();
   var sHeight = screen.availHeight;
-  var winHeight = sHeight * .7;
-  var topOffset = sHeight * .15;
-  var sWidth = screen.width;
-  var winWidth = 700;
-  var leftOffset = (sWidth/2) - (winWidth/2);
-  var optPage = $(this).attr('href');
-  var optOutWin = window.open(optPage, 'optOut', 'height=' + winHeight + ', width=' + winWidth + ', menubar=no, left='+ leftOffset + ', top=' + topOffset + '');
-  optOutWin.focus();
-  });
-$('#remove-proxy').on('click', function() {
-  removeProxy();
-  setCookie('dbProxy', 'removed', null);
-  
-  
-});
-var proxySet = getCookie('dbProxy');
-if (proxySet === 'removed') {
-  removeProxy();
-}
-function removeProxy() {
-    $('.db-name').each(function() {
-    var h = $(this).attr('href');
-    if (h.indexOf('//0-') > -1) {
-     var deProxy = h.replace('//0-', '//');
-     if (h.indexOf('https') > -1) {
-      var parts = deProxy.split('.edu/');
-      parts[0] = parts[0].replace(/\-/g, '.').replace(/$/, '.edu/');
-      deProxy = parts.join('');
-      console.log(deProxy);
-     }
-     deProxy = deProxy.replace('.lasiii.losrios.edu', '');
-     $(this).attr('href', deProxy); 
-    }
-  });
-    var proxyDiv = $('#proxy');
-  $('#remove-proxy').attr('id', 'add-proxy').html('&#8635; Restore proxy string to URLs');
-  $('<p class="special">Proxy string has been removed from URLs; databases may not be accessible.</p>').hide().prependTo(proxyDiv).fadeIn();
-  $('#add-proxy').on('click', function() {
-    setCookie('dbProxy', 'restored', null);
-    proxyDiv.find('p').remove();
-    proxyDiv.fadeOut('fast');
-    location.reload();
-  });
-}click', function(e) {
-  e.preventDefault();
-  var sHeight = screen.availHeight;
-  var winHeight = sHeight * .7;
-  var topOffset = sHeight * .15;
+  var winHeight = sHeight * 0.7;
+  var topOffset = sHeight * 0.15;
   var sWidth = screen.width;
   var winWidth = 700;
   var leftOffset = (sWidth/2) - (winWidth/2);
