@@ -57,7 +57,7 @@ else {
 	$homeLibrary = 'unknown';
 }
 
-$alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a></div>';
+$alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a></div>' . "\n";
 if (isset($format)) {
 $formatPretty = str_replace('-', ' ', $format);
 $formatPretty = ucwords($formatPretty);
