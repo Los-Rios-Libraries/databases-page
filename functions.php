@@ -149,6 +149,10 @@ function dbsByAlpha($letter) {
  usort($dbs, 'cmp');
  global $format;
  global $query;
+ $query = strtolower($query);
+ $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);
+ $query = preg_replace('/j\s*stor.*/', 'jstor', $query);
+ $queryParts = explode(' ', $query);
  global $alphaShowAll;
  echo "<div class=\"alpha category\"><h2>" .$letter . "</h2>\n";
  echo "<ul>\n";
@@ -167,15 +171,17 @@ function dbsByAlpha($letter) {
       $altNames = implode(' ', $db -> altname);
       $altNames = str_replace('-', ' ', $altNames);
       $altNames = strtolower($altNames);
-      $query = strtolower($query);
-      $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);
-       $query = preg_replace('/j\s*stor.*/', 'jstor', $query);
+
      $types = implode(' ', $db -> type);
      $types = str_replace('-', ' ', $types);
      $categories = implode(' ', $db -> category);
  //    echo '<p>altNames: ' . $altNames . '</p>';
- //(strpos($categories, $query > -1)) || (strpos($types, $query > -1))  many false positives...     
-      if ((strpos($dbLower, $query) > -1) || (strpos($altNames, $query) > -1) ||(strpos($categories, $query) > -1) || (strpos($types, $query) > -1) ||(strpos($vendorLower, $query) > -1))  {
+ //(strpos($categories, $query > -1)) || (strpos($types, $query > -1))  many false positives..
+        if (($dbLower === $query) || ($altNames === $query) ||( $categories === $query) || ($types === $query) ||($vendorLower === $query))  {
+      echo writeDBInfo($db, $url);
+      // need to figure out how to end it here
+      }
+      elseif ((strpos($dbLower, $queryParts[0]) > -1) || (strpos($altNames, $queryParts[0]) > -1) ||(strpos($categories, $queryParts[0]) > -1) || (strpos($types, $queryParts[0]) > -1) ||(strpos($vendorLower, $queryParts[0]) > -1))  {
       echo writeDBInfo($db, $url);
       }
      }
