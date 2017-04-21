@@ -30,7 +30,8 @@
         "category": [
                      "psychology"
                      ],
-                     "onesearch": "yes"
+                     "onesearch": "yes",
+        "altname": ["psycharticles"]
         },
         {
         "name":"Crc Handbook of Chemistry and Physics",
@@ -466,7 +467,8 @@
         "category": [
                      "encyclopedias,-dictionaries,-reference", "literature"
                      ],
-                     "onesearch": "no"
+                     "onesearch": "no",
+        "altname": ["OED"]
         },
  
 
@@ -919,7 +921,8 @@
         "category": [
                      "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
-                     "onesearch": "yes"
+                     "onesearch": "yes",
+        "altname": ["j stor", "jstore"]
         },
            
         
