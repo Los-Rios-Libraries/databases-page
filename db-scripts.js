@@ -55,14 +55,39 @@ function defaultAuto(el) {
     if (ui.item)
         {
           el.val(ui.item.value);
+           
         }
+       submitSearch(el.val());
 
-        $('#multi-search').submit();
+ //       $('#multi-search').submit();
   }
 });
     
     
   }
+$('#multi-search').on('submit', function(e) { // if users do not select autocomplete item and instead click search or enter
+  e.preventDefault();
+  submitSearch($('#dbpage-query').val());
+  });
+function submitSearch(kw) {
+    var dbPatterns = /ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|lex[ui]s(( )?nex[iu]s)?|gale virtual|gvrl|cq|onesearch|oxford art|^grove|artstor|ebooks|google scholar|business source|statista|opposing viewpoints|socindex|psycarticles|^eric$|education research complete|greenfile|intelecom|pubmed|medline|naxos|oxford english|oed|rcl|resources for college|science( )?direct|kanopy/i;
+    ga('send', 'event', 'search', 'submit', kw);
+    if (dbPatterns.test(kw) === true) {
+      console.log('found match');
+      location.href = 'index.php?az&query=' + encodeURIComponent(kw);
+    }
+    else {
+      var url = 'http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip,uid&direct=true&profile=eds&bquery=' + encodeURIComponent(kw) + '&site=eds-live&scope=site';
+      if (getCookie('newWindowLinks') === 'yes') {
+        window.open(url);
+      }
+      else {
+        location.href = url;
+      }
+    }
+    
+  
+}
 $(function ()
 {
   defaultAuto($('#dbpage-query'));
@@ -237,12 +262,7 @@ $('#dbpage-query').on('focus', function ()
 {
   ga('send', 'event', 'search form', 'activate');
 });
-$('#multi-search').on('submit', function ()
-{
-  var a = $('input[name="search-type"]:checked').val();
-  var searchTerm = $('#dbpage-query').val();
-  ga('send', 'event', 'search', 'submit - ' + a, searchTerm);
-});
+
 // cookies
 function setCookie(cname, cvalue, exdays)
 {
