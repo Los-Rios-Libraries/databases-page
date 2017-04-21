@@ -1,5 +1,4 @@
      // db autocomplete
-      var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "CRC Handbook of Chemistry and Physics", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "Environment Complete", "ERIC", "Explora", "Films on Demand", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Grove Art Online", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "Kanopy", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "MasterFILE Premier", "MEDLINE", "Military & Government Collection", "Naxos Music Library", "Naxos Music Library Jazz Collection", "News", "Newspaper Source Plus", "OneSearch", "Opposing Viewpoints in Context", "Oxford Art Online", "Oxford English Dictionary", "PsycARTICLES", "Psychology & Behavioral Sciences Collection", "PubMed", "Regional Business News", "Rehabilitation Reference Center", "Religion & Philosophy Collection", "RCL", "Resources for College Libraries", "Safari Books Online", "Salem Press", "Small Business Reference Center", "ScienceDirect", "Scholarly Journals", "SocINDEX with Full Text", "Statista", "Trade Publications", "Video"];
 function showDBNos() {
   var dbNo = $('#main .db-name:visible').length;
   var numberDisplay = $('#show-db-no');
@@ -197,57 +196,7 @@ $('.format-links').each(function ()
     a.addClass('current');
   }
 });
-// show hints for different search options
-$('#multi-search input[type=radio]').on('click', function ()
-{
-  var form = $('#multi-search');
-  $('.search-exp').each(function ()
-  {
-    e = $(this);
-    if (!(e.hasClass('hidden')))
-    {
-      e.slideUp().addClass('hidden');
-    }
-  });
-  var a = $(this);
-  var b = $('#dbpage-query');
-  checkCookies();
-  var newWins = getCookie('newWindowLinks');
-  if (newWins === 'yes')
-  {
-    form.attr('target', '_blank');
-  }
-  if (a.is('#search-db'))
-  {
-    form.removeAttr('target');
-    b.autocomplete(
-    {
- //     source: dbNames,
-   source: function( request, response ) {
-          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-          response( $.grep( dbNames, function( item ){
-              return matcher.test( item );
-          }) );
-      },
-      select: function (event, ui)
-      {
-        if (ui.item)
-        {
-          b.val(ui.item.value);
-        }
-        //      alert('hello');
-        form.submit();
-      }
-    });
-  }
-  else
-  {
-    defaultAuto(b);
 
-  }
-  
-  a.parent().next().slideDown().removeClass('hidden');
-});
 
 // google analytics events
 $('.db-name').on('click', function ()
