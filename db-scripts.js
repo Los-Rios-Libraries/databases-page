@@ -1,5 +1,4 @@
      // db autocomplete
-      var dbNames = ["Academic Search Complete", "ACLS Humanities E-Book", "America: History and Life with Full Text", "Artstor", "Auto Repair Reference Center", "BIR Entertainment", "Book Index with Reviews", "Business Source Complete", "CINAHL Plus with Full Text", "Communication & Mass Media Complete", "Consumer Health Complete", "CountryWatch", "CQ Researcher", "CRC Handbook of Chemistry and Physics", "Criminal Justice Abstracts with Full Text", "eBook Collection", "Ebooks", "EBSCO", "Education Research Complete", "Environment Complete", "ERIC", "Explora", "Films on Demand", "Gale", "Gale Virtual Reference Library", "Google Scholar", "GreenFILE", "Grove Art Online", "Health Source: Consumer Edition", "Health Source: Nursing/Academic Edition", "International Bibliography of Theatre & Dance with Full Text", "JSTOR", "Kanopy", "LexisNexis Academic", "Library, Information Science & Technology Abstracts", "Literary Reference Center Plus", "MasterFILE Premier", "MEDLINE", "Military & Government Collection", "Naxos Music Library", "Naxos Music Library Jazz Collection", "News", "Newspaper Source Plus", "OneSearch", "Opposing Viewpoints in Context", "Oxford Art Online", "Oxford English Dictionary", "PsycARTICLES", "Psychology & Behavioral Sciences Collection", "PubMed", "Regional Business News", "Rehabilitation Reference Center", "Religion & Philosophy Collection", "RCL", "Resources for College Libraries", "Safari Books Online", "Salem Press", "Small Business Reference Center", "ScienceDirect", "Scholarly Journals", "SocINDEX with Full Text", "Statista", "Trade Publications", "Video"];
 function showDBNos() {
   var dbNo = $('#main .db-name:visible').length;
   var numberDisplay = $('#show-db-no');
@@ -56,14 +55,39 @@ function defaultAuto(el) {
     if (ui.item)
         {
           el.val(ui.item.value);
+           
         }
+       submitSearch(el.val());
 
-        $('#multi-search').submit();
+ //       $('#multi-search').submit();
   }
 });
     
     
   }
+$('#multi-search').on('submit', function(e) { // if users do not select autocomplete item and instead click search or enter
+  e.preventDefault();
+  submitSearch($('#dbpage-query').val());
+  });
+function submitSearch(kw) {
+    var dbPatterns = /ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|lex[ui]s(( )?nex[iu]s)?|gale virtual|gvrl|cq|onesearch|oxford art|^grove|artstor|ebooks|google scholar|business source|statista|opposing viewpoints|socindex|psycarticles|^eric$|education research complete|greenfile|intelecom|pubmed|medline|naxos|oxford english|oed|rcl|resources for college|science( )?direct|kanopy/i;
+    ga('send', 'event', 'search', 'submit', kw);
+    if (dbPatterns.test(kw) === true) {
+      console.log('found match');
+      location.href = 'index.php?az&query=' + encodeURIComponent(kw);
+    }
+    else {
+      var url = 'http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip,uid&direct=true&profile=eds&bquery=' + encodeURIComponent(kw) + '&site=eds-live&scope=site';
+      if (getCookie('newWindowLinks') === 'yes') {
+        window.open(url);
+      }
+      else {
+        location.href = url;
+      }
+    }
+    
+  
+}
 $(function ()
 {
   defaultAuto($('#dbpage-query'));
@@ -156,6 +180,7 @@ function showSearch(form, input)
   form.slideDown().removeClass('hidden');
   //    $('#dbpage-query').focus();
   //     input.off(input, 'focus', showSearch);
+   $('#dbpage-query-submit').removeClass('hidden');
   $('#form-closer').on('click', (function (e)
   {
     e.preventDefault();
@@ -169,6 +194,7 @@ function showSearch(form, input)
 
 function hideSearch(form, input)
 {
+  $('#dbpage-query-submit').addClass('hidden');
   form.slideUp().addClass('hidden');
   input.removeClass('form-emphasis');
   input.on('click', function ()
@@ -197,57 +223,7 @@ $('.format-links').each(function ()
     a.addClass('current');
   }
 });
-// show hints for different search options
-$('#multi-search input[type=radio]').on('click', function ()
-{
-  var form = $('#multi-search');
-  $('.search-exp').each(function ()
-  {
-    e = $(this);
-    if (!(e.hasClass('hidden')))
-    {
-      e.slideUp().addClass('hidden');
-    }
-  });
-  var a = $(this);
-  var b = $('#dbpage-query');
-  checkCookies();
-  var newWins = getCookie('newWindowLinks');
-  if (newWins === 'yes')
-  {
-    form.attr('target', '_blank');
-  }
-  if (a.is('#search-db'))
-  {
-    form.removeAttr('target');
-    b.autocomplete(
-    {
- //     source: dbNames,
-   source: function( request, response ) {
-          var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
-          response( $.grep( dbNames, function( item ){
-              return matcher.test( item );
-          }) );
-      },
-      select: function (event, ui)
-      {
-        if (ui.item)
-        {
-          b.val(ui.item.value);
-        }
-        //      alert('hello');
-        form.submit();
-      }
-    });
-  }
-  else
-  {
-    defaultAuto(b);
 
-  }
-  
-  a.parent().next().slideDown().removeClass('hidden');
-});
 
 // google analytics events
 $('.db-name').on('click', function ()
@@ -288,12 +264,7 @@ $('#dbpage-query').on('focus', function ()
 {
   ga('send', 'event', 'search form', 'activate');
 });
-$('#multi-search').on('submit', function ()
-{
-  var a = $('input[name="search-type"]:checked').val();
-  var searchTerm = $('#dbpage-query').val();
-  ga('send', 'event', 'search', 'submit - ' + a, searchTerm);
-});
+
 // cookies
 function setCookie(cname, cvalue, exdays)
 {
