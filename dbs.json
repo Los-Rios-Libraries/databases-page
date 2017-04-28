@@ -288,6 +288,7 @@
         "urlRoot": "www.lexisnexis.com",
         "urlPath": "hottopics/lnacademic/",
         "proxy": true,
+        "ssl": true,
         "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, including: national and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources; U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information; Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789; business news journals, company financial information, SEC filings and reports, and industry and market news. ",
         "category": [
                      "criminal-justice-&amp;-law",
