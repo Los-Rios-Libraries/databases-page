@@ -144,9 +144,16 @@ $(function ()
 });
 $('#dbpage-query').on('focus', function ()
 {
-  //   var button = $(this);
-  //   var searchForm = $('#multi-search');
-  showSearch($('#form-remainder'), $(this));
+  var button = $(this);
+  var remainder = $('#form-remainder');
+  showSearch(remainder, button);
+  $('html').on('click', function(e) {
+    if (!($(e.target).parents('#multi-search').length)) { // clicking outside the form closes it
+      if (!(remainder.hasClass('hidden'))) {
+        hideSearch(remainder, button);
+      }
+    }
+  });
 });
 $('.alpha').each(function ()
 {
