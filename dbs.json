@@ -714,7 +714,7 @@
                 ],
         "urlRoot": "ebookcentral.proquest.com",
         "urlPath": "lib/losrios/",
-        "proxy": "yes",
+        "proxy": true,
         "description": "Provides ebooks in dozens of fields from various publishers. Content may be viewed online. To download chapters or in some cases full ebooks, create a free Ebook Central account.",
         "category": [
                       "art", "business", "ebooks", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-medicine", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
