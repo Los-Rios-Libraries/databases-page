@@ -115,6 +115,16 @@ elseif (strpos($vendor, 'jstor') > -1) {
         $url = $urlBase . 'showAdvancedSearch';
     }
 }
+elseif (strpos($dbName, 'ebook-central') > -1) {
+    $urlBase = 'http://0-ebookcentral.proquest.com.lasiii.losrios.edu/lib/losrios/';
+    if ($query !== '') {
+        $url = $urlBase . 'search.action?query=' . $query;
+    }
+    else {
+        $url = $urlBase;
+    }
+    
+}
 elseif (strpos($dbName, 'pubmed') > -1) {
     $urlBase = 'http://0-www.ncbi.nlm.nih.gov.lasiii.losrios.edu/pubmed';
     if ($query !== '') {
