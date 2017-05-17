@@ -29,7 +29,6 @@ function writeDBInfo($db, $url) {
     global $trial;
     global $query;
     global $category;
-    global $format;
     global $category;
     $formatList = implode(' ', $db -> type);
     $topPick = '';
@@ -56,35 +55,6 @@ function writeDBInfo($db, $url) {
     $output .= $searchButton;
     $output .= "<h3><a class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
     $output .= "<p class=\"db-desc\">" . $description . "</p>\n";
-    if ((isset($format)) || (isset($query)) || (isset($category))) {
-        $output .= "<dl class=\"internal-links\">\n";
-        if (!isset($category)) {
-            $output .= "<dt class=\"cat-list\">Categories:</dt> ";
-            $dbCategories = $db -> category;
-            for ($m = 0; $m < count($dbCategories); $m++) {
-                $dbCategory = $dbCategories[$m];
-                $viewCategory = str_replace('-', ' ', $dbCategory);
-                $viewCategory = ucwords($viewCategory);
-                $dbCategory = str_replace('&amp;', '%26amp%3B', $dbCategory);
-                $catURL = 'index.php?category=' .$dbCategory ;
-                $catString = '<dd class="db-cat"><a class="desc-category" href="' .$catURL .'">' . $viewCategory . '</a></dd>';
-                $output .= $catString;
-            }
-        }
-        $output .= "<dt class=\"format-list\">Types:</dt>\n";
-        $dbFormats = $db -> type;
-        for ($n = 0; $n < count($dbFormats); $n++) {
-            $dbFormat = $dbFormats[$n];
-            $viewFormat = str_replace('-', ' ', $dbFormat);
-            $viewFormat = ucwords($viewFormat);
-            $dbFormat = str_replace('&amp;', '%26amp%3B', $dbFormat);
-            $formatURL = 'index.php?az&amp;format=' .$dbFormat ;
-            $formatString = '<dd class="db-format"><a class="desc-format" href="' .$formatURL .'">' . $viewFormat . '</a></dd>';
-            $output .= $formatString;
-        };
-        $output .= "</dl>\n";
-    }
-    $output .= "</li>\n";
     return $output;
 }
 function dbsByCat($dbcat) {
@@ -103,24 +73,7 @@ function dbsByCat($dbcat) {
    echo "</ul>\n";
    echo "</div>\n";
 }
-function dbsByFormat($format) { 
- global $dbs;
-// sort($dbs);
- usort($dbs, 'cmp');
- $formatHead = str_replace('-', ' ', $format);
- echo "<div id=\"format\" class=\"format category\"><h2>" .$formatHead ."</h2>\n";
- echo "<ul>\n";
- foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
-  if (in_array($format, $db ->type)) {
-//   include('writeDBInfo.php');
-echo writeDBInfo($db, $url);
-  }
- }
- echo "</ul>\n";
- echo "</div>\n";
- 
-}
+
 function dbsByName($name) {
 
  $query = strtolower($name);
@@ -160,13 +113,7 @@ function dbsByAlpha($letter) {
   $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
   $dbLower = strtolower($db -> name);
   if (strpos($dbLower, $letter) === 0) {
-   if (isset($format)) {
-    if (in_array($format, $db -> type)) {
-     echo writeDBInfo($db, $url);
-     
-     }
-     }
-     elseif ((isset($query)) && (!(empty($query)))) {
+     if ((isset($query)) && (!(empty($query)))) {
       $vendorLower = strtolower($db -> vendor);
       $altNames = implode(' ', $db -> altname);
       $altNames = str_replace('-', ' ', $altNames);
