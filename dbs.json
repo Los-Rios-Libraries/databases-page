@@ -10,7 +10,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=plus",
         "proxy": true,
-        "description": "Contains full-text literary reference books/works, journals and magazines, contemporary literature titles from Salem Press, literary study guides and videos.",
+        "description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
         "category": [
                      "literature"
                      ],
@@ -26,7 +26,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pdh",
         "proxy": true,
-        "description": "Provides full text, peer-reviewed scholarly and scientific articles from journals published by the American Psychological Association (APA) and related imprints.",
+        "description": "Scholarly journals in psychology and behavioral sciences published by the American Psychological Association and affiliates.",
         "category": [
                      "psychology"
                      ],
@@ -41,7 +41,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=31h",
         "proxy": true,
-        "description": "Provides full-text scholarly publications covering the history and culture of the United States and Canada, from prehistory to the present.",
+        "description": "Scholarly journals, professional journals, and ebooks on the history and culture of the United States and Canada, from prehistory to the present.",
         "category": [
                      "history"
                      ],
@@ -56,7 +56,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=i3h",
         "proxy": true,
-        "description": "Scholarly and other professional literature from areas including: criminology; criminal law and procedure; corrections; police and policing; criminal investigation; forensic sciences and investigation; substance abuse and addiction; probation and parole.",
+        "description": "Scholarly journals and magazines in criminology, criminal law, corrections, policing, and forensic science.",
         "category": [
                      "criminal-justice-&amp;-law", "sociology"
                      ],
@@ -71,7 +71,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=sih",
         "proxy": true,
-        "description": "Contains full text for more than 860 journals in sociology and related fields, including full text for more than 830 books and monographs and over 16,000 conference papers. Content is organized according to subject headings from a 20,000+ term sociological thesaurus.",
+        "description": "Scholarly journals, professional journals, ebooks, and conference papers in sociology, anthropology, and related social sciences.",
         "category": [
                      "criminal-justice-&amp;-law", "sociology", "psychology"
                      ],
@@ -87,7 +87,7 @@
        "urlRoot": "www.oxfordartonline.com",
         "urlPath": "",
         "proxy": true,
-        "description": "Features articles about Western and non-Western art, bibliographies for further research, and thousands of searchable images from museums, galleries, and other arts organizations. Includes Grove Art Online, The Concise Oxford Dictionary of Art Terms, Encyclopedia of Aesthetics, and the Companion to Western Art.",
+        "description": "Background information, artist biographies, and images of Western and non-Western art.",
         "category": [
                      "art", "encyclopedias,-dictionaries,-reference"
                      ],
@@ -102,7 +102,7 @@
         "urlRoot": "library.artstor.org",
         "urlPath": "",
         "proxy": true,
-        "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture.  <strong>Note:</strong> Register within Artstor to gain access to tools for organizing images and creating presentations.",
+        "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture. Register within Artstor to organize images and create presentations.",
         "category": [
                      "art"
                      ],
@@ -118,7 +118,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=autorefctr",
         "proxy": true,
-        "description": "Contains repair and maintenance information on most major manufacturers of domestic and imported vehicles. New repair procedures, TSBs and updates are added to the product on a regular basis.",
+        "description": "Repair and maintenance information on most major manufacturers of domestic and imported vehicles.",
         "category": [
                      "automotive", "encyclopedias,-dictionaries,-reference"
                      ],
@@ -135,7 +135,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=bsc",
         "proxy": true,
-        "description": "Contains scholarly business journals, financial data, books, monographs, major reference works, book digests, conference proceedings, case studies, investment research reports, industry reports, market research reports, country reports, company profiles, SWOT analyses and more.",
+        "description": "Scholarly journals, company profiles, SWOT analyses, financial data, ebooks, conference proceedings, case studies, investment research, market research, and industry reports.",
         "category": [
                      "business"
                      ],
@@ -151,7 +151,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=rzh",
         "proxy": true,
-        "description": "Provides full text and careful subject indexing for more than 640 journals in Nursing and other Allied Health fields. Also includes reports on evidence-based practice.",
+        "description": "Scholarly journals, professional journals and reports in nursing and allied health fields.",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -167,7 +167,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ufh",
         "proxy": true,
-        "description": "Offers cover-to-cover indexing and abstracts for more than 440 journals in Communication and related fields, and selected (priority) coverage of nearly 200 more. Includes full text for 326 journals.",
+        "description": "Scholarly and professional journals in communication studies, media studies, and related fields.",
         "category": [
                      "communication"
                      ],
@@ -184,7 +184,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=chc",
         "proxy": true,
-        "description": "Designed for the everyday consumer of healthcare information, provides convenient access to easily understandable health and medical information.",
+        "description": "Magazines, reports, and professional journals in healthcare and medicine, plus drug and herb information designed for consumers.",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -201,7 +201,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
         "proxy": true,
-        "description": "Articles covering all levels of education from early childhood to higher education, and educational specialties such as multilingual education, health education, and testing.",
+        "description": "Scholarly and professional journals on teaching and learning in early childhood, K-12 and higher education, educational leadership and education policy.",
         "category": [
                      "education"
                      ],
@@ -217,7 +217,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eih",
         "proxy": true,
-        "description": "Covers agriculture, ecosystem ecology, energy, sustainability, and related areas of study. ",
+        "description": "Scholarly and professional journals on agriculture, ecology, energy, sustainability, and environmental sciences. ",
         "category": [
                      "environmental-science"
                      ],
@@ -233,7 +233,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eric",
         "proxy": true,
-        "description": "Maintained by the US Department of Education, the Educational Resource Information Center (ERIC) contains more than 1,194,000 records related to the field of education. ",
+        "description": "Professional journals, scholarly journals and reports in the field of education.",
         "category": [
                      "education"
                      ],
@@ -251,7 +251,7 @@
         "urlRoot": "www.ncbi.nlm.nih.gov",
         "urlPath": "pubmed?myncbishare=casccllib",
         "proxy": true,
-        "description": "PubMed comprises more than 23 million citations for biomedical literature from MEDLINE, life science journals, and online books. Using the special link on this page, you can limit your search results to those that are held in library databases or available for free elsewhere. ",
+        "description": "Scholarly journals in medicine and health sciences.",
         "category": [
                      "health-&amp;-medicine", "psychology"
                      ],
@@ -289,7 +289,7 @@
         "urlPath": "hottopics/lnacademic/",
         "proxy": true,
         "ssl": true,
-        "description": "<strong>Use is restricted to students and faculty/staff</strong>. LexisNexis Academic provides searchable access to a comprehensive spectrum of full-text information from over 5,600 sources, including: national and regional newspapers, wire services, broadcast transcripts, international news, and non-English language sources; U.S. Federal and state case law, codes, regulations, legal news, law reviews, and international legal information; Shepard&#39;s Citations for all U.S. Supreme Court cases back to 1789; business news journals, company financial information, SEC filings and reports, and industry and market news. ",
+        "description": " National and international newspapers, radio news transcripts, professional journals, legal research, business reviews, and company profiles. U.S. Federal and state case law and Shepard's Citations for all U.S. Supreme Court cases from 1789 to present. <strong>Use is restricted to students and faculty/staff</strong>.",
         "category": [
                      "criminal-justice-&amp;-law",
                      "news",
@@ -310,7 +310,7 @@
         "urlRoot": "www.countrywatch.com",
         "urlPath": "ip",
         "proxy": true,
-        "description": "Contains information on specific countries including an overview of the country, political and economic conditions, environmental issues, and wire service stories. ",
+        "description": "Background information, reports and current news about culture, politics, economics and the environment from countries around the world. ",
         "category": [
                       "political-science", "geography", "news"
                      ],
@@ -327,7 +327,7 @@
         "urlRoot": "www.statista.com",
         "urlPath": "",
         "proxy": true,
-        "description": "Statistical data on a wide variety of business topics and social issues from a range of international sources. Data may be exported as spreadsheets, charts or graphs.",
+        "description": "Statistics, studies, and reports on business and social issues in the United States and internationally.",
         "category": [
                      "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
                      ],
@@ -345,7 +345,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hxh",
         "proxy": true,
-        "description": "Contains a collection of consumer health information, including the medical sciences, food sciences and nutrition, childcare, sports medicine and general health.",
+        "description": "Background information, magazines and reports on consumer health in medical sciences, food sciences/nutrition, childcare, sports medicine and general health.",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -362,7 +362,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hch",
         "proxy": true,
-        "description": "Provides full-text journals, including peer-reviewed, focused on many medical disciplines. Also features the Lexi-PAL Drug Guide, which includes 1,300 generic drug patient education sheets with more than 4,700 brand names.",
+        "description": "Scholarly journals on medical topics, and the Lexi-PAL Drug Guide with generic drug patient education sheets.",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -380,7 +380,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pbh",
         "proxy": true,
-        "description": "Covers topics such as emotional and behavioral characteristics, psychiatry and psychology, mental processes, anthropology, and observational and experimental methods.",
+        "description": "Scholarly journals in psychology, psychiatry, and behavioral sciences.",
         "category": [
                      "psychology"
                      ],
@@ -396,7 +396,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=cmedm",
         "proxy": true,
-        "description": "Contains authoritative medical information on medicine, nursing, dentistry, veterinary medicine, the health care system, pre-clinical sciences, and much more. Created by the National Library of Medicine, it uses MeSH (Medical Subject Headings) indexing.",
+        "description": "Scholarly journals, newspapers, magazines, and newsletters in medicine, nursing, dentistry, veterinary medicine, healthcare administration and pre-clinical sciences. Produced by the US National Library of Medicine.",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -413,7 +413,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=mth",
         "proxy": true,
-        "description": "Offers periodicals, academic journals, and other content pertinent to all branches of the military and government to the increasing needs of those sites.",
+        "description": "Scholarly journals, magazines, and newspapers in military science and government.",
         "category": [
                      ""
                      ],
@@ -430,7 +430,7 @@
        "urlRoot": "www.sciencedirect.com",
         "urlPath": "science?_ob=MiamiSearchURL&_method=requestForm&_temp=search.tmpl&md5=be86fcf199953fc3d5e2cd09e0389370&Subscribed=1&openaccess=1",
         "proxy": true,
-        "description": "Offers over 2,000 full-text journal titles from a leading academic publisher, primarily in the health and life sciences.",
+        "description": "Scholarly journals in health, medicine, psychology and life sciences.",
         "category": [
                      "health-&amp;-medicine", "psychology"
                      ],
@@ -447,7 +447,7 @@
        "urlRoot": "www.oed.com",
         "urlPath": "",
         "proxy": true,
-        "description": "A guide to the meaning, history, and pronunciation of over half a million words, both present and past.",
+        "description": "Definitions, pronunciations and historical background of words in the English language.",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "literature"
                      ],
@@ -467,7 +467,7 @@
        "urlRoot": "online.salempress.com",
         "urlPath": "home.do",
         "proxy": true,
-        "description": "Includes the complete content of several history, health, science, and literature reference sets.",
+        "description": "Ebooks and background information in career development, history, health, science, and literature.",
         "category": [
                      "ebooks", "health-&amp;-medicine", "history", "literature"
                      ],
@@ -483,7 +483,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=8gh",
         "proxy": true,
-        "description": "offers well-researched information covering all aspects of human impact to the environment, including global warming, green building, pollution, sustainable agriculture, renewable energy, and recycling.",
+        "description": "Scholarly journals covering human impact on the environment, climate change, green architecture, pollution, sustainable agriculture, renewable energy, and recycling.",
         "category": [
                      "environmental-science"
                      ],
@@ -499,7 +499,7 @@
         "urlRoot": "losrios.naxosmusiclibrary.com",
         "urlPath": "",
         "proxy": true,
-        "description": "Music listening service with over 256,000 tracks of classical and modern music, including complete liner notes.",
+        "description": "Classical and modern music.",
         "category": [
                      "music"
                      ],
@@ -516,7 +516,7 @@
         "urlPath": "SearchCenter.aspx",
         "proxy": true,
         "col": "s",
-        "description": "Streaming video from a variety of academic and vocational fields. (Access limited to Sacramento City College.)",
+        "description": "Video clips covering a variety of academic and vocational fields. (Access limited to Sacramento City College.)",
         "category": [
                      ],
                      "onesearch": "yes"
@@ -531,7 +531,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=n5h",
         "proxy": true,
-        "description": "Contains 700 full-text newspapers. Also features more than 757,000 television and radio news transcripts.",
+        "description": "Regional, national and international newspapers, television and radio news transcripts.",
         "category": [
                      "news"
                      ],
@@ -549,7 +549,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tfh",
         "proxy": true,
-        "description": "Provides 520 education journals, including nearly 350 peer-reviewed titles. Also contains more than 200 educational reports",
+        "description": "Scholarly journals, professional journals, and reports in education.",
         "category": [
                      "education"
                      ],
@@ -567,7 +567,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lxh",
         "proxy": true,
-        "description": "Provides indexing for more than 600 publications on librarianship, classification, cataloging, bibliometrics, online information retrieval, information management and more.",
+        "description": "Scholarly journals and magazines in library and information science.",
         "category": [
                      "social-sciences"
                      ],
@@ -585,7 +585,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=trh",
         "proxy": true,
-        "description": "Provides indexing and abstracts for 280 teacher and administrator journals and magazines.",
+        "description": "Scholarly journals and professional journals on teaching and education leadership.",
         "category": [
                      "education"
                      ],
@@ -601,7 +601,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=rlh",
         "proxy": true,
-        "description": "Coverage of such topics as world religions, major denominations, biblical studies, religious history, epistemology, political philosophy, philosophy of language, moral philosophy and the history of philosophy.",
+        "description": "Scholarly journals covering world religions, philosophy, and theology.",
         "category": [
                      "philosophy-&amp;-religion"
                      ],
@@ -618,7 +618,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bwh",
         "proxy": true,
-        "description": "Full text coverage of 75 business journals, newspapers and newswires from various metropolitan and rural areas within the United States. This database is updated daily.",
+        "description": "U.S. business journals and news.",
         "category": [
                      "business"
                      ],
@@ -636,7 +636,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ulh",
         "proxy": true,
-        "description": "Contains full text for more than 500 popular, high school magazines, more than 360 full text reference books, 85,639 biographies, 104,481 primary source documents, and an Image Collection of 285,912 photos, maps & flags.",
+        "description": "Background information, biographies, primary source documents, maps, flags and images on many topics.",
         "category": [
                      ""
                      ],
@@ -652,7 +652,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=l0h",
         "proxy": true,
-        "description": "Published by the American Society of Health-System Pharmacists, AHFS includes more than a thousand drug information monographs written in lay language for consumers and has been a Top Ten Award Winner in the Department of Health and Human Services National Consumer Education Materials Contest. This content is updated monthly.",
+        "description": "Information on medications from the American Society of Health-System Pharmacists.",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "health-&amp;-medicine"
                      ],
@@ -668,7 +668,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kdh",
         "proxy": true,
-        "description": "Provides information on over 5 million book titles, along with almost 800,000 full-text searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist and others.",
+        "description": "Information on book titles, with full-text, searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist, and others.",
         "category": [
                      "encyclopedias,-dictionaries,-reference"
                      ],
@@ -684,7 +684,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kfh",
         "proxy": true,
-        "description": "Provides information, such as publisher, producer, and track listing or cast, on about 450,000 music titles and 200,000 DVD/video titles.",
+        "description": "Information on music and film titles such as publisher, producer, track listing, and cast.",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "music"
                      ],
@@ -700,7 +700,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ebooks&defaultdb=nlebk",
         "proxy": true,
-        "description": "Contains over 130,000 eBook titles on a wide range of topics, including information technology, social sciences, humanities, business, economics, and more. Content may be read within the browser or, in most cases, downloaded to a computer or tablet for limited periods.",
+        "description": "Ebooks on social sciences, information technology, the humanities, business, economics, and more.",
         "category": [
                      "art", "business", "ebooks", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-medicine", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
                      ],
@@ -719,7 +719,7 @@
        "urlRoot": "quod.lib.umich.edu",
         "urlPath": "cgi/t/text/text-idx?c=acls;rgn=full%20text;page=simple",
         "proxy": true,
-        "description": "Contains approximately 4,300 high-quality academic titles in the humanities. Fields currently covered include Archaeology, American Studies, Art and Architectural History, Biblical Studies, Film and Media Studies, Folklore, Linguistics, Literary Criticism, Musicology, Performance Studies (theater, music, dance), Philosophy, Political Science, Religion, and Sociology.",
+        "description": "Ebooks on archaeology, art and architecture, religion, film and media, linguistics, literature, musicology, performance studies, philosophy, and social sciences.",
         "category": [
                      "art", "communication", "ebooks", "history", "literature", "philosophy-&amp;-religion"
                      ],
@@ -738,7 +738,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
         "proxy": true,
-        "description": "Offers information on small business and entrepreneurial subject areas, common business types, a help and advice section, and provides information on how to create business plans. Provides full-text access to a number of Nolo Press titles.",
+        "description": "Ebooks, professional journals and magazines in entrepreneurship and small business ownership.",
         "category": [
                      "business", "ebooks"
                      ],
@@ -755,7 +755,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
         "proxy": true,
-        "description": "Indexes over 60,000 journal articles, books, book chapters and dissertation abstracts on all aspects of theatre and performance in 126 countries. Also contains more than 490 full-text titles, including more than 170 full-text journals, and more than 360 full-text books &amp; monographs.",
+        "description": "Scholarly journals and ebooks on theatre and performance.",
         "category": [
                      "theatre-&amp;-performing-arts", "literature"
                      ],
@@ -772,7 +772,7 @@
         "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb/?db=OVIC",
         "proxy": true,
-        "description": "Contains nearly 7,000 viewpoint articles presented in a pro-and-con format.",
+        "description": "Viewpoint articles on current social issues and controversial topics.",
         "category": [
                      "controversial-topics", "communication"
                      ],
@@ -788,7 +788,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nsm",
         "proxy": true,
-        "description": "News items from Associated Press, United Press International, PR Newswire, Xinhua, CNN Wire, and Business Wire from the last 30 days.",
+        "description": "News reports from Associated Press, United Press International, PR Newswire, Xinhua, CNN Wire, and Business Wire from the last 30 days.",
         "category": [
                      "news"
                      ],
@@ -820,7 +820,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=a9h",
         "proxy": true,
-        "description": "Provides full text for scholarly publications, most of them peer-reviewed, as well as popular magazines. Includes topics in the social sciences, humanities, general science, education and most areas of academic study.",
+        "description": "Scholarly journals, professional journals, reports and magazines in the social sciences, the humanities, and general sciences.",
         "category": [
                      "general", "art", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
                      ],
@@ -837,7 +837,7 @@
         "urlPath": "cqresearcher/",
         "proxy": true,
         "ssl": false,
-        "description": "This full-text database provides detailed reports that include background, a chronology, current and future trends, related topics and a bibliography on current and controversial topics. This is an excellent place to start research on a controversial or hot topic.",
+        "description": "In-depth reports on current social and political issues.",
         "category": [
                      "general","controversial-topics"
                      ],
@@ -853,7 +853,7 @@
         "urlRoot": "",
         "urlPath": "special.php?pageTitle=films-on-demand",
         "proxy": false,
-        "description": "Over 20,000 full-length videos available for streaming from a range of devices. Includes the Master Academic Package, Master Career &amp; Tech Ed Package, and Archival Films &amp; Newsreels Collection.",
+        "description": "Documentaries in the humanities, history, health, technical education, archival films, and much more.",
         "category": [
                      "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
@@ -869,7 +869,7 @@
        "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb?db=GVRL",
         "proxy": true,
-        "description": "Specialized encyclopedias and other reference sources.",
+        "description": "Background information from general and subject encyclopedias.",
         "category": [
                      "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
                      ],
@@ -888,7 +888,7 @@
         "urlPath": "action/showAdvancedSearch",
         "proxy": true,
         "ssl": true,
-        "description": "Core journals from the humanities, social sciences, education and other fields. Full-text coverage is provided from the earliest issues to within a few years of the current publication. Los Rios subscribes to JSTOR Arts & Sciences Collections I, II, III and V.",
+        "description": "Scholarly journals in the humanities, social sciences, education and other fields.",
         "category": [
                      "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
@@ -907,7 +907,7 @@
         "urlRoot": "scholar.google.com",
         "urlPath": "",
         "proxy": true,
-        "description": "Articles, abstracts, books, patents, and legal materials from academic publishers, nonprofits and government sources. Links to full text, including links to Los Rios-subscribed content, are displayed to the right of the search result entry.",
+        "description": "Scholarly journals, ebooks, abstracts, patents and legal research from academic, nonprofit and government sources. Use the Los Rios Full Text link for library provided content.",
         "category": [
                      "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
@@ -923,7 +923,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f5h",
         "proxy": true,
-        "description": "Provides full text for more than 1,750 general reference publications with full text information dating as far back as 1975. Also includes large number of popular magazines, nearly 500 full text reference books, full text from 86,019 biographies, 105,787 full text primary source documents, and an Image Collection of 293,480 photos, maps and flags. ",
+        "description": "Background information, magazines, biographies, primary source documents, maps, flags and images on different topics. ",
         "category": [
                      ""
                      ],
@@ -940,7 +940,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=src_ic",
         "proxy": true,
-        "description": "Beginner-friendly alternative interface to a number of EBSCOhost databases. Search results contain mostly magazine and newspaper content, with fewer scholarly sources.",
+        "description": "Background information, magazines, news, ebooks, primary sources, and scholarly journals on many topics. Teaching and curriculum support for educators.",
         "category": [
                      ""
                      ],
@@ -956,7 +956,7 @@
         "urlRoot": "www.collegesource.org",
         "urlPath": "",
         "proxy": true,
-        "description": "Provides access to digital college catalogs, institution profiles, transcript keys, and other resources.",
+        "description": "College profiles, catalogs, transcript keys, and other resources related to higher education.",
         "category": [
                      "encyclopedias,-dictionaries,-reference"
                      ],
@@ -972,7 +972,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=eds",
         "proxy": true,
-        "description": "Provides access to the content of nearly every database held by Los Rios Libraries. Also provides access to books, videos, and other content from library shelves.",
+        "description": "Los Rios Libraries&apos; online catalog and access to the content of most databases held at Los Rios.",
         "category": [
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
@@ -986,7 +986,7 @@
             "urlRoot": "www.rclweb.net",
             "urlPath": "",
             "proxy": true,
-            "description": "Provides reviews and information about print and electronic resources for academic libraries, featuring over 85,000 titles in 117 subjects.",
+            "description": "Reviews of print and electronic resources for academic libraries.",
             "category": ["library-science"],
             "onesearch": "no",
             "altname": ["RCL"]
