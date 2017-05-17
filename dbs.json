@@ -288,7 +288,7 @@
         "urlRoot": "www.lexisnexis.com",
         "urlPath": "hottopics/lnacademic/",
         "proxy": true,
-        "ssl": true,
+        "ssl": false,
         "description": " National and international newspapers, radio news transcripts, professional journals, legal research, business reviews, and company profiles. U.S. Federal and state case law and Shepard's Citations for all U.S. Supreme Court cases from 1789 to present. <strong>Use is restricted to students and faculty/staff</strong>.",
         "category": [
                      "criminal-justice-&amp;-law",
