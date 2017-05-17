@@ -90,7 +90,7 @@ padding-bottom: 2px;
 
 .vendor {font-weight:normal; font-size:.9em;}
 #main .trial .vendor::after {content:"trial"; font-size:.9em; background:#83AA30;  margin-left:1em; padding:1px 6px; color:#fff; font-weight:bold;}
-.db-desc {font-size:.8em;}
+.db-desc {font-size:.9em;}
  .db-name:link, .db-name:visited, #library-help-content a:link, #library-help-content a:visited, #auth-help a:link, #auth-help a:visited, .my-record-blurb a:link, #my-record-blurb a:visited, .special a:link, .special a:visited {color:#1499D3;}
 .db-name:hover, .db-name:focus,  #library-help-content a:hover, #library-help-content a:focus, #auth-help a:hover, #auth-help a:focus, .my-record-blurb a:hover, #my-record-blurb a:focus, .special a:focus, .special a:hover {color:#E74700;}
 #auth-help a, .my-record-blurb a {font-weight:bold;}
