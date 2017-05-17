@@ -267,7 +267,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=rrc",
         "proxy": true,
         "ssl": true,
-        "description": "Includes more than 500 clinical reviews, more than 150 research instruments, information on over 11,700 drugs and their manufacturers, more than 9,800 exercise images, reference handbooks, guidelines from the National Guidelines Clearinghouse, nearly 1,500  patient education topics in both English & Spanish, and news and clinical updates.",
+        "description": "Clinical reviews, research instruments, drug information, exercise images, and patient education resources.",
         "category": [
                      "health-&amp;-medicine"
                      ],
