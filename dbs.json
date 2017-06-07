@@ -10,6 +10,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=plus",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
         "category": [
                      "literature"
@@ -26,6 +27,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pdh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals in psychology and behavioral sciences published by the American Psychological Association and affiliates.",
         "category": [
                      "psychology"
@@ -41,6 +43,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=31h",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, professional journals, and ebooks on the history and culture of the United States and Canada, from prehistory to the present.",
         "category": [
                      "history"
@@ -56,6 +59,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=i3h",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals and magazines in criminology, criminal law, corrections, policing, and forensic science.",
         "category": [
                      "criminal-justice-&amp;-law", "sociology"
@@ -71,6 +75,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=sih",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, professional journals, ebooks, and conference papers in sociology, anthropology, and related social sciences.",
         "category": [
                      "criminal-justice-&amp;-law", "sociology", "psychology"
@@ -87,6 +92,7 @@
        "urlRoot": "www.oxfordartonline.com",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, artist biographies, and images of Western and non-Western art.",
         "category": [
                      "art", "encyclopedias,-dictionaries,-reference"
@@ -102,6 +108,7 @@
         "urlRoot": "library.artstor.org",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture. Register within Artstor to organize images and create presentations.",
         "category": [
                      "art"
@@ -118,6 +125,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=autorefctr",
         "proxy": true,
+        "ssl": false,
         "description": "Repair and maintenance information on most major manufacturers of domestic and imported vehicles.",
         "category": [
                      "automotive", "encyclopedias,-dictionaries,-reference"
@@ -135,6 +143,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=bsc",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, company profiles, SWOT analyses, financial data, ebooks, conference proceedings, case studies, investment research, market research, and industry reports.",
         "category": [
                      "business"
@@ -151,6 +160,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=rzh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, professional journals and reports in nursing and allied health fields.",
         "category": [
                      "health-&amp;-medicine"
@@ -167,6 +177,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ufh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly and professional journals in communication studies, media studies, and related fields.",
         "category": [
                      "communication"
@@ -184,6 +195,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=chc",
         "proxy": true,
+        "ssl": false,
         "description": "Magazines, reports, and professional journals in healthcare and medicine, plus drug and herb information designed for consumers.",
         "category": [
                      "health-&amp;-medicine"
@@ -201,6 +213,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly and professional journals on teaching and learning in early childhood, K-12 and higher education, educational leadership and education policy.",
         "category": [
                      "education"
@@ -217,6 +230,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eih",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly and professional journals on agriculture, ecology, energy, sustainability, and environmental sciences. ",
         "category": [
                      "environmental-science"
@@ -233,6 +247,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eric",
         "proxy": true,
+        "ssl": false,
         "description": "Professional journals, scholarly journals and reports in the field of education.",
         "category": [
                      "education"
@@ -251,6 +266,7 @@
         "urlRoot": "www.ncbi.nlm.nih.gov",
         "urlPath": "pubmed?myncbishare=casccllib",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals in medicine and health sciences.",
         "category": [
                      "health-&amp;-medicine", "psychology"
@@ -266,7 +282,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=rrc",
         "proxy": true,
-        "ssl": true,
+        "ssl": false,
         "description": "Clinical reviews, research instruments, drug information, exercise images, and patient education resources.",
         "category": [
                      "health-&amp;-medicine"
@@ -310,6 +326,7 @@
         "urlRoot": "www.countrywatch.com",
         "urlPath": "ip",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, reports and current news about culture, politics, economics and the environment from countries around the world. ",
         "category": [
                       "political-science", "geography", "news"
@@ -327,6 +344,7 @@
         "urlRoot": "www.statista.com",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "Statistics, studies, and reports on business and social issues in the United States and internationally.",
         "category": [
                      "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
@@ -345,6 +363,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hxh",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, magazines and reports on consumer health in medical sciences, food sciences/nutrition, childcare, sports medicine and general health.",
         "category": [
                      "health-&amp;-medicine"
@@ -362,6 +381,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hch",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals on medical topics, and the Lexi-PAL Drug Guide with generic drug patient education sheets.",
         "category": [
                      "health-&amp;-medicine"
@@ -380,6 +400,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pbh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals in psychology, psychiatry, and behavioral sciences.",
         "category": [
                      "psychology"
@@ -396,6 +417,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=cmedm",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, newspapers, magazines, and newsletters in medicine, nursing, dentistry, veterinary medicine, healthcare administration and pre-clinical sciences. Produced by the US National Library of Medicine.",
         "category": [
                      "health-&amp;-medicine"
@@ -413,6 +435,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=mth",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, magazines, and newspapers in military science and government.",
         "category": [
                      ""
@@ -430,6 +453,7 @@
        "urlRoot": "www.sciencedirect.com",
         "urlPath": "science?_ob=MiamiSearchURL&_method=requestForm&_temp=search.tmpl&md5=be86fcf199953fc3d5e2cd09e0389370&Subscribed=1&openaccess=1",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals in health, medicine, psychology and life sciences.",
         "category": [
                      "health-&amp;-medicine", "psychology"
@@ -447,6 +471,7 @@
        "urlRoot": "www.oed.com",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "Definitions, pronunciations and historical background of words in the English language.",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "literature"
@@ -467,6 +492,7 @@
        "urlRoot": "online.salempress.com",
         "urlPath": "home.do",
         "proxy": true,
+        "ssl": false,
         "description": "Ebooks and background information in career development, history, health, science, and literature.",
         "category": [
                      "ebooks", "health-&amp;-medicine", "history", "literature"
@@ -483,6 +509,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=8gh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals covering human impact on the environment, climate change, green architecture, pollution, sustainable agriculture, renewable energy, and recycling.",
         "category": [
                      "environmental-science"
@@ -499,6 +526,7 @@
         "urlRoot": "losrios.naxosmusiclibrary.com",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "Classical and modern music.",
         "category": [
                      "music"
@@ -515,6 +543,7 @@
         "urlRoot": "searchcenter.intelecomonline.net",
         "urlPath": "SearchCenter.aspx",
         "proxy": true,
+        "ssl": false,
         "col": "s",
         "description": "Video clips covering a variety of academic and vocational fields. (Access limited to Sacramento City College.)",
         "category": [
@@ -531,6 +560,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=n5h",
         "proxy": true,
+        "ssl": false,
         "description": "Regional, national and international newspapers, television and radio news transcripts.",
         "category": [
                      "news"
@@ -549,6 +579,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tfh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, professional journals, and reports in education.",
         "category": [
                      "education"
@@ -567,6 +598,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lxh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals and magazines in library and information science.",
         "category": [
                      "social-sciences"
@@ -585,6 +617,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=trh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals and professional journals on teaching and education leadership.",
         "category": [
                      "education"
@@ -601,6 +634,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=rlh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals covering world religions, philosophy, and theology.",
         "category": [
                      "philosophy-&amp;-religion"
@@ -618,6 +652,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bwh",
         "proxy": true,
+        "ssl": false,
         "description": "U.S. business journals and news.",
         "category": [
                      "business"
@@ -636,6 +671,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ulh",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, biographies, primary source documents, maps, flags and images on many topics.",
         "category": [
                      ""
@@ -652,6 +688,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=l0h",
         "proxy": true,
+        "ssl": false,
         "description": "Information on medications from the American Society of Health-System Pharmacists.",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "health-&amp;-medicine"
@@ -668,6 +705,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kdh",
         "proxy": true,
+        "ssl": false,
         "description": "Information on book titles, with full-text, searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist, and others.",
         "category": [
                      "encyclopedias,-dictionaries,-reference"
@@ -684,6 +722,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kfh",
         "proxy": true,
+        "ssl": false,
         "description": "Information on music and film titles such as publisher, producer, track listing, and cast.",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "music"
@@ -700,6 +739,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ebooks&defaultdb=nlebk",
         "proxy": true,
+        "ssl": false,
         "description": "Ebooks on social sciences, information technology, the humanities, business, economics, and more.",
         "category": [
                      "art", "business", "ebooks", "education", "communication", "computer-information-science", "criminal-justice-&amp;-law", "environmental-science", "health-&amp;-medicine", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
@@ -719,6 +759,7 @@
        "urlRoot": "quod.lib.umich.edu",
         "urlPath": "cgi/t/text/text-idx?c=acls;rgn=full%20text;page=simple",
         "proxy": true,
+        "ssl": false,
         "description": "Ebooks on archaeology, art and architecture, religion, film and media, linguistics, literature, musicology, performance studies, philosophy, and social sciences.",
         "category": [
                      "art", "communication", "ebooks", "history", "literature", "philosophy-&amp;-religion"
@@ -738,6 +779,7 @@
        "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
         "proxy": true,
+        "ssl": false,
         "description": "Ebooks, professional journals and magazines in entrepreneurship and small business ownership.",
         "category": [
                      "business", "ebooks"
@@ -755,6 +797,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals and ebooks on theatre and performance.",
         "category": [
                      "theatre-&amp;-performing-arts", "literature"
@@ -772,6 +815,7 @@
         "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb/?db=OVIC",
         "proxy": true,
+        "ssl": false,
         "description": "Viewpoint articles on current social issues and controversial topics.",
         "category": [
                      "controversial-topics", "communication"
@@ -788,6 +832,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nsm",
         "proxy": true,
+        "ssl": false,
         "description": "News reports from Associated Press, United Press International, PR Newswire, Xinhua, CNN Wire, and Business Wire from the last 30 days.",
         "category": [
                      "news"
@@ -804,6 +849,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nmr",
         "proxy": true,
+        "ssl": false,
         "description": "Includes over 14,000 feeds covering a range of business and general news topics. Click the title to go directly to the online source.",
         "category": [
                      "news"
@@ -820,6 +866,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=a9h",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, professional journals, reports and magazines in the social sciences, the humanities, and general sciences.",
         "category": [
                      "general", "art", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology"
@@ -853,6 +900,7 @@
         "urlRoot": "",
         "urlPath": "special.php?pageTitle=films-on-demand",
         "proxy": false,
+        "ssl": false,
         "description": "Documentaries in the humanities, history, health, technical education, archival films, and much more.",
         "category": [
                      "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
@@ -869,6 +917,7 @@
        "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb?db=GVRL",
         "proxy": true,
+        "ssl": false,
         "description": "Background information from general and subject encyclopedias.",
         "category": [
                      "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
@@ -907,6 +956,7 @@
         "urlRoot": "scholar.google.com",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "Scholarly journals, ebooks, abstracts, patents and legal research from academic, nonprofit and government sources. Use the Los Rios Full Text link for library provided content.",
         "category": [
                      "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
@@ -923,6 +973,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f5h",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, magazines, biographies, primary source documents, maps, flags and images on different topics. ",
         "category": [
                      ""
@@ -940,6 +991,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=src_ic",
         "proxy": true,
+        "ssl": false,
         "description": "Background information, magazines, news, ebooks, primary sources, and scholarly journals on many topics. Teaching and curriculum support for educators.",
         "category": [
                      ""
@@ -956,6 +1008,7 @@
         "urlRoot": "www.collegesource.org",
         "urlPath": "",
         "proxy": true,
+        "ssl": false,
         "description": "College profiles, catalogs, transcript keys, and other resources related to higher education.",
         "category": [
                      "encyclopedias,-dictionaries,-reference"
@@ -972,6 +1025,7 @@
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=eds",
         "proxy": true,
+        "ssl": false,
         "description": "Los Rios Libraries&apos; online catalog and access to the content of most databases held at Los Rios.",
         "category": [
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
@@ -986,6 +1040,7 @@
             "urlRoot": "www.rclweb.net",
             "urlPath": "",
             "proxy": true,
+            "ssl": false,
             "description": "Reviews of print and electronic resources for academic libraries.",
             "category": ["library-science"],
             "onesearch": "no",
