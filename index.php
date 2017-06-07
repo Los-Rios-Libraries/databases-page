@@ -7,40 +7,61 @@ ini_set('display_startup_errors',1);
 error_reporting(-1);
 */
 
-
-$category=$_GET['category'];
-$alpha = $_GET['az'];
-$format = $_GET['format'];
-$query = $_GET['query'];
-$query = urldecode($query);
-$query = str_replace('&', '&amp;', $query);
+if (isset($_GET['category'])) {
+	$category=$_GET['category'];
+}
+if (isset($_GET['az'])) {
+	$alpha = $_GET['az'];
+}
+if (isset($_GET['format'])) { // are we still using this--is it needed any longer?
+	$format = $_GET['format'];
+}
+if (isset($_GET['query'])) {
+	$query = $_GET['query'];
+	$query = urldecode($query);
+	$query = str_replace('&', '&amp;', $query);
+}
 // $referrer = $_SERVER['HTTP_REFERER']; this is not working
-$college = $_GET['college'];
-$newWins = $_COOKIE['newWindowLinks'];
-$profile = $_GET['profile'];
+if (isset($_GET['college'])) {
+	$college = $_GET['college'];
+	// most often people will be clicking from library website or libguides. So set the cookie that way if possible.
+	$ar = 'arc';
+	$cr = 'crc';
+	$fl = 'flc';
+	$sc = 'scc';
+	if ($college === $ar) {
+		setHomeLib($ar);
+	}
+	elseif ($college === $sc) {
+		setHomeLib($sc);
+	}
+	elseif ($college === $cr) {
+		setHomeLib($cr);
+	}
+	elseif ($college === $fl) {
+		setHomeLib($fl);
+	}
+}
+elseif (isset($_COOKIE['homeLibrary'])) {
+	$homeLibrary = $_COOKIE['homeLibrary'];
+}
+else {
+	$homeLibrary = 'unknown';
+}
+
+if (isset($_COOKIE['newWindowLinks'])) {
+	$newWins = $_COOKIE['newWindowLinks'];
+}
+if (isset($_GET['profile'])) {
+	$profile = $_GET['profile'];
+}
 // echo $referrer;
 
 function setHomeLib($s){
 	setcookie('homeLibrary', $s,  time() + (86400 * 10), '/', 'losrios.edu'); // cookie expires after 10 days. May want to lengthen it.
 	
 }
-// most often people will be clicking from library website or libguides. So set the cookie that way if possible.
-$ar = 'arc';
-$cr = 'crc';
-$fl = 'flc';
-$sc = 'scc';
-if ($college === $ar) {
-	setHomeLib($ar);
-}
-elseif ($college === $sc) {
-	setHomeLib($sc);
-}
-elseif ($college === $cr) {
-	setHomeLib($cr);
-}
-elseif ($college === $fl) {
-	setHomeLib($fl);
-}
+
 
 /*
 // our ips are not working out so well...
@@ -50,12 +71,6 @@ elseif (!isset($_COOKIE['homeLibrary'])) {
 	
 }
 */
-elseif (isset($_COOKIE['homeLibrary'])) {
-	$homeLibrary = $_COOKIE['homeLibrary'];
-}
-else {
-	$homeLibrary = 'unknown';
-}
 
 $alphaShowAll = '<div><a id="show-all" href="index.php?az">Show All</a></div>' . "\n";
 if (isset($format)) {
