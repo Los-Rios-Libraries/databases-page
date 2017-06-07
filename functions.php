@@ -43,7 +43,7 @@ function writeDBInfo($db, $url) {
         $trialclass = '';
     }
     $dataCol = '';
-    if ($db->col !== null) {
+    if (array_key_exists('col',$db)) {
         $dataCol = ' data-college="' . $db -> col . '" ';
     }
     $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " " . $topPick . "\">\n";
