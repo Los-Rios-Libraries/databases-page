@@ -100,7 +100,6 @@ function dbsByAlpha($letter) {
  global $dbs;
 // sort($dbs);
  usort($dbs, 'cmp');
- global $format;
  global $query;
  $query = strtolower($query);
  $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);

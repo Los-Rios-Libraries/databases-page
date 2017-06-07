@@ -199,7 +199,7 @@ elseif ((isset($alpha)) && (!isset($format)) ) {
 
      for ($k = 0; $k < $azLinksNo; $k++) {
     
-     dbsByAlpha($azLinks[$k], $format);
+     dbsByAlpha($azLinks[$k]);
      
      }
      if ((isset($format)) || ((isset($query)) && (!(empty($query))))){
