@@ -1,5 +1,6 @@
 <style>
     #scc-help ul {list-style-type:none;}
+    #library-hours thead{position:absolute; left: -90999999px;}
     
 </style>
 <div id="scc-help">
@@ -24,6 +25,13 @@ style="display: none;">
 <hr>
 <h3>Library Hours, Fall 2017</h3>
 <table id="library-hours">
+    <thead>
+    <tr>
+        <th>Day</th>
+        <th>Hours</th>
+    </tr>
+    </thead>
+    <tbody>
     <tr>
         <td>M-Th</td>
         <td>7:30 am &ndash; 9:30 pm</td>
@@ -40,6 +48,7 @@ style="display: none;">
         <td>Sun</td>
         <td>Closed</td>
     </tr>
+    </tbody>
 </table>
 <p><a href="http://www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
 </div>
