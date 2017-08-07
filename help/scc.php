@@ -9,9 +9,7 @@
 <div class="libraryh3lp" jid="homepage@chat.libraryh3lp.com" 
 style="display: none;">
     <div id="ask-block-active" class="ask-block">
-         <a href="https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093" 
-   onclick="window.open('https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093',
-   'chat', 'resizable=1,width=320,height=460,left=100, top=100'); return false;">
+         <a href="https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093">
         <img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian">
         <p><strong>Live Chat</strong></p>
          </a>
@@ -63,4 +61,10 @@ checkCookies('newWindowLinks');
     x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?multi,poll";
     var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
   })();
+  document.querySelector('#ask-block-active a').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093',
+   'chat', 'resizable=1,width=320,height=460,left=100, top=100');
+    
+  });
 </script>
