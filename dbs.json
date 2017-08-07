@@ -220,6 +220,7 @@
                      ],
                      "onesearch": "yes"
         },
+  
                                                {
         "name":"Environment Complete",
         "vendor": "EBSCO",
@@ -546,7 +547,7 @@
         "ssl": false,
         "col": "s",
         "description": "Video clips covering a variety of academic and vocational fields. (Access limited to Sacramento City College.)",
-        "category": [
+        "category": [ "video", "business", "communication", "environmental-science", "psychology", "sociology"
                      ],
                      "onesearch": "yes"
         },
@@ -916,7 +917,7 @@
         "ssl": false,
         "description": "Documentaries in the humanities, history, health, technical education, archival films, and much more.",
         "category": [
-                     "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
+                     "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts", "video"
                      ],
                      "onesearch": "yes"
         },
