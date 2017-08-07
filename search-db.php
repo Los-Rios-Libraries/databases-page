@@ -251,7 +251,7 @@ elseif (strpos($vendor, 'naxos') > -1) {
     }
     }
 elseif (strpos($vendor, 'kanopy') > -1) {
-    $urlBase = 'https://0-losrios-kanopystreaming-com.lasiii.losrios.edu/';
+    $urlBase = 'https://losrios.kanopystreaming.com/';
     if ($query !== '') {
     $url = $urlBase .  's?query=' . $query;
     }
