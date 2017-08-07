@@ -804,7 +804,20 @@
                      ],
                      "onesearch": "yes"
         },
-        
+                      {
+                "name":"Kanopy",
+                "vendor": "Kanopy",
+                "type": [
+                         "video"],
+                "urlRoot": "losrios.kanopystreaming.com",
+                "urlPath": "",
+                "proxy": false,
+                "ssl": true,
+                "description": "Feature films, documentaries, and educational videos.</strong>",
+                "category": ["video", "theatre-&amp;-performing-arts" ],
+                "onesearch": "yes"
+ },
+      
          {
         "name":"Opposing Viewpoints in Context",
         "vendor": "Gale",
