@@ -234,6 +234,9 @@ aside {float:none !important; margin-left:50px; width:auto !important; display:i
     #lr-footer {position:static !important; padding-bottom:20px;}
     #ft-content-container {border-radius:0;}
  }
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     #lr-footer {position:static;margin-bottom:30px;} /* crappy IE fix */
+}
  @media screen and (max-width: 780px)
  {
     #head-nav ul {clear:left;}
