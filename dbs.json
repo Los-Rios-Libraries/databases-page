@@ -220,6 +220,23 @@
                      ],
                      "onesearch": "yes"
         },
+                                 {
+        "name":"Ethnologue",
+        "vendor": "SIL International",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "www.ethnologue.com",
+        "urlPath": "",
+        "proxy": true,
+        "ssl": false,
+        "description": "A guide to the living languages of the world, including language profiles, statistics, and maps.",
+        "category": [
+                     "encyclopedias,-dictionaries,-reference", "geography"
+                     ],
+                     "onesearch": "no"
+        },
   
                                                {
         "name":"Environment Complete",
