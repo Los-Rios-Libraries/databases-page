@@ -1,4 +1,17 @@
 <!-- alt text for images should match text in all elements, to aid with Google Analytics tracking -->
+<style>
+#mySched27927 {
+background: none;
+border: 0px;
+ border-radius: 0px;  
+font: 14px Arial, Helvetica, Verdana;
+  padding: 8px;
+  cursor: pointer;
+}
+#mySched27927:hover {
+  opacity: 0.9;
+}
+</style>
 <div id="arc-help">
 <div>
 	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>
@@ -7,7 +20,7 @@
     <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="135" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
 </div>
     <div id="arc-appt">
-        <a href="http://arc.losrios.libcal.com/scheduler.php?iid=525&amp;u=4411&amp;t=Make an appointment!"><img width="136" src="help/arc-img/ResearchAppts.png" alt="Research Appointments"></a>
+        <button id="mySched27927"><img alt="Research Appointments" height="40" src="help/arc-img/ResearchAppts.png" width="136" type="button" /></button>
     </div>
     
 </div>
@@ -25,11 +38,37 @@
 
 <script>
     checkCookies('newWindowLinks');
-    var arcSched = document.querySelectorAll('#arc-appt a');
-    for (var i=0; i<arcSched.length; i++) {
-    arcSched[i].addEventListener('click', function(e) {
-        e.preventDefault();
-        window.open('http://arc.losrios.libcal.com/scheduler.php?iid=525&u=4411&t=Make an appointment!', 'sched','width=660,height=400,left=100,top=100').focus();
-        });
+
+    function attachDialog() { // from Springshare
+    	$("#mySched27927").LibCalMySched({
+    		iid: 525,
+    		uid: 0,
+    		gid: 1123,
+    		width: 500,
+    		height: 450
+    	});
+
     }
+    var wait = setInterval(function() { // wait for jQuery to load
+
+    	if (typeof(jQuery) == 'function') {
+    		clearTimeout(wait);
+    		if (!(document.getElementById('arc-sched-scr'))) { // if libcal scheduler script is not already loaded, load it
+    			var a = document.createElement('script');
+    			a.async = true;
+    			a.id = 'arc-sched-scr'; // allows us to check for it before loading
+    			a.src = '//api3.libcal.com/js/myscheduler.min.js?002';
+    			document.getElementsByTagName('body')[0].appendChild(a); // add script below jQuery
+    			$('#arc-sched-scr').on('load', function() { // wait for it to load since we need the LibCalMySched function
+    				attachDialog();
+    			});
+    		} else {
+    			attachDialog();
+    		}
+    	}
+    }, 50);
+    	
+  
 </script>
+<!-- Place the following link anywhere in your page. Make sure the id "mySched27927" matches with the above code: jQuery("#mySched27927")  //-->
+
