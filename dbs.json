@@ -504,6 +504,41 @@
                      ],
                      "onesearch": "yes"
         },
+                                       {
+        "name":"Cochrane Library",
+        "vendor": "Wiley",
+        "top": "no",
+        "type": [
+            "scholarly-journals", "reports"
+                ],
+       "urlRoot": "www.cochranelibrary.com",
+        "urlPath": "",
+        "proxy": true,
+        "trial": true,
+        "description": "Systematic reviews and information about clinical trials in the health sciences.",
+        "category": [
+                     "health-&amp;-medicine"
+                     ],
+                     "onesearch": "no"
+        },
+        
+                                               {
+        "name":"Cochrane Clinical Answers",
+        "vendor": "Wiley",
+        "top": "no",
+        "type": [
+            "reference"
+                ],
+       "urlRoot": "cochraneclinicalanswers.com",
+        "urlPath": "",
+        "proxy": true,
+        "trial": true,
+        "description": "Research-informed answers to health-related questions, with citations to scholarly literature.",
+        "category": [
+                     "health-&amp;-medicine",  "encyclopedias,-dictionaries,-reference"
+                     ],
+                     "onesearch": "no"
+        },
   
                                {
         "name":"Oxford English Dictionary",

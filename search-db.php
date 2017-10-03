@@ -239,6 +239,16 @@ elseif (strpos($vendor, 'salem') > -1) {
         $url = $urlBase . 'home.do';
     }
 }
+elseif (strpos($dbName, 'clinical') > -1) {
+
+    $urlBase = 'http://0-cochraneclinicalanswers.com.lasiii.losrios.edu/';
+    if ($query !== '') {
+    $url = $urlBase . 'search?searchTerm=' . $query . '&sortBy=relevance' ;
+    }
+    else {
+        $url = $urlBase;
+    }
+}
 
 elseif (strpos($vendor, 'naxos') > -1) {
     $urlBase = 'http://0-losrios.naxosmusiclibrary.com.lasiii.losrios.edu/';
