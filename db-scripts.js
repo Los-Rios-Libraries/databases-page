@@ -70,7 +70,7 @@ $('#multi-search').on('submit', function(e) { // if users do not select autocomp
   submitSearch($('#dbpage-query').val());
   });
 function submitSearch(kw) {
-    var dbPatterns = /ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|lex[ui]s(( )?nex[iu]s)?|gale virtual|gvrl|cq|onesearch|oxford art|^grove|artstor|ebooks|google scholar|business source|statista|opposing viewpoints|socindex|psycarticles|^eric$|education research complete|greenfile|intelecom|pubmed|medline|naxos|oxford english|oed|rcl|resources for college|science( )?direct|kanopy/i;
+    var dbPatterns = /ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|ethnologue|lex[ui]s(( )?nex[iu]s)?|nexis|gale virtual|gvrl|cq|onesearch|oxford art|^grove|artstor|ebooks|google scholar|business source|statista|opposing viewpoints|socindex|psycarticles|^eric$|education research complete|greenfile|intelecom|pubmed|medline|naxos|oxford english|oed|rcl|resources for college|science( )?direct|kanopy/i;
     ga('send', 'event', 'search', 'submit', kw);
     if (dbPatterns.test(kw) === true) {
       console.log('found match');
