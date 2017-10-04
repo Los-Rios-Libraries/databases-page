@@ -393,21 +393,10 @@ function checkCookies(a)
   if (a === 'homeLibrary')
   {
     var homeLibrary = getCookie(a);
-    if (homeLibrary === 'arc')
+    if (homeLibrary)
     {
-      homeLibEls('arc');
-    }
-    else if (homeLibrary === 'scc')
-    {
-      homeLibEls('scc');
-    }
-    else if (homeLibrary === 'crc')
-    {
-      homeLibEls('crc');
-    }
-    else if (homeLibrary === 'flc')
-    {
-      homeLibEls('flc');
+      homeLibEls(homeLibrary);
+    
     }
     else
     {
