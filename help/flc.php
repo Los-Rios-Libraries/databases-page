@@ -1,10 +1,3 @@
-<style>
-    #services {margin-top:8px;}
-    .service {margin-bottom:10px;}
-    .service p {margin-left:38px;}
-    .service img {clear:both; float:left; padding:.5em .5em 0 0;}
-
-</style>
 <div id="flc-help">
 <p>The FLC Librarians can help you with your research in variety of ways.</p>
 <p><em>We are always happy to help!</em></p>

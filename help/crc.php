@@ -1,10 +1,3 @@
-<style>
-    #crc-info p, #crc-info li, #crc-info h4 {font-size:.9em;}
-    #crc-info h4 {font-weight:bold;}
-    #crc-info ul {list-style-type:none;}
-    #crc-info h3 {margin-top:8px;}
-    
-</style>
 <div id="crc-info">
     <h3>
         Location</h3>

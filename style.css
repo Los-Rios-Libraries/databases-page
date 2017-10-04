@@ -209,6 +209,25 @@ table.patFunc {border-collapse: collapse;}
 .patFuncEntry {background: #F5F5F5; border-top: 1px solid #ccc;}
 .patFuncFinesEntryTitle {background:#F5F5F5; font-size:1.4em; border-bottom:2px solid #ccc;}
 .patFuncFinesEntryDetail td {border-bottom:none;}
+/* college-specific boxes */
+/* arc */
+#mySched27927 {
+background: none;
+border: 0px; border-radius: 0px;  font: 14px Arial, Helvetica, Verdana; padding: 8px; cursor: pointer; }
+#mySched27927:hover {  opacity: 0.9;}
+/* crc */
+#crc-info p, #crc-info li, #crc-info h4 {font-size:.9em;}
+#crc-info h4 {font-weight:bold;}
+#crc-info ul {list-style-type:none;}
+#crc-info h3 {margin-top:8px;}
+/* flc */
+#flc-help #services {margin-top:8px;}
+#flc-help .service {margin-bottom:10px;}
+#flc-help .service p {margin-left:38px;}
+#flc-help .service img {clear:both; float:left; padding:.5em .5em 0 0;}
+/* scc */
+#scc-help ul {list-style-type:none;}
+#scc-help #library-hours thead{position:absolute; left: -90999999px;}
 /* footer */
 #lr-footer {clear:both; width: 100%; color: #fff;position: absolute; z-index:100; background:#fff; bottom: 20px; margin: 0 auto; font-size:80%;   }
 #ft-content-container {display: table; width: 100%;max-width:1100px; margin: 0 auto; /* background: #3d3d3d;  */ padding: 5px; border-top: 2px solid #3d3d3d; /* border-radius: 4px 4px 0 0; */ color:#3d3d3d;}

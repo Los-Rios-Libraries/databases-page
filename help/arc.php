@@ -1,17 +1,4 @@
 <!-- alt text for images should match text in all elements, to aid with Google Analytics tracking -->
-<style>
-#mySched27927 {
-background: none;
-border: 0px;
- border-radius: 0px;  
-font: 14px Arial, Helvetica, Verdana;
-  padding: 8px;
-  cursor: pointer;
-}
-#mySched27927:hover {
-  opacity: 0.9;
-}
-</style>
 <div id="arc-help">
 <div>
 	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>

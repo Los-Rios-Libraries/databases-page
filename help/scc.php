@@ -1,8 +1,3 @@
-<style>
-    #scc-help ul {list-style-type:none;}
-    #library-hours thead{position:absolute; left: -90999999px;}
-    
-</style>
 <div id="scc-help">
 <div class="needs-js"><img src="loader.gif"  height="16" alt="loading"></div>
 
