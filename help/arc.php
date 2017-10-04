@@ -20,7 +20,7 @@ font: 14px Arial, Helvetica, Verdana;
     <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="135" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
 </div>
     <div id="arc-appt">
-        <button id="mySched27927"><img alt="Research Appointments" height="40" src="help/arc-img/ResearchAppts.png" width="136" type="button" /></button>
+        <button id="mySched27927" type="button"><img alt="Research Appointments" height="40" src="help/arc-img/ResearchAppts.png" width="136" /></button>
     </div>
     
 </div>
