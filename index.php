@@ -275,10 +275,10 @@ include_once('footer.php');
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="res/jquery-ui.min.js"></script>
-  <!-- <script src="db-scripts.js?0421"> 
+ <script src="db-scripts.js?0421"> 
  
-</script>      -->
-<script src="db-scripts.min.js?1004"></script>
+</script>    
+<!--<script src="db-scripts.min.js?1004a"></script>-->
 
 
 </body>
