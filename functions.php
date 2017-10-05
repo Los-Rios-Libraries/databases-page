@@ -65,7 +65,11 @@ function dbsByCat($dbcat) {
  echo "<h2>" .$heading . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
+    $ssl = '';
+    if (isset($db -> ssl)) {
+        $ssl = $db -> ssl;
+    }
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $ssl);
   if (in_array($dbcat, $db ->category)) {
    echo writeDBInfo($db, $url);
    }
@@ -109,7 +113,11 @@ function dbsByAlpha($letter) {
  echo "<div class=\"alpha category\"><h2>" .$letter . "</h2>\n";
  echo "<ul>\n";
  foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
+        $ssl = '';
+    if (isset($db -> ssl)) {
+        $ssl = $db -> ssl;
+    }
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $ssl);
   $dbLower = strtolower($db -> name);
   if (strpos($dbLower, $letter) === 0) {
      if ((isset($query)) && (!(empty($query)))) {
@@ -145,7 +153,11 @@ function trialDbs() {
  global $dbs;
   echo "<ul>\n";
  foreach($dbs as $db) {
-  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $db->ssl);
+        $ssl = '';
+    if (isset($db -> ssl)) {
+        $ssl = $db -> ssl;
+    }
+  $url = makeURL($db->urlRoot, $db->urlPath, $db->proxy, $ssl);
   if (array_key_exists('trial', $db)) {
    echo writeDBInfo($db, $url);
    }
