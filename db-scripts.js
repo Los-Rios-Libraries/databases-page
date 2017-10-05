@@ -32,7 +32,7 @@ function defaultAuto(el) {
     {
       //        console.log(data);
       data = JSON.parse(data); // turn response into JSON object
-      var array = $.map(data, function (value, index) // convert to array
+      var array = $.map(data, function (value) // convert to array
       {
         return [value];
       });
