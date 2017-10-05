@@ -21,7 +21,7 @@ padding-bottom: 2px;
 #multi-search label {position:relative; z-index:500;}
 #dbpage-query { position:relative; z-index: 500; width:10em; padding:0 8px; border:1px solid #ccc; border-radius:4px; margin-left:1em; height:14px;  -webkit-transition: width .5  s;}
 .form-emphasis { height:2em !important; width:18em !important; font-size: 1.2em; transition: width .4s;-webkit-transition: width .4s;}
-#form-remainder { position:absolute; z-index:400; left:1em; background: #3d3d3d; margin-top:-1.4em; width:80%; max-width: 500px; padding:3em; border-radius:0 0 8px 8px; -webkit-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);}
+#form-remainder { position:absolute; z-index:99; left:1em; background: #3d3d3d; margin-top:-1.4em; width:80%; max-width: 500px; padding:3em; border-radius:0 0 8px 8px; -webkit-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);box-shadow: 10px 10px 24px -8px rgba(0,0,0,0.75);}
 #dbpage-query-submit {margin-top:8px; padding: 4px; font-size:1em; cursor:pointer; border-radius:4px;  background:#F5F5F5;position:relative; z-index:2000;}
 #dbpage-query-submit:hover {background:#ccc;}
 #main #multi-search {margin: 10px auto 0;  width: 80%;  max-width: 500px; border-top:1px solid #ccc; float:none; padding-top:20px;}
