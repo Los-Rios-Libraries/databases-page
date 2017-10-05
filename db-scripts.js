@@ -77,7 +77,7 @@ function submitSearch(kw) {
       location.href = 'index.php?az&query=' + encodeURIComponent(kw);
     }
     else {
-      var url = 'http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip,uid&direct=true&profile=eds&bquery=' + encodeURIComponent(kw) + '&site=eds-live&scope=site';
+      var url = 'https://0-search-ebscohost-com.lasiii.losrios.edu/login.aspx?authtype=ip,uid&direct=true&profile=eds&bquery=' + encodeURIComponent(kw) + '&site=eds-live&scope=site';
       if (getCookie('newWindowLinks') === 'yes') {
         window.open(url);
       }
@@ -344,7 +344,7 @@ function homeLibEls(col)
   }, 'html');
   var colUpper = col.toUpperCase();
   $('#library-help h2').html('From the ' + colUpper + ' Library');
-  $('#pubfinder a').attr('href', 'http://search.ebscohost.com/login.aspx?authtype=ip,guest&direct=true&custid=' + cust + '&db=edspub&groupid=main&profile=eds&plp=1');
+  $('#pubfinder a').attr('href', 'https://search.ebscohost.com/login.aspx?authtype=ip,guest&direct=true&custid=' + colProps[col].cust + '&db=edspub&groupid=main&profile=eds&plp=1');
   $('.db-entry').each(function() { // hide databases not shown to particular colleges
     var a = $(this);
     if (a.data('college')) {

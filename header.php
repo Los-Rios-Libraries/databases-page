@@ -21,5 +21,5 @@
  <h1><a href="index.php">Research  Databases</a><?php echo $pageTitle; ?></h1>
 <div id="tagline">Los Rios Libraries</div>
 
-<div id="pubfinder"><a title="Check Library Holdings of Individual Periodicals" href="http://0-search.ebscohost.com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1">Periodicals by Title</a></div>
+<div id="pubfinder"><a title="Check Library Holdings of Individual Periodicals" href="https://0-search-ebscohost-com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1">Periodicals by Title</a></div>
  </header>
