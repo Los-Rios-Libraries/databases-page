@@ -309,34 +309,32 @@ function getCookie(cname)
 
 function homeLibEls(col)
 {
-  var cust;
-  var fod;
-  var singleCol;
-  switch (col)
-  {
-  case 'arc':
-    cust = 'amerriv';
-    fod = '240535';
-    singleCol = 'a';
-    break;
-  case 'scc':
-    cust = 'sacram';
-    fod = '106093';
-    singleCol = 's';
-    break;
-  case 'crc':
-    cust = 'cosum';
-    fod = '237206';
-    singleCol = 'c';
-    break;
-  case 'flc':
-    cust = 'ns015092';
-    fod = '237742';
-    singleCol = 'f';
-    break;
-  default:
-    cust = '';
-  }
+  var colProps = {
+  	'arc': {
+  		cust: 'amerriv',
+  		fod: '240535',
+  		singleCol: 'a'
+
+  	},
+  	'crc': {
+  		cust: 'cosum',
+  		fod: '237206',
+  		singleCol: 'c'
+
+  	},
+  	'flc': {
+  		cust: 'ns015092',
+  		fod: '237742',
+  		singleCol: 'f'
+
+  	},
+  	'scc': {
+  		cust: 'sacram',
+  		fod: '106093',
+  		singleCol: 's'
+
+  	}
+  };
   $('#' + col + '-link').addClass('homelib');
   $.get('help/' + col + '.php', function (data)
   {
@@ -348,13 +346,13 @@ function homeLibEls(col)
   $('.db-entry').each(function() { // hide databases not shown to particular colleges
     var a = $(this);
     if (a.data('college')) {
-      if (a.data('college').indexOf(singleCol) === -1) {
+      if (a.data('college').indexOf(colProps[col].singleCol) === -1) {
         a.hide();
       }
     }
     
   });
-  $('.db-name:contains(Films on Demand)').attr('href', 'http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' + fod);
+  $('.db-name:contains(Films on Demand)').attr('href', 'http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' + colProps[col].fod);
   setTimeout(function ()
   {
     $('#library-help-content a').on('click', function ()
