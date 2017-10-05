@@ -33,7 +33,7 @@ padding-bottom: 2px;
 
 #form-closer {position:absolute; bottom:4px; right:4px; cursor: pointer;}
 .ui-menu {border:1px solid #ccc; border-radius: 0 0 4px 4px;}
-.ui-menu-item:hover, .ui-menu-item:focus, .ui-state-focus {background:#4D6684; color:#fff;}
+.ui-menu-item:hover, .ui-menu-item:focus, .ui-state-focus, .ui-menu-item:active {background:#4D6684; color:#fff;}
 
 
 #head-nav ul {text-align: right; }
