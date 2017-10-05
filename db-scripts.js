@@ -402,6 +402,7 @@ function checkCookies(a)
       {
         $('#library-help-content').html(data);
       }, 'html');
+      showDBNos();
     }
     console.log(homeLibrary);
   }
