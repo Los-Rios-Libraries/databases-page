@@ -17,7 +17,7 @@ function showDBNos() {
     numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
   }
 }
-function defaultAuto(el) {
+function defaultAuto(el, searchType) {
        el.autocomplete(
 {
   source: function (request, response)
@@ -57,7 +57,12 @@ function defaultAuto(el) {
           el.val(ui.item.value);
            
         }
+        if (searchType !== 'quick') {
        submitSearch(el.val());
+       }
+       else {
+        el.closest('form').submit();
+       }
 
  //       $('#multi-search').submit();
   }
@@ -517,7 +522,9 @@ $('.open-db-search').on('click', function ()
     searchButton.addClass('hidden');
     searchButton.after(searchDB);
     searchButton.next(searchForms).fadeIn();
-    searchButton.next(searchForms).find(':text').focus();
+    var input = searchButton.next(searchForms).find(':text');
+    input.focus();
+    defaultAuto(input, 'quick');
   }
   else
   {
