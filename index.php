@@ -33,24 +33,7 @@ if (isset($_GET['query'])) {
 }
 // $referrer = $_SERVER['HTTP_REFERER']; this is not working
 if (isset($_GET['college'])) {
-	$college = $_GET['college'];
-	// most often people will be clicking from library website or libguides. So set the cookie that way if possible.
-	$ar = 'arc';
-	$cr = 'crc';
-	$fl = 'flc';
-	$sc = 'scc';
-	if ($college === $ar) {
-		setHomeLib($ar);
-	}
-	elseif ($college === $sc) {
-		setHomeLib($sc);
-	}
-	elseif ($college === $cr) {
-		setHomeLib($cr);
-	}
-	elseif ($college === $fl) {
-		setHomeLib($fl);
-	}
+	setHomeLib($_GET['college']); // most often people will be clicking from library website or libguides. So set the cookie that way if possible.
 }
 elseif (isset($_COOKIE['homeLibrary'])) {
 	$homeLibrary = $_COOKIE['homeLibrary'];
