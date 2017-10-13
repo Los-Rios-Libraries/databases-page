@@ -53,6 +53,7 @@ include_once('special/' . $pTitle . '.php');
 
 <?php
 include_once('asides.php');
+include_once('footer.php');
 ?>
 
 <img id="loader" alt="loading" src="loader.gif" class="hidden">
