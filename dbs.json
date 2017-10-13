@@ -515,7 +515,7 @@
         "urlPath": "",
         "proxy": true,
         "trial": true,
-        "description": "Systematic reviews and information about clinical trials in the health sciences.",
+        "description": "Systematic reviews and information about clinical trials in the health sciences. <strong>Trial ends October 31.</strong>",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -533,7 +533,7 @@
         "urlPath": "",
         "proxy": true,
         "trial": true,
-        "description": "Research-informed answers to health-related questions, with citations to scholarly literature.",
+        "description": "Research-informed answers to health-related questions, with citations to scholarly literature. <strong>Trial ends October 31.</strong>",
         "category": [
                      "health-&amp;-medicine",  "encyclopedias,-dictionaries,-reference"
                      ],
