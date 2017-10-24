@@ -447,6 +447,25 @@
                      ],
                      "onesearch": "yes"
         },
+                                {
+        "name":"SAGE Books",
+        "vendor": "SAGE Publications",
+        "top": "no",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "sk.sagepub.com",
+        "urlPath": "books",
+        "proxy": true,
+        "ssl": false,
+        "description": "Ebooks in the social sciences, education and business. <strong>Trial ends November 23.</strong>",
+        "category": [
+                      "ebooks", "criminal-justice-&amp;-law",
+                     "geography", "communication", "psychology", "education", "sociology", "political-science", "business"
+                     ],
+                     "onesearch": "no",
+                     "trial": true
+        },
                        {
         "name":"Health Source: Consumer Edition",
         "vendor": "EBSCO",
