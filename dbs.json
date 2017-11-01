@@ -348,8 +348,7 @@
         "urlPath": "",
         "proxy": true,
         "ssl": false,
-        "col": "a",
-        "description": "News, business, and legal research. Includes federal and state case law and Shepard's Citations. (Access currently limited to American River College.) <strong>Note: Nexis Uni will replace LexisNexis Academic in January 2018. Use is restricted to students and faculty/staff.</strong>",
+        "description": "News, business, and legal research. Includes federal and state case law and Shepard's Citations. <strong>Note: Nexis Uni will replace LexisNexis Academic in January 2018. Use is restricted to students and faculty/staff.</strong>",
         "category": [
                      "criminal-justice-&amp;-law",
                      "news",
