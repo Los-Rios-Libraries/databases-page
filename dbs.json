@@ -395,41 +395,6 @@
                      ],
                      "onesearch": "no"
                      },                  
-                                    {
-        "name":"Cochrane Library",
-        "vendor": "Wiley",
-        "top": "no",
-        "type": [
-            "scholarly-journals", "reports"
-                ],
-       "urlRoot": "www.cochranelibrary.com",
-        "urlPath": "",
-        "proxy": true,
-        "trial": true,
-        "description": "Systematic reviews and meta-analyses in health and medicine. <strong>Trial ends October 31.</strong>",
-        "category": [
-                     "health-&amp;-medicine"
-                     ],
-                     "onesearch": "no"
-        },
-        
-                                               {
-        "name":"Cochrane Clinical Answers",
-        "vendor": "Wiley",
-        "top": "no",
-        "type": [
-            "reference"
-                ],
-       "urlRoot": "cochraneclinicalanswers.com",
-        "urlPath": "",
-        "proxy": true,
-        "trial": true,
-        "description": "Clinical questions and answers for healthcare practitioners. <strong>Trial ends October 31.</strong>",
-        "category": [
-                     "health-&amp;-medicine",  "encyclopedias,-dictionaries,-reference"
-                     ],
-                     "onesearch": "no"
-        },
                                                        {
         "name":"Ovid Nursing Full Text Plus",
         "vendor": "Ovid Technologies",
