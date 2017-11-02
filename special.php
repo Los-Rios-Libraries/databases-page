@@ -5,13 +5,19 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 */
-$url = $_GET['url'];
-$pTitle = $_GET['pageTitle'];
-$skipCookie = $_COOKIE["skipPage-" . $pTitle];
-if ($skipCookie === 'skip') {
-	header('Location: '. $url);
-	
+if (isset($_GET['url'])) {
+	$url = $_GET['url'];
 }
+$pTitle = $_GET['pageTitle'];
+if (isset($_COOKIE['skipPage-' . $pTitle])) {
+	$skipCookie = $_COOKIE["skipPage-" . $pTitle];
+	if ($skipCookie === 'skip') {
+		header('Location: '. $url);
+		exit;
+	}
+}
+
+
 
 if (isset($_COOKIE['homeLibrary'])) {
 	$homeLibrary = $_COOKIE['homeLibrary'];
