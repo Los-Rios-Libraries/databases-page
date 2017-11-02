@@ -1,6 +1,6 @@
 /*! jQuery UI - v1.12.1 - 2017-10-04
 * http://jqueryui.com
-* Includes: core.css, autocomplete.css, menu.css, theme.css
+* Includes: core.css, autocomplete.css, menu.css, theme.cssx`
 
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
 
@@ -83,7 +83,8 @@ padding-bottom: 2px;
  .fourothree h3 {font-size:1.3em; padding-left:10px;}
  
  .category ul, .special p, #hide-message {list-style-type:none; padding:10px; background:#fff; margin-top:0;}
- .special ol {background:#f5f5f5;}
+ .special ol {background:#f5f5f5; padding-top:1em;}
+ .special li {margin:1em;}
 .fourothree ul {list-style-type: disc; padding-left:2em }
 .fourothree li {margin-top:1.3em;}
 .fourothree li:first-child {margin-top:0;}
