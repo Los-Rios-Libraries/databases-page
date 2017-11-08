@@ -21,7 +21,8 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', '' + gaID + '', 'auto');
-  ga('send', 'pageview');
   ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
 
 </script>
