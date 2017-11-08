@@ -31,10 +31,6 @@ function writeDBInfo($db, $url) {
     global $category;
     global $category;
     $formatList = implode(' ', $db -> type);
-    $topPick = '';
-    if (strpos($db->top, 'yes') !== false) {
-        $topPick = 'top-pick';
-    }
     $description = $db -> description;
     if (isset($db -> trial)) {
         $trialclass = 'trial';
@@ -46,7 +42,7 @@ function writeDBInfo($db, $url) {
     if (array_key_exists('col',$db)) {
         $dataCol = ' data-college="' . $db -> col . '" ';
     }
-    $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " " . $topPick . "\">\n";
+    $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " \">\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
     $name = $db -> name;
     if (preg_match('/Auto|Artstor|Nexis|Country|Cq|Crc|INTELECOM|Kanopy|Opposing|SAGE|ScienceDirect|Statista|CollegeSource|Ethnologue|Ovid/', $name) === 1) {
