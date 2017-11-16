@@ -118,7 +118,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=autorefctr",
         "proxy": true,
         "ssl": false,
-        "description": "Repair and maintenance information on most major manufacturers of domestic and imported vehicles.",
+        "description": "Repair and maintenance information on most major manufacturers of domestic and imported vehicles. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "automotive", "encyclopedias,-dictionaries,-reference"
                      ],
@@ -184,7 +184,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=chc",
         "proxy": true,
         "ssl": false,
-        "description": "Magazines, reports, and professional journals in healthcare and medicine, plus drug and herb information designed for consumers.",
+        "description": "Magazines, reports, and professional journals in healthcare and medicine, plus drug and herb information designed for consumers. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "health-&amp;-medicine"
                      ],
@@ -367,7 +367,7 @@
         "urlPath": "",
         "proxy": true,
         "ssl": false,
-        "description": "Statistics, studies, and reports on business and social issues in the United States and internationally.",
+        "description": "Statistics, studies, and reports on business and social issues in the United States and internationally. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
                      ],
@@ -673,7 +673,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tfh",
         "proxy": true,
         "ssl": false,
-        "description": "Scholarly journals, professional journals, and reports in education.",
+        "description": "Scholarly journals, professional journals, and reports in education. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "education"
                      ],
@@ -725,7 +725,7 @@
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=rlh",
         "proxy": true,
         "ssl": false,
-        "description": "Scholarly journals covering world religions, philosophy, and theology.",
+        "description": "Scholarly journals covering world religions, philosophy, and theology. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "philosophy-&amp;-religion"
                      ],
@@ -792,7 +792,7 @@
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kdh",
         "proxy": true,
         "ssl": false,
-        "description": "Information on book titles, with full-text, searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist, and others.",
+        "description": "Information on book titles, with full-text, searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist, and others. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "encyclopedias,-dictionaries,-reference"
                      ],
@@ -808,7 +808,7 @@
         "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kfh",
         "proxy": true,
         "ssl": false,
-        "description": "Information on music and film titles such as publisher, producer, track listing, and cast.",
+        "description": "Information on music and film titles such as publisher, producer, track listing, and cast. <strong>As of Spring 2018, this database will no longer be available.</strong>",
         "category": [
                      "encyclopedias,-dictionaries,-reference", "music"
                      ],
