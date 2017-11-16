@@ -42,6 +42,12 @@ function writeDBInfo($db, $url) {
     if (array_key_exists('col',$db)) {
         $dataCol = ' data-college="' . $db -> col . '" ';
     }
+    $dataProx = '';
+    if (array_key_exists('proxy', $db)) {
+        if ($db -> proxy === false) {
+            $dataProx = ' data-proxy="false" ';
+        }
+    }
     $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " \">\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
     $name = $db -> name;
@@ -49,7 +55,7 @@ function writeDBInfo($db, $url) {
         $searchButton = '';
     }
     $output .= $searchButton;
-    $output .= "<h3><a class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
+    $output .= "<h3><a " . $dataProx . " class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
     $output .= "<p class=\"db-desc\">" . $description . "</p>\n";
     return $output;
 }
