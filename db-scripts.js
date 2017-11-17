@@ -357,7 +357,7 @@ function homeLibEls(col)
     }
     
   });
-  $('.db-name:contains(Films on Demand)').attr('href', 'http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' + colProps[col].fod);
+  $('.db-name:contains(Films on Demand)').attr('href', 'http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' + colProps[col].fod).data('proxy', true);
   setTimeout(function ()
   {
     $('#library-help-content a').on('click', function ()
