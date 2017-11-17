@@ -557,12 +557,18 @@ $('#add-ezproxy').on('click', function() {
 	if ($('body').data('ezproxy') !== true) {
 		removeProxy();
 		$('#proxy').hide();
+    var proxyPref = 'https://ezproxy.losrios.edu/login?url=';
 		$('.db-name').each(function() {
 			if ($(this).data('proxy') !== false) {
 				var h = $(this).attr('href');
-				var deProxy = h.replace(/^/, 'https://ezproxy.losrios.edu/login?url=');
+				var deProxy = h.replace(/^/, proxyPref);
 				$(this).attr('href', deProxy);
 			}
+      else if ($(this).attr('href').indexOf('special') > -1) {
+        var arr = $(this).attr('href').split('=');
+        var url = arr.pop();
+        $(this).attr('href', proxyPref + url);
+      }
 		});
 		$('body').data('ezproxy', true);
 		if (!($('#ez-proxy-explanation').length)) {
