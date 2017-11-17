@@ -37,6 +37,9 @@ echo "</div>\n";
   <p class="special">The Library uses Google Analytics to track activity on this site. <span id="ga-status"><a target="blank" id="ga-opt-out" href="../notes/google-analytics.php">Read more &amp; opt out.</a></span></p>
 </aside>
 
-<aside id="proxy" class="gen-aside">
+<aside id="proxy" class="gen-aside proxy-button">
   <button id="remove-proxy" type="button">Remove proxy (for troubleshooting access problems)</button>
+</aside>
+<aside class="gen-aside proxy-button">
+  <button id="add-ezproxy" type="button">Use EZProxy (beta)</button>
 </aside>

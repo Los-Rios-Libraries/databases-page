@@ -553,6 +553,23 @@ $('#remove-proxy').on('click', function() {
   
   
 });
+$('#add-ezproxy').on('click', function() {
+	if ($('body').data('ezproxy') !== true) {
+		removeProxy();
+		$('#proxy').hide();
+		$('.db-name').each(function() {
+			if ($(this).data('proxy') !== false) {
+				var h = $(this).attr('href');
+				var deProxy = h.replace(/^/, 'https://ezproxy.losrios.edu/login?url=');
+				$(this).attr('href', deProxy);
+			}
+		});
+		$('body').data('ezproxy', true);
+		if (!($('#ez-proxy-explanation').length)) {
+			$('#add-ezproxy').after('<p class="special">This is for trying out access via the new authentication system. Not all databases will function correcctly. To go back to the normal urls, refresh the screen or navigate to another page.</p>');
+		}
+	}
+});
 var proxySet = getCookie('dbProxy');
 if (proxySet === 'removed') {
   removeProxy();
