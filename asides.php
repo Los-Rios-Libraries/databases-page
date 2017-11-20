@@ -41,5 +41,5 @@ echo "</div>\n";
   <button id="remove-proxy" type="button">Remove proxy (for troubleshooting access problems)</button>
 </aside>
 <aside class="gen-aside proxy-button">
-  <button id="add-ezproxy" type="button">Use EZProxy (beta)</button>
+  <button id="add-ezproxy" type="button">Use EZproxy (beta)</button>
 </aside>
