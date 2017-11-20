@@ -508,6 +508,25 @@
                      ],
                      "onesearch": "yes"
         },
+        
+                                       {
+        "name":"Digital Theatre Plus",
+        "vendor": "Digital Theatre+",
+        "type": [
+            "video"
+                ],
+        "urlRoot": "www.digitaltheatreplus.com",
+        "urlPath": "",
+        "proxy": true,
+        "ssl": true,
+        "col": "c",
+        "description": "Videos of theatre productions and interviews exploring the dramatic process.  Includes essays and study guides concerning the history, theory and criticism of theatre.",
+        "category": [
+                     "theatre-&amp;-performing-arts", "video"
+                     ],
+                     "onesearch": "no"
+        },
+        
                        {
         "name":"Medline",
         "vendor": "EBSCO",
