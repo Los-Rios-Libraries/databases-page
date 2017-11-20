@@ -572,7 +572,7 @@ $('#add-ezproxy').on('click', function() {
 		});
 		$('body').data('ezproxy', true);
 		if (!($('#ez-proxy-explanation').length)) {
-			$('#add-ezproxy').after('<p class="special">This is for trying out access via the new authentication system. Not all databases will function correcctly. To go back to the normal urls, refresh the screen or navigate to another page.</p>');
+			$('#add-ezproxy').after('<p class="special">This is for testing access via the new authentication system. Not all databases will function correctly. To go back to the normal urls, refresh the screen or navigate to another page.</p>');
 		}
 	}
 });
