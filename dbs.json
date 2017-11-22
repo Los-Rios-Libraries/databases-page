@@ -612,7 +612,7 @@
         "ssl": false,
         "description": "Ebooks and background information in career development, history, health, science, and literature.",
         "category": [
-                     "ebooks", "health-&amp;-medicine", "history", "literature"
+                     "ebooks", "encyclopedias,-dictionaries,-reference", "health-&amp;-medicine", "history", "literature"
                      ],
                      "onesearch": "no"
         },
