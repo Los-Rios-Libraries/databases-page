@@ -98,9 +98,9 @@
         "name":"Artstor",
         "vendor": "Artstor",
         "type": ["images"],
-        "urlRoot": "",
-        "urlPath": "special.php?pageTitle=artstor&url=https://library.artstor.org",
-        "proxy": false,
+        "urlRoot": "library.artstor.org/",
+        "urlPath": "",
+        "proxy": "ez",
         "ssl": false,
         "description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture. Register within Artstor to organize images and create presentations.",
         "category": [
