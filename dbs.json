@@ -98,7 +98,7 @@
         "name":"Artstor",
         "vendor": "Artstor",
         "type": ["images"],
-        "urlRoot": "library.artstor.org/",
+        "urlRoot": "library.artstor.org",
         "urlPath": "",
         "proxy": "ez",
         "ssl": false,

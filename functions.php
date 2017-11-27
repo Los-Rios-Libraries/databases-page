@@ -17,7 +17,7 @@ function makeURL($root, $path,$proxy, $ssl) {
             $url = $pro . '://0-' .$root . '.lasiii.losrios.edu/' .$path;
         }
         elseif ($proxy === 'ez') {
-            $url = 'https://ezproxy.losrios.edu/login?url=' . $pro . '://' . $root . $path;
+            $url = 'https://ezproxy.losrios.edu/login?url=' . $pro . '://' . $root . '/' . $path;
         }
         else {
             $url = $pro . '://' .$root .'/'.$path;
