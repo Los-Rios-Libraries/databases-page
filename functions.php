@@ -10,12 +10,15 @@ function makeURL($root, $path,$proxy, $ssl) {
         $pro = 'https';
     }
         if ($root !== '') {
-        if($proxy === true) {
+        if($proxy === 'wam') {
             if ($ssl === true) {
                 $root = str_replace('.', '-', $root);
             }
             $url = $pro . '://0-' .$root . '.lasiii.losrios.edu/' .$path;
-        }   
+        }
+        elseif ($proxy === 'ez') {
+            $url = 'https://ezproxy.losrios.edu/login?url=' . $pro . '://' . $root . $path;
+        }
         else {
             $url = $pro . '://' .$root .'/'.$path;
         }
@@ -44,9 +47,8 @@ function writeDBInfo($db, $url) {
     }
     $dataProx = '';
     if (array_key_exists('proxy', $db)) {
-        if ($db -> proxy === false) {
-            $dataProx = ' data-proxy="false" ';
-        }
+        $dataProx = ' data-proxy="'. $db -> proxy . '" ';
+        
     }
     $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " \">\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
