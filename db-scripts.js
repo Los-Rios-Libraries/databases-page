@@ -554,12 +554,12 @@ $('#remove-proxy').on('click', function() {
   
 });
 $('#add-ezproxy').on('click', function() {
-	if ($('body').data('ezproxy') !== true) {
+	if ($(this).data('pressed') !== true) {
 		removeProxy();
 		$('#proxy').hide();
     var proxyPref = 'https://ezproxy.losrios.edu/login?url=';
 		$('.db-name').each(function() {
-			if ($(this).data('proxy') !== false) {
+			if ($(this).data('proxy') === 'wam') {
 				var h = $(this).attr('href');
 				var deProxy = h.replace(/^/, proxyPref);
 				$(this).attr('href', deProxy);
@@ -569,11 +569,12 @@ $('#add-ezproxy').on('click', function() {
         var url = arr.pop();
         $(this).attr('href', proxyPref + url);
       }
+      $(this).data('proxy', 'ez');
 		});
-		$('body').data('ezproxy', true);
-		if (!($('#ez-proxy-explanation').length)) {
+    $(this).data('pressed', true);
+
 			$('#add-ezproxy').after('<p class="special">This is for testing access via the new authentication system. Not all databases will function correctly. To go back to the normal urls, refresh the screen or navigate to another page.</p>');
-		}
+		
 	}
 });
 var proxySet = getCookie('dbProxy');
