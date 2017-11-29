@@ -213,9 +213,6 @@ else {
 
 <link rel="stylesheet" href="style.css" >
 
- 
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
 </head>
@@ -226,6 +223,7 @@ else {
 if ($url !== '') {
 
 ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 location.replace('<?php echo $url; ?>');
 // http://stackoverflow.com/a/12135342/1903000
