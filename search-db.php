@@ -192,13 +192,11 @@ $dbs = array(
 
 if ($ehostCode !== '') {
     $url = findURL($dbs[0], $query);
-    echo 'url is ' .$url;
 }
 else {
     for ($i = 1; $i < count($dbs); $i++) { // loop starts with second array element
         if (strpos($dbName, $dbs[$i]['dbname']) > -1) {
             $url = findURL($dbs[$i], $query);
-            echo $url;
             break;
         }
     }
