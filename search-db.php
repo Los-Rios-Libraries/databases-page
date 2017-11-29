@@ -15,10 +15,16 @@ function findURL($arr, $query) {
 }
 
 $dbName = $_POST['db-name'];
+$query = '';
+if (isset($_POST['query'])) {
  $query = $_POST['query'];
  $query = urlencode($query);
+}
 $vendor = $_POST['vendor'];
+$ehostCode = '';
+if (isset($_POST['ehost'])) {
 $ehostCode = $_POST['ehost'];
+}
 $url = '';
 $homeLibrary = '';
 $galeID = '';
