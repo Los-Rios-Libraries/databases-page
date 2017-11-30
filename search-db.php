@@ -63,6 +63,7 @@ for ($i = 0; $i < count($collegeVars); $i++) {
     }
 }
 $proxyStr = '.lasiii.losrios.edu/';
+$ezpStr = 'https://ezproxy.losrios.edu/login?url=';
 $ebscoBase = 'http://0-search.ebscohost.com' . $proxyStr .'login.aspx?authtype=ip';
 $dbs = array(
              array( // first array element is ehost patterns - treated differently
