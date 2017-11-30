@@ -178,8 +178,8 @@ $dbs = array(
              array(
                 'vendor' => 'salem',
                 'dbname' => 'salem',
-                'noquery' =>  'http://0-online.salempress.com'. $proxyStr . 'home.do',
-                'queryUrl' => 'http://0-online.salempress.com'. $proxyStr . 'search.do?categoryName=&All=All&numCategories=5&searchInAll=all&searchText=' . $query
+                'noquery' =>  $ezpStr . 'http://online.salempress.com/home.do',
+                'queryUrl' => $ezpStr . 'http://online.salempress.com/search.do?categoryName=&All=All&numCategories=5&searchInAll=all&searchText=' . $query
              ),
              array(
                 'vendor' => 'naxos',

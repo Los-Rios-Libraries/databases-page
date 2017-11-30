@@ -590,7 +590,7 @@
                 ],
        "urlRoot": "online.salempress.com",
         "urlPath": "home.do",
-        "proxy": "wam",
+        "proxy": "ez",
         "ssl": false,
         "description": "Ebooks and background information in career development, history, health, science, and literature.",
         "category": [
