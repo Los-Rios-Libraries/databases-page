@@ -559,15 +559,15 @@ $('#add-ezproxy').on('click', function() {
 		$('#proxy').hide();
     var proxyPref = 'https://ezproxy.losrios.edu/login?url=';
 		$('.db-name').each(function() {
-			if ($(this).data('proxy') === 'wam') {
-				var h = $(this).attr('href');
-				var deProxy = h.replace(/^/, proxyPref);
-				$(this).attr('href', deProxy);
-			}
-      else if ($(this).attr('href').indexOf('special') > -1) {
+      if ($(this).attr('href').indexOf('special') > -1) {
         var arr = $(this).attr('href').split('=');
         var url = arr.pop();
         $(this).attr('href', proxyPref + url);
+      }
+      else {
+        var h = $(this).attr('href');
+				var deProxy = h.replace(/^/, proxyPref);
+				$(this).attr('href', deProxy);
       }
       $(this).data('proxy', 'ez');
 		});
@@ -584,8 +584,9 @@ if (proxySet === 'removed') {
 function removeProxy() {
     $('.db-name').each(function() {
     var h = $(this).attr('href');
+    var deProxy;
     if (h.indexOf('//0-') > -1) {
-     var deProxy = h.replace('//0-', '//');
+     deProxy = h.replace('//0-', '//');
      if (h.indexOf('https') > -1) {
       var parts = deProxy.split('.edu/');
       parts[0] = parts[0].replace(/\-/g, '.').replace(/$/, '.edu/');
@@ -594,6 +595,10 @@ function removeProxy() {
      }
      deProxy = deProxy.replace('.lasiii.losrios.edu', '');
      $(this).attr('href', deProxy); 
+    }
+    else if (h.indexOf('ezproxy') > -1) {
+      deProxy = h.replace('https://ezproxy.losrios.edu/login?url=', '');
+      $(this).attr('href', deProxy);    
     }
   });
     var proxyDiv = $('#proxy');
