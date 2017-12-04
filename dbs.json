@@ -406,22 +406,6 @@
                      ],
                      "onesearch": "yes"
                      },  
-                                                                               {
-        "name":"Ovid Nursing Full Text Plus",
-        "vendor": "Ovid Technologies",
-        "type": [
-            "scholarly-journals"
-                ],
-       "urlRoot": "ovidsp.ovid.com",
-        "urlPath": "autologin",
-        "proxy": "wam",
-        "trial": true,
-        "description": "Scholarly journals in Nursing and Allied Health fields. <strong>Trial ends December 2.</strong>",
-        "category": [
-                     "health-&amp;-medicine"
-                     ],
-                     "onesearch": "yes"
-        },
                           {
         "name":"Political Science Complete",
         "vendor": "EBSCO",
