@@ -325,10 +325,10 @@
             "scholarly-journals",
             "news"
                 ],
-        "urlRoot": "",
-        "urlPath": "special.php?pageTitle=nexis-uni&url=http://www.nexisuni.com",
-        "proxy": false,
-        "ssl": false,
+        "urlRoot": "www.nexisuni.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
         "description": "News, business, and legal research. Includes federal and state case law and Shepard's Citations. <strong>Note: Nexis Uni will replace LexisNexis Academic in January 2018. Use is restricted to students and faculty/staff.</strong>",
         "category": [
                      "criminal-justice-&amp;-law",
