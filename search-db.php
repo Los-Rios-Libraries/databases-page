@@ -154,8 +154,8 @@ $dbs = array(
              array(
                 'vendor' => 'oxford',
                 'dbname' => 'oxford-art',
-                'noquery' =>  'http://0-www.oxfordartonline.com'. $proxyStr,
-                'queryUrl' => 'http://0-www.oxfordartonline.com'. $proxyStr . 'subscriber/search_results?q=' . $query
+                'noquery' => $ezpStr . 'http://www.oxfordartonline.com/',
+                'queryUrl' => $ezpStr . 'http://www.oxfordartonline.com/groveart/search?siteToSearch=groveart&q=' . $query . '&searchBtn=Search&isQuickSearch=true'
              ),
              array(
                 'vendor' => 'oxford',

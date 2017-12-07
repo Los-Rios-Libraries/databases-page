@@ -85,7 +85,7 @@
                 ],
        "urlRoot": "www.oxfordartonline.com",
         "urlPath": "",
-        "proxy": "wam",
+        "proxy": "ez",
         "ssl": false,
         "description": "Background information, artist biographies, and images of Western and non-Western art.",
         "category": [
