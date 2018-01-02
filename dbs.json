@@ -108,22 +108,7 @@
                      ],
                      "onesearch": "yes"
         },
-        {
-        "name":"Auto Repair Reference Center",
-        "vendor": "EBSCO",
-        "type": [
-            "reference"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=autorefctr",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Repair and maintenance information on most major manufacturers of domestic and imported vehicles. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "automotive", "encyclopedias,-dictionaries,-reference"
-                     ],
-                     "onesearch": "no"
-        },
+
         {
         "name":"Business Source Complete",
         "vendor": "EBSCO",
@@ -173,24 +158,6 @@
                      ],
                      "onesearch": "yes"
         },
-                {
-        "name":"Consumer Health Complete",
-        "vendor": "EBSCO",
-        "type": [
-            "magazines",
-                 "trade-publications"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=chc",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Magazines, reports, and professional journals in healthcare and medicine, plus drug and herb information designed for consumers. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "health-&amp;-medicine"
-                     ],
-                     "onesearch": "yes"
-        },
-
                                        {
         "name":"Education Research Complete",
         "vendor": "EBSCO",
@@ -291,30 +258,7 @@
                      "onesearch": "yes"
         },
   
-        {
-                        
-        
-        "name": "LexisNexis Academic",
-        "vendor": "LexisNexis",
-        "type": [
-            "legal-research",
-            "scholarly-journals",
-            "news"
-                ],
-        "urlRoot": "www.lexisnexis.com",
-        "urlPath": "hottopics/lnacademic/",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "National and international newspapers, radio news transcripts, professional journals, legal research, business reviews, and company profiles. U.S. Federal and state case law and Shepard's Citations for all U.S. Supreme Court cases from 1789 to present. <strong>Note: This database will be replaced by Nexis Uni in January 2018. Use is restricted to students and faculty/staff</strong>.",
-        "category": [
-                     "criminal-justice-&amp;-law",
-                     "news",
-                     "business",
-                     "law",
-                     "political-science"
-                     ],
-                     "onesearch": "partial"
-        },
+
                 {
                         
         
@@ -356,56 +300,8 @@
                      ],
                      "onesearch": "no"
         },
+                        
         
-                           {
-        "name":"Statista",
-        "vendor": "Statista Inc.",
-        "type": [
-            "reference"
-                ],
-        "urlRoot": "www.statista.com",
-        "urlPath": "",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Statistics, studies, and reports on business and social issues in the United States and internationally. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "business", "encyclopedias,-dictionaries,-reference", "sociology", "communication"
-                     ],
-                     "onesearch": "no"
-                     },                  
-       
-                           {
-        "name":"Dentistry &amp; Oral Sciences Source",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ddh",
-        "proxy": "wam",
-        "trial": true,
-        "description": "Scholarly journals and magazines in dentistry, periodontology, orthodontics and related fields. <strong>Trial ends December 15.</strong>",
-        "category": [
-                     "health-&amp;-medicine"
-                     ],
-                     "onesearch": "yes"
-                     },
-                           {
-        "name":"Historical Abstracts with Full Text",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=30h",
-        "proxy": "wam",
-        "trial": true,
-        "description": "Scholarly journals and book chapters on world history. <strong>Trial ends December 15.</strong>",
-        "category": [
-                     "history"
-                     ],
-                     "onesearch": "yes"
-                     },  
                           {
         "name":"Political Science Complete",
         "vendor": "EBSCO",
@@ -646,24 +542,7 @@
                      ],
                      "onesearch": "yes"
         },
-                                                                     {
-        "name":"Professional Development Collection",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals",
-            "reports",
-            "trade publications"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tfh",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Scholarly journals, professional journals, and reports in education. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "education"
-                     ],
-                     "onesearch": "yes"
-        },
+
                                                                              {
         "name":"Library, Information Science &amp; Technology Abstracts",
         "vendor": "EBSCO",
@@ -697,22 +576,6 @@
         "description": "Scholarly journals and professional journals on teaching and education leadership.",
         "category": [
                      "education"
-                     ],
-                     "onesearch": "yes"
-        },
-                                        {
-        "name":"Religion &amp; Philosophy Collection",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=rlh",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Scholarly journals covering world religions, philosophy, and theology. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "philosophy-&amp;-religion"
                      ],
                      "onesearch": "yes"
         },
@@ -767,38 +630,7 @@
                      ],
                      "onesearch": "no"
         },
-{
-        "name":"Book Index With Reviews",
-        "vendor": "EBSCO",
-        "type": [
-            "reference"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kdh",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Information on book titles, with full-text, searchable book reviews from Library Journal, School Library Journal, Publishers Weekly, Booklist, and others. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "encyclopedias,-dictionaries,-reference"
-                     ],
-                     "onesearch": "no"
-        },
-                                                        {
-        "name":"BIR Entertainment",
-        "vendor": "EBSCO",
-        "type": [
-            "reference"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip,uid&profile=ehost&defaultdb=kfh",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Information on music and film titles such as publisher, producer, track listing, and cast. <strong>As of Spring 2018, this database will no longer be available.</strong>",
-        "category": [
-                     "encyclopedias,-dictionaries,-reference", "music"
-                     ],
-                     "onesearch": "no"
-        },
+
                     {
         "name":"Ebook Collection",
         "vendor": "EBSCO",
