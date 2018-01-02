@@ -866,15 +866,15 @@
                      "onesearch": "no"
         },
               {
-        "name":"MasterFILE Premier",
+        "name":"MasterFILE Complete",
         "vendor": "EBSCO",
         "type": [
             "magazines", "images"
                 ],
         "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f5h",
-        "proxy": "wam",
-        "ssl": false,
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f6h",
+        "proxy": "ez",
+        "ssl": true,
         "description": "Background information, magazines, biographies, primary source documents, maps, flags and images on different topics. ",
         "category": [
                      ""
