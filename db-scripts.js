@@ -82,7 +82,7 @@ function submitSearch(kw) {
       location.href = 'index.php?az&query=' + encodeURIComponent(kw);
     }
     else {
-      var url = 'https://0-search-ebscohost-com.lasiii.losrios.edu/login.aspx?authtype=ip,uid&direct=true&profile=eds&bquery=' + encodeURIComponent(kw) + '&site=eds-live&scope=site';
+      var url = 'https://ezproxy.losrios.edu/login?url=https://search.ebscohost.com/login.aspx?authtype=ip,uid&direct=true&profile=eds&bquery=' + encodeURIComponent(kw) + '&site=eds-live&scope=site';
       if (getCookie('newWindowLinks') === 'yes') {
         window.open(url);
       }
@@ -357,7 +357,7 @@ function homeLibEls(col)
     }
     
   });
-  $('.db-name:contains(Films on Demand)').attr('href', 'http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' + colProps[col].fod).data('proxy', true);
+  $('.db-name:contains(Films on Demand)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://fod.infobase.com/PortalPlayLists.aspx?wid=' + colProps[col].fod).data('proxy', true);
   setTimeout(function ()
   {
     $('#library-help-content a').on('click', function ()
