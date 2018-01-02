@@ -553,34 +553,27 @@ $('#remove-proxy').on('click', function() {
   
   
 });
-$('#add-ezproxy').on('click', function() {
-	if ($(this).data('pressed') !== true) {
-		removeProxy();
-		$('#proxy').hide();
-    var proxyPref = 'https://ezproxy.losrios.edu/login?url=';
-		$('.db-name').each(function() {
-      if ($(this).attr('href').indexOf('special') > -1) {
-        var arr = $(this).attr('href').split('=');
-        var url = arr.pop();
-        $(this).attr('href', proxyPref + url);
-      }
-      else {
-        var h = $(this).attr('href');
-				var deProxy = h.replace(/^/, proxyPref);
-				$(this).attr('href', deProxy);
-      }
-      $(this).data('proxy', 'ez');
-		});
-    $(this).data('pressed', true);
-
-			$('#add-ezproxy').after('<p class="special">This is for testing access via the new authentication system. Not all databases will function correctly. To go back to the normal urls, refresh the screen or navigate to another page.</p>');
-		
-	}
+$('#force-login').on('click', function() {
+  setCookie('ezproxyrequireauthenticate2', '2', null);
+  $(this).hide();
+  $('<p class="special" style="display:none;">This computer will now see login prompts when accessing resources. <button id="reset-login" type="button">Reset </button></p>').insertAfter($(this)).fadeIn();
+  $('#reset-login').on('click', function() {
+    resetLogin($(this));
+  });
+  $('#remove-proxy').fadeOut();
 });
 var proxySet = getCookie('dbProxy');
 if (proxySet === 'removed') {
   removeProxy();
 }
+function resetLogin(el) {
+  setCookie('ezproxyrequireauthenticate2', '0', null);
+  el.closest('aside').fadeOut();
+  $('#remove-proxy').fadeIn();
+}
+$('#reset-login').on('click', function() {
+  resetLogin($(this));
+});
 function removeProxy() {
     $('.db-name').each(function() {
     var h = $(this).attr('href');

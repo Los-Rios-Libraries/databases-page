@@ -40,6 +40,16 @@ echo "</div>\n";
 <aside id="proxy" class="gen-aside proxy-button">
   <button id="remove-proxy" type="button">Remove proxy (for troubleshooting access problems)</button>
 </aside>
-<aside class="gen-aside proxy-button">
-  <button id="add-ezproxy" type="button">Use EZproxy (beta)</button>
-</aside>
+<?php
+if ((strpos($_SERVER['REMOTE_ADDR'], '165.196.') !== false) && ($_COOKIE['dbProxy'] !== 'removed')) {
+	echo '<aside class="gen-aside proxy-button">';
+	if ($_COOKIE['ezproxyrequireauthenticate2'] !== '2') {
+		echo '<button id="force-login" type="button">Force login while on-campus</button>';
+	}
+	else {
+		echo '<button id="reset-login" type="button">Stop forcing login on this computer</button>';
+	}
+	echo '</aside>';
+}
+
+?>
