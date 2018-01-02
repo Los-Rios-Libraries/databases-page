@@ -64,7 +64,7 @@ for ($i = 0; $i < count($collegeVars); $i++) {
 }
 $proxyStr = '.lasiii.losrios.edu/';
 $ezpStr = 'https://ezproxy.losrios.edu/login?url=';
-$ebscoBase = 'http://0-search.ebscohost.com' . $proxyStr .'login.aspx?authtype=ip';
+$ebscoBase = $ezpStr . 'http://search.ebscohost.com/login.aspx?authtype=ip';
 $dbs = array(
              array( // first array element is ehost patterns - treated differently
                 'vendor' => 'ebsco',
@@ -124,26 +124,26 @@ $dbs = array(
              array(
                 'vendor' => 'google',
                 'dbname' => 'google',
-                'noquery' =>  'http://0-scholar.google.com'. $proxyStr,
-                'queryUrl' => 'http://0-scholar.google.com'. $proxyStr . 'scholar?hl=en&q=' .$query
+                'noquery' =>  $ezpStr . 'https://scholar.google.com',
+                'queryUrl' => $ezpStr . 'https://scholar.google.com/scholar?hl=en&q=' .$query
              ),
              array(
                 'vendor' => 'jstor',
                 'dbname' => 'jstor',
-                'noquery' =>  'http://0-www.jstor.org'. $proxyStr . 'action/showAdvancedSearch',
-                'queryUrl' => 'http://0-www.jstor.org'. $proxyStr . 'action/doAdvancedSearch?q0=' .$query
+                'noquery' =>  $ezpStr . 'http://www.jstor.org/action/showAdvancedSearch',
+                'queryUrl' => $ezpStr . 'http://www.jstor.org/action/doAdvancedSearch?q0=' .$query
              ),
              array(
                 'vendor' => 'pubmed',
                 'dbname' => 'pubmed',
-                'noquery' =>  'http://0-www.ncbi.nlm.nih.gov'. $proxyStr . 'pubmed?myncbishare=casccllib',
-                'queryUrl' => 'http://0-www.ncbi.nlm.nih.gov'. $proxyStr . 'pubmed?/?term=' . $query . '&myncbishare=casccllib'
+                'noquery' =>  $ezpStr . 'http://www.ncbi.nlm.nih.gov/pubmed?myncbishare=casccllib',
+                'queryUrl' => $ezpStr . 'http://www.ncbi.nlm.nih.gov/pubmed?/?term=' . $query . '&myncbishare=casccllib'
              ),
              array(
                 'vendor' => 'gale',
                 'dbname' => 'gale-virtual',
-                'noquery' =>  'http://0-infotrac.galegroup.com'. $proxyStr . 'itweb?db=GVRL',
-                'queryUrl' => 'http://0-go.galegroup.com'. $proxyStr . 'ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
+                'noquery' =>  $ezpStr . 'http://infotrac.galegroup.com/itweb?db=GVRL',
+                'queryUrl' => $ezpStr . 'http://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
              ),
              array(
                 'vendor' => 'american',
@@ -160,20 +160,20 @@ $dbs = array(
              array(
                 'vendor' => 'oxford',
                 'dbname' => 'oxford-english',
-                'noquery' =>  'http://0-www.oed.com'. $proxyStr,
-                'queryUrl' => 'http://0-www.oed.com'. $proxyStr . 'search?searchType=dictionary&q=' . $query
+                'noquery' =>  $ezpStr . 'http://www.oed.com/',
+                'queryUrl' => $ezpStr . 'http://www.oed.com/search?searchType=dictionary&q=' . $query
              ),
              array(
                 'vendor' => 'infobase',
                 'dbname' => 'films',
-                'noquery' =>  'http://0-digital.films.com'. $proxyStr . 'PortalPlaylists.aspx?wid=' .$fodWid,
-                'queryUrl' => 'http://0-digital.films.com'. $proxyStr . 'PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
+                'noquery' =>  $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid,
+                'queryUrl' => $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
              ),
              array(
                 'vendor' => 'proquest',
                 'dbname' => 'resources',
-                'noquery' =>  'http://0-www.rclweb.net'. $proxyStr,
-                'queryUrl' => 'http://0-www.rclweb.net'. $proxyStr . 'Search/Results?q=rcl-searchall%3A[' . $query . ']&op=1&qs=1'
+                'noquery' =>  $ezpStr . 'http://www.rclweb.net',
+                'queryUrl' => $ezpStr . 'http://www.rclweb.net/Search/Results?q=rcl-searchall%3A[' . $query . ']&op=1&qs=1'
              ),
              array(
                 'vendor' => 'salem',
@@ -184,8 +184,8 @@ $dbs = array(
              array(
                 'vendor' => 'naxos',
                 'dbname' => 'naxos',
-                'noquery' =>  'http://0-losrios.naxosmusiclibrary.com'. $proxyStr,
-                'queryUrl' => 'http://0-losrios.naxosmusiclibrary.com'. $proxyStr . 'google/searchgoogle.asp?googletext=' . $query
+                'noquery' =>  $ezpStr . 'http://losrios.naxosmusiclibrary.com',
+                'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
              )
              
              );
