@@ -477,7 +477,13 @@ var currentURL = location.href;
 if (currentURL.match('college='))
 {
   currentURL = currentURL.replace(/(\?|&)college.*/, '');
-  replaceURL = currentURL.replace(/.*losrios.edu\//, '');
+//  replaceURL = currentURL.replace(/.*losrios.edu\//, '');
+  history.replaceState(currentURL, document.title, currentURL);
+}
+if (currentURL.match(/logged(in|out)/))
+{
+  currentURL = currentURL.replace(/\?logged.*/, '');
+//  replaceURL = currentURL.replace(/.*losrios.edu\//, '');
   history.replaceState(currentURL, document.title, currentURL);
 }
 /*
@@ -604,3 +610,13 @@ function removeProxy() {
     location.reload();
   });
 }
+(function() {
+  var alert = $('.proxy-dialog');
+  if (alert.length) {
+    alert.fadeIn();
+    setTimeout(function() {
+      alert.fadeOut();
+    }, 1500);
+  }
+  
+  }());

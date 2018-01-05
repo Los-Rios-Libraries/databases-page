@@ -182,7 +182,21 @@ echo "</div>\n";
 
 
 <section id="main" tabindex="0">
+<?php
+if (isset($_GET['loggedin'])) {
+	echo '<div id="logged-in" class="proxy-dialog" role="alert" style="display:none;" >';
+	echo '<p>You are now signed in to library databases</p>';
+	echo '</div>';
+	
+}
+elseif (isset($_GET['loggedout'])) {
+	echo '<div id="logged-in" class="proxy-dialog" role="alert" style="display:none;" >';
+	echo '<p>You are now signed out of library databases</p>';
+	echo '</div>';
+	
+}
 
+?>
   <nav>
   
  <!--   <button id="open-search"><img alt="" src="search-icon.png" height="32">Search</button> -->
@@ -257,10 +271,10 @@ include_once('footer.php');
 <img id="loader" alt="loading" src="loader.gif" class="hidden">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--<script src="res/jquery-ui.min.js"></script>
- <script src="db-scripts.js?0421"> 
- 
-</script>    -->
+<!--<script src="res/jquery-ui.min.js"></script>-->
+<!-- <script src="db-scripts.js?0421"> -->
+<!-- -->
+<!--</script>    -->
 <script src="db-scripts.min.js?1005"></script>
 
 
