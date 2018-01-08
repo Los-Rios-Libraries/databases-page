@@ -319,5 +319,6 @@ aside { float:none !important;}
     #lr-footer {position:static !important;}
     aside:last-of-type {margin-bottom:10px;}
     #ft-head {text-align:left;margin:0 0 10px 0; width:100%;}
+    .proxy-dialog {width:auto;margin-left:0; left:5%; right:5%;}
     
   }
