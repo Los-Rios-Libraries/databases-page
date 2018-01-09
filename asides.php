@@ -13,10 +13,21 @@ if (strpos($json_file, 'trial') > -1) {
 	?>
 	
 </aside>
+
 <?php
 }
 }
 }
+if (strpos($_SERVER['REMOTE_ADDR'], '165.196.') === false)
+{
+?>
+<aside class="gen-aside proxy-button">
+	You are currently signed <span id="proxy-status">out</span>.
+	<button id="proxy-toggle">Sign in</button>
+</aside>
+<?php
+}
+
 echo "<aside id=\"library-help\" class=\"gen-aside\">\n";
 echo "<h2>From Your Library</h2>\n";
 echo "<div class=\"hidden\">" . $homeLibrary . "</div>\n";

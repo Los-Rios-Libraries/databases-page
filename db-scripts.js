@@ -621,6 +621,22 @@ $('#disable-sso').on('click', function() {
   
   
   });
+
+(function() {
+  if (getCookie('ezproxy') !== '') {
+    $('#proxy-status').html('in');
+    $('#proxy-toggle').html('Sign out');
+  }
+  
+  }());
+$('#proxy-toggle').on('click', function() {
+  if (getCookie('ezproxy') !== '') {
+    location.href = 'https://ezproxy.losrios.edu/logout';
+  }
+  else {
+    location.href = 'https://ezproxy.losrios.edu';
+  }
+});
 (function() {
   var alert = $('.proxy-dialog');
   if (alert.length) {
