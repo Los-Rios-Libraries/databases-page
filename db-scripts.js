@@ -596,8 +596,9 @@ function removeProxy() {
      $(this).attr('href', deProxy); 
     }
     else if (h.indexOf('ezproxy') > -1) {
-      deProxy = h.replace('https://ezproxy.losrios.edu/login?url=', '');
-      $(this).attr('href', deProxy);    
+      deProxy = h.replace(/https:\/\/ezproxy\.losrios\.edu\/login\?(auth=custom&amp;)?url=/, '');
+      $(this).attr('href', deProxy);
+      $('#sso').hide();
     }
   });
     var proxyDiv = $('#proxy');
