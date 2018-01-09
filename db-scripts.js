@@ -610,6 +610,17 @@ function removeProxy() {
     location.reload();
   });
 }
+$('#disable-sso').on('click', function() {
+  $('.db-name').each(function() {
+    var url = $(this).attr('href');
+    var custom = url.replace('?url=', '?auth=custom&amp;url=');
+    $(this).attr('href', custom);
+    
+    });
+  $(this).fadeOut().after('<p class="special">Links will not pass through the Los Rios Single Sign-on system.</p>');
+  
+  
+  });
 (function() {
   var alert = $('.proxy-dialog');
   if (alert.length) {
