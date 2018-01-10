@@ -596,7 +596,7 @@ function removeProxy() {
      $(this).attr('href', deProxy); 
     }
     else if (h.indexOf('ezproxy') > -1) {
-      deProxy = h.replace(/https:\/\/ezproxy\.losrios\.edu\/login\?(auth=custom&amp;)?url=/, '');
+      deProxy = h.replace(/https:\/\/ezproxy\.losrios\.edu\/login\?(auth=custom&)?url=/, '');
       $(this).attr('href', deProxy);
       $('#sso').hide();
     }
@@ -614,7 +614,7 @@ function removeProxy() {
 $('#disable-sso').on('click', function() {
   $('.db-name').each(function() {
     var url = $(this).attr('href');
-    var custom = url.replace('?url=', '?auth=custom&amp;url=');
+    var custom = url.replace('?url=', '?auth=custom&url=');
     $(this).attr('href', custom);
     
     });
