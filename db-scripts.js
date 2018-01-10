@@ -567,6 +567,7 @@ $('#force-login').on('click', function() {
     resetLogin($(this));
   });
   $('#remove-proxy').fadeOut();
+  $('#sso').show();
 });
 var proxySet = getCookie('dbProxy');
 if (proxySet === 'removed') {
@@ -575,11 +576,15 @@ if (proxySet === 'removed') {
 function resetLogin(el) {
   setCookie('ezproxyrequireauthenticate2', '0', null);
   el.closest('aside').fadeOut();
+  $('#sso').fadeOut();
   $('#remove-proxy').fadeIn();
 }
 $('#reset-login').on('click', function() {
   resetLogin($(this));
 });
+if ($('#reset-login').length) {
+  $('#sso').show();
+}
 function removeProxy() {
     $('.db-name').each(function() {
     var h = $(this).attr('href');

@@ -52,7 +52,9 @@ echo "</div>\n";
   <button id="remove-proxy" type="button">Remove proxy (for troubleshooting access problems)</button>
 </aside>
 <?php
+$noSSO = '';
 if ((strpos($_SERVER['REMOTE_ADDR'], '165.196.') !== false) && ($_COOKIE['dbProxy'] !== 'removed')) {
+	$noSSO = 'style="display:none;"';
 	echo '<aside class="gen-aside proxy-button">';
 	if ($_COOKIE['ezproxyrequireauthenticate2'] !== '2') {
 		echo '<button id="force-login" type="button">Force login while on-campus</button>';
@@ -60,10 +62,9 @@ if ((strpos($_SERVER['REMOTE_ADDR'], '165.196.') !== false) && ($_COOKIE['dbProx
 	else {
 		echo '<button id="reset-login" type="button">Stop forcing login on this computer</button>';
 	}
-	echo '</aside>';
+	echo '</aside>' . "\r\n";
+	echo '<aside class="gen-aside proxy-button" id="sso" ' . $noSSO . '>';
+	echo '<button type="button" id="disable-sso">Bypass single sign-on</button>';
+	echo '</aside>' . "\r\n";
 }
-
 ?>
-<aside class="gen-aside proxy-button" id="sso" >
-	<button type="button" id="disable-sso">Bypass single sign-on</button>
-</aside>
