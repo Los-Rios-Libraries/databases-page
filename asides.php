@@ -63,8 +63,8 @@ if ((strpos($_SERVER['REMOTE_ADDR'], '165.196.') !== false) && ($_COOKIE['dbProx
 		echo '<button id="reset-login" type="button">Stop forcing login on this computer</button>';
 	}
 	echo '</aside>' . "\r\n";
-	echo '<aside class="gen-aside proxy-button" id="sso" ' . $noSSO . '>';
-	echo '<button type="button" id="disable-sso">Bypass single sign-on</button>';
-	echo '</aside>' . "\r\n";
 }
+echo '<aside class="gen-aside proxy-button" id="sso" ' . $noSSO . '>';
+echo '<button type="button" id="disable-sso">Bypass single sign-on</button>';
+echo '</aside>' . "\r\n";
 ?>
