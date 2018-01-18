@@ -26,19 +26,19 @@ style="display: none;">
     </thead>
     <tbody>
     <tr>
-        <td>M-Th</td>
+        <td><abbr title="Monday">M</abbr>-<abbr title="Thursday">Th</abbr></td>
         <td>7:30 am &ndash; 9:30 pm</td>
     </tr>
     <tr>
-        <td>F</td>
+        <td><abbr title="Friday">F</abbr></td>
         <td>7:30 am &ndash; 5 pm</td>
     </tr>
     <tr>
-        <td>Sat</td>
+        <td><abbr title="Saturday">Sat</abbr></td>
         <td>9 am &ndash; 3 pm</td>
     </tr>
     <tr>
-        <td>Sun</td>
+        <td><abbr title="Sunday">Sun</abbr></td>
         <td>Closed</td>
     </tr>
     </tbody>
