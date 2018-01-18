@@ -1,4 +1,4 @@
-<form id="multi-search" action="https://0-search-ebscohost-com.lasiii.losrios.edu/login.aspx" method="get" aria-describedby="search-exp">
+<form id="multi-search" action="https://ezproxy.losrios.edu/form?qurl=https%3A%2F%2Fsearch.ebscohost.com" method="post" aria-describedby="search-exp">
  <input type="hidden" name="authtype" value="ip,uid">
  <input type="hidden" name="direct" value="true">
  <input type="hidden" name="profile" value="eds">
