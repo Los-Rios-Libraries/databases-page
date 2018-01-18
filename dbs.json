@@ -352,6 +352,22 @@
                      ],
                      "onesearch": "yes"
         },
+                                 {
+        "name":"Political Science Complete",
+        "vendor": "EBSCO",
+        "type": [
+            "scholarly-journals", "magazines", "trade-publications"
+                ],
+        "urlRoot": "search.ebscohost.com",
+        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=poh",
+        "proxy": "ez",
+        "ssl": true,
+        "description": "Scholarly journals, reference books and conference papers in politics, international relations and related fields.",
+        "category": [
+                     "political-science"
+                     ],
+                     "onesearch": "yes"
+                     }, 
         
                                        {
         "name":"Digital Theatre Plus",
