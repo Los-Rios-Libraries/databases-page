@@ -617,15 +617,7 @@ function removeProxy() {
   });
 }
 $('#disable-sso').on('click', function() {
-  $('.db-name').each(function() {
-    var url = $(this).attr('href');
-    var custom = url.replace('?url=', '?auth=custom&url=');
-    $(this).attr('href', custom);
-    
-    });
-  $(this).fadeOut().after('<p class="special">Links will not pass through the Los Rios Single Sign-on system.</p>');
-  
-  
+  location.href = 'https://ezproxy.losrios.edu/login?auth=custom';
   });
 
 (function() {
