@@ -318,24 +318,28 @@ function homeLibEls(col)
   	'arc': {
   		cust: 'amerriv',
   		fod: '240535',
+      gale: 'sacr22807',
   		singleCol: 'a'
 
   	},
   	'crc': {
   		cust: 'cosum',
   		fod: '237206',
+      gale: 'sacr73031',
   		singleCol: 'c'
 
   	},
   	'flc': {
   		cust: 'ns015092',
   		fod: '237742',
+      gale: 'sacr88293',
   		singleCol: 'f'
 
   	},
   	'scc': {
   		cust: 'sacram',
   		fod: '106093',
+      gale: 'cclc_sac',
   		singleCol: 's'
 
   	}
@@ -358,6 +362,8 @@ function homeLibEls(col)
     
   });
   $('.db-name:contains(Films on Demand)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://fod.infobase.com/PortalPlayLists.aspx?wid=' + colProps[col].fod).data('proxy', true);
+  $('.db-name:contains(Gale Virtual)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://go.galegroup.com/ps/dispBasicSearch.do?userGroupName='+ colProps[col].gale + '&prodId=GVRL').data('proxy', true);
+  $('.db-name:contains(Opposing)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://ic.galegroup.com/ic/ovic/home?p=OVIC&u='+ colProps[col].gale).data('proxy', true);
   setTimeout(function ()
   {
     $('#library-help-content a').on('click', function ()
