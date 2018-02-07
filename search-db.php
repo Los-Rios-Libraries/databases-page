@@ -146,12 +146,6 @@ $dbs = array(
                 'queryUrl' => $ezpStr . 'http://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
              ),
              array(
-                'vendor' => 'american',
-                'dbname' => 'acls-humanities',
-                'noquery' =>  'http://0-quod.lib.umich.edu'. $proxyStr . 'cgi/t/text/text-idx?c=acls;rgn=full%20text;page=simple',
-                'queryUrl' => 'http://0-quod.lib.umich.edu'. $proxyStr . 'cgi/t/text/text-idx?c=acls&cc=acls&op2=and&rgn2=series&sort=freq&type=simple&q1=' . $query .'&rgn1=full+text&q2=ACLS+Humanities+E-Book&cite1=&cite1restrict=author&cite2=&cite2restrict=author&Submit=Search'
-             ),
-             array(
                 'vendor' => 'oxford',
                 'dbname' => 'oxford-art',
                 'noquery' => $ezpStr . 'http://www.oxfordartonline.com/',

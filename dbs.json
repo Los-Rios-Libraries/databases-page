@@ -645,26 +645,6 @@
                      ],
                      "onesearch": "yes"
         },
-   
-        
-        
-                            {
-        "name":"Acls Humanities E-Book",
-        "vendor": "American Council of Learned Societies",
-        "type": [
-            "ebooks"
-                ],
-       "urlRoot": "quod.lib.umich.edu",
-        "urlPath": "cgi/t/text/text-idx?c=acls;rgn=full%20text;page=simple",
-        "proxy": "wam",
-        "ssl": false,
-        "description": "Ebooks on archaeology, art and architecture, religion, film and media, linguistics, literature, musicology, performance studies, philosophy, and social sciences.",
-        "category": [
-                     "art", "communication", "ebooks", "history", "literature", "philosophy-&amp;-religion"
-                     ],
-                     "onesearch": "yes"
-        },
-        
                                                                      {
         "name":"Small Business Reference Center",
         "vendor": "EBSCO",
