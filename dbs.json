@@ -118,7 +118,7 @@
                 ],
         "urlRoot": "search.ebscohost.com",
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=bsc",
-        "proxy": "true",
+        "proxy": "ez",
         "ssl": true,
         "description": "Scholarly journals, company profiles, SWOT analyses, financial data, ebooks, conference proceedings, case studies, investment research, market research, and industry reports.",
         "category": [
