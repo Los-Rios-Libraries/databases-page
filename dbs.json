@@ -127,6 +127,21 @@
                      "onesearch": "yes"
         },
         {
+        "name":"Ovid Nursing and Health Professions Collection",
+        "vendor": "Ovid Technologies",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "ovidsp.ovid.com",
+        "urlPath": "ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=y&DBC=y&D=yrovft",
+        "proxy": "ez",
+        "description": "Scholarly journals in Nursing and Allied Health fields.",
+        "category": [
+                     "health-&amp;-medicine"
+                     ],
+                     "onesearch": "yes"
+        },
+        {
         "name":"Cinahl Plus with Full Text",
         "vendor": "EBSCO",
         "type": [
