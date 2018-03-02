@@ -227,7 +227,7 @@ elseif ((isset($alpha)) && (!isset($format)) ) {
      if ((isset($format)) || ((isset($query)) && (!(empty($query))))){
            echo $alphaShowAll;
 	         echo '<div id="alt-search" class="special">';
-        echo 'It looked like you were searching for a database so we searched this page for it. If that&apos;s not what you wanted, <a href="https://0-search-ebscohost-com.lasiii.losrios.edu/login.aspx?authtype=ip&amp;groupid=main&amp;profile=eds&amp;direct=true&amp;site=eds-live&amp;bquery=' . $query . '">search for <span id="check-search-query">' . $query . '</span> in OneSearch</a>.';
+        echo 'It looked like you were searching for a database so we searched this page for it. If that&apos;s not what you wanted, <a href="https://ezproxy.losrios.edu/login?url=https://search.ebscohost.com/login.aspx?authtype=ip&amp;groupid=main&amp;profile=eds&amp;direct=true&amp;site=eds-live&amp;bquery=' . $query . '">search for <span id="check-search-query">' . $query . '</span> in OneSearch</a>.';
       echo "</div>\n";
      }
     }
