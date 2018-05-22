@@ -98,7 +98,18 @@ $(function ()
   defaultAuto($('#dbpage-query'));
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
-    $(this).text($(this).text().replace('Cinahl', 'CINAHL').replace('Cq', 'CQ').replace('Ebook Coll', 'eBook Coll').replace('Eric', 'ERIC').replace('Medline', 'MEDLINE'));
+	var arr = $(this).html().split(' ');
+	var reg = /Cq|Eric|^Mas$|Medline/;
+	for (var i = 0; i < arr.length; i++) {
+		if (reg.test(arr[i])) {
+			arr[i] = arr[i].toUpperCase();
+		}
+		else if (arr[i] === 'Ebook') {
+			arr[i] = 'eBook';
+		}
+	}
+	var newStr = arr.join(' ');
+	$(this).html(newStr);
   });
   // contract nav by default on small screens
   var navList = $('#main-nav');
