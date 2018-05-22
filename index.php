@@ -278,19 +278,11 @@ include_once('footer.php');
 <script src="db-scripts.min.js?1005"></script>
 
 <script>
-	(function()
-	{
-		var d = new Date();
-		var date = d.getDate();
-		if (d.getMonth() === 4)
-		{
-			if (((date > 20) && (date < 25)) || ((date === 25) && (d.getHours() < 13)))
-			{
-				var alert = '<p id="maintenance-alert" role="alert" style="display:none; font-weight:bold; font-size:1em;">Due to scheduled maintenance, access to OneSearch and My Library Record may be limited or unavailable the morning of Friday, May 25.</p>';
-				$(alert).prependTo($('#main')).fadeIn();
-			}
-		}
-	}());
+	showNote({
+	 message: 'Due to scheduled maintenance, access to databases may be interrupted the morning of Friday, May 25.',
+	 start: '2018-05-18',
+	 end: '2018-05-25'  
+	 });
 </script>
 
 </body>

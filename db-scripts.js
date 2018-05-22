@@ -1,4 +1,3 @@
-     // db autocomplete
 function showDBNos() {
   var dbNo = $('#main .db-name:visible').length;
   var numberDisplay = $('#show-db-no');
@@ -662,3 +661,49 @@ $('#proxy-toggle').on('click', function() {
   }
   
   }());
+function showNote(obj)
+{
+	/*
+	 call using e.g.
+	 showNote({
+	 message: 'Due to scheduled maintenance, access to databases may be interrupted the morning of Friday, May 25.',
+	 start: 2018-05-21,
+	 end: 2018-05-26 // this is the beginning of the day, so if you want it to show that day, must set to the next day
+	 });
+	 */
+	var cName = 'dbHideAlert';
+	if (getCookie(cName) !== 'hide')
+	{
+		var d = new Date(); // time when page is viewed
+		var parseDate = function(str)
+		{
+			var arr = str.split('-');
+			return new Date(arr); // for some reason this doesn't work if you include more than year-month-date
+		};
+		var start = new Date(1970);
+		// start and end properties are optional
+		if (obj.start)
+		{
+			start = parseDate(obj.start);
+		}
+		var end = new Date(3000);
+		if (obj.end)
+		{
+			end = parseDate(obj.end);
+		}
+		//console.log(start);
+		//console.log(end);
+		var text = obj.message || '';
+		if ((d >= start) && (d <= end) && (text !== ''))
+		{
+			$('<p id="db-alert" role="alert" style="display:none;">' + text + '<button type="button" id="message-dismiss">Hide this message</button></p>').prependTo($('#main')).fadeIn();
+			$('#message-dismiss').on('click', function()
+			{
+				$('#db-alert').fadeOut();
+				setCookie(cName, 'hide', 2); // cookie expires in just two days
+			});
+		}
+	}
+
+
+}
