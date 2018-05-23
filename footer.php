@@ -1,7 +1,9 @@
 <footer id="lr-footer">
     <div id="ft-content-container">
         <div id="col-container">
-        <div id="ft-head">Los Rios Libraries</div>
+		 <div id="ft-head">
+			<img src="res/Los Rios Libraries_Logo_Horizontal.png" width="125" height="32" alt="Los Rios Libraries">
+		 </div>
         <div id="col1" class="foot-col">
             <div><a href="http://www.arc.losrios.edu/arclibrary.htm">American River College Library</a></div> 
            <!--  <div><a href="http://www.arc.losrios.edu/arclibrary.htm"><abbr title="American River College">ARC</abbr> Library</a></div>-->

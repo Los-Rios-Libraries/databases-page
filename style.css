@@ -252,7 +252,7 @@ border: 0px; border-radius: 0px;  font: 14px Arial, Helvetica, Verdana; padding:
 #lr-footer {clear:both; width: 100%; color: #fff;position: absolute; z-index:100; background:#fff; bottom: 20px; margin: 0 auto; font-size:80%;   }
 #ft-content-container {display: table; width: 100%;max-width:1100px; margin: 0 auto; /* background: #3d3d3d;  */ padding: 5px; border-top: 2px solid #3d3d3d; /* border-radius: 4px 4px 0 0; */ color:#3d3d3d;}
 #col-container {    width:90%;    margin:0 auto;    text-align:center;}
-#ft-head {text-align: center;font-size: 1.4em;border-bottom: 1px solid #fff; width: 50%; margin: 0 auto 20px;}
+#ft-head {text-align: center;font-size: 1.4em;border-bottom: 1px solid #fff; width: 50%; margin: 10px auto 20px;}
 .foot-col {text-align:left;float: left; width: 21%; padding: 0 2% 0 2%;}
 #ft-content-container a:link, #ft-content-container a:visited {color: #3d3d3d; text-decoration: underline;}
 #ft-content-container a:hover, #ft-content-container a:focus {color:#E74700; text-decoration:none;}
