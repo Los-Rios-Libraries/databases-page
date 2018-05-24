@@ -17,7 +17,7 @@ style="display: none;">
 </div>
 <hr>
 <table id="library-hours">
-    <caption>Library Hours, Spring 2018</caption>
+    <caption>Library Hours, Summer 2018</caption>
     <thead>
     <tr>
         <th>Day</th>
@@ -26,21 +26,21 @@ style="display: none;">
     </thead>
     <tbody>
     <tr>
-        <td><abbr title="Monday">M</abbr>-<abbr title="Thursday">Th</abbr></td>
-        <td>7:30 am &ndash; 9:30 pm</td>
+        <td><abbr title="Monday">M</abbr> &ndash; <abbr title="Thursday">Th</abbr></td>
+        <td>8 am &ndash; 6 pm</td>
     </tr>
     <tr>
-        <td><abbr title="Friday">F</abbr></td>
-        <td>7:30 am &ndash; 5 pm</td>
-    </tr>
-    <tr>
-        <td><abbr title="Saturday">Sat</abbr></td>
-        <td>9 am &ndash; 3 pm</td>
-    </tr>
-    <tr>
-        <td><abbr title="Sunday">Sun</abbr></td>
+        <td><abbr title="Friday">F &ndash; Sun</abbr></td>
         <td>Closed</td>
     </tr>
+    <!--<tr>-->
+    <!--    <td><abbr title="Saturday">Sat</abbr></td>-->
+    <!--    <td>9 am &ndash; 3 pm</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--    <td><abbr title="Sunday">Sun</abbr></td>-->
+    <!--    <td>Closed</td>-->
+    <!--</tr>-->
     </tbody>
 </table>
 <p><a href="http://www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
