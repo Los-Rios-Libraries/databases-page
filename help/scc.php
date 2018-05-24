@@ -13,7 +13,7 @@ style="display: none;">
 </div>
 
 <div class="libraryh3lp" style="display: none;"> 
-<div id="ask-block-inactive" class="ask-block"><a href="http://www.scc.losrios.edu/library/services/ask-librarian/"><img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian"></a><p>Chat is offline. <a href="http://www.scc.losrios.edu/library/services/ask-librarian/">Leave a message</a> or call us at 916&ndash;558&ndash;2461.</p></div>
+<div id="ask-block-inactive" class="ask-block"><a href="//www.scc.losrios.edu/library/services/ask-librarian/"><img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian"></a><p>Chat is offline. <a href="//www.scc.losrios.edu/library/services/ask-librarian/">Leave a message</a> or call us at 916&ndash;558&ndash;2461.</p></div>
 </div>
 <hr>
 <table id="library-hours">
@@ -43,7 +43,7 @@ style="display: none;">
     <!--</tr>-->
     </tbody>
 </table>
-<p><a href="http://www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
+<p><a href="//www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
 </div>
 <script>
   //  hideZ();
