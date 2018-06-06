@@ -667,8 +667,8 @@ function showNote(obj)
 	 call using e.g.
 	 showNote({
 	 message: 'Due to scheduled maintenance, access to databases may be interrupted the morning of Friday, May 25.',
-	 start: 2018-05-21,
-	 end: 2018-05-26 // this is the beginning of the day, so if you want it to show that day, must set to the next day
+	 start: '2018-05-21',
+	 end: '2018-05-26' // this is the beginning of the day, so if you want it to show that day, must set to the next day
 	 });
 	 */
 	var cName = 'dbHideAlert';
