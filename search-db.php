@@ -175,6 +175,12 @@ $dbs = array(
                 'noquery' =>  $ezpStr . 'http://online.salempress.com/home.do',
                 'queryUrl' => $ezpStr . 'http://online.salempress.com/search.do?categoryName=&All=All&numCategories=5&searchInAll=all&searchText=' . $query
              ),
+			array(
+                'vendor' => 'sage',
+                'dbname' => 'sage',
+                'noquery' =>  $ezpStr . 'http://journals.sagepub.com/',
+                'queryUrl' => $ezpStr . 'http://journals.sagepub.com/action/doSearch?AllField=' . $query
+             ),
              array(
                 'vendor' => 'naxos',
                 'dbname' => 'naxos',
