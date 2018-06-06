@@ -98,7 +98,7 @@ $(function ()
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
 	var arr = $(this).html().split(' ');
-	var reg = /Cq|Eric|^Mas$|Medline/;
+	var reg = /Cinahl|Cq|Eric|^Mas$|Medline|Sage/;
 	for (var i = 0; i < arr.length; i++) {
 		if (reg.test(arr[i])) {
 			arr[i] = arr[i].toUpperCase();
