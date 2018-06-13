@@ -129,7 +129,7 @@ $(function ()
     e.removeClass('active hidden');
     var dbs = e.find('li');
     //  console.log(dbs);
-    if (dbs.hasClass('active'))
+    if ((dbs.hasClass('active')) && (dbs.is(':visible')))
     {
       e.addClass('active');
     }
@@ -183,7 +183,7 @@ function checkZeros()
   if ((!($('.problem-description').length)) && (!($('#main .special').length)))
   {
     $('#zero-notice').remove();
-    if ($('#main .active').length === 0)
+    if ($('#main .active:visible').length === 0)
     {
       //   $('.category').removeClass('hidden').append('<div id="zero-notice">There are no databases fitting the criteria you indicated. Sorry! Try again?</div>');
       var a = $('#main');
