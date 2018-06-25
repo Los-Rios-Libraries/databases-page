@@ -181,6 +181,13 @@ $dbs = array(
                 'noquery' =>  $ezpStr . 'http://journals.sagepub.com/',
                 'queryUrl' => $ezpStr . 'http://journals.sagepub.com/action/doSearch?AllField=' . $query
              ),
+			array(
+				  'vendor' => 'ovid',
+				  'dbname' => 'ovid',
+				  'noquery' => $ezpStr . 'http://ovidsp.ovid.com/ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=n&DBC=n&D=yrovft',
+				  'queryUrl' => $ezpStr . 'http://ovidsp.ovid.com/ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=n&DBC=n&D=yrovft&SEARCH=' . $query
+				  ),
+			
              array(
                 'vendor' => 'naxos',
                 'dbname' => 'naxos',
