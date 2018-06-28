@@ -92,7 +92,7 @@ $dbs = array(
              ),
             array(
                 'vendor' => 'ebsco',
-                'dbname' => 'business source',
+                'dbname' => 'business-source',
                 'noquery' => $ebscoBase . '&profile=bsc',
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query .'&profile=bsc&site=bsc-live&scope=site'
              ),
