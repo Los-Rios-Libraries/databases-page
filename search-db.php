@@ -233,19 +233,22 @@ else {
     <img id="loader" alt="loading" src="loader.gif">
 <?php
 if ($url !== '') {
-
 ?>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 location.replace('<?php echo $url; ?>');
+
 // http://stackoverflow.com/a/12135342/1903000
 var i = 1;
 var sampleMessages = [ "Loading database...", "Still loading...", "Still loading..." ];
+var messageBlock = document.getElementById('message');
 setInterval(function() {
     var newText = sampleMessages[i++ % sampleMessages.length];
-    $("#message").fadeOut(600, function () {
-      $(this).text(newText).fadeIn(500);
-    });
+	messageBlock.innerHTML = '';
+	setTimeout(function() {
+		messageBlock.innerHTML = newText;
+	}, 100);
+	
+	
 }, 1 * 4000);
 </script>
 <?php
