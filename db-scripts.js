@@ -540,7 +540,7 @@ $('.open-db-search').on('click', function ()
       var ebCode = dbURL.split(/[= ]+/).pop();
       ehost = '<input type="hidden" name="ehost" value="' + ebCode + '">';
     }
-    var searchDB = '<form onsubmit="ga(\'send\', \'event\', \'quick search\', \'submit\', \'' + dbNameText + '\');" class="search-one-db" method="post" action="search-db.php" ' + target + '><label class="search-one-db-l" for="' + dbNameLower + '">Search ' + dbNameText + '</label><input name="query" id="' + dbNameLower + '" type="text"><input type="hidden" name="vendor" value="' + vendor + '"><input type="hidden" name="db-name" value="' + dbNameLower + '">' + ehost + '<button class="search-btn" type="submit"><img height="16" width="16" src="search.png" alt="search"></button></form>';
+    var searchDB = '<form onsubmit="ga(\'send\', \'event\', \'quick search\', \'submit\', \'' + dbNameText + '\');" class="search-one-db" method="post" action="search-db.php" ' + target + '><label class="search-one-db-l" for="' + dbNameLower + '">Search ' + dbNameText + '</label><input name="query" id="' + dbNameLower + '" type="text"><input type="hidden" name="vendor" value="' + vendor + '"><input type="hidden" name="db-name" value="' + dbNameLower + '">' + ehost + '<input type="hidden" name="db-url" value="' + encodeURIComponent(dbName.attr('href')) + '"><button class="search-btn" type="submit"><img height="16" width="16" src="search.png" alt="search"></button></form>';
     searchButton.addClass('hidden');
     searchButton.after(searchDB);
     searchButton.next(searchForms).fadeIn();
