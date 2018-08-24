@@ -27,20 +27,20 @@ style="display: none;">
     <tbody>
     <tr>
         <td><abbr title="Monday">M</abbr> &ndash; <abbr title="Thursday">Th</abbr></td>
-        <td>8 am &ndash; 6 pm</td>
+        <td>7:30 am &ndash; 9:30 pm</td>
     </tr>
     <tr>
         <td><abbr title="Friday">F &ndash; Sun</abbr></td>
-        <td>Closed</td>
+        <td>7:30 am &ndash; 5 pm</td>
     </tr>
-    <!--<tr>-->
-    <!--    <td><abbr title="Saturday">Sat</abbr></td>-->
-    <!--    <td>9 am &ndash; 3 pm</td>-->
-    <!--</tr>-->
-    <!--<tr>-->
-    <!--    <td><abbr title="Sunday">Sun</abbr></td>-->
-    <!--    <td>Closed</td>-->
-    <!--</tr>-->
+    <tr>
+		<td><abbr title="Saturday">Sat</abbr></td>
+        <td>9 am &ndash; 3 pm</td>
+	</tr>
+    <tr>
+        <td><abbr title="Sunday">Sun</abbr></td>
+        <td>Closed</td
+    </tr>
     </tbody>
 </table>
 <p><a href="//www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
