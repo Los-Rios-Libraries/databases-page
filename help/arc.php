@@ -38,7 +38,7 @@
     }
     var wait = setInterval(function() { // wait for jQuery to load
 
-    	if (typeof(jQuery) == 'function') {
+    	if (typeof(jQuery) === 'function') {
     		clearTimeout(wait);
     		if (!(document.getElementById('arc-sched-scr'))) { // if libcal scheduler script is not already loaded, load it
     			var a = document.createElement('script');
