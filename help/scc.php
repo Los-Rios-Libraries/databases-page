@@ -1,9 +1,9 @@
 <div id="scc-help">
 <div class="needs-js"><img src="loader.gif"  height="16" alt="loading"></div>
 
-<div class="libraryh3lp" jid="homepage@chat.libraryh3lp.com" 
+<div class="libraryh3lp" id="ask-block-active" jid="homepage@chat.libraryh3lp.com" 
 style="display: none;">
-    <div id="ask-block-active" class="ask-block">
+    <div class="ask-block">
          <a href="https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093">
         <img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian">
         <p><strong>Live Chat</strong></p>
@@ -12,12 +12,12 @@ style="display: none;">
     </div>
 </div>
 
-<div class="libraryh3lp" style="display: none;"> 
-<div id="ask-block-inactive" class="ask-block"><a href="//www.scc.losrios.edu/library/services/ask-librarian/"><img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian"></a><p>Chat is offline. <a href="//www.scc.losrios.edu/library/services/ask-librarian/">Leave a message</a> or call us at 916&ndash;558&ndash;2461.</p></div>
+<div class="libraryh3lp" id="ask-block-inactive" style="display: none;"> 
+<div class="ask-block"><a href="//www.scc.losrios.edu/library/services/ask-librarian/"><img src="//www.library.losrios.edu/resources/ask-icons/scc.png" alt="Ask a Librarian"></a><p>Chat is offline. <a href="//www.scc.losrios.edu/library/services/ask-librarian/">Leave a message</a> or call us at 916&ndash;558&ndash;2461.</p></div>
 </div>
 <hr>
 <table id="library-hours">
-    <caption>Library Hours, Summer 2018</caption>
+    <caption>Library Hours, Fall 2018</caption>
     <thead>
     <tr>
         <th>Day</th>
@@ -52,14 +52,43 @@ checkCookies('newWindowLinks');
     // libraryh3lp presence
 
   (function() {
-    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?multi,poll";
-    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-  })();
-  document.querySelector('#ask-block-active a').addEventListener('click', function(e) {
-    e.preventDefault();
-    window.open('https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093',
-   'chat', 'resizable=1,width=320,height=460,left=100, top=100');
-    
-  });
+    var check_presence = function() { // alternative to standard, resource-heavy libraryh3lp presence check. reference: https://libraryh3lp.com/presence/jid/homepage/chat.libraryh3lp.com/js
+	$.getScript('https://libraryh3lp.com/presence/jid/homepage/chat.libraryh3lp.com/js')
+    .done(function() {
+		replaceChat(jabber_resources[0].show);
+	})
+    .fail(function(a,b,c) {
+		ga('send', 'event', 'libraryh3lp presence check', 'error', c); 
+	});
+};
+
+var replaceChat = function(status) {
+	if (status === 'available' || status.show === 'chat') {
+		$('#ask-block-inactive, .needs-js').hide(1, function() {
+			$('#ask-block-active').fadeIn();
+		});
+	} else {
+		$('#ask-block-active, .needs-js').hide(2, function() {
+			$('#ask-block-inactive').fadeIn();
+		});
+	}
+};
+var jqWait = setInterval(function() {
+	if (typeof(jQuery) === 'function')
+	{
+		clearInterval(jqWait);
+		check_presence();
+		setInterval(check_presence, 20000);
+		$('#ask-block-active a').on('click', function(e)
+				{
+					e.preventDefault();
+					window.open('https://us.libraryh3lp.com/chat/homepage@chat.libraryh3lp.com?skin=22093',
+						'chat', 'resizable=1,width=320,height=460,left=100, top=100');
+				});
+		$('#choose-library button').on('click', function() {
+			clearInterval(check_presence);
+		});
+	}
+}, 100);
+  }());
 </script>
