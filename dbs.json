@@ -298,6 +298,28 @@
                      ],
                      "onesearch": "no"
         },
+		     {
+                        
+        
+        "name": "HeinOnline",
+        "vendor": "William S. Hein &amp; Co., Inc.",
+        "type": [
+            "legal-research",
+            "scholarly-journals"
+                ],
+        "urlRoot": "www.heinonline.org",
+        "urlPath": "HOL/Welcome",
+        "proxy": "ez",
+        "ssl": true,
+        "description": "Case law, scholarly journals, and government documents including U.S. congressional documents, presidential documents, treaties, international constitutions, and classic treatises. <strong>Trial ends December 31.</strong>",
+		"trial": true,
+        "category": [
+                     "criminal-justice-&amp;-law",
+                     "law",
+                     "political-science"
+                     ],
+                     "onesearch": "yes"
+        },
         
                         {
         "name":"CountryWatch",

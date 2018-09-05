@@ -155,7 +155,11 @@ $dbs = array(
              array(
                 'dbname' => 'naxos',
                 'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
-             )
+             ),
+			 array(
+				'dbname' => 'heinonline',
+				'queryURL' => $ezpStr . 'https://www.heinonline.org/HOL/LuceneSearch?terms=' . $query . '&collection=all&searchtype=advanced&typea=text&tabfrom=&submit=Go&all=true'
+			 )
              
              );
 
