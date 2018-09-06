@@ -30,7 +30,7 @@ style="display: none;">
         <td>7:30 am &ndash; 9:30 pm</td>
     </tr>
     <tr>
-        <td><abbr title="Friday">F &ndash; Sun</abbr></td>
+        <td><abbr title="Friday">F</abbr></td>
         <td>7:30 am &ndash; 5 pm</td>
     </tr>
     <tr>
