@@ -416,8 +416,8 @@
         "urlPath": "",
         "proxy": "ez",
         "ssl": true,
-        "col": "c",
-        "description": "Videos of theatre productions and interviews exploring the dramatic process.  Includes essays and study guides concerning the history, theory and criticism of theatre. (Access is limited to Cosumnes River College.)",
+		"trial": true,
+        "description": "Videos of theatre productions and interviews exploring the dramatic process.  Includes essays and study guides concerning the history, theory and criticism of theatre. <strong>Trial access for ARC, FLC and SCC available through Friday, October 5</strong> (CRC access will continue).",
         "category": [
                      "theatre-&amp;-performing-arts", "video"
                      ],
