@@ -127,6 +127,10 @@ $dbs = array(
                 'dbname' => 'oxford-english',
                 'queryUrl' => $ezpStr . 'http://www.oed.com/search?searchType=dictionary&q=' . $query
              ),
+			 array(
+                'dbname' => 'oxford-research',
+                'queryUrl' => $ezpStr . 'http://oxfordre.com/search?q=' . $query . '&searchBtn=Search&isQuickSearch=true'
+             ),
              array(
                 'dbname' => 'films',
                 'queryUrl' => $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query

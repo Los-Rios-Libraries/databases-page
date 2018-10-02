@@ -222,6 +222,22 @@
                      ],
                      "onesearch": "yes"
         },
+		                                               {
+        "name":"Oxford Research Encyclopedias",
+        "vendor": "Oxford University Press",
+        "type": [
+            "encyclopedias", "reference"
+                ],
+       "urlRoot": "oxfordre.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "description": "Background information in a variety of academic disciplines. <strong>Trial ends Thursday, December 20.</strong>",
+		"trial": true,
+        "category": [
+                     "history", "business", "criminal-justice-&amp;-law", "education", "health-&amp;-medicine", "encyclopedias,-dictionaries,-reference", "environmental-science", "literature", "political-science", "psychology", "sociology"
+                     ],
+                     "onesearch": "yes"
+        },
                                                        {
         "name":"Eric",
         "vendor": "EBSCO",
