@@ -236,6 +236,23 @@
         "category": [
                      "history", "business", "criminal-justice-&amp;-law", "education", "health-&amp;-medicine", "encyclopedias,-dictionaries,-reference", "environmental-science", "literature", "political-science", "psychology", "sociology"
                      ],
+                     "onesearch": "no"
+        },
+				                                               {
+        "name":"Cambridge Companions Online",
+        "vendor": "Cambridge University Press",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "www.cambridge.org",
+        "urlPath": "core/what-we-publish/collections/cambridge-companions",
+        "proxy": "ez",
+		"ssl": true,
+        "description": "Collections of essays on literature, philosophy, and culture. <strong>Trial ends Thursday, November 9.</strong>",
+		"trial": true,
+        "category": [
+                     "music", "literature", "philosophy-&amp;-religion", "ebooks"
+                     ],
                      "onesearch": "yes"
         },
                                                        {

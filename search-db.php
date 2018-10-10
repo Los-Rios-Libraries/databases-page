@@ -163,6 +163,10 @@ $dbs = array(
 			 array(
 				'dbname' => 'heinonline',
 				'queryURL' => $ezpStr . 'https://www.heinonline.org/HOL/LuceneSearch?terms=' . $query . '&collection=all&searchtype=advanced&typea=text&tabfrom=&submit=Go&all=true'
+			 ),
+			 array(
+				'dbname' => 'cambridge-companions',
+				'queryURL' => $ezpStr . 'https://www-cambridge-org.ezproxy.losrios.edu/core/what-we-publish/collections/cambridge-companions/listing?q=' . $query
 			 )
              
              );
