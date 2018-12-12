@@ -852,7 +852,7 @@
         "urlRoot": "library.cqpress.com",
         "urlPath": "cqresearcher/",
         "proxy": "ez",
-        "ssl": false,
+        "ssl": true,
         "description": "In-depth reports on current social and political issues.",
         "category": [
                      "general","controversial-topics"
