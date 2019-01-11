@@ -17,7 +17,7 @@ style="display: none;">
 </div>
 <hr>
 <table id="library-hours">
-    <caption>Library Hours, Fall 2018</caption>
+    <caption>Library Hours, Spring 2019</caption>
     <thead>
     <tr>
         <th>Day</th>
