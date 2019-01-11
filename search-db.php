@@ -127,10 +127,6 @@ $dbs = array(
                 'dbname' => 'oxford-english',
                 'queryUrl' => $ezpStr . 'http://www.oed.com/search?searchType=dictionary&q=' . $query
              ),
-			 array(
-                'dbname' => 'oxford-research',
-                'queryUrl' => $ezpStr . 'http://oxfordre.com/search?q=' . $query . '&searchBtn=Search&isQuickSearch=true'
-             ),
              array(
                 'dbname' => 'films',
                 'queryUrl' => $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
@@ -159,15 +155,7 @@ $dbs = array(
              array(
                 'dbname' => 'naxos',
                 'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
-             ),
-			 array(
-				'dbname' => 'heinonline',
-				'queryUrl' => $ezpStr . 'https://www.heinonline.org/HOL/LuceneSearch?terms=' . $query . '&collection=all&searchtype=advanced&typea=text&tabfrom=&submit=Go&all=true'
-			 ),
-			 array(
-				'dbname' => 'cambridge',
-				'queryUrl' => $ezpStr . 'https://www.cambridge.org/core/what-we-publish/collections/cambridge-companions/listing?q=' . $query
-			 )
+             )
              
              );
 

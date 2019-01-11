@@ -222,39 +222,6 @@
                      ],
                      "onesearch": "yes"
         },
-		                                               {
-        "name":"Oxford Research Encyclopedias",
-        "vendor": "Oxford University Press",
-        "type": [
-            "encyclopedias", "reference"
-                ],
-       "urlRoot": "oxfordre.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "description": "Background information in a variety of academic disciplines. <strong>Trial ends Thursday, December 20.</strong>",
-		"trial": true,
-        "category": [
-                     "history", "business", "criminal-justice-&amp;-law", "education", "health-&amp;-medicine", "encyclopedias,-dictionaries,-reference", "environmental-science", "literature", "political-science", "psychology", "sociology"
-                     ],
-                     "onesearch": "no"
-        },
-				                                               {
-        "name":"Cambridge Companions Online",
-        "vendor": "Cambridge University Press",
-        "type": [
-            "ebooks"
-                ],
-       "urlRoot": "www.cambridge.org",
-        "urlPath": "core/what-we-publish/collections/cambridge-companions",
-        "proxy": "ez",
-		"ssl": true,
-        "description": "Collections of essays on literature, philosophy, and culture. <strong>Trial ends Thursday, December 20.</strong>",
-		"trial": true,
-        "category": [
-                     "music", "literature", "philosophy-&amp;-religion", "ebooks"
-                     ],
-                     "onesearch": "yes"
-        },
                                                        {
         "name":"Eric",
         "vendor": "EBSCO",
@@ -330,28 +297,6 @@
                      "political-science"
                      ],
                      "onesearch": "no"
-        },
-		     {
-                        
-        
-        "name": "HeinOnline",
-        "vendor": "William S. Hein &amp; Co., Inc.",
-        "type": [
-            "legal-research",
-            "scholarly-journals"
-                ],
-        "urlRoot": "www.heinonline.org",
-        "urlPath": "HOL/Welcome",
-        "proxy": "ez",
-        "ssl": true,
-        "description": "Case law, scholarly journals, and government documents including U.S. congressional documents, presidential documents, treaties, international constitutions, and classic treatises. <strong>Trial ends December 31.</strong>",
-		"trial": true,
-        "category": [
-                     "criminal-justice-&amp;-law",
-                     "law",
-                     "political-science"
-                     ],
-                     "onesearch": "yes"
         },
         
                         {
