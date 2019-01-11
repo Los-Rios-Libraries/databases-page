@@ -867,7 +867,7 @@
         "urlPath": "",
         "proxy": "ez",
         "ssl": false,
-        "description": "Scholarly journals, ebooks, abstracts, patents and legal research from academic, nonprofit and government sources. Use the Los Rios Full Text link for library provided content.",
+        "description": "Scholarly journals, ebooks, abstracts, patents and legal research from academic, nonprofit and government sources. Use the Los Rios Full Text link for library-provided content.",
         "category": [
                      "general", "art", "education","history","literature","music",   "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts"
                      ],
