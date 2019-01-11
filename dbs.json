@@ -195,9 +195,9 @@
         "type": [
             "reference"
                 ],
-       "urlRoot": "",
-        "urlPath": "special.php?pageTitle=ethnologue&url=https%3A%2F%2Fezproxy.losrios.edu%2Flogin%3Furl%3Dhttps%3A%2F%2Fwww.ethnologue.com%2F",
-        "proxy": false,
+       "urlRoot": "www.ethnologue.com",
+        "urlPath": "",
+        "proxy": "ez",
         "ssl": true,
         "description": "A guide to the living languages of the world, including language profiles, statistics, and maps.",
         "category": [

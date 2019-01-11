@@ -1,3 +1,7 @@
+<script>
+	// in case anybody bookmarked this page
+	location.replace('https://ezproxy.losrios.edu/login?url=https://www.ethnologue.com/');
+</script>
 <p>
   SIL International, provider of Ethnologue, has revoked access to this database because of an overdue payment. We expect access to be restored soon.</p>
 <p>Most vendors understand the challenges in processing bills through educational institutions and take our word that payment will arrive, but SIL International has chosen not to do so.</p>
