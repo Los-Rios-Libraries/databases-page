@@ -912,10 +912,10 @@
         "type": [
             "reference"
                 ],
-        "urlRoot": "www.collegesource.org",
+        "urlRoot": "cso.collegesource.com",
         "urlPath": "",
         "proxy": "ez",
-        "ssl": false,
+        "ssl": true,
         "description": "College profiles, catalogs, transcript keys, and other resources related to higher education.",
         "category": [
                      "encyclopedias,-dictionaries,-reference"
