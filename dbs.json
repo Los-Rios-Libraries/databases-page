@@ -448,7 +448,7 @@
         "ssl": true,
         "description": "Scholarly journals in health, medicine, psychology and life sciences.",
         "category": [
-                     "health-&amp;-medicine", "psychology"
+                     "environmental-science","health-&amp;-medicine", "psychology"
                      ],
                      "onesearch": "yes"
         },
