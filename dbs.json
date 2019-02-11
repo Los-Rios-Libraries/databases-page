@@ -469,22 +469,7 @@
                      ],
                      "onesearch": "yes"
         },
-                          {
-        "name":"Sage Journals",
-        "vendor": "SAGE",
-        "type": [
-            "scholarly-journals"
-                ],
-       "urlRoot": "journals.sagepub.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": false,
-        "description": "Scholarly journals in social and behavioral science, health science, education and communication.",
-        "category": [
-                    "communication", "criminal-justice-&amp; law", "education", "health-&amp;-medicine", "psychology", "sociology"
-                     ],
-                     "onesearch": "yes"
-        },
+
         
   
                                {
