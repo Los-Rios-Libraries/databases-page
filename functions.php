@@ -53,7 +53,7 @@ function writeDBInfo($db, $url) {
     $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " \">\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
     $name = $db -> name;
-    if (preg_match('/Nexis|Country|Cq|Crc|Digital Thea|INTELECOM|Kanopy|Opposing|SAGE|CollegeSource|Ethnologue/', $name) === 1) {
+    if (preg_match('/Nexis|Country|Cq|Crc|Dailies|Digital Thea|INTELECOM|Kanopy|Opposing|SAGE|CollegeSource|Ethnologue/', $name) === 1) {
         $searchButton = '';
     }
     $output .= $searchButton;
