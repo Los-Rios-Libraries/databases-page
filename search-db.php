@@ -140,9 +140,13 @@ $dbs = array(
                 'queryUrl' => $ezpStr . 'http://online.salempress.com/search.do?categoryName=&All=All&numCategories=5&searchInAll=all&searchText=' . $query
              ),
 			array(
-                'dbname' => 'sage',
-                'queryUrl' => $ezpStr . 'http://journals.sagepub.com/action/doSearch?AllField=' . $query
+                'dbname' => 'access-world',
+                'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=WORLDNEWS&fld-base-0=alltext&val-base-0=' . $query
              ),
+			array(
+				'dbname' => 'sacramento',
+				'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=WORLDNEWS&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%2520Bee%2520Collection'
+			)
 			array(
 				  'dbname' => 'sciencedirect',
 				  'queryUrl' => $ezpStr . 'https://www.sciencedirect.com/search/advanced?qs=' . $query
