@@ -313,7 +313,7 @@
         "category": [
                     "news"
                      ],
-                     "onesearch": "yes"
+                     "onesearch": "no"
         },
                                   {
         "name":"Sacramento Bee Collection",
@@ -329,6 +329,9 @@
         "description": "Newspaper articles, blog posts, online content and historical archives from the Sacramento Bee, 1857 to the present. <strong>Trial access expires Tuesday, April 30.</strong>",
         "category": [
                     "news"
+                     ],
+                     "onesearch": "no"
+        },
                      ],
                      "onesearch": "yes"
         },
