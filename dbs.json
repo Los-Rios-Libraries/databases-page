@@ -349,25 +349,7 @@
                      ],
                      "onesearch": "yes"
         },
-                                  {
-        "name":"Music Online: Smithsonian Global Sound for Libraries",
-        "vendor": "Alexander Street",
-        "type": [
-            "streaming-audio"
-                ],
-       "urlRoot": "search.alexanderstreet.com",
-        "urlPath": "glmu",
-        "proxy": "ez",
-        "ssl": true,
-        "trial": true,
-        "description": "Streaming audio from over 1,400 cultural groups in over 150 countries. <strong>Trial access expires Friday, April 12.</strong>",
-        "category": [
-                    "music", "history"
-                     ],
-                     "onesearch": "no"
-        },
-        
-                        {
+        {
         "name":"CountryWatch",
         "vendor": "CountryWatch",
         "type": [
