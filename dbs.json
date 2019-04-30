@@ -284,10 +284,9 @@
             "scholarly-journals",
             "news"
                 ],
-        "urlRoot": "www.nexisuni.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": false,
+        "urlRoot": "",
+        "urlPath": "special.php?url=https%3A%2F%2Fezproxy.losrios.edu%2Flogin%3Fqurl%3Dhttp%253A%252F%252Fwww.nexisuni.com&pageTitle=nexis-uni",
+        "proxy": "false",
         "description": "News, business, and legal research. Includes federal and state case law and Shepard's Citations. <strong>Note: Use is restricted to students and faculty/staff.</strong>",
         "category": [
                      "criminal-justice-&amp;-law",
