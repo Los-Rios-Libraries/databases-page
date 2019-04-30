@@ -750,8 +750,8 @@
                 "vendor": "Kanopy",
                 "type": [
                          "video"],
-                "urlRoot": "losrios.kanopystreaming.com",
-                "urlPath": "",
+                "urlRoot": "",
+                "urlPath": "special.php?url=https%3A%2F%2Flosrios.kanopy.com&pageTitle=kanopy",
                 "proxy": false,
                 "ssl": true,
                 "description": "Feature films, documentaries, and educational videos.</strong>",
