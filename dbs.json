@@ -328,22 +328,6 @@
                     "news"
                      ],
                      "onesearch": "no"
-                                  {
-        "name":"Am Explorer",
-        "vendor": "Adam Matthew Digital",
-        "type": [
-            "primary-source"
-                ],
-       "urlRoot": "www.am-explorer.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": false,
-        "trial": true,
-        "description": "Collections of primary source materials such as letters, manuscripts, newspaper articles, and images from a variety of historical contexts, including Native American history, gender and sexuality, and the American West. <strong>Trial access expires Tuesday, April 30.</strong>",
-        "category": [
-                    "history"
-                     ],
-                     "onesearch": "yes"
         },
         {
         "name":"CountryWatch",
