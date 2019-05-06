@@ -297,40 +297,37 @@
                      ],
                      "onesearch": "no"
         },
-                          {
+                       {
         "name":"Access World News",
         "vendor": "NewsBank",
         "type": [
             "news"
                 ],
        "urlRoot": "infoweb.newsbank.com",
-        "urlPath": "apps/news/easy-search?p=WORLDNEWS",
+        "urlPath": "apps/news/easy-search?p=AWNB",
         "proxy": "ez",
         "ssl": true,
-        "trial": true,
-        "description": "Articles from US and international newspapers. <strong>Trial access expires Tuesday, April 30.</strong>",
+        "description": "Articles from US and international newspapers.",
         "category": [
                     "news"
                      ],
                      "onesearch": "no"
         },
-                                  {
+                       {
         "name":"Sacramento Bee Collection",
         "vendor": "NewsBank",
         "type": [
             "news"
                 ],
        "urlRoot": "infoweb.newsbank.com",
-        "urlPath": "apps/news/browse-multi?p=WORLDNEWS&t=family%3AA1963%21Sacramento%2520Bee%2520Collection&action=browse",
+        "urlPath": "apps/news/browse-multi?p=AWNB&t=family%3AA1963%21Sacramento%20Bee%20Collection",
         "proxy": "ez",
         "ssl": true,
-        "trial": true,
-        "description": "Newspaper articles, blog posts, online content and historical archives from the Sacramento Bee, 1857 to the present. <strong>Trial access expires Tuesday, April 30.</strong>",
+        "description": "Newspaper articles, blog posts, and web-only content from the Sacramento Bee, 1984 to the present.",
         "category": [
                     "news"
                      ],
                      "onesearch": "no"
-        },
                                   {
         "name":"Am Explorer",
         "vendor": "Adam Matthew Digital",

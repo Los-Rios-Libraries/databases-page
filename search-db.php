@@ -141,11 +141,11 @@ $dbs = array(
              ),
 			array(
                 'dbname' => 'access-world',
-                'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=WORLDNEWS&fld-base-0=alltext&val-base-0=' . $query
+                'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query
              ),
 			array(
 				'dbname' => 'sacramento',
-				'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=WORLDNEWS&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%2520Bee%2520Collection'
+				'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%20Bee%20Collection'
 			),
 			array(
 				  'dbname' => 'sciencedirect',
