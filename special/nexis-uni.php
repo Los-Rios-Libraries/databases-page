@@ -13,15 +13,15 @@ $url = $_GET['url'];
 <h2>State and Federal Cases</h2>
 <p>You may find state and federal court decisions using <strong>Google Scholar</strong>.</p>
 <ol>
-   <li>Visit Google Scholar.</li>
+    <li>Visit <a href="index.php?az&amp;query=google%20scholar">Google Scholar</a>.</li>
    <li>Select the <strong>Case law</strong> radio button underneath the search box.</li>
 </ol>
 <h2>Law Reviews</h2>
 <p><strong>OneSearch</strong> contains a large number of legal journal articles from various sources. Try adding the phrase &quot;law review&quot; to your search.</p>
 <h2>Newspapers and other news sources</h2>
-<p>The Library will be adding two databases, <strong>US Major Dailies </strong>and <strong>Access World News</strong>, to replace the news sources in Nexis Uni. In addition, OneSearch features a News source type limiter that can be used to search for news content.</p>
+<p>The Library will be adding two databases, <strong>US Major Dailies</strong> and <strong><a href="index.php?az&amp;query=newsbank">Access World News</a></strong>, to replace the news sources in Nexis Uni. In addition, OneSearch features a News source type limiter that can be used to search for news content.</p>
 <h2>Business Profiles</h2>
-<p><strong>Business Source Complete</strong> contains profiles of businesses similar to those found in Nexis Uni.</p>
+<p><strong><a href="index.php?az&amp;query=business+source+complete">Business Source Complete</a></strong> contains profiles of businesses similar to those found in Nexis Uni.</p>
 <p><a class="db-name" href="<?php echo $url; ?>">Continue to Nexis Uni.</a></p>
 <div id="hide-message"><button id="hide-page">In the future, go directly to Nexis Uni</button></div>
 </div>
