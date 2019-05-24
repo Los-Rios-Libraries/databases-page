@@ -414,23 +414,6 @@
                      "onesearch": "yes"
                      }, 
         
-                                       {
-        "name":"Digital Theatre Plus",
-        "vendor": "Digital Theatre+",
-        "type": [
-            "video"
-                ],
-        "urlRoot": "www.digitaltheatreplus.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": true,
-		"col": "cf",
-        "description": "Videos of theatre productions and interviews exploring the dramatic process. Includes essays and study guides concerning the history, theory and criticism of theatre. <strong>Access is limited to Cosumnes River College and Folsom Lake College.</strong>",
-        "category": [
-                     "theatre-&amp;-performing-arts", "video"
-                     ],
-                     "onesearch": "no"
-        },
         
                        {
         "name":"Medline",
@@ -738,6 +721,22 @@
                 "category": ["video", "theatre-&amp;-performing-arts" ],
                 "onesearch": "yes"
  },
+               {
+        "name":"Digital Theatre Plus",
+        "vendor": "Digital Theatre+",
+        "type": [
+            "video"
+                ],
+        "urlRoot": "www.digitaltheatreplus.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
+        "description": "Videos of theatre productions and interviews exploring the dramatic process. Includes essays and study guides concerning the history, theory and criticism of theatre.",
+        "category": [
+                     "theatre-&amp;-performing-arts", "video"
+                     ],
+                     "onesearch": "no"
+        },
       
          {
         "name":"Opposing Viewpoints in Context",
