@@ -404,6 +404,19 @@ function homeLibEls(col)
       ga('send', 'event', '' + col + ' box', 'click', label);
     });
   }, 800);
+  (function() { // hide Nexis Uni starting July 1, until can get in to remove from JSON
+  var exp = new Date('07/01/2019');
+  var expStr = exp.getTime();
+  var d = new Date();
+  var dStr = d.getTime();
+  if (dStr >= expStr) {
+    $('.db-entry').each(function() {
+      if ($(this).text().indexOf('Nexis Uni') > -1) {
+        $(this).hide();      
+      }
+    });    
+  } 
+}());
   showDBNos();
 }
 
