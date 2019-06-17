@@ -297,6 +297,22 @@
                      ],
                      "onesearch": "no"
         },
+                            {
+        "name":"US Major Dailies",
+        "vendor": "ProQuest",
+        "type": [
+            "news"
+                ],
+       "urlRoot": "search.proquest.com",
+        "urlPath": "usmajordailies/",
+        "proxy": "ez",
+        "ssl": true,
+        "description": "Articles from The New York Times, Washington Post, Wall Street Journal, Los Angeles Times, and Chicago Tribune.",
+        "category": [
+                    "news"
+                     ],
+                     "onesearch": "no"
+        },
                        {
         "name":"Access World News",
         "vendor": "NewsBank",
