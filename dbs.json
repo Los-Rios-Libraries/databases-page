@@ -538,7 +538,7 @@
         "proxy": "ez",
         "ssl": false,
         "col": "s",
-        "description": "Video clips covering a variety of academic and vocational fields. (Access limited to Sacramento City College.)",
+        "description": "Video clips covering a variety of academic and vocational fields. <strong>Access limited to Sacramento City College. Access will expire August 1, 2019.</strong>",
         "category": [ "video", "business", "communication", "environmental-science", "psychology", "sociology"
                      ],
                      "onesearch": "yes"
