@@ -1,27 +1,15 @@
 <!-- alt text for images should match text in all elements, to aid with Google Analytics tracking -->
 <div id="arc-help">
 <div>
-	<p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us/Hours.htm"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>
+	<p><a href="https://www.arc.losrios.edu/student-resources/library/about/hours"><img alt="ARC Library Hours" width="136" src="help/arc-img/Hours.png"></a> </p>
 	</div>
 <div>
-    <p><a href="http://www.arc.losrios.edu/arclibrary/Contact_Us.htm"><img alt="Contact a librarian, phone, email, text" height="135" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
+    <p><a href="https://www.arc.losrios.edu/student-resources/library/contact"><img alt="Contact a librarian, phone, email" height="135" src="help/arc-img/AskLibrarian_Menu.png" width="136" /></a></p>
 </div>
     <div id="arc-appt">
-        <button id="mySched27927" type="button"><img alt="Research Appointments" height="40" src="help/arc-img/ResearchAppts.png" width="136" /></button>
+        <p><a href="https://arc_losriosdss.ingeniuxondemand.com/student-resources/library/research/make-an-appointment"><img alt="Research Appointments" height="40" src="help/arc-img/ResearchAppts.png" width="136" /></a></p>
     </div>
-    
-</div>
-<!-- Place this div in your web page where you want your chat widget to appear. -->
-<div class="needs-js">chat loading...</div>
-</div>
-<!-- Place this script as near to the end of your BODY as possible. -->
-<script type="text/javascript">
-  (function() {
-    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?9603";
-    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-  })();
-</script>
+
 
 <script>
     checkCookies('newWindowLinks');
@@ -57,5 +45,4 @@
     	
   
 </script>
-<!-- Place the following link anywhere in your page. Make sure the id "mySched27927" matches with the above code: jQuery("#mySched27927")  //-->
 
