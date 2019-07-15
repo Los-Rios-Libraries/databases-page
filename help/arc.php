@@ -9,7 +9,7 @@
     <div id="arc-appt">
         <p><a href="https://arc_losriosdss.ingeniuxondemand.com/student-resources/library/research/make-an-appointment"><img alt="Research Appointments" height="40" src="help/arc-img/ResearchAppts.png" width="136" /></a></p>
     </div>
-
+</div>
 
 <script>
     checkCookies('newWindowLinks');
