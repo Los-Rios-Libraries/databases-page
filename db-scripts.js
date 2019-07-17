@@ -375,8 +375,8 @@ function homeLibEls(col)
     
   });
   $('.db-name:contains(Films on Demand)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://fod.infobase.com/PortalPlayLists.aspx?wid=' + colProps[col].fod).data('proxy', true);
-  $('.db-name:contains(Gale Virtual)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://go.galegroup.com/ps/dispBasicSearch.do?userGroupName='+ colProps[col].gale + '&prodId=GVRL').data('proxy', true);
-  $('.db-name:contains(Opposing)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://ic.galegroup.com/ic/ovic/home?p=OVIC&u='+ colProps[col].gale).data('proxy', true);
+  //$('.db-name:contains(Gale Virtual)').attr('href', 'https://ezproxy.losrios.edu/login?url=https://go.galegroup.com/ps/dispBasicSearch.do?userGroupName='+ colProps[col].gale + '&prodId=GVRL').data('proxy', true);
+  //$('.db-name:contains(Opposing)').attr('href', 'https://ezproxy.losrios.edu/login?url=https://go.galegroup.com/ps/dispBasicSearch.do?userGroupName='+ colProps[col].gale + '&prodId=OVIC').data('proxy', true);
   setTimeout(function ()
   {
     $('#library-help-content a').on('click', function ()

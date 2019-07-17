@@ -117,7 +117,7 @@ $dbs = array(
              ),
              array(
                 'dbname' => 'gale-virtual',
-                'queryUrl' => $ezpStr . 'http://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
+                'queryUrl' => $ezpStr . 'https://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
              ),
              array(
                 'dbname' => 'oxford-art',

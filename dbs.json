@@ -738,7 +738,7 @@
         "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb/?db=OVIC",
         "proxy": "ez",
-        "ssl": false,
+        "ssl": true,
         "description": "Viewpoint articles on current social issues and controversial topics.",
         "category": [
                      "controversial-topics", "communication"
@@ -834,7 +834,7 @@
        "urlRoot": "infotrac.galegroup.com",
         "urlPath": "itweb?db=GVRL",
         "proxy": "ez",
-        "ssl": false,
+        "ssl": true,
         "description": "Background information from general and subject encyclopedias.",
         "category": [
                      "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
