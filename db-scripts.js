@@ -1,20 +1,23 @@
 function showDBNos() {
   var dbNo = $('#main .db-name:visible').length;
   var numberDisplay = $('#show-db-no');
-  if (dbNo < 70)
-  {
-    dbNoS = dbNo.toString();
-    $('#db-no').text(dbNoS);
-    if (dbNo === 1)
+  if (numberDisplay.length) {
+    if (dbNo < 70)
     {
-      numberDisplay.html(numberDisplay.html().replace('Databases', 'Database'));
+      dbNoS = dbNo.toString();
+      $('#db-no').text(dbNoS);
+      if (dbNo === 1)
+        {
+          numberDisplay.html(numberDisplay.html().replace('Databases', 'Database'));
+        }
+      numberDisplay.attr('class', 'show');
     }
-    numberDisplay.attr('class', 'show');
+    else
+    {
+     numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
+    }
   }
-  else
-  {
-    numberDisplay.attr('class', 'hidden').attr('aria-hidden', 'true');
-  }
+  
 }
 function defaultAuto(el, searchType) {
        el.autocomplete(
