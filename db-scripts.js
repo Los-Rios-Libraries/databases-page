@@ -291,25 +291,29 @@ $('#dbpage-query').on('focus', function ()
 });
 
 // cookies
-function setCookie(cname, cvalue, exdays)
+function setCookie(obj)
 {
-  var expires;
-  if (exdays === null) {
-    expires = '';
+  var expires = ''; // if obj.exp is not set, cookie is session-only
+  if (obj.exp) {
+    var multiplier = 60 * 60 * 24; // assumes days
+    if (obj.unit === 'hours') {
+      multiplier = multiplier / 24;
+    }
+    else if (obj.unit === 'minutes') {
+      multiplier = 60;
+    }
+    else if (obj.unit === 'months'){
+      multiplier = multiplier * 30;
+    }
+      expires = 'max-age=' +obj.exp * multiplier + ';';
   }
-  else {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    expires = 'expires=' + d.toUTCString() + '; ';
-  }
-  
-  document.cookie = cname + '=' + cvalue + '; ' + expires + 'path=/;domain=losrios.edu';
+  document.cookie = obj.name + '=' + obj.value + '; ' + expires + 'path=/;domain=losrios.edu';
 }
 $('.headnav a, #choose-library button').on('click', function ()
 { // set home library cookie when people click to their college or select college from menu in box.
   var lib = $(this).text().toLowerCase();
   //  alert(lib);
-  setCookie('homeLibrary', lib, 10);
+  setCookie({name: 'homeLibrary', value: lib, exp: 30});
 });
 
 function getCookie(cname)
@@ -458,7 +462,7 @@ $('#newwin-check').on('click', function ()
   var b = $('.db-name, .search-one-db, #library-help-content a, .headnav a, #pubfinder a');
   if (a.is(':checked'))
   {
-    setCookie('newWindowLinks', 'yes', 30);
+    setCookie({name: 'newWindowLinks', value: 'yes', exp: 30});
     b.attr('target', '_blank');
     if ($('#search-db').prop('checked', false))
     {
@@ -467,7 +471,7 @@ $('#newwin-check').on('click', function ()
   }
   else
   {
-    setCookie('newWindowLinks', 'no', 1);
+    setCookie({name: 'newWindowLinks', value: 'no', exp: 1});
     b.removeAttr('target');
     $('#multi-search').removeAttr('target');
   }
@@ -574,12 +578,12 @@ $('#ga-opt-out').on('click', function(e) {
   });
 $('#remove-proxy').on('click', function() {
   removeProxy();
-  setCookie('dbProxy', 'removed', null);
+  setCookie({name: 'dbProxy', value: 'removed'});
   
   
 });
 $('#force-login').on('click', function() {
-  setCookie('ezproxyrequireauthenticate2', '2', null);
+  setCookie({name: 'ezproxyrequireauthenticate2', value: '2'});
   $(this).hide();
   $('<p class="special" style="display:none;">This computer will now see login prompts when accessing resources. <button id="reset-login" type="button">Reset </button></p>').insertAfter($(this)).fadeIn();
   $('#reset-login').on('click', function() {
@@ -593,7 +597,7 @@ if (proxySet === 'removed') {
   removeProxy();
 }
 function resetLogin(el) {
-  setCookie('ezproxyrequireauthenticate2', '0', null);
+  setCookie({name: 'ezproxyrequireauthenticate2', value: '0'});
   el.closest('aside').fadeOut();
   $('#sso').fadeOut();
   $('#remove-proxy').fadeIn();
@@ -629,7 +633,7 @@ function removeProxy() {
   $('#remove-proxy').attr('id', 'add-proxy').html('&#8635; Restore proxy string to URLs');
   $('<p class="special">Proxy string has been removed from URLs; databases may not be accessible.</p>').hide().prependTo(proxyDiv).fadeIn();
   $('#add-proxy').on('click', function() {
-    setCookie('dbProxy', 'restored', null);
+    setCookie({name: 'dbProxy', value: 'restored'});
     proxyDiv.find('p').remove();
     proxyDiv.fadeOut('fast');
     location.reload();
@@ -703,7 +707,7 @@ function showNote(obj)
 			$('#message-dismiss').on('click', function()
 			{
 				$('#db-alert').fadeOut();
-				setCookie(cName, 'hide', 2); // cookie expires in just two days
+				setCookie({name: cName, value: 'hide',exp: 2}); // cookie expires in just two days
 			});
 		}
 	}
