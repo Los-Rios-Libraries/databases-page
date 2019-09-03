@@ -16,6 +16,6 @@ if ($homeLibrary !== 'unknown') {
     default:
       $wID = '107590'; // default shouldn't be needed, but just in case
   }
-  header('Location: http://0-fod.infobase.com.lasiii.losrios.edu/PortalPlayLists.aspx?wid=' . $wID);
+  header('Location: https://ezproxy.losrios.edu/login?url=https://fod.infobase.com/PortalPlayLists.aspx?wid=' . $wID);
 }
 ?>
