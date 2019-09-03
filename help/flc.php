@@ -19,7 +19,7 @@
 	<h3>Monday - Thursday</h3>
 	<p>8:00 am to 8:00 pm</p>
 	<br>
-	<h3>Friday</3>
+	<h3>Friday</h3>
 	<p>8:00 am to 5:00 pm</p>
 	<br>
 	<h3>Weekends and Holidays</h3>
