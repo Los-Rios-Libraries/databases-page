@@ -13,13 +13,16 @@
 	<hr>
 
 	<h3>Library Hours</h3>
-	<p>Summer 2019</p>
-	<p>June 10 - August 8</p>
+	<p>Fall 2019</p>
+	<p>August 24 - December 19</p>
 	<br>
 	<h3>Monday - Thursday</h3>
-	<p>8:00 am to 6:00 pm</p>
+	<p>8:00 am to 8:00 pm</p>
 	<br>
-	<h3>Friday, Weekends and Holidays</h3>
+	<h3>Friday</3>
+	<p>8:00 am to 5:00 pm</p>
+	<br>
+	<h3>Weekends and Holidays</h3>
 	<p>Closed</p>
 	<br>
 	<p><a href="https://www.flc.losrios.edu/student-resources/library/about/hours">More about library hours</a></p>
