@@ -76,7 +76,7 @@ $dbs = array(
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query . '&profile=eds&site=eds-live&scope=site'
              ),
              array(
-                'dbname' => 'ebook',
+                'dbname' => 'ebook-collection',
                 'queryUrl' => $ebscoBase . '&direct=true&db=nlebk&bquery=' . $query . '&profile=ebooks&site=ehost-live&scope=site'
              ),
             array(
@@ -116,7 +116,7 @@ $dbs = array(
                 'queryUrl' => $ezpStr . 'http://www.ncbi.nlm.nih.gov/pubmed?/?term=' . $query . '&myncbishare=casccllib'
              ),
              array(
-                'dbname' => 'gale-virtual',
+                'dbname' => 'gale-ebooks',
                 'queryUrl' => $ezpStr . 'https://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
              ),
              array(

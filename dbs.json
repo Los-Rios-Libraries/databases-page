@@ -826,7 +826,7 @@
                      "onesearch": "yes"
         },
         {
-        "name":"Gale Virtual Reference Library",
+        "name":"Gale eBooks",
         "vendor": "Gale",
         "type": [
             "encyclopedias", "reference", "ebooks"
@@ -835,12 +835,12 @@
         "urlPath": "itweb?db=GVRL",
         "proxy": "ez",
         "ssl": true,
-        "description": "Background information from general and subject encyclopedias.",
+        "description": "Formerly known as <em>Gale Virtual Reference Library</em>. Background information from general and subject encyclopedias.",
         "category": [
                      "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
                      ],
                      "onesearch": "yes",
-                     "altname": ["GVRL"]
+                     "altname": ["GVRL", "Gale Virtual Reference Library"]
         }, 
         
                 {
