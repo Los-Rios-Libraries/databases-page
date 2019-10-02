@@ -942,20 +942,6 @@
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
-        },
-        {
-            "name": "Resources for College Libraries",
-            "vendor": "ProQuest",
-            "type": [],
-            "urlRoot": "www.rclweb.net",
-            "urlPath": "",
-            "proxy": "ez",
-            "ssl": true,
-            "description": "Reviews of print and electronic resources for academic libraries.",
-            "category": ["library-science"],
-            "onesearch": "no",
-            "altname": ["RCL"]
-            
         }
-        ]
+]
 }

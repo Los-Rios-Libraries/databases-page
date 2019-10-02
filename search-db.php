@@ -132,10 +132,6 @@ $dbs = array(
                 'queryUrl' => $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
              ),
              array(
-                'dbname' => 'resources',
-                'queryUrl' => $ezpStr . 'http://www.rclweb.net/Search/Results?q=rcl-searchall%3A[' . $query . ']&op=1&qs=1'
-             ),
-             array(
                 'dbname' => 'salem',
                 'queryUrl' => $ezpStr . 'http://online.salempress.com/search.do?categoryName=&All=All&numCategories=5&searchInAll=all&searchText=' . $query
              ),
