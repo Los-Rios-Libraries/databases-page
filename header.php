@@ -4,13 +4,13 @@
 ?>
 <ul>
 <li id="arc-link" class="headnav">
-<abbr title="American River College"><a href="http://www.arc.losrios.edu/arclibrary.htm">ARC</a></abbr>
+<abbr title="American River College"><a href="https://www.arc.losrios.edu/student-resources/library">ARC</a></abbr>
 </li>
 <li id="crc-link" class="headnav" >
-<abbr title="Cosumnes River College"><a href="http://www.crc.losrios.edu/library">CRC</a></abbr>
+<abbr title="Cosumnes River College"><a href="https://crc.losrios.edu/student-resources/library">CRC</a></abbr>
 </li>
 <li id="flc-link" class="headnav" >
-<abbr title="Folsom Lake College"><a href="http://www.flc.losrios.edu/libraries">FLC</a></abbr>
+<abbr title="Folsom Lake College"><a href="https://www.flc.losrios.edu/student-resources/library">FLC</a></abbr>
 </li>
 <li id="scc-link" class="headnav">
 <abbr title="Sacramento City College"><a href="http://www.scc.losrios.edu/library">SCC</a></abbr>
