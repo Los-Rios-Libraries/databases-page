@@ -13,8 +13,10 @@
 	<hr>
 
 	<h3>Library Hours</h3>
-	<p>Fall 2019</p>
-	<p>August 24 - December 19</p>
+	<p>The library will be closed Friday, December 20 through Monday, January 20.</p>
+	<br>
+	<p>Spring 2020</p>
+	<p>January 18 - May 20</p>
 	<br>
 	<h3>Monday - Thursday</h3>
 	<p>8:00 am to 8:00 pm</p>
