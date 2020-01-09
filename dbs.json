@@ -835,7 +835,7 @@
         "urlPath": "itweb?db=GVRL",
         "proxy": "ez",
         "ssl": true,
-        "description": "Formerly known as <em>Gale Virtual Reference Library</em>. Background information from general and subject encyclopedias.",
+        "description": "Background information from general and subject encyclopedias.",
         "category": [
                      "ebooks", "general", "criminal-justice-&amp;-law", "education", "encyclopedias,-dictionaries,-reference", "history", "music", "environmental-science", "business", "literature", "sociology"
                      ],
