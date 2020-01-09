@@ -72,7 +72,7 @@ $dbs = array(
                 'queryUrl' => $ebscoBase . '&direct=true&db=' . $ehostCode . '&bquery=' .$query . '&site=ehost-live&scope=site'
              ),
              array(
-                'dbname' => 'onesearch',
+                'dbname' => 'ebsco-discovery',
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query . '&profile=eds&site=eds-live&scope=site'
              ),
              array(
