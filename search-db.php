@@ -71,6 +71,10 @@ $dbs = array(
                 'ehostcode' => $ehostCode,
                 'queryUrl' => $ebscoBase . '&direct=true&db=' . $ehostCode . '&bquery=' .$query . '&site=ehost-live&scope=site'
              ),
+													array(
+														'dbname' => 'onesearch',
+														'queryUrl' => 'https://caccl-lrccd.primo.exlibrisgroup.com/discovery/search?query=any,contains,' . $query . '&vid=01CACCL_LRCCD:' . $homeLibrary
+													),
              array(
                 'dbname' => 'ebsco-discovery',
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query . '&profile=eds&site=eds-live&scope=site'

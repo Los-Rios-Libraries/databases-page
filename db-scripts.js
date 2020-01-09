@@ -381,6 +381,7 @@ function homeLibEls(col)
     }
     
   });
+  $('.db-name:contains(OneSearch)').attr('href', 'https://caccl-lrccd.primo.exlibrisgroup.com/discovery/search?vid=01CACCL_LRCCD:' + col);
   $('.db-name:contains(Films on Demand)').attr('href', 'https://ezproxy.losrios.edu/login?url=http://fod.infobase.com/PortalPlayLists.aspx?wid=' + colProps[col].fod).data('proxy', true);
   //$('.db-name:contains(Gale Virtual)').attr('href', 'https://ezproxy.losrios.edu/login?url=https://go.galegroup.com/ps/dispBasicSearch.do?userGroupName='+ colProps[col].gale + '&prodId=GVRL').data('proxy', true);
   //$('.db-name:contains(Opposing)').attr('href', 'https://ezproxy.losrios.edu/login?url=https://go.galegroup.com/ps/dispBasicSearch.do?userGroupName='+ colProps[col].gale + '&prodId=OVIC').data('proxy', true);

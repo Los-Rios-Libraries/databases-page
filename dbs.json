@@ -943,6 +943,16 @@
                      ],
                      "onesearch": "yes"
         },
+           {
+        "name":"OneSearch",
+        "vendor": "Ex Libris",
+        "type": [
+            "scholarly-journals", "books", "ebooks", "trade-publications", "magazines", "legal-research", "reports", "images", "streaming-audio"
+                ],
+        "urlRoot": "",
+        "urlPath": "special.php?pageTitle=onesearch",
+        "proxy": false,
+        "ssl": true,
         "description": "Los Rios Libraries&apos; online catalog and access to the content of most databases held at Los Rios.",
         "category": [
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
