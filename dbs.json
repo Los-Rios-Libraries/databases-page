@@ -90,6 +90,22 @@
                      "general", "art", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "geography", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology", "news"
                      ]
         },
+        
+                                {
+        "name":"Annual Reviews",
+        "vendor": "Annual Reviews",
+        "type": ["scholarly-journals"],
+        "urlRoot": "www.annualreviews.org",
+        "urlPath": "",
+        "proxy": "false",
+        "ssl": true,
+        "trial": true,
+        "description": "Articles reporting on the current state of knowledge in a wide variety of fields including medicine, technology, physical sciences and social sciences. <strong>Access expires Thursday, April 30.</strong>",
+        "category": [
+                     "criminal-justice-&amp;-law", "sociology", "psychology", "health-&amp;-medicine"
+                     ],
+                     "onesearch": "yes"
+        },
         },
                                       {
         "name":"Oxford Art Online",

@@ -159,6 +159,12 @@ $dbs = array(
              array(
                 'dbname' => 'naxos',
                 'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
+             ),
+													array(
+													'dbname' => 'annual',
+													'queryUrl' => 'https://www.annualreviews.org/action/doSearch?AllField=' . $query
+													
+													),
              )
              
              );
