@@ -77,6 +77,20 @@
                      ],
                      "onesearch": "yes"
         },
+        {
+          "name": "ProQuest Central",
+          "vendor": "ProQuest",
+          "urlRoot": "search.proquest.com",
+          "urlPath": "central/",
+          "trial": true,
+          "proxy": "ez",
+          "ssl": true,
+          "description": "Scholarly journals, magazines, news articles, and other formats in business, social sciences, humanities, geography and beyond. This resource combines a large number of databases, all of which can be searched separately. <strong>Access expires on Thursday, April 22.</strong>",
+          "category": [
+                     "general", "art", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "geography", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology", "news"
+                     ]
+        },
+        },
                                       {
         "name":"Oxford Art Online",
         "vendor": "Oxford University Press",
