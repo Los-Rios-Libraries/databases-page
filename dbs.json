@@ -17,7 +17,7 @@
                      "onesearch": "yes"
         },
         {
-        "name":"PsycARTICLES",
+        "name":"Apa PsycARTICLES",
         "vendor": "EBSCO",
         "type": [
             "scholarly-journals"
@@ -31,7 +31,7 @@
                      "psychology"
                      ],
                      "onesearch": "yes",
-        "altname": ["psycharticles"]
+        "altname": ["psycharticles", "psycarticles"]
         },
         {
         "name":"America: History and Life with Full Text",
