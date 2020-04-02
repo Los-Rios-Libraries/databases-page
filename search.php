@@ -20,7 +20,7 @@ if (preg_match($dbQuery, $query)) {
     $url = 'index.php?az&query=' .urlencode($query);
 }
 else {
-    $url = 'https://0-search-ebscohost-com.lasiii.losrios.edu/login.aspx?authtype=ip&groupid=main&profile=eds&direct=true&site=eds-live&bquery=' . urlencode($query);
+    $url = 'https://www.library.losrios.edu/onesearch?query=' . urlencode($query);
 }
 header('Location: ' .$url);
 ?>
