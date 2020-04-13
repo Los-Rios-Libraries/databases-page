@@ -371,6 +371,23 @@
                      "onesearch": "no"
         },
                        {
+        "name":"Coronavirus Research Database",
+        "vendor": "ProQuest",
+        "type": [
+            "scholarly-journals"
+                ],
+       "urlRoot": "search.proquest.com",
+        "urlPath": "coronavirus/",
+        "proxy": "ez",
+        "ssl": true,
+        "exp": "",
+        "description": "Articles related to the COVID-19 pandemic.",
+        "category": [
+                    "health-&amp;-medicine", "temporary-access"
+                     ],
+                     "onesearch": "no"
+        },
+                       {
         "name":"Access World News",
         "vendor": "NewsBank",
         "type": [
