@@ -117,11 +117,10 @@
         "urlPath": "",
         "proxy": "false",
         "ssl": true,
-        "trial": true,
         "description": "Articles reporting on the current state of knowledge in a wide variety of fields including medicine, technology, physical sciences and social sciences.",
         "exp": "2020-04-30",
         "category": [
-                     "criminal-justice-&amp;-law", "sociology", "psychology", "health-&amp;-medicine"
+                     "temporary-access","criminal-justice-&amp;-law", "sociology", "psychology", "health-&amp;-medicine"
                      ],
                      "onesearch": "yes"
         },
@@ -135,11 +134,10 @@
        "ssl": true,
         "urlPath": "cdsr/reviews/topics",
         "proxy": false,
-        "trial": true,
         "description": "Systematic reviews and meta-analyses in health and medicine.",
         "exp": "",
         "category": [
-                     "health-&amp;-medicine"
+                     "temporary-access", "health-&amp;-medicine"
                      ],
                      "onesearch": "no"
         },
