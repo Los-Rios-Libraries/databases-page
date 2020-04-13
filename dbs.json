@@ -748,6 +748,24 @@
                      "onesearch": "yes"
         },
                                                                      {
+        "name":"Project MUSE",
+        "vendor": "Project MUSE",
+        "type": [
+            "ebooks", "scholarly-journals"
+                ],
+       "urlRoot": "muse.jhu.edu",
+        "urlPath": "browse",
+        "proxy": false,
+        "ssl": true,
+        "exp": "",
+        "description": "Scholarly articles and ebooks in the humanities, social sciences, and arts.",
+        "category": [
+                     "temporary-access", "art", "ebooks", "communication", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     ],
+                     "onesearch": "yes"
+        },
+    
+                                                                     {
         "name":"Small Business Reference Center",
         "vendor": "EBSCO",
         "type": [
