@@ -143,6 +143,10 @@ $dbs = array(
                 'dbname' => 'access-world',
                 'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query
              ),
+			 array(
+										'dbname' => 'heinonline',
+										'queryUrl' => $ezpStr . 'https://www.heinonline.org/HOL/LuceneSearch?terms=' . $query . '&collection=all&searchtype=advanced&typea=text&tabfrom=&submit=Go&all=true'
+ ),
 			array(
 				'dbname' => 'sacramento',
 				'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%20Bee%20Collection'
@@ -168,7 +172,7 @@ $dbs = array(
 														array(
 													'dbname' => 'cochrane',
 													'queryUrl' => 'https://www.cochranelibrary.com/search?p_p_id=scolarissearchresultsportlet_WAR_scolarissearchresults&p_p_lifecycle=0&_scolarissearchresultsportlet_WAR_scolarissearchresults_searchType=basic&_scolarissearchresultsportlet_WAR_scolarissearchresults_searchBy=6&_scolarissearchresultsportlet_WAR_scolarissearchresults_searchText=' . $query					
-             )
+													)
              
              );
 

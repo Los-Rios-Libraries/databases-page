@@ -48,7 +48,7 @@
                      "psychology"
                      ],
                      "onesearch": "yes",
-        "altname": ["psycharticles", "psycarticles"]
+        "altname": ["psycharticles", "psyc articles"]
         },
         {
         "name":"America: History and Life with Full Text",
@@ -368,7 +368,7 @@
                      ],
                      "onesearch": "no"
         },
-                       {
+         {
         "name":"Coronavirus Research Database",
         "vendor": "ProQuest",
         "type": [
@@ -500,9 +500,26 @@
                      "political-science"
                      ],
                      "onesearch": "yes"
-                     }, 
-        
-        
+                     },
+         {
+		"name": "HeinOnline",
+		"vendor": "William S. Hein &amp; Co., Inc.",
+		"type": [
+			"legal-research",
+			"scholarly-journals"
+		],
+		"urlRoot": "www.heinonline.org",
+		"urlPath": "HOL/Welcome",
+		"proxy": "ez",
+		"ssl": true,
+                "exp": "2020-12-15",
+		"description": "Case law, scholarly journals, and government documents including U.S. congressional documents, presidential documents, treaties, international constitutions, and classic treatises.",
+		"category": [
+			"criminaljustice-&amp;-law",
+			"political-science", "temporary-access"
+		],
+		"onesearch": "yes"
+	},
                        {
         "name":"Medline",
         "vendor": "EBSCO",
@@ -745,7 +762,7 @@
                      ],
                      "onesearch": "yes"
         },
-                                                                     {
+    {
         "name":"Project MUSE",
         "vendor": "Project MUSE",
         "type": [
