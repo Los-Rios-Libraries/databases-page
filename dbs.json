@@ -85,7 +85,8 @@
           "trial": true,
           "proxy": "ez",
           "ssl": true,
-          "description": "Scholarly journals, magazines, news articles, and other formats in business, social sciences, humanities, geography and beyond. This resource combines a large number of databases, all of which can be searched separately. <strong>Access expires on Thursday, April 22.</strong>",
+          "description": "Scholarly journals, magazines, news articles, and other formats in business, social sciences, humanities, geography and beyond. This resource combines a large number of databases, all of which can be searched separately.",
+          "exp": "2020-04-22",
           "category": [
                      "general", "art", "business", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "geography", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology", "news"
                      ]
@@ -100,7 +101,8 @@
         "proxy": "false",
         "ssl": true,
         "trial": true,
-        "description": "Articles reporting on the current state of knowledge in a wide variety of fields including medicine, technology, physical sciences and social sciences. <strong>Access expires Thursday, April 30.</strong>",
+        "description": "Articles reporting on the current state of knowledge in a wide variety of fields including medicine, technology, physical sciences and social sciences.",
+        "exp": "2020-04-30",
         "category": [
                      "criminal-justice-&amp;-law", "sociology", "psychology", "health-&amp;-medicine"
                      ],
@@ -117,7 +119,8 @@
         "urlPath": "cdsr/reviews/topics",
         "proxy": false,
         "trial": true,
-        "description": "Systematic reviews and meta-analyses in health and medicine. <strong>Open-ended access.</strong>",
+        "description": "Systematic reviews and meta-analyses in health and medicine.",
+        "exp": "",
         "category": [
                      "health-&amp;-medicine"
                      ],
