@@ -927,6 +927,74 @@
                      "onesearch": "yes"
         },
         {
+        "name":"Drama Online",
+        "vendor": "Bloomsbury Publishing",
+        "type": [
+            "video"
+                ],
+       "urlRoot": "www.dramaonlinelibrary.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
+        "exp": "2020-05-31",
+        "description": "Streaming video of dramatic performances, including the National Theater and Royal Shakespeare Company.",
+        "category": [
+                     "temporary-access", "theatre-&amp;-performing-arts", "video"
+                     ],
+                     "onesearch": "yes"
+        },
+         {
+        "name":"Screen Studies",
+        "vendor": "Bloomsbury Publishing",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "www.screenstudies.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
+        "exp": "2020-05-31",
+        "description": "Ebooks, screenplays, topic overviews and other information on the film histor and criticism.",
+        "category": [
+                     "temporary-access", "theatre-&amp;-performing-arts", "ebooks"
+                     ],
+                     "onesearch": "yes"
+        },
+        {
+        "name":"Bloomsbury Collections",
+        "vendor": "Bloomsbury Publishing",
+        "type": [
+            "ebooks"
+                ],
+       "urlRoot": "www.bloomsburycollections.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
+        "exp": "2020-05-31",
+        "description": "Ebooks in the arts, humanities and social sciences.",
+        "category": [
+                     "temporary-access", "art", "ebooks", "communication", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
+                     ],
+                     "onesearch": "yes"
+        },
+{
+        "name":"Bloomsbury Fashion Central",
+        "vendor": "Bloomsbury Publishing",
+        "type": [
+            "ebooks", "scholarly-journals"
+                ],
+       "urlRoot": "www.bloomsburyfashioncentral.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
+        "exp": "2020-05-31",
+        "description": "Ebooks, biographies, lesson plans, video, photos and more focusing on fashion and dress. Includes the Berg Fashion Library, Fashion Photography Archive, Fairchild Books Library, and Bloomsbury Fashion Business Cases.",
+        "category": [
+                     "temporary-access", "ebooks", "business", "encyclopedias,-dictionaries,-reference", "video"
+                     ],
+                     "onesearch": "yes"
+        },
+        {
         "name":"Gale eBooks",
         "vendor": "Gale",
         "type": [
