@@ -10,13 +10,7 @@ function makeURL($root, $path,$proxy, $ssl) {
         $pro = 'https';
     }
         if ($root !== '') {
-        if($proxy === 'wam') {
-            if ($ssl === true) {
-                $root = str_replace('.', '-', $root);
-            }
-            $url = $pro . '://0-' .$root . '.lasiii.losrios.edu/' .$path;
-        }
-        elseif ($proxy === 'ez') {
+         if ($proxy === 'ez') {
             $url = 'https://ezproxy.losrios.edu/login?url=' . $pro . '://' . $root . '/' . $path;
         }
         else {
