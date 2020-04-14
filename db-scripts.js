@@ -372,6 +372,17 @@ function homeLibEls(col)
         a.hide();
       }
     }
+    if (a.data('expiration')) {
+      if (a.data('expiration') !== '') {
+        var arr = a.data('expiration').split('-');
+        var d = new Date();
+        d.setFullYear(arr[0], arr[1] - 1, arr[2]);
+        var today = new Date();
+        if (today > d) {
+          a.hide();
+		}
+	  }
+	}
     
   });
   $('.db-name:contains(OneSearch)').attr('href', 'https://caccl-lrccd.primo.exlibrisgroup.com/discovery/search?vid=01CACCL_LRCCD:' + col);

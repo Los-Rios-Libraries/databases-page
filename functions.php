@@ -59,7 +59,11 @@ function writeDBInfo($db, $url) {
         $dataProx = ' data-proxy="'. $db -> proxy . '" ';
         
     }
-    $output =  "<li" . $dataCol . " class=\"db-entry active " .$formatList . " " .$trialclass . " \">\n";
+    $dataExp = '';
+    if ($expiration !== '') {
+     $dataExp = ' data-expiration="' . $expiration . '" ';
+    }
+    $output =  '<li' . $dataCol . $dataExp . ' class="db-entry active ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
     $name = $db -> name;
     if (preg_match('/Bloomsbury|Coronavirus|Country|Cq|Dailies|Digital Thea|Drama Online|Kanopy|Am Ex|Opposing|CollegeSource|Ethnologue|Health Reference|MUSE|ProQuest|Literature Resource|Screen Studies/', $name) === 1) {
