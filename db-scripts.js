@@ -484,19 +484,11 @@ checkCookies('newWindowLinks');
 checkCookies('lrGAOptOut');
 $('#choose-library button').on('click', (function ()
 {
-    $('script[src*="libraryh3lp"]').remove();
-    $('.zopim').remove();
-    $('.db-entry').show();
-  var library = $(this).text();
-  /*
-  $.get("help/" + library + ".php", function(data) {
-    $("#library-help-content").html(data);
-  }, 'html');
-  setCookie('homeLibrary', library, 20);
-  var colUpper = library.toUpperCase();
-    $('#library-help h2').html('From the '+colUpper + ' Library');
-    */
-  homeLibEls(library);
+  var connecter = '&';
+  if (location.search === '') {
+	connecter = '?';
+  }
+    location.href = 'https://' + location.hostname + location.pathname + location.search + connecter + 'college=' + $(this).text();
 }));
 var currentURL = location.href;
 // var pagePath = '/tools/databases/library/tools/databases';
