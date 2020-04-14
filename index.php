@@ -32,14 +32,13 @@ if (isset($_GET['query'])) {
 	$query = str_replace('&', '&amp;', $query);
 }
 // $referrer = $_SERVER['HTTP_REFERER']; this is not working
+$homeLibrary = 'unknown';
 if (isset($_GET['college'])) {
+ $homeLibrary = $_GET['college'];
 	setHomeLib($_GET['college']); // most often people will be clicking from library website or libguides. So set the cookie that way if possible.
 }
 elseif (isset($_COOKIE['homeLibrary'])) {
 	$homeLibrary = $_COOKIE['homeLibrary'];
-}
-else {
-	$homeLibrary = 'unknown';
 }
 
 if (isset($_COOKIE['newWindowLinks'])) {
