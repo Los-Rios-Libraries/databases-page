@@ -80,6 +80,9 @@ function dbsByCat($dbcat) {
  $heading = str_replace('-', ' ', $dbcat);
  echo "<div id=\"" .$dbcat . "\" class=\"category\">\n";
  echo "<h2>" .$heading . "</h2>\n";
+ if ($dbcat === 'temporary-access') {
+  echo '<div style="padding:10px;">The following databases are being provided by vendors temporarily during the COVID-19 emergency.</div>';
+ }
  echo "<ul>\n";
  foreach($dbs as $db) {
     $ssl = '';
