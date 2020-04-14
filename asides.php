@@ -29,10 +29,15 @@ if (strpos($_SERVER['REMOTE_ADDR'], '165.196.') === false)
 }
 
 echo "<aside id=\"library-help\" class=\"gen-aside\">\n";
-echo "<h2>From Your Library</h2>\n";
+if ($homeLibrary === 'unknown') {
+  echo "<h2>From Your Library</h2>\n";
+}
+else {
+  echo '<h2>From the ' . strtoupper($homeLibrary) . ' Library</h2>';
+}
 echo "<div class=\"hidden\">" . $homeLibrary . "</div>\n";
 echo "<div id=\"library-help-content\">\n";
-
+include_once('help/' . $homeLibrary . '.php');
 // echo 'home library is '.$homeLibrary;
 // include('help/' .$homeLibrary . '.php');
 

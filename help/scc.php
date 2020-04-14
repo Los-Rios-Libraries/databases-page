@@ -31,9 +31,3 @@
 <p><a href="//www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
 </div>
 
-<script>
-  //  hideZ();
-checkCookies('newWindowLinks');
-
-  
-</script>

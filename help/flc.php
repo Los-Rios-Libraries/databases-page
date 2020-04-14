@@ -29,7 +29,3 @@
 	<br>
 	<p><a href="https://www.flc.losrios.edu/student-resources/library/about/hours">More about library hours</a></p>
 </div>
-
-<script>
-	checkCookies('newWindowLinks');
-</script>

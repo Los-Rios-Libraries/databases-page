@@ -365,12 +365,6 @@ function homeLibEls(col)
   	}
   };
   $('#' + col + '-link').addClass('homelib');
-  $.get('help/' + col + '.php', function (data)
-  {
-    $('#library-help-content').html(data);
-  }, 'html');
-  var colUpper = col.toUpperCase();
-  $('#library-help h2').html('From the ' + colUpper + ' Library');
   $('.db-entry').each(function() { // hide databases not shown to particular colleges
     var a = $(this);
     if (a.data('college')) {
@@ -429,10 +423,6 @@ function checkCookies(a)
     }
     else
     {
-      $.get("help/unknown.php", function (data)
-      {
-        $('#library-help-content').html(data);
-      }, 'html');
       showDBNos();
     }
     console.log(homeLibrary);

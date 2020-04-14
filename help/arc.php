@@ -11,8 +11,3 @@
     </div>
 </div>
 
-<script>
-    checkCookies('newWindowLinks');
-  
-</script>
-
