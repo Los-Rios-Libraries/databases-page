@@ -30,15 +30,17 @@ function writeDBInfo($db, $url) {
     $formatList = implode(' ', $db -> type);
     $description = $db -> description;
     $expiration = '';
+    $expirationNote = '';
     if (isset($db -> exp)) {
-     if ($db -> exp === '') {
-      $expiration = ' <strong>Open-ended access.</strong>';
+     $expiration = $db -> exp;
+     if ($expiration === '') {
+      $expirationNote = ' <strong>Open-ended access.</strong>';
      }
      else {
      
      $date = '';    
-     $date = date_create($db -> exp);
-     $expiration = ' <strong>Access expires ' . date_format($date, 'l, F j, Y') . '.</strong>';
+     $date = date_create($expiration);
+     $expirationNote = ' <strong>Access expires ' . date_format($date, 'l, F j, Y') . '.</strong>';
      }
      
     }
@@ -65,7 +67,7 @@ function writeDBInfo($db, $url) {
     }
     $output .= $searchButton;
     $output .= "<h3><a " . $dataProx . " class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
-    $output .= "<p class=\"db-desc\">" . $description . $expiration . "</p>\n";
+    $output .= "<p class=\"db-desc\">" . $description . $expirationNote . "</p>\n";
     return $output;
 }
 function dbsByCat($dbcat) {
