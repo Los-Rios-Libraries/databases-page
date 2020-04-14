@@ -40,7 +40,7 @@ echo "</div>\n";
 ?>
 <hr>
 <div id="choose-library">
-	<button><abbr title="American River College">arc</abbr></button> <button><abbr title="Cosumnes River College">crc</abbr></button> <button><abbr title="Folsom Lake College">flc</abbr></button> <button><abbr title="Sacramento City College">scc</abbr></button>
+	<button type="button"><abbr title="American River College">arc</abbr></button> <button type="button"><abbr title="Cosumnes River College">crc</abbr></button> <button type="button"><abbr title="Folsom Lake College">flc</abbr></button> <button type="button"><abbr title="Sacramento City College">scc</abbr></button>
 </div>
 </aside>
 
