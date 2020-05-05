@@ -365,6 +365,14 @@ function homeLibEls(col)
   	}
   };
   $('#' + col + '-link').addClass('homelib');
+  var makeDate = function(str) {
+    var arr = str.split('-');
+    var d = new Date();
+    d.setFullYear(arr[0], arr[1] - 1, arr[2]);
+    d.setHours(0);
+    return d;
+  };
+  var today = new Date();
   $('.db-entry').each(function() { // hide databases not shown to particular colleges
     var a = $(this);
     if (a.data('college')) {
@@ -374,10 +382,7 @@ function homeLibEls(col)
     }
     if (a.data('expiration')) {
       if (a.data('expiration') !== '') {
-        var arr = a.data('expiration').split('-');
-        var d = new Date();
-        d.setFullYear(arr[0], arr[1] - 1, arr[2]);
-        var today = new Date();
+        var d = makeDate(a.data('expiration'));
         if (today > d) {
           a.hide();
 		}
