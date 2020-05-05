@@ -388,6 +388,14 @@ function homeLibEls(col)
 		}
 	  }
 	}
+  if (a.data('startdate')) {
+    if (a.data('startdate') !== '') {
+		var e = makeDate(a.data('startdate'));
+    if (today < e) {
+      a.hide();
+    }
+	}
+  }
     
   });
   $('.db-name:contains(OneSearch)').attr('href', 'https://caccl-lrccd.primo.exlibrisgroup.com/discovery/search?vid=01CACCL_LRCCD:' + col);

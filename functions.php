@@ -41,8 +41,11 @@ function writeDBInfo($db, $url) {
      $date = '';    
      $date = date_create($expiration);
      $expirationNote = ' <strong>Access expires ' . date_format($date, 'l, F j, Y') . '.</strong>';
-     }
-     
+     }     
+    }
+    $start = '';
+    if (isset($db -> start_date)) {
+      $start = $db -> start_date;
     }
     if (isset($db -> trial)) {
         $trialclass = 'trial';
@@ -63,7 +66,11 @@ function writeDBInfo($db, $url) {
     if ($expiration !== '') {
      $dataExp = ' data-expiration="' . $expiration . '" ';
     }
-    $output =  '<li' . $dataCol . $dataExp . ' class="db-entry active ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
+    $dataStart = '';
+    if ($start  !== '') {
+     $dataStart = ' data-startdate="' . $start . '" ';
+    }
+    $output =  '<li' . $dataCol . $dataExp . $dataStart .  ' class="db-entry active ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
     $name = $db -> name;
     if (preg_match('/Bloomsbury|Coronavirus|Country|Cq|Dailies|Digital Thea|Drama Online|Kanopy|Am Ex|Opposing|CollegeSource|Ethnologue|Health Reference|MUSE|ProQuest|Literature Resource|Screen Studies/', $name) === 1) {
