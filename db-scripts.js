@@ -369,7 +369,6 @@ function homeLibEls(col)
     var arr = str.split('-');
     var d = new Date();
     d.setFullYear(arr[0], arr[1] - 1, arr[2]);
-    d.setHours(0);
     return d;
   };
   var today = new Date();
@@ -383,6 +382,7 @@ function homeLibEls(col)
     if (a.data('expiration')) {
       if (a.data('expiration') !== '') {
         var d = makeDate(a.data('expiration'));
+        d.setHours(23,59,59);
         if (today > d) {
           a.hide();
 		}
