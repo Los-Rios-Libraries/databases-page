@@ -31,6 +31,7 @@ function writeDBInfo($db, $url) {
     $description = $db -> description;
     $expiration = '';
     $expirationNote = '';
+    $date = '';    
     if (isset($db -> exp)) {
      $expiration = $db -> exp;
      if ($expiration === '') {
@@ -38,14 +39,17 @@ function writeDBInfo($db, $url) {
      }
      else {
      
-     $date = '';    
+
      $date = date_create($expiration);
      $expirationNote = ' <strong>Access expires ' . date_format($date, 'l, F j, Y') . '.</strong>';
      }     
     }
     $start = '';
+    $startNote = '';
     if (isset($db -> start_date)) {
       $start = $db -> start_date;
+      $date = date_create($start);
+      $startNote = ' <span class="start-note"><strong>Access will begin on ' . date_format($date, 'l, F j, Y') . '.</span></strong>';
     }
     if (isset($db -> trial)) {
         $trialclass = 'trial';
@@ -78,7 +82,7 @@ function writeDBInfo($db, $url) {
     }
     $output .= $searchButton;
     $output .= "<h3><a " . $dataProx . " class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
-    $output .= "<p class=\"db-desc\">" . $description . $expirationNote . "</p>\n";
+    $output .= "<p class=\"db-desc\">" . $description . $expirationNote . $startNote . "</p>\n";
     return $output;
 }
 function dbsByCat($dbcat) {

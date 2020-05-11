@@ -391,8 +391,16 @@ function homeLibEls(col)
   if (a.data('startdate')) {
     if (a.data('startdate') !== '') {
 		var e = makeDate(a.data('startdate'));
-    if (today < e) {
-      a.hide();
+    e.setHours(0);
+		if (today < e) {
+			var dbName = a.find('.db-name');
+			dbName.hide().after(dbName.text());
+			if (a.find('.open-db-search').length) {
+				a.find('.open-db-search').hide();
+			}
+		}
+    else {
+      a.find('.start-note').hide();
     }
 	}
   }
