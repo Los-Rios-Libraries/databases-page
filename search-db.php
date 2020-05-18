@@ -117,7 +117,7 @@ $dbs = array(
              ),
              array(
                 'dbname' => 'pubmed',
-                'queryUrl' => $ezpStr . 'http://www.ncbi.nlm.nih.gov/pubmed?/?term=' . $query . '&myncbishare=casccllib'
+                'queryUrl' => $ezpStr . 'https://pubmed.ncbi.nlm.nih.gov/?term=' . $query . '&otool=casccllib'
              ),
              array(
                 'dbname' => 'gale-ebooks',
