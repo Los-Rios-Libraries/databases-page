@@ -296,10 +296,10 @@
         "type": [
             "scholarly-journals"
                 ],
-        "urlRoot": "www.ncbi.nlm.nih.gov",
-        "urlPath": "pubmed?myncbishare=casccllib",
+        "urlRoot": "pubmed.ncbi.nlm.nih.gov",
+        "urlPath": "?otool=casccllib",
         "proxy": "ez",
-        "ssl": false,
+        "ssl": true,
         "description": "Scholarly journals in medicine and health sciences.",
         "category": [
                      "health-&amp;-medicine", "psychology"
