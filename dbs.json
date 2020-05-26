@@ -1,22 +1,4 @@
 {"databases": [
-          {
-        "name":"Literature Resource Center",
-        "vendor": "Gale",
-        "type": [
-            "ebooks", "scholarly-journals", "reference", "magazines"
-                ],
-        "urlRoot": "infotrac.gale.com",
-        "urlPath": "itweb/acd_litrc_31?db=LitRC&id=trial",
-        "proxy": false,
-        "ssl": true,
-        "trial": true,
-        "description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
-        "exp": "2020-05-20",
-        "category": [
-                     "literature"
-                     ],
-                     "onesearch": "yes"
-        },
                  {
         "name":"Literary Reference Center Plus",
         "vendor": "EBSCO",
@@ -1063,20 +1045,6 @@
                      ""
                      ],
                      "onesearch": "yes"
-        },
-        {
-          "name": "ProQuest Central",
-          "vendor": "ProQuest",
-          "urlRoot": "search.proquest.com",
-          "urlPath": "central/",
-          "trial": true,
-          "proxy": "ez",
-          "ssl": true,
-          "description": "Scholarly journals, magazines, news articles, and other formats in business, social sciences, humanities, geography and beyond. This resource combines a large number of databases, all of which can be searched separately.",
-          "exp": "2020-05-24",
-          "category": [
-                     "general", "art", "business", "criminal-justice-&amp;-law", "economics", "communication", "computer-information-science", "geography", "history", "education", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "psychology", "news"
-                     ]
         },
 {
         "name":"Explora",
