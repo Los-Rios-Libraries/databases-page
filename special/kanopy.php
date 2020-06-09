@@ -1,15 +1,8 @@
 <p>
-   <em>Warning:</em> when you are off-campus, after signing in through Los Rios, you may see a &quot;Create Your Account&quot; page, which urges you to create a Kanopy account.</p>
-<img style="display:block; margin: 5px auto;max-width:400px;" src="special/kanopy-login.png" alt="Create Your Account page from Kanopy website">
-<p>
-   A Kanopy account is <strong>not required</strong> in order to watch Kanopy videos and, unless you read and agree to the terms and privacy policy, <strong>we recommend you do not create one</strong>.
+   <em>Note:</em> When you sign in to Kanopy, you will see some buttons that say <em>Log in to Los Rios</em> and others that just say <em>Log in</em>.
 </p>
 <p>
-   When the page appears, click the Kanopy logo at the top of the screen, or go to https://losrios.kanopy.com, and you will have access to the Los Rios Kanopy collection.
-</p>   
-   
-<p>
-   <em>Note:</em> to use Kanopy&apos;s apps (iOS, Android, Roku) you will need a Kanopy account.
+   It is important that you only click the buttons that say <em>Log in to Los Rios</em>. The other buttons are for personal Kanopy accounts. These are needed for Kanopy apps used on mobile devices, Roku etc. A personal account is not needed for viewing Kanopy on a desktop or laptop computer.
 </p>
 <p><strong>Faculty:</strong> if you need a Kanopy video we do not have access to, please fill out the request form on the video&apos;s page, and specify the reason you need it. We will fill requests as funding allows.</p>
 <p>During Summer Recess and Summer Session, the requests will not be monitored.</p>

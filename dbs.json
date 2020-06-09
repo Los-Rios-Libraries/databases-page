@@ -803,7 +803,7 @@
                 "type": [
                          "video"],
                 "urlRoot": "",
-                "urlPath": "special.php?url=https%3A%2F%2Fezproxy.losrios.edu%2Flogin%3Furl%3Dhttps%3A%2F%2Flosrios.kanopy.com%2F&pageTitle=kanopy",
+                "urlPath": "special.php?url=https%3A%2F%2Flosrios.kanopy.com%2F&pageTitle=kanopy",
                 "proxy": false,
                 "ssl": true,
                 "description": "Feature films, documentaries, and educational videos.</strong>",
