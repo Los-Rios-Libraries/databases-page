@@ -58,11 +58,19 @@ echo "</div>\n";
 </aside>
 <?php
 $noSSO = '';
+$dbProxy = '';
+if (isset($_COOKIE['dbProxy'])) {
+  $dbProxy = $_COOKIE['dbProxy'];
+}
+$ezAuth = '';
+if (isset($_COOKIE['ezproxyrequireauthenticate2'])) {
+  $ezAuth = $_COOKIE['ezproxyrequireauthenticate2'];
+}
 //if ((strpos($_SERVER['REMOTE_ADDR'], '165.196.') !== false) && ($_COOKIE['dbProxy'] !== 'removed')) {
-if ((preg_match('/^(165\.196\.|10\.|172\.)/', $_SERVER['REMOTE_ADDR']) === 1) && ($_COOKIE['dbProxy'] !== 'removed')) {
+if ((preg_match('/^(165\.196\.|10\.|172\.)/', $_SERVER['REMOTE_ADDR']) === 1) && ($dbProxy !== 'removed')) {
 	$noSSO = 'style="display:none;"';
 	echo '<aside class="gen-aside proxy-button">';
-	if ($_COOKIE['ezproxyrequireauthenticate2'] !== '2') {
+	if ($ezAuth !== '2') {
 		echo '<button id="force-login" type="button">Force login while on-campus</button>';
 	}
 	else {
