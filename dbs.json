@@ -22,6 +22,7 @@
         "urlPath": "login.aspx?authtype=ip,uid&profile=plus",
         "proxy": "ez",
         "ssl": false,
+        "exp": "2020-07-01",
         "description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
         "category": [
                      "literature"
