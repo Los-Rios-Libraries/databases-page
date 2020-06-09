@@ -120,9 +120,13 @@ $dbs = array(
                 'queryUrl' => $ezpStr . 'https://pubmed.ncbi.nlm.nih.gov/?term=' . $query . '&otool=casccllib'
              ),
              array(
-                'dbname' => 'gale-ebooks',
-                'queryUrl' => $ezpStr . 'https://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
-             ),
+																			'dbname' => 'gale-ebooks',
+																			'queryUrl' => $ezpStr . 'https://go.galegroup.com/ps/i.do?dblist=GVRL&st=T003&qt=OQE~' .$query . '&sw=w&ty=bs&it=search&p=GVRL&s=RELEVANCE&u=' . $galeID . '&v=2.1'
+																			),
+													array(
+																			'dbname' => 'literature-resource',
+																			'queryUrl' => $ezpStr . 'https://go.gale.com/ps/basicSearch.do?inputFieldNames%5B0%5D=OQE&inputFieldValues%5B0%5D=' . $query . '&nwf=y&searchType=BasicSearchForm&userGroupName=' . $galeID .'&prodId=LitRC&spellCheck=true&method=doSearch'
+																			),
              array(
                 'dbname' => 'oxford-art',
                 'queryUrl' => $ezpStr . 'http://www.oxfordartonline.com/groveart/search?siteToSearch=groveart&q=' . $query . '&searchBtn=Search&isQuickSearch=true'

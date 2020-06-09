@@ -1,4 +1,17 @@
 {"databases": [
+
+{
+	"name": "Literature Resource Center",
+	"vendor": "Gale",
+	"type": ["ebooks", "scholarly journals", "reference", "magazines"],
+	"urlRoot": "infotrac.gale.com",
+	"urlPath": "itweb/?db=LitRC",
+	"proxy": "ez",
+	"ssl": true,
+	"description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
+	"category": ["literature"],
+	"onesearch": "yes"
+},
                  {
         "name":"Literary Reference Center Plus",
         "vendor": "EBSCO",
