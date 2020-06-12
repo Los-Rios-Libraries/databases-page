@@ -22,7 +22,7 @@
         "urlPath": "login.aspx?authtype=ip,uid&profile=plus",
         "proxy": "ez",
         "ssl": false,
-        "exp": "2020-07-01",
+        "exp": "2020-06-30",
         "description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
         "category": [
                      "literature"
@@ -69,6 +69,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=i3h",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "Scholarly journals and magazines in criminology, criminal law, corrections, policing, and forensic science.",
         "category": [
                      "criminal-justice-&amp;-law", "sociology"
@@ -84,6 +85,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=sih",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "Scholarly journals, professional journals, ebooks, and conference papers in sociology, anthropology, and related social sciences.",
         "category": [
                      "criminal-justice-&amp;-law", "sociology", "psychology"
@@ -213,6 +215,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ufh",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "Scholarly and professional journals in communication studies, media studies, and related fields.",
         "category": [
                      "communication"
@@ -262,6 +265,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eih",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "Scholarly and professional journals on agriculture, ecology, energy, sustainability, and environmental sciences. ",
         "category": [
                      "environmental-science"
@@ -477,6 +481,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=poh",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "Scholarly journals, reference books and conference papers in politics, international relations and related fields.",
         "category": [
                      "political-science"
@@ -774,6 +779,7 @@
         "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
         "proxy": "ez",
         "ssl": false,
+        "exp": "2020-06-30",
         "description": "Ebooks, professional journals and magazines in entrepreneurship and small business ownership.",
         "category": [
                      "business", "ebooks"
@@ -791,6 +797,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "Scholarly journals and ebooks on theatre and performance.",
         "category": [
                      "theatre-&amp;-performing-arts", "literature"
@@ -1103,6 +1110,7 @@
         "urlPath": "login.aspx?authtype=ip%2Cuid&profile=eds",
         "proxy": "ez",
         "ssl": true,
+        "exp": "2020-06-30",
         "description": "<em>Formerly known as OneSearch.</em> Scholarly articles, ebooks and other publications from EBSCO and other sources; books and other items from the Los Rios Libraries.",
         "category": [
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
