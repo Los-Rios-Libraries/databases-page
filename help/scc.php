@@ -2,7 +2,7 @@
 <!-- add chat widget 
 <hr>-->
 <table id="library-hours">
-    <caption>Library Hours, Spring 2020 (January 18 &ndash; May 20)</caption>
+    <caption>Library Hours, Summer 2020 (June 8 to August 5)</caption>
     <thead>
     <tr>
         <th>Day</th>
@@ -12,20 +12,20 @@
     <tbody>
     <tr>
         <td><abbr title="Monday">M</abbr> &ndash; <abbr title="Thursday">Th</abbr></td>
-        <td>7:30 am &ndash; 9:30 pm</td>
+        <td>8:00 am to 9:30 pm</td>
     </tr>
     <tr>
-        <td><abbr title="Friday">F</abbr></td>
-        <td>7:30 am &ndash; 5 pm</td>
+        <td><abbr title="Friday">F</abbr> to <abbr title="Sunday">Su</abbr></td>
+        <td>Closed</td>
     </tr>
-        <tr>
+       <!-- <tr>
         <td><abbr title="Saturday">Sa</abbr></td>
         <td>9 am &ndash; 3 pm</td>
     </tr>
     <tr>
         <td><abbr title="Sunday">Su</abbr></td>
         <td>Closed</td>
-    </tr>
+    </tr>-->
     </tbody>
 </table>
 <p><a href="//www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
