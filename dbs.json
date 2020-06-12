@@ -108,23 +108,6 @@
                      ],
                      "onesearch": "yes"
         },
-                                            {
-        "name":"Cochrane Library",
-        "vendor": "Wiley",
-        "type": [
-            "scholarly-journals", "reports"
-                ],
-       "urlRoot": "www.cochranelibrary.com",
-       "ssl": true,
-        "urlPath": "cdsr/reviews/topics",
-        "proxy": false,
-        "description": "Systematic reviews and meta-analyses in health and medicine.",
-        "exp": "",
-        "category": [
-                     "temporary-access", "health-&amp;-medicine"
-                     ],
-                     "onesearch": "no"
-        },
                                       {
         "name":"Oxford Art Online",
         "vendor": "Oxford University Press",
