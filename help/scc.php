@@ -11,7 +11,7 @@
     </thead>
     <tbody>
     <tr>
-        <td><abbr title="Monday">M</abbr> &ndash; <abbr title="Thursday">Th</abbr></td>
+        <td><abbr title="Monday">M</abbr> to <abbr title="Thursday">Th</abbr></td>
         <td>8:00 am to 9:30 pm</td>
     </tr>
     <tr>
