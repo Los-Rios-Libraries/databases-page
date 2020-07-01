@@ -84,16 +84,8 @@ $dbs = array(
                 'queryUrl' => $ebscoBase . '&direct=true&db=nlebk&bquery=' . $query . '&profile=ebooks&site=ehost-live&scope=site'
              ),
             array(
-                'dbname' => 'small',
-                'queryUrl' => $ebscoBase .'&direct=true&profile=sbrc&bquery=' . $query .'&site=sbrc-live&scope=site'
-             ),
-            array(
                 'dbname' => 'business-source',
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query .'&profile=bsc&site=bsc-live&scope=site'
-             ),
-            array(
-                'dbname' => 'literary',
-                'queryUrl' => $ebscoBase . '&direct=true&db=lkh&bquery=' . $query .'&site=lrc-plus&scope=site'
              ),
             array(
                 'dbname' => 'rehabilitation',

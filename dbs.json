@@ -12,23 +12,6 @@
 	"category": ["literature"],
 	"onesearch": "yes"
 },
-                 {
-        "name":"Literary Reference Center Plus",
-        "vendor": "EBSCO",
-        "type": [
-            "ebooks", "scholarly-journals", "reference", "magazines"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip,uid&profile=plus",
-        "proxy": "ez",
-        "ssl": false,
-        "exp": "2020-06-30",
-        "description": "Background information, scholarly journals, book chapters and magazines covering literary authors and works.",
-        "category": [
-                     "literature"
-                     ],
-                     "onesearch": "yes"
-        },
         {
         "name":"Apa PsycARTICLES",
         "vendor": "EBSCO",
@@ -59,55 +42,7 @@
                      "history"
                      ],
                      "onesearch": "yes"
-        },
-                {
-        "name":"Criminal Justice Abstracts with Full Text",
-        "vendor": "EBSCO",
-        "type": ["scholarly-journals",
-                 "trade-publications"],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=i3h",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly journals and magazines in criminology, criminal law, corrections, policing, and forensic science.",
-        "category": [
-                     "criminal-justice-&amp;-law", "sociology"
-                     ],
-                     "onesearch": "yes"
-        },
-                        {
-        "name":"SocINDEX with Full Text",
-        "vendor": "EBSCO",
-        "type": ["scholarly-journals",
-                 "trade-publications"],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=sih",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly journals, professional journals, ebooks, and conference papers in sociology, anthropology, and related social sciences.",
-        "category": [
-                     "criminal-justice-&amp;-law", "sociology", "psychology"
-                     ],
-                     "onesearch": "yes"
-        },
-        
-                                {
-        "name":"Annual Reviews",
-        "vendor": "Annual Reviews",
-        "type": ["scholarly-journals"],
-        "urlRoot": "www.annualreviews.org",
-        "urlPath": "",
-        "proxy": "false",
-        "ssl": true,
-        "description": "Articles reporting on the current state of knowledge in a wide variety of fields including medicine, technology, physical sciences and social sciences.",
-        "exp": "2020-06-30",
-        "category": [
-                     "temporary-access","criminal-justice-&amp;-law", "sociology", "psychology", "health-&amp;-medicine"
-                     ],
-                     "onesearch": "yes"
-        },
+        },        
                                       {
         "name":"Oxford Art Online",
         "vendor": "Oxford University Press",
@@ -188,23 +123,6 @@
                      ],
                      "onesearch": "yes"
         },
-                {
-        "name":"Communication &amp; Mass Media Complete",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals", "trade-publications"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ufh",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly and professional journals in communication studies, media studies, and related fields.",
-        "category": [
-                     "communication"
-                     ],
-                     "onesearch": "yes"
-        },
                                        {
         "name":"Education Research Complete",
         "vendor": "EBSCO",
@@ -237,25 +155,7 @@
                      ],
                      "onesearch": "no"
         },
-  
-                                               {
-        "name":"Environment Complete",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals", "trade-publications"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eih",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly and professional journals on agriculture, ecology, energy, sustainability, and environmental sciences. ",
-        "category": [
-                     "environmental-science"
-                     ],
-                     "onesearch": "yes"
-        },
-                                                       {
+                                                         {
         "name":"Eric",
         "vendor": "EBSCO",
         "type": [
@@ -454,23 +354,6 @@
                      ],
                      "onesearch": "yes"
         },
-                                 {
-        "name":"Political Science Complete",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals", "magazines", "trade-publications"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=poh",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly journals, reference books and conference papers in politics, international relations and related fields.",
-        "category": [
-                     "political-science"
-                     ],
-                     "onesearch": "yes"
-                     },
          {
 		"name": "HeinOnline",
 		"vendor": "William S. Hein &amp; Co., Inc.",
@@ -732,61 +615,6 @@
                      ],
                      "onesearch": "yes"
         },
-    {
-        "name":"Project MUSE",
-        "vendor": "Project MUSE",
-        "type": [
-            "ebooks", "scholarly-journals"
-                ],
-       "urlRoot": "muse.jhu.edu",
-        "urlPath": "browse",
-        "proxy": false,
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly articles and ebooks in the humanities, social sciences, and arts.",
-        "category": [
-                     "temporary-access", "art", "ebooks", "communication", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
-                     ],
-                     "onesearch": "yes"
-        },
-    
-                                                                     {
-        "name":"Small Business Reference Center",
-        "vendor": "EBSCO",
-        "type": [
-            "ebooks",
-            "magazines",
-            "trade publications"
-                ],
-       "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip,uid&profile=sbrc",
-        "proxy": "ez",
-        "ssl": false,
-        "exp": "2020-06-30",
-        "description": "Ebooks, professional journals and magazines in entrepreneurship and small business ownership.",
-        "category": [
-                     "business", "ebooks"
-                     ],
-                     "onesearch": "yes"
-        },
-                                       {
-        "name":"International Bibliography of Theatre &amp; Dance with Full Text",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals", "magazines",
-                 "trade-publications", "ebooks"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ibh",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Scholarly journals and ebooks on theatre and performance.",
-        "category": [
-                     "theatre-&amp;-performing-arts", "literature"
-                     ],
-                     "onesearch": "yes"
-        },
                       {
                 "name":"Kanopy",
                 "vendor": "Kanopy",
@@ -931,57 +759,6 @@
                      ],
                      "onesearch": "yes"
         },
-         {
-        "name":"Screen Studies",
-        "vendor": "Bloomsbury Publishing",
-        "type": [
-            "ebooks"
-                ],
-       "urlRoot": "www.screenstudies.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Ebooks, screenplays, topic overviews, criticism and other information on cinema history and aesthetics.",
-        "category": [
-                     "temporary-access", "theatre-&amp;-performing-arts", "ebooks"
-                     ],
-                     "onesearch": "yes"
-        },
-        {
-        "name":"Bloomsbury Collections",
-        "vendor": "Bloomsbury Publishing",
-        "type": [
-            "ebooks"
-                ],
-       "urlRoot": "www.bloomsburycollections.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Ebooks in the arts, humanities and social sciences.",
-        "category": [
-                     "temporary-access", "art", "ebooks", "communication", "history", "literature", "psychology", "philosophy-&amp;-religion", "sociology"
-                     ],
-                     "onesearch": "yes"
-        },
-{
-        "name":"Bloomsbury Fashion Central",
-        "vendor": "Bloomsbury Publishing",
-        "type": [
-            "ebooks", "scholarly-journals"
-                ],
-       "urlRoot": "www.bloomsburyfashioncentral.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "Ebooks, biographies, lesson plans, video, photos and more focusing on fashion and dress. Includes the Berg Fashion Library, Fashion Photography Archive, Fairchild Books Library, and Bloomsbury Fashion Business Cases.",
-        "category": [
-                     "temporary-access", "ebooks", "business", "encyclopedias,-dictionaries,-reference", "video"
-                     ],
-                     "onesearch": "yes"
-        },
         {
         "name":"Gale eBooks",
         "vendor": "Gale",
@@ -1083,23 +860,6 @@
                      "encyclopedias,-dictionaries,-reference"
                      ],
                      "onesearch": "no"
-        },
-                      {
-        "name":"EBSCO Discovery",
-        "vendor": "EBSCO",
-        "type": [
-            "scholarly-journals", "books", "ebooks", "trade-publications", "magazines", "legal-research", "reports", "images", "streaming-audio"
-                ],
-        "urlRoot": "search.ebscohost.com",
-        "urlPath": "login.aspx?authtype=ip%2Cuid&profile=eds",
-        "proxy": "ez",
-        "ssl": true,
-        "exp": "2020-06-30",
-        "description": "<em>Formerly known as OneSearch.</em> Scholarly articles, ebooks and other publications from EBSCO and other sources; books and other items from the Los Rios Libraries.",
-        "category": [
-                      "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
-                     ],
-                     "onesearch": "yes"
         },
            {
         "name":"OneSearch",
