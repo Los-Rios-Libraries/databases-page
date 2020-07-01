@@ -12,7 +12,7 @@
     <tbody>
     <tr>
         <td><abbr title="Monday">M</abbr> to <abbr title="Thursday">Th</abbr></td>
-        <td>8:00 am to 9:30 pm</td>
+        <td>8:00 am to 6:00 pm</td>
     </tr>
     <tr>
         <td><abbr title="Friday">F</abbr> to <abbr title="Sunday">Su</abbr></td>
