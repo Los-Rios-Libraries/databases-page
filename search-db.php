@@ -95,6 +95,10 @@ $dbs = array(
                 'dbname' => 'explora',
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query .'&site=src_ic-live&scope=site'
              ),
+												array(
+                'dbname' => 'ebsco-search',
+                'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query .'&profile=all&site=src_ic-live&scope=site'
+             ),
 			array(
 				  'dbname' => 'artstor',
 				  'queryUrl' => $ezpStr . 'http://library.artstor.org/#/search/' . $query

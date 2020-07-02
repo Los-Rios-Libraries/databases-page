@@ -899,6 +899,21 @@
                       "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
                      ],
                      "onesearch": "yes"
+        },
+        {
+                "name": "Ebsco Search",
+                "vendor": "EBSCO",
+                "type": ["scholarly-journals", "ebooks", "trade-publications", "magazines"],
+                "urlRoot": "search.ebscohost.com",
+                "urlPath": "login.aspx?authtype=ip%2Cuid&profile=all",
+                "proxy": "ez",
+                "ssl": true,
+                "description": "Scholarly journals, magazines, and ebooks from a variety of EBSCOhost databases.",
+                 "category": [
+                      "general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
+                     ],
+                "onesearch": "no"
         }
+        
 ]
 }
