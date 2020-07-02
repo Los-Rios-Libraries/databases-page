@@ -77,7 +77,7 @@ $('#multi-search').on('submit', function(e) { // if users do not select autocomp
   submitSearch($('#dbpage-query').val());
   });
 function submitSearch(kw) {
-    var dbPatterns = /^(ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|ethnologue|gale (virtual|ebook)|gvrl|cq|onesearch|oxford art|grove|art( )?stor|ebooks|kanopy|google scholar|business source|opposing viewpoints|dailies|socindex|psycarticles|^eric$|education research complete|greenfile|omnigraphic|health reference series|pubmed|medline|naxos|newsbank|ovid|oxford english|oed|science( )?direct|kanopy|digital theat|masterfile)/i;
+    var dbPatterns = /^(ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|ethnologue|gale (virtual|ebook)|gvrl|cq|onesearch|oxford art|grove|art( )?stor|ebooks|kanopy|google scholar|business source|opposing viewpoints|dailies|psycarticles|^eric$|education research complete|greenfile|omnigraphic|health reference series|pubmed|medline|naxos|newsbank|ovid|oxford english|oed|science( )?direct|kanopy|digital theat|masterfile|wiley|sage)/i;
     ga('send', 'event', 'search', 'submit', kw);
     if (/lex[ui]s(( )?nex[iu]s)?|nex[iu]s/.test(kw) === true) {
       location.href='special.php?pageTitle=nexis-uni';
@@ -104,7 +104,7 @@ $(function ()
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
 	var arr = $(this).html().split(' ');
-	var reg = /^Ahfs|^Apa$|Cinahl|Cq|Eric|^Mas$|Medline/;
+	var reg = /^Ahfs|^Apa$|Cinahl|Cq|Eric|^Mas$|Medline|^Sage/;
 	for (var i = 0; i < arr.length; i++) {
 		if (reg.test(arr[i])) {
 			arr[i] = arr[i].toUpperCase();

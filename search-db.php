@@ -168,6 +168,10 @@ $dbs = array(
 														array(
 													'dbname' => 'wiley',
 													'queryUrl' => $ezpStr . 'https://www.onlinelibrary.wiley.com/action/doSearch?AllField=' . $query		. '&PubType=journal'			
+													),
+														array(
+													'dbname' => 'sage',
+													'queryUrl' => $ezpStr . 'https://journals.sagepub.com/action/doSearch?AllField=' . $query			
 													)
              
              );

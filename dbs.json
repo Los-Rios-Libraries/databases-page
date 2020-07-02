@@ -407,6 +407,18 @@
                      "onesearch": "yes"
         },
         {
+                "name": "Sage Journals",
+                "vendor": "SAGE",
+                "type": ["scholarly-journals"],
+                "urlRoot": "journals.sagepub.com",
+                "urlPath": "",
+                "proxy": "ez",
+                "ssl": true,
+                "description": "Scholarly journals in the health sciences, social sciences, humanities, engineering, and life sciences.",
+                "category": ["communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "health-&amp;-medicine", "history","philosophy-&amp;-religion", "political-science", "psychology", "sociology"]
+                
+        },
+        {
                 "name": "Wiley Online Library",
                 "vendor": "Wiley",
                 "type": ["scholarly-journals"],
