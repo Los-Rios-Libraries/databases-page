@@ -76,10 +76,6 @@ $dbs = array(
 														'queryUrl' => 'https://caccl-lrccd.primo.exlibrisgroup.com/discovery/search?query=any,contains,' . $query . '&vid=01CACCL_LRCCD:' . $homeLibrary
 													),
              array(
-                'dbname' => 'ebsco-discovery',
-                'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query . '&profile=eds&site=eds-live&scope=site'
-             ),
-             array(
                 'dbname' => 'ebook-collection',
                 'queryUrl' => $ebscoBase . '&direct=true&db=nlebk&bquery=' . $query . '&profile=ebooks&site=ehost-live&scope=site'
              ),
@@ -164,11 +160,6 @@ $dbs = array(
                 'dbname' => 'naxos',
                 'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
              ),
-													array(
-													'dbname' => 'annual',
-													'queryUrl' => 'https://www.annualreviews.org/action/doSearch?AllField=' . $query
-													
-													),
 														array(
 													'dbname' => 'wiley',
 													'queryUrl' => $ezpStr . 'https://www.onlinelibrary.wiley.com/action/doSearch?AllField=' . $query		. '&PubType=journal'			
