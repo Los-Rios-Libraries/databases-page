@@ -774,11 +774,9 @@
         "urlPath": "",
         "proxy": "ez",
         "ssl": true,
-        "exp": "2020-08-05",
-        "trial": true,
         "description": "Streaming video of dramatic performances, including the National Theater and Royal Shakespeare Company.",
         "category": [
-                     "temporary-access", "theatre-&amp;-performing-arts", "video"
+                     "theatre-&amp;-performing-arts", "video"
                      ],
                      "onesearch": "yes"
         },
