@@ -250,7 +250,7 @@
         "exp": "",
         "description": "Articles related to the COVID-19 pandemic.",
         "category": [
-                    "health-&amp;-medicine", "temporary-access"
+                    "health-&amp;-medicine"
                      ],
                      "onesearch": "no"
         },
@@ -369,7 +369,7 @@
 		"description": "Case law, scholarly journals, and government documents including U.S. congressional documents, presidential documents, treaties, international constitutions, and classic treatises.",
 		"category": [
 			"criminal-justice-&amp;-law",
-			"political-science", "temporary-access"
+			"political-science"
 		],
 		"onesearch": "yes"
 	},
