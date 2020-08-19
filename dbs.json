@@ -651,6 +651,22 @@
                 "category": ["video", "theatre-&amp;-performing-arts" ],
                 "onesearch": "yes"
  },
+         {
+        "name":"Drama Online",
+        "vendor": "Bloomsbury Publishing",
+        "type": [
+            "video"
+                ],
+       "urlRoot": "www.dramaonlinelibrary.com",
+        "urlPath": "",
+        "proxy": "ez",
+        "ssl": true,
+        "description": "Streaming video and audio of dramatic performances, including the National Theatre and Royal Shakespeare Company, film adaptations, published plays, and scholarly books on theatre.",
+        "category": [
+                     "theatre-&amp;-performing-arts", "video", "ebooks"
+                     ],
+                     "onesearch": "yes"
+        },
                {
         "name":"Digital Theatre Plus",
         "vendor": "Digital Theatre+",
@@ -761,22 +777,6 @@
         "description": "Documentaries in the humanities, history, health, technical education, archival films, and much more.",
         "category": [
                      "general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature","music",   "philosophy-&amp;-religion", "political-science", "psychology", "sociology",  "theatre-&amp;-performing-arts", "video"
-                     ],
-                     "onesearch": "yes"
-        },
-        {
-        "name":"Drama Online",
-        "vendor": "Bloomsbury Publishing",
-        "type": [
-            "video"
-                ],
-       "urlRoot": "www.dramaonlinelibrary.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": true,
-        "description": "Streaming video of dramatic performances, including the National Theater and Royal Shakespeare Company.",
-        "category": [
-                     "theatre-&amp;-performing-arts", "video"
                      ],
                      "onesearch": "yes"
         },
