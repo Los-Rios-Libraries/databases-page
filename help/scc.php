@@ -28,6 +28,6 @@
     </tr>-->
     </tbody>
 </table>
-<p><a href="//www.scc.losrios.edu/library/about/hours">More about library hours</a></p>
+<p><a href="https://www.scc.losrios.edu/student-resources/library/library-daily-hours">More about library hours</a></p>
 </div>
 
