@@ -20,7 +20,7 @@
     </tr>
        <tr>
         <td><abbr title="Saturday">Sa</abbr></td>
-        <td>9 am &ndash; 3 pm</td>
+        <td>9:00 am to 3:00 pm</td>
     </tr>
     <tr>
         <td><abbr title="Sunday">Su</abbr></td>
