@@ -301,7 +301,25 @@
                       "political-science", "geography", "news"
                      ],
                      "onesearch": "no"
-        }, 
+        },
+        {
+		"name": "Dsm-5 Library",
+		"vendor": "American Psychiatric Association",
+		"type": [
+		],
+		"urlRoot": "dsm.psychiatryonline.org",
+		"urlPath": "",
+		"proxy": "ez",
+		"ssl": true,
+                "trial": true,
+                "exp": "2021-01-02",
+		"description": "The American Psychiatric Society&apos;s diagnostic manual, clinical cases, and related reference content.",
+		"category": [
+			"psychology",
+			"encyclopedias,-dictionaries,-reference"
+		],
+		"onesearch": "no"
+	},
                        {
         "name":"Health Source: Consumer Edition",
         "vendor": "EBSCO",
