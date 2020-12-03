@@ -310,7 +310,7 @@ function setCookie(obj)
     }
       expires = 'max-age=' +obj.exp * multiplier + ';';
   }
-  document.cookie = obj.name + '=' + obj.value + '; ' + expires + 'path=/;domain=losrios.edu';
+  document.cookie = obj.name + '=' + obj.value + '; ' + expires + 'path=/;domain=losrios.edu;secure=true';
 }
 $('.headnav a, #choose-library button').on('click', function ()
 { // set home library cookie when people click to their college or select college from menu in box.
