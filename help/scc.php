@@ -2,7 +2,7 @@
 <!-- add chat widget 
 <hr>-->
 <table id="library-hours">
-    <caption>Library Help Hours, Fall 2020</caption>
+    <caption>Library Help Hours, Spring 2021</caption>
     <thead>
     <tr>
         <th>Day</th>
