@@ -302,24 +302,6 @@
                      ],
                      "onesearch": "no"
         },
-        {
-		"name": "Dsm-5 Library",
-		"vendor": "American Psychiatric Association",
-		"type": [
-		],
-		"urlRoot": "dsm.psychiatryonline.org",
-		"urlPath": "",
-		"proxy": "ez",
-		"ssl": true,
-                "trial": true,
-                "exp": "2021-01-02",
-		"description": "The American Psychiatric Society&apos;s diagnostic manual, clinical cases, and related reference content.",
-		"category": [
-			"psychology",
-			"encyclopedias,-dictionaries,-reference"
-		],
-		"onesearch": "no"
-	},
                        {
         "name":"Health Source: Consumer Edition",
         "vendor": "EBSCO",
@@ -372,25 +354,6 @@
                      ],
                      "onesearch": "yes"
         },
-         {
-		"name": "HeinOnline",
-		"vendor": "William S. Hein &amp; Co., Inc.",
-		"type": [
-			"legal-research",
-			"scholarly-journals"
-		],
-		"urlRoot": "www.heinonline.org",
-		"urlPath": "HOL/Welcome",
-		"proxy": "ez",
-		"ssl": true,
-                "exp": "2020-12-15",
-		"description": "Case law, scholarly journals, and government documents including U.S. congressional documents, presidential documents, treaties, international constitutions, and classic treatises.",
-		"category": [
-			"criminal-justice-&amp;-law",
-			"political-science"
-		],
-		"onesearch": "yes"
-	},
                        {
         "name":"Medline",
         "vendor": "EBSCO",
