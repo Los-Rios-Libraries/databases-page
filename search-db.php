@@ -127,6 +127,10 @@ $dbs = array(
                 'dbname' => 'oxford-english',
                 'queryUrl' => $ezpStr . 'http://www.oed.com/search?searchType=dictionary&q=' . $query
              ),
+													array(
+                'dbname' => 'ebook-central',
+                'queryUrl' => $ezpStr . 'https://ebookcentral.proquest.com/lib/losrios/search.action?query=' . $query
+             ),
              array(
                 'dbname' => 'films',
                 'queryUrl' => $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
