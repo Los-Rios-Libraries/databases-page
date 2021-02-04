@@ -103,18 +103,19 @@ $(function ()
   defaultAuto($('#dbpage-query'));
   $('.db-name').each(function ()
   { // correct capitalization while preserving php's sorting
-	var arr = $(this).html().split(' ');
+	var dbName = $(this);
+  var arr = dbName.html().split(' ');
 	var reg = /^Ahfs|^Apa$|^Dsm|^Ebsco|Cinahl|Cq|Eric|^Mas$|Medline|^Sage/;
 	for (var i = 0; i < arr.length; i++) {
 		if (reg.test(arr[i])) {
 			arr[i] = arr[i].toUpperCase();
 		}
-		else if (arr[i] === 'Ebook') {
-			arr[i] = 'eBook';
-		}
 	}
 	var newStr = arr.join(' ');
-	$(this).html(newStr);
+	dbName.html(newStr);
+  if (dbName.html().indexOf('Ebook Col') > -1) {
+    dbName.html(dbName.html().replace('Ebook', 'eBook'));
+  }
   });
   // contract nav by default on small screens
   var navList = $('#main-nav');
