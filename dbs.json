@@ -75,20 +75,12 @@
                      "onesearch": "yes"
         },
           {
-        "name":"Oxford Research Encyclopedias",
-        "vendor": "Oxford University Press",
-        "type": ["reference"],
-        "urlRoot": "oxfordre.com",
-        "urlPath": "",
         "proxy": "ez",
         "ssl": true,
         "trial": true,
-        "description": "Brief but detailed essays on a variety of topics, with bibliographies and suggestions for further research.",
         "category": [
-                     "encyclopedias,-dictionaries,-reference"
                      ],
                      "onesearch": "yes",
-                     "exp": "2021-03-01"
         },
 
         {
@@ -442,23 +434,6 @@
                      "environmental-science","health-&amp;-medicine", "psychology"
                      ],
                      "onesearch": "yes"
-        },
-
-              {
-        "name":"What Everyone Needs to Know",
-        "vendor": "Oxford University Press",
-        "type": ["ebooks"],
-        "urlRoot": "www.whateveryoneneedstoknow.com",
-        "urlPath": "",
-        "proxy": "ez",
-        "ssl": true,
-        "trial": true,
-        "description": "Ebooks that aim to provide introductory information about a particular general topic.",
-        "category": [
-                     "criminal-justice-&amp;-law", "ebooks", "environmental-science", "geography", "music", "philosophy-&amp;-religion", "political-science", "psychology", "sociology"
-                     ],
-                     "onesearch": "no",
-                     "exp": "2021-03-01"
         },
   
                                {
