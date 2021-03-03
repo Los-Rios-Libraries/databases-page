@@ -75,12 +75,20 @@
                      "onesearch": "yes"
         },
           {
+        "name":"Global Environmental Justice Collection",
+        "vendor": "Docuseek",
+        "type": ["video"],
+        "urlRoot": "docuseek2.com",
+        "urlPath": "gj-gej",
         "proxy": "ez",
         "ssl": true,
         "trial": true,
+        "description": "Documentary films that explore human rights and environmental protection issues triggered by inequality, global development and climate change.",
         "category": [
+                     "environmental-science", "geography", "video"
                      ],
                      "onesearch": "yes",
+                     "exp": "2021-03-30"
         },
 
         {
