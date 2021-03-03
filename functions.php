@@ -77,7 +77,7 @@ function writeDBInfo($db, $url) {
     $output =  '<li' . $dataCol . $dataExp . $dataStart .  ' class="db-entry active ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
     $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
     $name = $db -> name;
-    if (preg_match('/Bloomsbury|Coronavirus|Country|Cq|Dailies|Digital Thea|Drama Online|Dsm|Kanopy|Opposing|CollegeSource|Ethnologue|Health Reference|ProQuest|What|Oxford Research/', $name) === 1) {
+    if (preg_match('/Bloomsbury|Coronavirus|Country|Cq|Dailies|Digital Thea|Drama Online|Kanopy|Opposing|CollegeSource|Ethnologue|Health Reference|ProQuest|Global Env/', $name) === 1) {
         $searchButton = '';
     }
     $output .= $searchButton;
