@@ -11,7 +11,7 @@
 
 <h3>
 Phone</h3> <p>(916) 691-7266</p>
-<h3>Email</h3> <p><a href="mailto:library@losrios.libanswers.com">library@losrios.libanswers.com</a></p>
+<h3>Email</h3> <p><a href="mailto:library@crc.losrios.edu">library@crc.losrios.edu</a></p>
 
 
 </div>
