@@ -4,6 +4,20 @@ function cmp($a, $b) // http://stackoverflow.com/a/4282423
     return strcmp($a->name, $b->name);
 }
 function makeURL($root, $path,$proxy, $ssl) {
+ global $college;
+ if (count($path) === 1) {
+  $path = $path[0];
+ }
+ else {
+  $c = array('arc', 'crc', 'flc', 'scc');
+  for ($i = 0; $i < count($c); $i++)  {
+   if ($c[$i] === $college) {
+    $path = $path[$i];
+   }
+  }
+ }
+
+ 
     $path = str_replace('&', '&amp;', $path);
     $pro = 'http';
     if ($ssl === true) {
@@ -31,17 +45,18 @@ function writeDBInfo($db, $url) {
     $description = $db -> description;
     $expiration = '';
     $expirationNote = '';
+    $trialLabel = '';
     $date = '';    
     if (isset($db -> exp)) {
      $expiration = $db -> exp;
      if ($expiration === '') {
-      $expirationNote = ' <strong>Open-ended access.</strong>';
+      $expirationNote = ' <exp-note>Open-ended access.</exp-note>';
      }
      else {
      
 
      $date = date_create($expiration);
-     $expirationNote = ' <strong>Access expires ' . date_format($date, 'l, F j, Y') . '.</strong>';
+     $expirationNote = ' <span class="exp-note">Access expires ' . date_format($date, 'l, F j, Y') . '.</span>';
      }     
     }
     $start = '';
@@ -53,6 +68,7 @@ function writeDBInfo($db, $url) {
     }
     if (isset($db -> trial)) {
         $trialclass = 'trial';
+        $trialLabel = '<span class="badge badge-secondary ml-2">Trial</span>';
     }
     else {
         $trialclass = '';
@@ -74,27 +90,29 @@ function writeDBInfo($db, $url) {
     if ($start  !== '') {
      $dataStart = ' data-startdate="' . $start . '" ';
     }
-    $output =  '<li' . $dataCol . $dataExp . $dataStart .  ' class="db-entry active ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
-    $searchButton = "<button class=\"open-db-search\" title=\"Search this database\"><img height=\"16\" width=\"16\" src=\"search.png\" alt=\"search\"></button>\n";
+    $output =  '<li' . $dataCol . $dataExp . $dataStart .  ' class="db-entry shadow-sm p-2 mb-1 bg-white border-0 rounded list-group-item active-db ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
+    $searchButton = '<button class="open-db-search float-right btn" title="Search '. $db -> name .'"><svg width="100%" height="100%" viewBox="0 0 24 24" y="264"><use xlink:href="#magnifyingglass" preserveAspectRatio="xMidYMid meet"></svg></button>' . "\r\n";
     $name = $db -> name;
-    if (preg_match('/Bloomsbury|Coronavirus|Country|Cq|Dailies|Digital Thea|Drama Online|Kanopy|Opposing|CollegeSource|Ethnologue|Health Reference|ProQuest|Global Env/', $name) === 1) {
+    if (preg_match('/Bloomsbury|Coronavirus|Country|Dailies|Digital Thea|Kanopy|Opposing|CollegeSource|Ethnologue|Health Reference|ProQuest|Global Env/', $name) === 1) {
         $searchButton = '';
     }
     $output .= $searchButton;
-    $output .= "<h3><a " . $dataProx . " class=\"db-name\" href=\"" .$url ."\">" .$db-> name ."</a> <span class=\"vendor\">(" . $db -> vendor .")</span></h3>\n";
+    $output .= '<h3><a ' . $dataProx . ' class="db-name" href="' .$url .'">' .$db-> name .'</a> <span class="vendor">(' . $db -> vendor .')</span>' . $trialLabel . '</h3>' . "\r\n";
     $output .= "<p class=\"db-desc\">" . $description . $expirationNote . $startNote . "</p>\n";
     return $output;
 }
 function dbsByCat($dbcat) {
  global $dbs;
  global $category;
+ global $showDB;
  $heading = str_replace('-', ' ', $dbcat);
  echo "<div id=\"" .$dbcat . "\" class=\"category\">\n";
- echo "<h2>" .$heading . "</h2>\n";
+ echo '<h2 class="py-2">' . ucwords($heading) . '</h2>' . "\r\n";
+ echo $showDB . "\r\n";
  if ($dbcat === 'temporary-access') {
   echo '<div style="padding:10px;">The following databases are being provided by vendors temporarily during the COVID-19 emergency.</div>';
  }
- echo "<ul>\n";
+ echo '<ul class="list-group">' . "\r\n";
  foreach($dbs as $db) {
     $ssl = '';
     if (isset($db -> ssl)) {
@@ -113,7 +131,6 @@ function dbsByName($name) {
 
  $query = strtolower($name);
   global $dbs;
-
  global $format;
  echo "<div id=\"search-results\" class=\"category\">\n";
   echo "<ul>\n";
@@ -133,16 +150,17 @@ function dbsByName($name) {
 
 function dbsByAlpha($letter) {
  global $dbs;
+ global $showDB;
 // sort($dbs);
  usort($dbs, 'cmp');
  global $query;
  $query = strtolower($query);
- $query = preg_replace('/lexus|lex[iu]s(.*)/', 'lexisnexis', $query);
  $query = preg_replace('/j\s*stor.*/', 'jstor', $query);
  $queryParts = explode(' ', $query);
  global $alphaShowAll;
- echo "<div class=\"alpha category\"><h2>" .$letter . "</h2>\n";
- echo "<ul>\n";
+ echo '<div class="alpha category"><h2 class="py-2">' . strtoupper($letter) . '</h2>' . "\r\n";
+ echo $showDB . "\r\n";
+ echo '<ul class="list-group">' . "\r\n";
  foreach($dbs as $db) {
         $ssl = '';
     if (isset($db -> ssl)) {
@@ -153,9 +171,13 @@ function dbsByAlpha($letter) {
   if (strpos($dbLower, $letter) === 0) {
      if ((isset($query)) && (!(empty($query)))) {
       $vendorLower = strtolower($db -> vendor);
-      $altNames = implode(' ', $db -> altname);
+      $altNames = '';
+      if (isset($db -> altname)) {
+       $altNames = implode(' ', $db -> altname);
       $altNames = str_replace('-', ' ', $altNames);
       $altNames = strtolower($altNames);
+      }
+      
 
      $types = implode(' ', $db -> type);
      $types = str_replace('-', ' ', $types);
@@ -182,7 +204,7 @@ function dbsByAlpha($letter) {
 function trialDbs() {
  
  global $dbs;
-  echo "<ul>\n";
+  echo '<ul class="shadow-sm mb-1 rounded">' . "\n";
  foreach($dbs as $db) {
         $ssl = '';
     if (isset($db -> ssl)) {
@@ -199,7 +221,6 @@ function makeNavLinks($term) {
  $encTerm = strtolower($term);
  $encTerm = str_replace(' ', '-', $encTerm);
  $encTerm = urlencode($encTerm);
- echo "<li>\n";
- echo "<a href=\"index.php?category=".$encTerm ."\">" .$term . "</a></li>";
+ return '<li class="nav-item border-bottom">' . "\r\n" . '<a class="nav-link text-wrap" href="index.php?category='.$encTerm .'">' .$term . '</a></li>';
 }
 ?>

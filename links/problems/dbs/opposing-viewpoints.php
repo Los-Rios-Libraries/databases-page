@@ -1,1 +1,0 @@
-<p>Opposing Viewpoints is currently experiencing system issues and is not accessible from off-campus. We're sorry for any inconvenience and have contacted the vendor to fix the problem.</p>

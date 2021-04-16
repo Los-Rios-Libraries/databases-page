@@ -95,11 +95,19 @@ $dbs = array(
                 'dbname' => 'ebsco-search',
                 'queryUrl' => $ebscoBase . '&direct=true&bquery=' . $query .'&profile=all&site=src_ic-live&scope=site'
              ),
-			array(
-				  'dbname' => 'artstor',
-				  'queryUrl' => $ezpStr . 'http://library.artstor.org/#/search/' . $query
-				  ),
+												array(
+															 'dbname' => 'artstor',
+														  'queryUrl' => $ezpStr . 'http://library.artstor.org/#/search/' . $query
+											  ),
              array(
+																			'dbname' => 'cq-researcher',
+																			'queryUrl' => $ezpStr . 'https://library.cqpress.com/cqresearcher/search.php?fulltext=' . $query . '&action=newsearch'
+																			),
+													array(
+																			'dbname' => 'drama-online',
+																			'queryUrl' => $ezpStr . 'https://www.dramaonlinelibrary.com/search-results?any=' . $query
+																			),
+													array(
                 'dbname' => 'google',
                 'queryUrl' => $ezpStr . 'https://scholar.google.com/scholar?hl=en&q=' .$query
              ),
@@ -139,41 +147,40 @@ $dbs = array(
                 'dbname' => 'salem',
                 'queryUrl' => $ezpStr . 'http://online.salempress.com/search.do?categoryName=&All=All&numCategories=5&searchInAll=all&searchText=' . $query
              ),
-			array(
+													array(
                 'dbname' => 'access-world',
                 'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query
              ),
-			 array(
-										'dbname' => 'heinonline',
-										'queryUrl' => $ezpStr . 'https://www.heinonline.org/HOL/LuceneSearch?terms=' . $query . '&collection=all&searchtype=advanced&typea=text&tabfrom=&submit=Go&all=true'
- ),
-			array(
-				'dbname' => 'sacramento',
-				'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%20Bee%20Collection'
-			),
-			array(
-				  'dbname' => 'sciencedirect',
-				  'queryUrl' => $ezpStr . 'https://www.sciencedirect.com/search/advanced?qs=' . $query
-			),
-			array(
-				  'dbname' => 'ovid',
-				  'queryUrl' => $ezpStr . 'http://ovidsp.ovid.com/ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=n&DBC=n&D=yrovft&SEARCH=' . $query
-				  ),
-			
-             array(
-                'dbname' => 'naxos',
-                'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
+													array(
+                'dbname' => 'chronicle',
+                'queryUrl' => $ezpStr . 'https://www.chronicle.com/search?q=' .$query
              ),
-														array(
+													array(
+																'dbname' => 'sacramento',
+																'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%20Bee%20Collection'
+												),
+												array(
+																'dbname' => 'sciencedirect',
+																'queryUrl' => $ezpStr . 'https://www.sciencedirect.com/search/advanced?qs=' . $query
+											 ),
+												array(
+															'dbname' => 'ovid',
+															'queryUrl' => $ezpStr . 'http://ovidsp.ovid.com/ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=n&DBC=n&D=yrovft&SEARCH=' . $query
+												),
+			
+           array(
+              'dbname' => 'naxos',
+              'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
+           ),
+											array(
 													'dbname' => 'wiley',
 													'queryUrl' => $ezpStr . 'https://www.onlinelibrary.wiley.com/action/doSearch?AllField=' . $query		. '&PubType=journal'			
-													),
-														array(
-													'dbname' => 'sage',
-													'queryUrl' => $ezpStr . 'https://journals.sagepub.com/action/doSearch?AllField=' . $query			
-													)
-             
-             );
+											),
+											array(
+												'dbname' => 'sage',
+												'queryUrl' => $ezpStr . 'https://journals.sagepub.com/action/doSearch?AllField=' . $query			
+											)
+         );
 
 
 if ($ehostCode !== '') {
@@ -199,16 +206,7 @@ else {
 <meta charset="utf-8" >
 <meta name="robots" description="noindex">
  <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
 <title>Finding Database</title>
-
-<link rel="stylesheet" href="style.css" >
 
 
 

@@ -5,71 +5,16 @@ ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 */
-if (isset($_GET['url'])) {
-	$url = $_GET['url'];
-}
+// this is needed because of legacy urls from special.php... redirect to matching page in new site. Should probably replace absolute URLs with relative PHP paths.
+$pTitle = '';
+
+if (isset($_GET['pageTitle'])) {
 $pTitle = $_GET['pageTitle'];
-if (isset($_COOKIE['skipPage-' . $pTitle])) {
-	$skipCookie = $_COOKIE["skipPage-" . $pTitle];
-	if ($skipCookie === 'skip') {
-		header('Location: '. $url);
-		exit;
-	}
 }
-
-
-
-if (isset($_COOKIE['homeLibrary'])) {
-	$homeLibrary = $_COOKIE['homeLibrary'];
+if ($pTitle !== '') {
+	header('Location: https://library.losrios.edu/databases/?db=' . $pTitle);
 }
 else {
-	$homeLibrary = 'unknown';
+	header('Location: https://library.losrios.edu/databases/');
 }
-if ($pTitle === 'films-on-demand') {
-	include_once('special/fod-scripts.php');
-	
-}
-if((isset($pTitle)) && (!empty($pTitle))) {
-    $pTitlePretty = str_replace('-', ' ', $pTitle);
-	$pTitlePretty = ucwords($pTitlePretty);
- $metaTitle = $pTitlePretty .' - ';
- $pageTitle = ': <span id="title-alpha">' .$pTitlePretty . '</span>';
-}
-include_once('head.php');
-?>
-
-
-<title><?php echo $metaTitle; ?> Research Databases - Los Rios Libraries</title>
-</head>
-<body>
-	<a href="#main" id="skip">Skip to main content</a>
-<?php
-include_once('header.php');
-?>
-
-
-<section id="main" tabindex="0">
- <div class="category special active" style="display:block !important;">
-<?php
-include_once('special/' . $pTitle . '.php');
-?>
- </div>
-    
-</section>
-
-<?php
-include_once('asides.php');
-include_once('footer.php');
-?>
-
-<img id="loader" alt="loading" src="loader.gif" class="hidden">
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="res/jquery-ui.min.js"></script>
-<!--
- <script src="db-scripts.js?1123a"> 
-  -->
-</script>     
- <script src="db-scripts.min.js?0407"></script>
-</body>
-</html>
+exit;
