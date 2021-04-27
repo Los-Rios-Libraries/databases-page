@@ -18,7 +18,7 @@
   
 
    <div class="col-3 p-0">
-    <button class="open-db-search   btn btn-secondary " id="dbpage-query-submit">
+    <button type="submit" value="submit" class="open-db-search btn btn-secondary" id="dbpage-query-submit">
      <svg width="100%" height="100%" viewBox="0 0 24 24" y="264"><use xlink:href="#magnifyingglass" style="width:24px;"  preserveAspectRatio="xMidYMid meet"></svg>
     </button>
    </div>
