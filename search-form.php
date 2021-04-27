@@ -4,7 +4,7 @@
    <form id="multi-search" action="https://caccl-lrccd.primo.exlibrisgroup.com/discovery/search" method="get" aria-describedby="search-exp">
  <div class="form-group row mb-0">
   <div class="col-9 p-0" >
-    <label for="dbpage-query" class="sr-only">Search</label>
+    <label for="onesearch-query" class="sr-only">Search</label>
     <input type="hidden" name="query" value="any,contains,">
      <input type="text" name="query"  class="form-control" id="onesearch-query" placeholder="Search Databases">
      <div id="onesearch-params">
