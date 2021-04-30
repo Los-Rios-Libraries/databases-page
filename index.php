@@ -68,7 +68,7 @@ function setCollegeParams($col) { // set current college parameters
 	array(
 		'college' => 'arc',
 		'fullName' => 'American River College',
-		'homepage' => 'https://www.arc.losrios.edu/student-resources/library/',
+		'homepage' => 'https://arc.losrios.edu/student-resources/library/',
   'chatWidget' => 'd05703ccd4c26fdae51ae0d0f5df25e1'
 	),
 	array(
@@ -87,7 +87,7 @@ function setCollegeParams($col) { // set current college parameters
 	array(
 		'college' => 'scc',
 		'fullName' => 'Sacramento City College',
-		'homepage' => 'https://www.scc.losrios.edu/library/',
+		'homepage' => 'https://scc.losrios.edu/library/',
   'chatWidget' => '3ed10430124d950ef2b216a68e1b18ba'
 	)
 	);
