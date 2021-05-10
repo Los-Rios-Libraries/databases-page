@@ -839,7 +839,7 @@
 			"ssl": true,
 			"description": "College profiles, catalogs, transcript keys, and other resources related to higher education.",
 			"category": [
-				"encyclopedias,-dictionaries,-reference"
+				"encyclopedias,-dictionaries,-reference", "education"
 			]
 		},
 		{
