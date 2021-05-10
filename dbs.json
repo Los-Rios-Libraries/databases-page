@@ -217,12 +217,10 @@
 			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
-			"description": "News and reports on trends and developments at colleges and universities. <a href=\"http://caccl-lrccd.alma.exlibrisgroup.com/view/surveyForm?c_id=5260&amp;i_id=5325&amp;trialId=3628341730005325&amp;pageBean.securityHashToken=-5995166567271755738\" target=\"_blank\" class=\"db-name\">Take our survey</a>.",
+			"description": "News and reports on trends and developments at colleges and universities.",
 			"category": [
 				"news", "education"
-			],
-			"exp": "2021-04-25"
+			]
 		},
 		{
 			"name": "US Major Dailies",
