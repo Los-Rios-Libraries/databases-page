@@ -208,21 +208,6 @@
 			]
 		},
 		{
-			"name": "Chronicle of Higher Education",
-			"vendor": "Chronicle of Higher Education",
-			"type": [
-				"news", "reports"
-			],
-			"urlRoot": "www.chronicle.com",
-			"urlPath": [""],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "News and reports on trends and developments at colleges and universities.",
-			"category": [
-				"news", "education"
-			]
-		},
-		{
 			"name": "US Major Dailies",
 			"vendor": "ProQuest",
 			"type": [
@@ -281,6 +266,21 @@
 			"description": "Newspaper articles, blog posts, and web-only content from the Sacramento Bee, 1984 to the present.",
 			"category": [
 				"news"
+			]
+		},
+		{
+			"name": "Chronicle of Higher Education",
+			"vendor": "Chronicle of Higher Education",
+			"type": [
+				"news", "reports"
+			],
+			"urlRoot": "www.chronicle.com",
+			"urlPath": [""],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "News and reports on trends and developments at colleges and universities.",
+			"category": [
+				"news", "education"
 			]
 		},
 		{
