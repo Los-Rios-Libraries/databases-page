@@ -71,6 +71,19 @@
 			]
 		},
 		{
+			"name": "Global Environmental Justice Collection",
+			"vendor": "Docuseek",
+			"type": ["video"],
+			"urlRoot": "gej.docuseek2.com",
+			"urlPath": "cart/advsearch/hf/0/0/0",
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Documentary films that explore human rights and environmental protection issues triggered by inequality, global development and climate change.",
+			"category": [
+				"environmental-science", "geography", "video"
+			]
+		},
+		{
 			"name": "Business Source Complete",
 			"vendor": "EBSCO",
 			"type": [
