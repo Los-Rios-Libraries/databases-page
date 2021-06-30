@@ -645,7 +645,7 @@
 			"type": [
 				"video"
 			],
-			"urlRoot": "www.digitaltheatreplus.com",
+			"urlRoot": "edu.digitaltheatreplus.com",
 			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
