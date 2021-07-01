@@ -54,6 +54,53 @@ if ($_GET['db'] === 'kanopy') {
 	<?php
 	}
 }
+if ($_GET['db'] === 'dtplus') {
+	if (isset($_COOKIE['skipPage-dtplus'])) {
+		if ($_COOKIE['skipPage-dtplus'] === 'skip') {
+			?>
+			<script>
+				location.href = 'https://ezproxy.losrios.edu/login?url=https://edu.digitaltheatreplus.com/';
+			</script>
+			
+			<?php
+			exit;
+		}
+	}
+	else {
+	?>
+<h2>Digital Theatre Plus</h2>
+<div class="shadow-sm p-2 mb-1 bg-white border-0 rounded">
+	<p>
+   This vendor is having some problems with its new platform. If you are experiencing problems, please use a <a href="https://docs.google.com/document/d/1ImtNPBM-exYsi5w9Q5kYoGJ86jw_p85d9qwVfMaz-MI/edit?usp=sharing">username and password that you will find on a shared Google document</a>. To access this document, you need to sign in using your campus credentials (for example, w1234567@apps.losrios.edu)
+</p>
+<p><a href="https://ezproxy.losrios.edu/login?url=https://edu.digitaltheatreplus.com/" class="db-name btn btn-outline-primary">Continue to Digital Theatre Plus without username/password</a></p>
+<div id="hide-message" class="text-right"><button class="btn btn-secondary" id="hide-page">In the future, go directly to Digital Theatre Plus</button></div>
+</div>
+
+<script>
+    
+    document.getElementById('hide-page').addEventListener('click', function() {
+        var d = new Date();
+    d.setTime(d.getTime() + (2592000000));
+    var expires = 'expires='+d.toUTCString();
+        document.cookie = 'skipPage-dtplus=skip;' + expires;
+        jQuery(document).ready(function($){
+        var result = $('<p />').attr('style', 'display:none;').html('OK! In the future you will bypass this page. <a class="db-name" href="https://ezproxy.losrios.edu/login?url=https://edu.digitaltheatreplus.com/">Continue to Digital Theatre Plus</a>');
+        
+        $('#hide-message').html(result);
+        result.fadeIn();
+        
+        });
+        
+        });
+
+
+    
+</script>
+	
+	<?php
+	}
+}
 
 elseif ($_GET['db'] === 'films-on-demand') {
 	if ($college !== 'unknown') {
