@@ -187,6 +187,7 @@ include_once('../resources/shared/components/head.php');
  .open-db-search,.search-btn {fill:#adadad;}
  .open-db-search svg, .search-btn svg {width:20px;}
  .exp-note, start-note {font-weight:600;}
+ #aside-area .open-db-search {display:none;}
 
 </style>
 	</head>
