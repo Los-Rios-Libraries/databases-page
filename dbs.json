@@ -348,6 +348,20 @@
 			]
 		},
 		{
+			"name": "HeinOnline",
+			"vendor": "William S. Hein &amp; Co., Inc.",
+			"type": ["legal-research", "scholarly-journals"],
+			"urlRoot": "www.heinonline.org",
+			"urlPath": ["HOL/Welcome"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2022-02-28",
+			"description": "Case law, scholarly journals, and government documents including U.S. congressional documents, presidential documents, treaties, international constitutions, and classic treatises.",
+			"category": ["criminal-justice-&amp;-law", "political-science"]
+		},
+
+		{
 			"name": "Medline",
 			"vendor": "EBSCO",
 			"type": [

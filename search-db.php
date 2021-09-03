@@ -156,6 +156,10 @@ $dbs = array(
                 'queryUrl' => $ezpStr . 'https://www.chronicle.com/search?q=' .$query
              ),
 													array(
+																			'dbname'=>'heinonline',
+																			'queryUrl'=>$ezpStr.'https://www.heinonline.org/HOL/LuceneSearch?terms='.$query.'&collection=all&searchtype=advanced&typea=text&tabfrom=&submit=Go&all=true'
+													),
+													array(
 																'dbname' => 'sacramento',
 																'queryUrl' => $ezpStr . 'https://infoweb.newsbank.com/apps/news/results?p=AWNB&fld-base-0=alltext&val-base-0=' . $query . '&t=family%3AA1963%21Sacramento%20Bee%20Collection'
 												),
