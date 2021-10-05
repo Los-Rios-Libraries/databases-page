@@ -348,6 +348,23 @@
 			]
 		},
 		{
+			"name": "Ethnic Diversity Source",
+			"vendor": "EBSCO",
+			"type": [
+				"scholarly-journals", "ebooks"
+			],
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ets,e091tww"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2022-10-04",
+			"description": "Scholarly journals, ebooks, and biographies related to the experience of various ethnic groups in the United States.",
+			"category": [
+				"geography", "history", "sociology"
+			]
+		},
+		{
 			"name": "HeinOnline",
 			"vendor": "William S. Hein &amp; Co., Inc.",
 			"type": ["legal-research", "scholarly-journals"],
