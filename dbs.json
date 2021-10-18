@@ -347,6 +347,23 @@
 				"psychology"
 			]
 		},
+{
+			"name": "Ethnic NewsWatch",
+			"vendor": "ProQuest",
+			"type": [
+				"scholarly-journals", "news", "ebooks"
+			],
+			"urlRoot": "search.proquest.com",
+			"urlPath": ["ethnicnewswatch"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2021-11-18",
+			"description": "Newspapers, magazines, and scholarly journals published by and about various racial and ethnic groups in the United States.",
+			"category": [
+				"geography", "history", "sociology", "news"
+			]
+		},
 		{
 			"name": "Ethnic Diversity Source",
 			"vendor": "EBSCO",
