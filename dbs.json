@@ -703,6 +703,22 @@
 			]
 		},
 		{
+			"name": "Swank Digital Campus",
+			"vendor": "Swank Motion Pictures, Inc.",
+			"type": [
+				"video"
+			],
+			"urlRoot": "digitalcampus.swankmp.net",
+			"urlPath": ["arc380515","crc378691","","scc378966"],
+			"col": "acs",
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Streaming video from major motion picture studios.",
+			"category": [
+				"video"
+			]
+		},
+		{
 			"name": "Global Environmental Justice Collection",
 			"vendor": "Docuseek",
 			"type": ["video"],
