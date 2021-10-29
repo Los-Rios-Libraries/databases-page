@@ -382,6 +382,57 @@
 			]
 		},
 		{
+			"name": "Black Thought and Culture",
+			"vendor": "Alexander Street Press",
+			"type": [
+				"primary-source"
+			],
+			"urlRoot": "search.alexanderstreet.com",
+			"urlPath": ["bltc"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2021-11-27",
+			"description": "Letters, leaflets, speeches, and other primary source materials by notable Black figures, primarily from the United States.",
+			"category": [
+				"history"
+			]
+		},
+		{
+			"name": "North American Indian Thought and Culture",
+			"vendor": "Alexander Street Press",
+			"type": [
+				"primary-source"
+			],
+			"urlRoot": "search.alexanderstreet.com",
+			"urlPath": ["ibio"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2021-11-27",
+			"description": "Biographical information, oral histories, photographs, and assorted primary source materials related to Native Americans, Alaska Natives, and Canadian First Peoples.",
+			"category": [
+				"history"
+			]
+		},
+		{
+			"name": "New York Times with Index",
+			"vendor": "ProQuest",
+			"type": [
+				"news"
+			],
+			"urlRoot": "search.proquest.com",
+			"urlPath": ["hnpnewyorktimeswindex"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2021-11-27",
+			"description": "Scanned versions of New York Times articles, stretching from 1851 through four years ago.",
+			"category": [
+				"news"
+			]
+		},
+		{
 			"name": "HeinOnline",
 			"vendor": "William S. Hein &amp; Co., Inc.",
 			"type": ["legal-research", "scholarly-journals"],

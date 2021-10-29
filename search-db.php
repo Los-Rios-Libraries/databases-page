@@ -183,6 +183,14 @@ $dbs = array(
 											array(
 												'dbname' => 'sage',
 												'queryUrl' => $ezpStr . 'https://journals.sagepub.com/action/doSearch?AllField=' . $query			
+											),
+										 array(
+												'dbname' => 'black-thought',
+												'queryUrl' => 'https://search.alexanderstreet.com/bltc/search?searchstring=' . $query
+																	),
+											array(
+												'dbname' => 'north-american',
+												'queryUrl' => 'https://search.alexanderstreet.com/ibio/search?searchstring=' . $query
 											)
          );
 
