@@ -3,6 +3,12 @@
 <?php
 if (isset($json_file)) {
 if ((!isset($category)) && (empty($alpha)) ) {
+  ?>
+<aside id="chat-widget" class="gen-aside mb-3">
+  <div id="libchat_<?php echo $chatWidget; ?>"></div>
+  <script src="https://answers.library.losrios.edu/load_chat.php?hash=<?php echo $chatWidget; ?>"></script>
+</aside>
+  <?php
 if (strpos($json_file, 'trial') > -1) {
 ?>
 <aside id="trial-dbs" class="gen-aside mb-2">
@@ -19,10 +25,6 @@ if (strpos($json_file, 'trial') > -1) {
 }
 
 ?>
-<aside id="chat-widget" class="gen-aside mb-3">
-  <div id="libchat_<?php echo $chatWidget; ?>"></div>
-  <script src="https://answers.library.losrios.edu/load_chat.php?hash=<?php echo $chatWidget; ?>"></script>
-</aside>
 <?php
 if (strpos($_SERVER['REMOTE_ADDR'], '165.196.') === false)
 {
