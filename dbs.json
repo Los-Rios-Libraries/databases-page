@@ -889,6 +889,23 @@
 			],
 			"altname": ["GVRL", "Gale Virtual Reference Library"]
 		},
+		{
+			"name": "InfobaseBooks",
+			"vendor": "Infobase",
+			"type": [
+				"ebooks"
+			],
+			"urlRoot": "ebooks.infobase.com",
+			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
+			"proxy": "ez",
+			"trial": true,
+			"ssl": true,
+			"exp": "2021-11-12",
+			"description": "Encyclopedias and other reference ebooks.",
+			"category": [
+				"ebooks",  "literature", "encyclopedias,-dictionaries,-reference"
+			]
+		},
 
 		{
 			"name": "JSTOR",
