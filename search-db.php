@@ -191,7 +191,11 @@ $dbs = array(
 											array(
 												'dbname' => 'north-american',
 												'queryUrl' => 'https://search.alexanderstreet.com/ibio/search?searchstring=' . $query
-											)
+											),
+											array(
+												'dbname' => 'primary-source',
+												'queryUrl' => 'https://go.gale.com/ps/i.do?action=interpret&ty=bs&v=2.1&u=sacr28903&it=search&p=GDCS&qt=OQE~' . $query . '&sw=w'
+																	)
          );
 
 

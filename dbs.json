@@ -382,6 +382,19 @@
 			]
 		},
 		{
+			"name": "Gale Primary Sources",
+			"vendor": "Gale",
+			"type": ["primary-sources"],
+			"urlRoot": "go.gale.com",
+			"urlPath": ["ps/start.do?p=GDCS&u=sacr28903"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2021-12-01",
+			"description": "Primary source collections providing historical documents related to the history of Native Americans, slavery and anti-slavery, and LGBTQ people and movements. Also provides a collection of historical newspapers.",
+			"category": ["history"]
+		},
+		{
 			"name": "Black Thought and Culture",
 			"vendor": "Alexander Street Press",
 			"type": [
