@@ -141,7 +141,11 @@ $dbs = array(
              ),
              array(
                 'dbname' => 'films',
-                'queryUrl' => $ezpStr . 'http://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
+                'queryUrl' => $ezpStr . 'https://digital.films.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
+             ),
+													array(
+                'dbname' => 'bloom',
+                'queryUrl' => $ezpStr . 'https://ebooks.infobase.com/PortalPlaylists.aspx?wid=' .$fodWid .'&rd=a&q=' . $query
              ),
              array(
                 'dbname' => 'salem',
