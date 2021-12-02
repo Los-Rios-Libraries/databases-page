@@ -356,7 +356,7 @@
 			"proxy": "ez",
 			"ssl": true,
 			"trial": true,
-			"exp": "2021-12-01",
+			"exp": "2021-12-09",
 			"description": "Primary source collections providing historical documents related to the history of Native Americans, slavery and anti-slavery, and LGBTQ people and movements. Also provides a collection of historical newspapers.",
 			"category": ["history"]
 		},
@@ -371,7 +371,7 @@
 			"proxy": "ez",
 			"ssl": true,
 			"trial": true,
-			"exp": "2021-11-27",
+			"exp": "2021-12-09",
 			"description": "Letters, leaflets, speeches, and other primary source materials by notable Black figures, primarily from the United States.",
 			"category": [
 				"history"
@@ -388,7 +388,7 @@
 			"proxy": "ez",
 			"ssl": true,
 			"trial": true,
-			"exp": "2021-11-27",
+			"exp": "2021-12-09",
 			"description": "Biographical information, oral histories, photographs, and assorted primary source materials related to Native Americans, Alaska Natives, and Canadian First Peoples.",
 			"category": [
 				"history"
