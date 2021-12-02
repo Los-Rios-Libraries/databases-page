@@ -460,7 +460,7 @@
 			"proxy": "ez",
 			"ssl": true,
 			"description": "Scholarly journals in the social sciences, life sciences, computer science, business, communication, and other fields.",
-			"category": ["art", "business", "economics", "communication", "computer-information-science", "geography", "sociology", "political-science", "psychology"]
+			"category": ["art", "business", "economics", "communication", "computer-information-science", "geography", "health-&amp;-medicine","sociology", "political-science", "psychology"]
 		},
 
 		{
