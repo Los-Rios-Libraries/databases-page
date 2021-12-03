@@ -13,22 +13,6 @@
 			"category": ["literature"]
 		},
 		{
-			"name": "Bloom&apos;s Literature Ebooks",
-			"vendor": "Infobase",
-			"type": [
-				"ebooks"
-			],
-			"urlRoot": "ebooks.infobase.com",
-			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
-			"proxy": "ez",
-			"ssl": true,
-			"col": "cfs",
-			"description": "Collections of essays on literary works and authors, focusing on the modern literary traditions of Europe and the United States.",
-			"category": [
-				"ebooks", "literature"
-			]
-		},
-		{
 			"name": "Apa PsycARTICLES",
 			"vendor": "EBSCO",
 			"type": [
@@ -530,9 +514,22 @@
 			],
 			"altname": ["OED"]
 		},
-
-
-
+{
+			"name": "Bloom&apos;s Literature Ebooks",
+			"vendor": "Infobase",
+			"type": [
+				"ebooks"
+			],
+			"urlRoot": "ebooks.infobase.com",
+			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
+			"proxy": "ez",
+			"ssl": true,
+			"col": "cfs",
+			"description": "Collections of essays on literary works and authors, focusing on the modern literary traditions of Europe and the United States.",
+			"category": [
+				"ebooks", "literature"
+			]
+		},
 		{
 			"name": "Salem Press",
 			"vendor": "Salem Online",
