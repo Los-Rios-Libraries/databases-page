@@ -239,6 +239,25 @@
 			]
 		},
 		{
+
+			"name": "New York Times with Index",
+			"vendor": "ProQuest",
+			"type": [
+				"news"
+			],
+			"urlRoot": "search.proquest.com",
+			"urlPath": ["hnpnewyorktimeswindex"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2021-12-17",
+			"description": "Scanned versions of New York Times articles, stretching from 1851 through four years ago.",
+			"category": [
+				"news"
+			]
+		},
+
+		{
 			"name": "Coronavirus Research Database",
 			"vendor": "ProQuest",
 			"type": [
