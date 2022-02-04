@@ -223,25 +223,6 @@
 			]
 		},
 		{
-
-			"name": "New York Times with Index",
-			"vendor": "ProQuest",
-			"type": [
-				"news"
-			],
-			"urlRoot": "search.proquest.com",
-			"urlPath": ["hnpnewyorktimeswindex"],
-			"proxy": "ez",
-			"ssl": true,
-			"trial": true,
-			"exp": "2021-12-17",
-			"description": "Scanned versions of New York Times articles, stretching from 1851 through four years ago.",
-			"category": [
-				"news"
-			]
-		},
-
-		{
 			"name": "Coronavirus Research Database",
 			"vendor": "ProQuest",
 			"type": [
@@ -367,19 +348,6 @@
 			]
 		},
 		{
-			"name": "Gale Primary Sources",
-			"vendor": "Gale",
-			"type": ["primary-sources"],
-			"urlRoot": "go.gale.com",
-			"urlPath": ["ps/start.do?p=GDCS&u=sacr28903"],
-			"proxy": "ez",
-			"ssl": true,
-			"trial": true,
-			"exp": "2021-12-09",
-			"description": "Primary source collections providing historical documents related to the history of Native Americans, slavery and anti-slavery, and LGBTQ people and movements. Also provides a collection of historical newspapers.",
-			"category": ["history"]
-		},
-		{
 			"name": "Black Thought and Culture",
 			"vendor": "Alexander Street Press",
 			"type": [
@@ -397,20 +365,9 @@
 			]
 		},
 		{
-			"name": "North American Indian Thought and Culture",
-			"vendor": "Alexander Street Press",
-			"type": [
-				"primary-source"
-			],
-			"urlRoot": "search.alexanderstreet.com",
-			"urlPath": ["ibio"],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
-			"exp": "2021-12-17",
-			"description": "Biographical information, oral histories, photographs, and assorted primary source materials related to Native Americans, Alaska Natives, and Canadian First Peoples.",
 			"category": [
-				"history"
 			]
 		},
 		{
@@ -883,24 +840,6 @@
 			],
 			"altname": ["GVRL", "Gale Virtual Reference Library"]
 		},
-		{
-			"name": "InfobaseBooks",
-			"vendor": "Infobase",
-			"type": [
-				"ebooks"
-			],
-			"urlRoot": "ebooks.infobase.com",
-			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
-			"proxy": "ez",
-			"trial": true,
-			"ssl": true,
-			"exp": "2021-11-12",
-			"description": "Encyclopedias and other reference ebooks.",
-			"category": [
-				"ebooks",  "literature", "encyclopedias,-dictionaries,-reference"
-			]
-		},
-
 		{
 			"name": "JSTOR",
 			"vendor": "JSTOR",
