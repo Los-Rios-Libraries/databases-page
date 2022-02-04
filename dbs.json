@@ -357,11 +357,9 @@
 			"urlPath": ["bltc"],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
-			"exp": "2021-12-17",
 			"description": "Letters, leaflets, speeches, and other primary source materials by notable Black figures, primarily from the United States.",
 			"category": [
-				"history"
+				"primary-sources"
 			]
 		},
 		{
