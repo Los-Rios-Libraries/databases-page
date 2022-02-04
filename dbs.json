@@ -715,9 +715,25 @@
 			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
+			"exp": "2022-06-30",
 			"description": "Streaming video and audio of dramatic performances, including the National Theatre and Royal Shakespeare Company, film adaptations, published plays, and scholarly books on theatre.",
 			"category": [
 				"theatre-&amp;-performing-arts", "video", "ebooks"
+			]
+		},
+		{
+			"name": "National Theatre Collection",
+			"vendor": "Bloomsbury Publishing",
+			"type": [
+				"video"
+			],
+			"urlRoot": "www.dramaonlinelibrary.com",
+			"urlPath": ["national-theatre-collection"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Streaming video of live performances, including productions of Shakespeare, Greek classics, literary adaptations, and modern plays.",
+			"category": [
+				"theatre-&amp;-performing-arts", "video"
 			]
 		},
 		{
