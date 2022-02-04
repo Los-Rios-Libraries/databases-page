@@ -127,6 +127,22 @@ $dbs = array(
 																			'dbname' => 'literature-resource',
 																			'queryUrl' => $ezpStr . 'https://go.gale.com/ps/basicSearch.do?inputFieldNames%5B0%5D=OQE&inputFieldValues%5B0%5D=' . $query . '&nwf=y&searchType=BasicSearchForm&userGroupName=' . $galeID .'&prodId=LitRC&spellCheck=true&method=doSearch'
 																			),
+														array(
+																			'dbname' => 'debates-over',
+																			'queryUrl' => $ezpStr . 'https://go.gale.com/ps/headerQuickSearch.do?inputFieldNames%5B0%5D=OQE&limiterTypes%5BDB%5D=OR&limiterFieldValues%5BDB%5D=allElectronicResources&limiterFieldValues%5BDB%5D=SAS-1&limiterFieldValues%5BDB%5D=SAS-3&quickSearchTerm=' . $query . '&searchType=BasicSearchForm&userGroupName=' . $galeID . '&nwf=y&prodId=SAS&stw.option=&ebook=&quicksearchIndex=OQE&spellCheck=true&hasCoProduct=false'
+																			),
+														array(
+																			'dbname' => 'indigenous-peoples',
+																			'queryUrl' => $ezpStr . 'https://go.gale.com/ps/headerQuickSearch.do?inputFieldNames%5B0%5D=OQE&limiterTypes%5BDB%5D=OR&limiterFieldValues%5BDB%5D=allElectronicResources&limiterFieldValues%5BDB%5D=SAS-1&limiterFieldValues%5BDB%5D=INDP-3&quickSearchTerm=' . $query . '&searchType=BasicSearchForm&userGroupName=' . $galeID . '&nwf=y&prodId=INDP&stw.option=&ebook=&quicksearchIndex=OQE&spellCheck=true&hasCoProduct=false'
+																			),
+														array(
+																			'dbname' => 'institution-of',
+																			'queryUrl' => $ezpStr . 'https://go.gale.com/ps/headerQuickSearch.do?inputFieldNames%5B0%5D=OQE&limiterTypes%5BDB%5D=OR&limiterFieldValues%5BDB%5D=allElectronicResources&limiterFieldValues%5BDB%5D=SAS-1&limiterFieldValues%5BDB%5D=SAS-3&quickSearchTerm=' . $query . '&searchType=BasicSearchForm&userGroupName=' . $galeID . '&nwf=y&prodId=SAS&stw.option=&ebook=&quicksearchIndex=OQE&spellCheck=true&hasCoProduct=false'
+																			),
+														array(
+																			'dbname' => 'lgbtq-history',
+																			'queryUrl' => $ezpStr . 'https://go.gale.com/ps/headerQuickSearch.do?inputFieldNames%5B0%5D=OQE&limiterTypes%5BDB%5D=OR&limiterFieldValues%5BDB%5D=allElectronicResources&limiterFieldValues%5BDB%5D=AHSI-1&quickSearchTerm=' . $query . '&searchType=BasicSearchForm&userGroupName=' . $galeID .'&nwf=y&prodId=AHSI&stw.option=&ebook=&quicksearchIndex=OQE&spellCheck=true&hasCoProduct=false'
+																			),
              array(
                 'dbname' => 'oxford-art',
                 'queryUrl' => $ezpStr . 'http://www.oxfordartonline.com/groveart/search?siteToSearch=groveart&q=' . $query . '&searchBtn=Search&isQuickSearch=true'

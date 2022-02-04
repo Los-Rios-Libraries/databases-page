@@ -363,9 +363,42 @@
 			]
 		},
 		{
+			"name": "Debates over Slavery and Abolition",
+			"vendor": "Gale",
+			"type": ["primary-source"],
+			"urlRoot": "go.gale.com",
+			"urlPath": ["ps/aboutThisArchive?userGroupName=sacr22807&inPS=true&mCode=72T0&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr73031&inPS=true&mCode=72T0&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr88293&inPS=true&mCode=72T0&prodId=SAS","ps/aboutThisArchive?userGroupName=cclc_sac&inPS=true&mCode=72T0&prodId=SAS" ],
 			"proxy": "ez",
 			"ssl": true,
+			"description": "Manuscripts, monographs, newspapers, letters, and other primary source materials relating to slavery and abolition in the colonies and United States.",
 			"category": [
+				"primary-sources"
+			]
+		},
+		{
+			"name": "Institution of Slavery",
+			"vendor": "Gale",
+			"type": ["primary-source"],
+			"urlRoot": "go.gale.com",
+			"urlPath": ["ps/aboutThisArchive?userGroupName=sacr22807&inPS=true&mCode=72T2&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr73031&inPS=true&mCode=72T2&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr88293&inPS=true&mCode=72T2&prodId=SAS","ps/aboutThisArchive?userGroupName=cclc_sac&inPS=true&mCode=72T2&prodId=SAS" ],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Newspapers, first-person accounts, government records, correspondence, and other primary source materials related to how slavery was conducted and experienced in the colonies and United States.",
+			"category": [
+				"primary-sources"
+			]
+		},
+		{
+			"name": "Lgbtq History and Culture Since 1940, Part I",
+			"vendor": "Gale",
+			"type": ["primary-source"],
+			"urlRoot": "go.gale.com",
+			"urlPath": ["ps/aboutThisArchive?userGroupName=sacr22807&inPS=true&mCode=2XYQ&prodId=AHSI", "ps/aboutThisArchive?userGroupName=sacr73031&inPS=true&mCode=2XYQ&prodId=AHSI", "ps/aboutThisArchive?userGroupName=sacr88293&inPS=true&mCode=2XYQ&prodId=AHSI", "ps/aboutThisArchive?userGroupName=cclc_sac&inPS=true&mCode=2XYQ&prodId=AHSI"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Primary source materials related to LGBTQ individuals, organizations, and movements in the United States and Great Britain, including: newsletters, newspapers, and periodicals by, for, and about gays and lesbians; materials from gay and lesbian organizations; documents related to the AIDS/HIV crisis of the 1980s and 90s.",
+			"category": [
+				"primary-sources"
 			]
 		},
 		{
