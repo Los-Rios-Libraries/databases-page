@@ -389,6 +389,19 @@
 			]
 		},
 		{
+			"name": "Indigenous Peoples of North America",
+			"vendor": "Gale",
+			"type": ["primary-source"],
+			"urlRoot": "infotrac.galegroup.com",
+			"urlPath": ["itweb/?db=INDP"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Manuscript, monographs, photographs, society documents, newspapers, and other primary source materials by and about native peoples and tribes of North America.",
+			"category": [
+				"primary-sources"
+			]
+		},
+		{
 			"name": "Lgbtq History and Culture Since 1940, Part I",
 			"vendor": "Gale",
 			"type": ["primary-source"],
