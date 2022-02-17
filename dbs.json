@@ -724,6 +724,21 @@
 				"primary-sources", "art"
 			]
 		},
+		{
+			"name": "Flipster",
+			"vendor": "EBSCO",
+			"type": [
+				"magazines"
+			],
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=eon"],
+			"proxy": "ez",
+			"ssl": true,
+			"col": "s",
+			"description": "Popular magazines presented in a browseable interface.",
+			"category": [
+			]
+		},
 
 		{
 			"name": "Ebook Collection",
