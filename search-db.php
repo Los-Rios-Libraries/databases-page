@@ -215,6 +215,10 @@ $dbs = array(
 											array(
 												'dbname' => 'primary-source',
 												'queryUrl' => 'https://go.gale.com/ps/i.do?action=interpret&ty=bs&v=2.1&u=sacr28903&it=search&p=GDCS&qt=OQE~' . $query . '&sw=w'
+																	),
+											array(
+												'dbname' => 'very-short',
+												'queryUrl' => 'https://www.veryshortintroductions.com/search?q=' . $query . '&searchBtn=Search&isQuickSearch=true'
 																	)
          );
 

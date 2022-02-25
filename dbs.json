@@ -739,6 +739,23 @@
 			]
 		},
 		{
+			"name": "Very Short Introductions",
+			"vendor": "Oxford University Press",
+			"type": [
+				"ebooks"
+			],
+			"urlRoot": "www.veryshortintroductions.com",
+			"urlPath": [""],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2022-03-23",
+			"description": "Ebooks providing an overview of complex topics.",
+			"category": [
+				"ebooks"
+			]
+		},
+		{
 			"name": "Flipster",
 			"vendor": "EBSCO",
 			"type": [
