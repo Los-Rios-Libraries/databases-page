@@ -443,7 +443,21 @@
 				"health-&amp;-medicine"
 			]
 		},
-
+		{
+			"name": "Veterinary Source",
+			"vendor": "EBSCO",
+			"type": [
+				"scholarly-journals", "magazines"
+			],
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=vft"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Scholarly journals and magazines focusing on animal health care.",
+			"category": [
+				"health-&amp;-medicine"
+			]
+		},
 		{
 			"name": "Military &amp; Government Collection",
 			"vendor": "EBSCO",
