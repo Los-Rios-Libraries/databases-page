@@ -512,7 +512,6 @@
 				"environmental-science", "health-&amp;-medicine", "psychology"
 			]
 		},
-
 		{
 			"name": "Oxford English Dictionary",
 			"vendor": "Oxford University Press",
@@ -687,6 +686,19 @@
 			"category": [
 				"encyclopedias,-dictionaries,-reference", "health-&amp;-medicine"
 			]
+		},
+		{
+			"name": "New Play Exchange",
+			"vendor": "National New Play Network",
+			"type": [],
+			"urlRoot": "newplayexchange.org",
+			"urlPath": [""],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"description": "Scripts of plays by living playwrights, with the ability to filter by race/ethnicity, gender, and age.",
+			"category": ["theatre-&amp;-performing-arts"],
+			"exp": "2022-03-19"
 		},
 		{
 			"name": "Ebony Magazine Archive",

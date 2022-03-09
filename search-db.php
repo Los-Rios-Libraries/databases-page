@@ -219,7 +219,11 @@ $dbs = array(
 											array(
 												'dbname' => 'very-short',
 												'queryUrl' => 'https://www.veryshortintroductions.com/search?q=' . $query . '&searchBtn=Search&isQuickSearch=true'
-																	)
+																	),
+											array(
+												'dbname' => 'new-play-exchange',
+												'queryUrl' => 'https://newplayexchange.org/search/plays?search_text_box=' . $query
+											)
          );
 
 
