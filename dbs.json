@@ -71,6 +71,21 @@
 			]
 		},
 		{
+			"name": "Art Magazine Collection Archive",
+			"vendor": "EBSCO",
+			"type": [
+				"magazines"
+			],
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Reproductions of the print magazines Antiques, ARTnews, and Art in America, with content spanning from 1902 to 2016.",
+			"category": [
+				"primary-sources", "art"
+			]
+		},
+		{
 			"name": "Business Source Complete",
 			"vendor": "EBSCO",
 			"type": [
@@ -731,23 +746,6 @@
 			"description": "Newspapers, magazines, reports and other periodicals that document the history of African American religious life and culture between 1829 and 1922.",
 			"category": [
 				"primary-sources"
-			]
-		},
-		{
-			"name": "Art Magazine Collection Archive",
-			"vendor": "EBSCO",
-			"type": [
-				"magazines"
-			],
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
-			"proxy": "ez",
-			"ssl": true,
-			"trial": true,
-			"exp": "2022-03-16",
-			"description": "Reproductions of the print magazines Antiques, ARTnews, and Art in America, with content spanning from 1902 to 2016.",
-			"category": [
-				"primary-sources", "art"
 			]
 		},
 		{
