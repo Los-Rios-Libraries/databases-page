@@ -769,8 +769,6 @@
 			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
-			"exp": "2022-03-23",
 			"description": "Ebooks providing an overview of complex topics.",
 			"category": [
 				"ebooks"
