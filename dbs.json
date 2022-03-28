@@ -730,16 +730,15 @@
 			"name": "Ebony Magazine Archive",
 			"vendor": "EBSCO",
 			"type": [
-				"ebooks"
+				"news"
 			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ear"],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
-			"exp": "2022-03-16",
 			"description": "Full content from 1945 to 2014 from the prominent mass-market magazine targeted to an African-American readership.",
 			"category": [
+				"news"
 			]
 		},
 		{
