@@ -243,7 +243,7 @@
 			"type": [
 				"scholarly-journals"
 			],
-			"urlRoot": "search.proquest.com",
+			"urlRoot": "www.proquest.com",
 			"urlPath": ["coronavirus/"],
 			"proxy": "ez",
 			"ssl": true,
@@ -272,7 +272,7 @@
 			"name": "New York Times with Index",
 			"vendor": "ProQuest",
 			"type": ["news"],
-			"urlRoot": "search.proquest.com",
+			"urlRoot": "www.proquest.com",
 			"urlPath": ["hnpnewyorktimeswindex"],
 			"proxy": "ez",
 			"ssl": true,
