@@ -934,6 +934,17 @@
 			]
 		},
 		{
+			"name": "Docuseek Complete Collection",
+			"vendor": "Docuseek",
+			"type" : ["video"],
+			"urlRoot": "docuseek2.com",
+			"urlPath": [""],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Films of various genres from independent and international filmmakers on a variety of topics.",
+			"category": ["video"]
+		},
+		{
 			"name": "Global Environmental Justice Collection",
 			"vendor": "Docuseek",
 			"type": ["video"],
