@@ -742,21 +742,60 @@
 			]
 		},
 		{
-			"name": "African American Historical Serials Collection",
+			"name": "Atlantic Magazine Archive",
 			"vendor": "EBSCO",
 			"type": [
-				"magazines"
+				"news"
 			],
 			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=h7i"],
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ama"],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
-			"exp": "2022-03-16",
-			"description": "Newspapers, magazines, reports and other periodicals that document the history of African American religious life and culture between 1829 and 1922.",
+			"description": "Full content from 1857 to 2014 from the renowned American magazine.",
 			"category": [
-				"primary-sources"
+				"news"
 			]
+		},
+		{
+			"name": "Life Magazine Archive",
+			"vendor": "EBSCO",
+			"type": [
+				"news"
+			],
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lma"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Complete coverage of the photojournalism magazine from its beginning in 1936 through 2000.",
+			"category": [
+				"news"
+			]
+		},
+		{
+			"name": "Time Magazine Archive",
+			"vendor": "EBSCO",
+			"type": [
+				"news"
+			],
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tma"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Page images of all issues of the prominent US news weekly magazine, from its beginning in 1923 through 2000.",
+			"category": [
+				"news"
+			]
+		},
+		{
+			"name": "Vogue Archive",
+			"vendor": "ProQuest",
+			"type": ["news"],
+			"urlRoot": "www.proquest.com",
+			"urlPath": ["hnpnewyorktimeswindex"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Cover-to-cover page images of the prominent fashion magazine from 1892 to the current issue.",
+			"category": ["news"]
 		},
 		{
 			"name": "Very Short Introductions",
