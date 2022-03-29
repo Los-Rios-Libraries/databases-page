@@ -210,9 +210,7 @@ include_once('../resources/shared/components/nav-links.php');
 }
 ?>
 
-<!-- 
-<div id="problem-notification" style="width:80%; margin:10px auto;">text here</div>
--->
+
 <div id="header-container" class="container">
 		<div class="page-header" id="header">
 			<div class="container">
@@ -223,6 +221,7 @@ include_once('../resources/shared/components/nav-links.php');
 		</div>
 	</div>
 <div class="container">
+ <div id="problem-notification"></div>
 
 
 

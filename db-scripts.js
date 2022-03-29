@@ -445,20 +445,24 @@ function showNote(obj) {
 			var arr = str.split('-');
 			return new Date(arr); // for some reason this doesn't work if you include more than year-month-date
 		};
-		var start = new Date(1970);
+		var start = new Date('1970');
 		// start and end properties are optional
 		if (obj.start) {
 			start = parseDate(obj.start);
 		}
-		var end = new Date(3000);
+		var end = new Date('3000');
 		if (obj.end) {
 			end = parseDate(obj.end);
 		}
 		//console.log(start);
 		//console.log(end);
 		var text = obj.message || '';
+		console.log(d);
+		console.log(start);
+		console.log(end);
 		if ((d >= start) && (d <= end) && (text !== '')) {
-			$('<p id="db-alert" role="alert" style="display:none;">' + text + '<button type="button" id="message-dismiss">Hide this message</button></p>').prependTo($('#main')).fadeIn();
+			$('#problem-notification').css('margin-top', '-20px');
+			$('<p id="db-alert" role="alert" class="alert alert-warning" style="display:none;">' + text + ' <button class="btn btn-secondary btn-sm" type="button" id="message-dismiss">Hide this message</button></p>').appendTo($('#problem-notification')).fadeIn();
 			$('#message-dismiss').on('click', function() {
 				$('#db-alert').fadeOut();
 				setCookie({
