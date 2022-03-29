@@ -457,9 +457,6 @@ function showNote(obj) {
 		//console.log(start);
 		//console.log(end);
 		var text = obj.message || '';
-		console.log(d);
-		console.log(start);
-		console.log(end);
 		if ((d >= start) && (d <= end) && (text !== '')) {
 			$('#problem-notification').css('margin-top', '-20px');
 			$('<p id="db-alert" role="alert" class="alert alert-warning" style="display:none;">' + text + ' <button class="btn btn-secondary btn-sm" type="button" id="message-dismiss">Hide this message</button></p>').appendTo($('#problem-notification')).fadeIn();
