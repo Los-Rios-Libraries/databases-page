@@ -433,9 +433,9 @@ if (!(isset($_GET['db']))) {
 
 <script>
 	showNote({
-	 message: 'Due to scheduled maintenance, access to databases may be interrupted the morning of Friday, May 25.',
+	 message: 'Films on Demand is experiencing technical problems. Certain films are not currently accessible. The vendor is working on restoring access.'/*,
 	 start: '2018-05-18',
-	 end: '2018-05-25'  
+	 end: '2018-05-25'  */
 	 });
 </script>
 
