@@ -41,7 +41,6 @@ function writeDBInfo($db, $url) {
     global $query;
     global $category;
     global $category;
-    $formatList = implode(' ', $db -> type);
     $description = $db -> description;
     $expiration = '';
     $expirationNote = '';
@@ -90,7 +89,7 @@ function writeDBInfo($db, $url) {
     if ($start  !== '') {
      $dataStart = ' data-startdate="' . $start . '" ';
     }
-    $output =  '<li' . $dataCol . $dataExp . $dataStart .  ' class="db-entry shadow-sm p-2 mb-1 bg-white border-0 rounded list-group-item active-db ' .$formatList . ' ' .$trialclass . ' ">' . "\r\n";
+    $output =  '<li' . $dataCol . $dataExp . $dataStart .  ' class="db-entry shadow-sm p-2 mb-1 bg-white border-0 rounded list-group-item active-db ' .$trialclass . ' ">' . "\r\n";
     $searchButton = '<button class="open-db-search float-right btn" title="Search '. $db -> name .'"><svg width="100%" height="100%" viewBox="0 0 24 24" y="264"><use xlink:href="#magnifyingglass" preserveAspectRatio="xMidYMid meet"></svg></button>' . "\r\n";
     $name = $db -> name;
     if (preg_match('/Bloomsbury|Coronavirus|Country|Dailies|(Digital|National) Thea|Flipster|Kanopy|New York Times|Opposing|CollegeSource|Ethnologue|Health Reference|ProQuest|Global Env|Docuseek|NewsWatch|Swank|InfobaseBooks|Vogue/', $name) === 1) {

@@ -4,7 +4,6 @@
 		{
 			"name": "Literature Resource Center",
 			"vendor": "Gale",
-			"type": ["ebooks", "scholarly journals", "reference", "magazines"],
 			"urlRoot": "infotrac.gale.com",
 			"urlPath": ["itweb/?db=LitRC"],
 			"proxy": "ez",
@@ -15,9 +14,6 @@
 		{
 			"name": "Apa PsycARTICLES",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pdh"],
 			"proxy": "ez",
@@ -31,7 +27,6 @@
 		{
 			"name": "America: History and Life with Full Text",
 			"vendor": "EBSCO",
-			"type": ["scholarly-journals"],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=31h"],
 			"proxy": "ez",
@@ -44,9 +39,6 @@
 		{
 			"name": "Oxford Art Online",
 			"vendor": "Oxford University Press",
-			"type": [
-				"reference", "images"
-			],
 			"urlRoot": "www.oxfordartonline.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -60,7 +52,6 @@
 		{
 			"name": "Artstor",
 			"vendor": "Artstor",
-			"type": ["images"],
 			"urlRoot": "library.artstor.org",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -73,9 +64,6 @@
 		{
 			"name": "Art Magazine Collection Archive",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
 			"proxy": "ez",
@@ -88,10 +76,6 @@
 		{
 			"name": "Business Source Complete",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals", "reports",
-				"trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=bsc"],
 			"proxy": "ez",
@@ -104,9 +88,6 @@
 		{
 			"name": "Ovid Nursing and Health Professions Collection",
 			"vendor": "Ovid Technologies",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "ovidsp.ovid.com",
 			"urlPath": ["ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=y&DBC=y&D=yrovft"],
 			"proxy": "ez",
@@ -118,9 +99,6 @@
 		{
 			"name": "Cinahl Plus with Full Text",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=rzh"],
 			"proxy": "ez",
@@ -133,9 +111,6 @@
 		{
 			"name": "Education Research Complete",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals", "trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ehh"],
 			"proxy": "ez",
@@ -148,9 +123,6 @@
 		{
 			"name": "Ethnologue",
 			"vendor": "SIL International",
-			"type": [
-				"reference"
-			],
 			"urlRoot": "www.ethnologue.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -163,9 +135,6 @@
 		{
 			"name": "Eric",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals", "trade-publications", "reports"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=eric"],
 			"proxy": "ez",
@@ -180,9 +149,6 @@
 		{
 			"name": "PubMed",
 			"vendor": "US National Library of Medicine",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "pubmed.ncbi.nlm.nih.gov",
 			"urlPath": ["?otool=casccllib"],
 			"proxy": "ez",
@@ -195,9 +161,6 @@
 		{
 			"name": "Rehabilitation Reference Center",
 			"vendor": "EBSCO",
-			"type": [
-				"reference"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=rrc"],
 			"proxy": "ez",
@@ -210,9 +173,6 @@
 		{
 			"name": "Health Reference Series",
 			"vendor": "Omnigraphics",
-			"type": [
-				"reference"
-			],
 			"urlRoot": "online.omnigraphics.com/%23/ezproxyhome/RpZ4hbkImYQ=#",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -225,9 +185,6 @@
 		{
 			"name": "US Major Dailies",
 			"vendor": "ProQuest",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.proquest.com",
 			"urlPath": ["usmajordailies/"],
 			"proxy": "ez",
@@ -240,9 +197,6 @@
 		{
 			"name": "Coronavirus Research Database",
 			"vendor": "ProQuest",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "www.proquest.com",
 			"urlPath": ["coronavirus/"],
 			"proxy": "ez",
@@ -256,9 +210,6 @@
 		{
 			"name": "Access World News",
 			"vendor": "NewsBank",
-			"type": [
-				"news"
-			],
 			"urlRoot": "infoweb.newsbank.com",
 			"urlPath": ["apps/news/easy-search?p=AWNB"],
 			"proxy": "ez",
@@ -271,7 +222,6 @@
 		{
 			"name": "New York Times with Index",
 			"vendor": "ProQuest",
-			"type": ["news"],
 			"urlRoot": "www.proquest.com",
 			"urlPath": ["hnpnewyorktimeswindex"],
 			"proxy": "ez",
@@ -282,9 +232,6 @@
 		{
 			"name": "Sacramento Bee Collection",
 			"vendor": "NewsBank",
-			"type": [
-				"news"
-			],
 			"urlRoot": "infoweb.newsbank.com",
 			"urlPath": ["apps/news/browse-multi?p=AWNB&t=family%3AA1963%21Sacramento%20Bee%20Collection"],
 			"proxy": "ez",
@@ -297,9 +244,6 @@
 		{
 			"name": "Chronicle of Higher Education",
 			"vendor": "Chronicle of Higher Education",
-			"type": [
-				"news", "reports"
-			],
 			"urlRoot": "www.chronicle.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -312,9 +256,6 @@
 		{
 			"name": "CountryWatch",
 			"vendor": "CountryWatch",
-			"type": [
-				"reports", "news"
-			],
 			"urlRoot": "www.countrywatch.com",
 			"urlPath": ["ip"],
 			"proxy": "ez",
@@ -327,10 +268,6 @@
 		{
 			"name": "Health Source: Consumer Edition",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines", "reports",
-				"trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hxh"],
 			"proxy": "ez",
@@ -343,10 +280,6 @@
 		{
 			"name": "Health Source: Nursing/Academic Edition",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals", "reference",
-				"trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=hch"],
 			"proxy": "ez",
@@ -360,10 +293,6 @@
 		{
 			"name": "Psychology &amp; Behavioral Sciences Collection",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals",
-				"trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=pbh"],
 			"proxy": "ez",
@@ -376,9 +305,6 @@
 		{
 			"name": "Black Thought and Culture",
 			"vendor": "Alexander Street Press",
-			"type": [
-				"primary-source"
-			],
 			"urlRoot": "search.alexanderstreet.com",
 			"urlPath": ["bltc"],
 			"proxy": "ez",
@@ -391,7 +317,6 @@
 		{
 			"name": "Debates over Slavery and Abolition",
 			"vendor": "Gale",
-			"type": ["primary-source"],
 			"urlRoot": "go.gale.com",
 			"urlPath": ["ps/aboutThisArchive?userGroupName=sacr22807&inPS=true&mCode=72T0&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr73031&inPS=true&mCode=72T0&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr88293&inPS=true&mCode=72T0&prodId=SAS","ps/aboutThisArchive?userGroupName=cclc_sac&inPS=true&mCode=72T0&prodId=SAS" ],
 			"proxy": "ez",
@@ -404,7 +329,6 @@
 		{
 			"name": "Institution of Slavery",
 			"vendor": "Gale",
-			"type": ["primary-source"],
 			"urlRoot": "go.gale.com",
 			"urlPath": ["ps/aboutThisArchive?userGroupName=sacr22807&inPS=true&mCode=72T2&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr73031&inPS=true&mCode=72T2&prodId=SAS","ps/aboutThisArchive?userGroupName=sacr88293&inPS=true&mCode=72T2&prodId=SAS","ps/aboutThisArchive?userGroupName=cclc_sac&inPS=true&mCode=72T2&prodId=SAS" ],
 			"proxy": "ez",
@@ -417,7 +341,6 @@
 		{
 			"name": "Indigenous Peoples of North America",
 			"vendor": "Gale",
-			"type": ["primary-source"],
 			"urlRoot": "infotrac.galegroup.com",
 			"urlPath": ["itweb/?db=INDP"],
 			"proxy": "ez",
@@ -430,7 +353,6 @@
 		{
 			"name": "Lgbtq History and Culture Since 1940, Part I",
 			"vendor": "Gale",
-			"type": ["primary-source"],
 			"urlRoot": "go.gale.com",
 			"urlPath": ["ps/aboutThisArchive?userGroupName=sacr22807&inPS=true&mCode=2XYQ&prodId=AHSI", "ps/aboutThisArchive?userGroupName=sacr73031&inPS=true&mCode=2XYQ&prodId=AHSI", "ps/aboutThisArchive?userGroupName=sacr88293&inPS=true&mCode=2XYQ&prodId=AHSI", "ps/aboutThisArchive?userGroupName=cclc_sac&inPS=true&mCode=2XYQ&prodId=AHSI"],
 			"proxy": "ez",
@@ -443,7 +365,6 @@
 		{
 			"name": "HeinOnline",
 			"vendor": "William S. Hein &amp; Co., Inc.",
-			"type": ["legal-research", "scholarly-journals"],
 			"urlRoot": "www.heinonline.org",
 			"urlPath": ["HOL/Welcome"],
 			"proxy": "ez",
@@ -457,9 +378,6 @@
 		{
 			"name": "Medline",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=cmedm"],
 			"proxy": "ez",
@@ -472,9 +390,6 @@
 		{
 			"name": "Veterinary Source",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals", "magazines"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=vft"],
 			"proxy": "ez",
@@ -487,9 +402,6 @@
 		{
 			"name": "Military &amp; Government Collection",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals", "trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=mth"],
 			"proxy": "ez",
@@ -502,7 +414,6 @@
 		{
 			"name": "Sage Journals",
 			"vendor": "SAGE",
-			"type": ["scholarly-journals"],
 			"urlRoot": "journals.sagepub.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -514,7 +425,6 @@
 		{
 			"name": "Wiley Online Library",
 			"vendor": "Wiley",
-			"type": ["scholarly-journals"],
 			"urlRoot": "www.onlinelibrary.wiley.com",
 			"urlPath": ["action/showPublications?PubType=journal"],
 			"proxy": "ez",
@@ -526,9 +436,6 @@
 		{
 			"name": "ScienceDirect",
 			"vendor": "Elsevier",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "www.sciencedirect.com",
 			"urlPath": ["search/advanced"],
 			"proxy": "ez",
@@ -541,9 +448,6 @@
 		{
 			"name": "Oxford English Dictionary",
 			"vendor": "Oxford University Press",
-			"type": [
-				"reference"
-			],
 			"urlRoot": "www.oed.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -557,9 +461,6 @@
 {
 			"name": "Bloom&apos;s Literature Ebooks",
 			"vendor": "Infobase",
-			"type": [
-				"ebooks"
-			],
 			"urlRoot": "ebooks.infobase.com",
 			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
 			"proxy": "ez",
@@ -573,9 +474,6 @@
 		{
 			"name": "Salem Press",
 			"vendor": "Salem Online",
-			"type": [
-				"ebooks", "reference"
-			],
 			"urlRoot": "online.salempress.com",
 			"urlPath": ["home.do"],
 			"proxy": "ez",
@@ -588,9 +486,6 @@
 		{
 			"name": "GreenFILE",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines", "scholarly-journals", "trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=8gh"],
 			"proxy": "ez",
@@ -603,9 +498,6 @@
 		{
 			"name": "Naxos Music Library",
 			"vendor": "Naxos Digital Services ",
-			"type": [
-				"streaming-audio"
-			],
 			"urlRoot": "losrios.naxosmusiclibrary.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -618,9 +510,6 @@
 		{
 			"name": "Newspaper Source Plus",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=n5h"],
 			"proxy": "ez",
@@ -634,11 +523,6 @@
 		{
 			"name": "Library, Information Science &amp; Technology Abstracts",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals",
-				"reports",
-				"trade publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lxh"],
 			"proxy": "ez",
@@ -652,10 +536,6 @@
 		{
 			"name": "Teacher Reference Center ",
 			"vendor": "EBSCO",
-			"type": [
-				"scholarly-journals",
-				"trade publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=trh"],
 			"proxy": "ez",
@@ -669,9 +549,6 @@
 		{
 			"name": "Regional Business News",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bwh"],
 			"proxy": "ez",
@@ -684,11 +561,6 @@
 		{
 			"name": "MAS Ultra: School Edition",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines",
-				"primary-sources",
-				"reference", "images"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ulh"],
 			"proxy": "ez",
@@ -701,9 +573,6 @@
 		{
 			"name": "Ahfs Consumer Medication Information",
 			"vendor": "EBSCO",
-			"type": [
-				"reference"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip,uid&profile=ehost&defaultdb=l0h"],
 			"proxy": "ez",
@@ -716,7 +585,6 @@
 		{
 			"name": "New Play Exchange",
 			"vendor": "National New Play Network",
-			"type": [],
 			"urlRoot": "newplayexchange.org",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -729,9 +597,6 @@
 		{
 			"name": "Ebony Magazine Archive",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ear"],
 			"proxy": "ez",
@@ -744,9 +609,6 @@
 		{
 			"name": "Atlantic Magazine Archive",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ama"],
 			"proxy": "ez",
@@ -759,9 +621,6 @@
 		{
 			"name": "Life Magazine Archive",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lma"],
 			"proxy": "ez",
@@ -774,9 +633,6 @@
 		{
 			"name": "Time Magazine Archive",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tma"],
 			"proxy": "ez",
@@ -789,7 +645,6 @@
 		{
 			"name": "Vogue Archive",
 			"vendor": "ProQuest",
-			"type": ["news"],
 			"urlRoot": "www.proquest.com",
 			"urlPath": ["hnpnewyorktimeswindex"],
 			"proxy": "ez",
@@ -800,9 +655,6 @@
 		{
 			"name": "Very Short Introductions",
 			"vendor": "Oxford University Press",
-			"type": [
-				"ebooks"
-			],
 			"urlRoot": "www.veryshortintroductions.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -815,9 +667,6 @@
 		{
 			"name": "Flipster",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=eon"],
 			"proxy": "ez",
@@ -831,9 +680,6 @@
 		{
 			"name": "Ebook Collection",
 			"vendor": "EBSCO",
-			"type": [
-				"ebooks"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ebooks&defaultdb=nlebk"],
 			"proxy": "ez",
@@ -846,9 +692,6 @@
 		{
 			"name": "Ebook Central",
 			"vendor": "ProQuest",
-			"type": [
-				"ebooks"
-			],
 			"urlRoot": "ebookcentral.proquest.com",
 			"urlPath": ["lib/losrios/"],
 			"proxy": "ez",
@@ -861,9 +704,6 @@
 		{
 			"name": "Kanopy",
 			"vendor": "Kanopy",
-			"type": [
-				"video"
-			],
 			"urlRoot": "",
 			"urlPath": ["?db=kanopy"],
 			"proxy": false,
@@ -874,9 +714,6 @@
 		{
 			"name": "Drama Online",
 			"vendor": "Bloomsbury Publishing",
-			"type": [
-				"video"
-			],
 			"urlRoot": "www.dramaonlinelibrary.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -890,9 +727,6 @@
 		{
 			"name": "National Theatre Collection",
 			"vendor": "Bloomsbury Publishing",
-			"type": [
-				"video"
-			],
 			"urlRoot": "www.dramaonlinelibrary.com",
 			"urlPath": ["national-theatre-collection"],
 			"proxy": "ez",
@@ -905,9 +739,6 @@
 		{
 			"name": "Digital Theatre Plus",
 			"vendor": "Digital Theatre+",
-			"type": [
-				"video"
-			],
 			"urlRoot": "edu.digitaltheatreplus.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -920,9 +751,6 @@
 		{
 			"name": "Swank Digital Campus",
 			"vendor": "Swank Motion Pictures, Inc.",
-			"type": [
-				"video"
-			],
 			"urlRoot": "digitalcampus.swankmp.net",
 			"urlPath": ["arc380515","crc378691","","scc378966"],
 			"col": "acs",
@@ -936,7 +764,6 @@
 		{
 			"name": "Docuseek Complete Collection",
 			"vendor": "Docuseek",
-			"type" : ["video"],
 			"urlRoot": "docuseek2.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -947,7 +774,6 @@
 		{
 			"name": "Global Environmental Justice Collection",
 			"vendor": "Docuseek",
-			"type": ["video"],
 			"urlRoot": "gej.docuseek2.com",
 			"urlPath": ["cart/advsearch/hf/0/0/0"],
 			"proxy": "ez",
@@ -960,9 +786,6 @@
 		{
 			"name": "Opposing Viewpoints",
 			"vendor": "Gale",
-			"type": [
-				"magazines", "essays", "news", "ebooks"
-			],
 			"urlRoot": "infotrac.galegroup.com",
 			"urlPath": ["itweb/?db=OVIC"],
 			"proxy": "ez",
@@ -975,9 +798,6 @@
 		{
 			"name": "Newswires",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nsm"],
 			"proxy": "ez",
@@ -990,9 +810,6 @@
 		{
 			"name": "Web News",
 			"vendor": "EBSCO",
-			"type": [
-				"news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=nmr"],
 			"proxy": "ez",
@@ -1006,9 +823,6 @@
 		{
 			"name": "Academic Search Complete",
 			"vendor": "EBSCO",
-			"type": ["scholarly-journals", "magazines",
-				"trade-publications"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=a9h"],
 			"proxy": "ez",
@@ -1021,9 +835,6 @@
 		{
 			"name": "Cq Researcher",
 			"vendor": "CQ Press",
-			"type": [
-				"reports"
-			],
 			"urlRoot": "library.cqpress.com",
 			"urlPath": ["cqresearcher/"],
 			"proxy": "ez",
@@ -1036,9 +847,6 @@
 		{
 			"name": "Films on Demand",
 			"vendor": "Infobase",
-			"type": [
-				"video"
-			],
 			"urlRoot": "fod.infobase.com",
 			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
 			"proxy": "ez",
@@ -1051,9 +859,6 @@
 		{
 			"name": "Gale eBooks",
 			"vendor": "Gale",
-			"type": [
-				"encyclopedias", "reference", "ebooks"
-			],
 			"urlRoot": "infotrac.galegroup.com",
 			"urlPath": ["itweb?db=GVRL"],
 			"proxy": "ez",
@@ -1067,9 +872,6 @@
 		{
 			"name": "JSTOR",
 			"vendor": "JSTOR",
-			"type": [
-				"scholarly-journals"
-			],
 			"urlRoot": "www.jstor.org",
 			"urlPath": ["action/showAdvancedSearch"],
 			"proxy": "ez",
@@ -1085,9 +887,6 @@
 		{
 			"name": "Google Scholar",
 			"vendor": "Google",
-			"type": [
-				"scholarly-journals", "legal-research"
-			],
 			"urlRoot": "scholar.google.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -1100,9 +899,6 @@
 		{
 			"name": "MasterFILE Complete",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines", "images"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f6h"],
 			"proxy": "ez",
@@ -1115,10 +911,6 @@
 		{
 			"name": "Explora",
 			"vendor": "EBSCO",
-			"type": [
-				"magazines",
-				"trade-publications", "news"
-			],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=src_ic"],
 			"proxy": "ez",
@@ -1131,9 +923,6 @@
 		{
 			"name": "CollegeSource Online",
 			"vendor": "CollegeSource, Inc.",
-			"type": [
-				"reference"
-			],
 			"urlRoot": "cso.collegesource.com",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -1146,9 +935,6 @@
 		{
 			"name": "OneSearch",
 			"vendor": "Ex Libris",
-			"type": [
-				"scholarly-journals", "books", "ebooks", "trade-publications", "magazines", "legal-research", "reports", "images", "streaming-audio"
-			],
 			"urlRoot": "caccl-lrccd.primo.exlibrisgroup.com",
 			"urlPath": ["discovery/search?vid=01CACCL_LRCCD:arc", "discovery/search?vid=01CACCL_LRCCD:crc", "discovery/search?vid=01CACCL_LRCCD:flc", "discovery/search?vid=01CACCL_LRCCD:scc"],
 			"proxy": false,
@@ -1161,7 +947,6 @@
 		{
 			"name": "Ebsco Search",
 			"vendor": "EBSCO",
-			"type": ["scholarly-journals", "ebooks", "trade-publications", "magazines"],
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=all"],
 			"proxy": "ez",
