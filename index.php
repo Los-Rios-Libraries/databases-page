@@ -430,14 +430,14 @@ if (!(isset($_GET['db']))) {
 
 </script>    
 
-
+<!--
 <script>
 	showNote({
 	 message: 'Films on Demand is experiencing technical problems. Certain films are not currently accessible. The vendor is working on restoring access.'/*,
 	 start: '2018-05-18',
 	 end: '2018-05-25'  */
 	 });
-</script>
+</script>-->
 
 </body>
 </html>
