@@ -191,7 +191,7 @@
 			"ssl": true,
 			"description": "Articles from The New York Times, Washington Post, Wall Street Journal, Los Angeles Times, and Chicago Tribune.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -216,7 +216,7 @@
 			"ssl": true,
 			"description": "Articles from US and international newspapers.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -227,7 +227,7 @@
 			"proxy": "ez",
 			"ssl": true,
 			"description": "Scanned versions of New York Times articles, stretching from 1851 through four years ago.",
-			"category": ["news"]
+			"category": ["news-&amp;-magazines"]
 		},
 		{
 			"name": "Sacramento Bee Collection",
@@ -238,7 +238,7 @@
 			"ssl": true,
 			"description": "Newspaper articles, blog posts, and web-only content from the Sacramento Bee, 1984 to the present.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -250,7 +250,7 @@
 			"ssl": true,
 			"description": "News and reports on trends and developments at colleges and universities.",
 			"category": [
-				"news", "education"
+				"news-&amp;-magazines", "education"
 			]
 		},
 		{
@@ -262,7 +262,7 @@
 			"ssl": false,
 			"description": "Background information, reports and current news about culture, politics, economics and the environment from countries around the world. ",
 			"category": [
-				"political-science", "geography", "news"
+				"political-science", "geography", "news-&amp;-magazines"
 			]
 		},
 		{
@@ -516,7 +516,7 @@
 			"ssl": true,
 			"description": "Regional, national and international newspapers, television and radio news transcripts.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 
@@ -603,7 +603,7 @@
 			"ssl": true,
 			"description": "Full content from 1945 to 2014 from the prominent mass-market magazine targeted to an African-American readership.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -615,7 +615,7 @@
 			"ssl": true,
 			"description": "Full content from 1857 to 2014 from the renowned American magazine.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -627,7 +627,7 @@
 			"ssl": true,
 			"description": "Complete coverage of the photojournalism magazine from its beginning in 1936 through 2000.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -639,7 +639,7 @@
 			"ssl": true,
 			"description": "Page images of all issues of the prominent US news weekly magazine, from its beginning in 1923 through 2000.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -650,7 +650,7 @@
 			"proxy": "ez",
 			"ssl": true,
 			"description": "Cover-to-cover page images of the prominent fashion magazine from 1892 to the current issue.",
-			"category": ["news"]
+			"category": ["news-&amp;-magazines"]
 		},
 		{
 			"name": "Very Short Introductions",
@@ -804,7 +804,7 @@
 			"ssl": true,
 			"description": "News reports from Associated Press, United Press International, PR Newswire, Xinhua, CNN Wire, and Business Wire from the last 30 days.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -816,7 +816,7 @@
 			"ssl": true,
 			"description": "Includes over 14,000 feeds covering a range of business and general news topics. Click the title to go directly to the online source.",
 			"category": [
-				"news"
+				"news-&amp;-magazines"
 			]
 		},
 
@@ -905,7 +905,7 @@
 			"ssl": true,
 			"description": "Background information, magazines, biographies, primary source documents, maps, flags and images on different topics. ",
 			"category": [
-				""
+				"news-&amp;-magazines"
 			]
 		},
 		{
@@ -941,7 +941,7 @@
 			"ssl": true,
 			"description": "Los Rios Libraries&apos; online catalog and access to the content of most databases held at Los Rios.",
 			"category": [
-				"general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
+				"general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news-&amp;-magazines", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
 			]
 		},
 		{
@@ -953,7 +953,7 @@
 			"ssl": true,
 			"description": "Scholarly journals, magazines, and ebooks from a variety of EBSCOhost databases.",
 			"category": [
-				"general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
+				"general", "art", "criminal-justice-&amp;-law", "ebooks", "economics", "communication", "computer-information-science", "geography", "history", "education", "health-&amp;-medicine", "news-&amp;-magazines", "sociology", "literature", "political-science", "philosophy-&amp;-religion", "physical-sciences"
 			]
 		}
 

@@ -253,7 +253,7 @@ echo "<a id=\"subject-all\" href=\"index.php\">Show All</a>\n";
 echo "</li>\n";
 */
 // this will be the list that displays in the nav. Does not need to be every category listed in the json file.
-$dbCats = array('General', 'Art', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice &amp; Law', 'Ebooks', 'Education', 'Encyclopedias, Dictionaries, Reference', 'Environmental Science', 'Geography', 'Health &amp; Medicine', 'History', 'Literature', 'Music', 'News', 'Philosophy &amp; Religion', 'Political Science', 'Primary Sources', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts', 'Video' );
+$dbCats = array('General', 'Art', 'Business', 'Communication', 'Controversial Topics', 'Criminal Justice &amp; Law', 'Ebooks', 'Education', 'Encyclopedias, Dictionaries, Reference', 'Environmental Science', 'Geography', 'Health &amp; Medicine', 'History', 'Literature', 'Music', 'News &amp; Magazines', 'Philosophy &amp; Religion', 'Political Science', 'Primary Sources', 'Psychology', 'Sociology', 'Theatre &amp; Performing Arts', 'Video' );
     
     $dbCatsNo = count($dbCats);
     for ($i = 0; $i < count($dbCats); $i++){
