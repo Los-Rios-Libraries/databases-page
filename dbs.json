@@ -254,6 +254,19 @@
 			]
 		},
 		{
+			"name": "Flipster",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=eon"],
+			"proxy": "ez",
+			"ssl": true,
+			"col": "s",
+			"description": "Popular magazines presented in a browseable interface.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
 			"name": "CountryWatch",
 			"vendor": "CountryWatch",
 			"urlRoot": "www.countrywatch.com",
@@ -519,7 +532,18 @@
 				"news-&amp;-magazines"
 			]
 		},
-
+		{
+			"name": "MasterFILE Complete",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f6h"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Background information, magazines, biographies, primary source documents, maps, flags and images on different topics. ",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
 		{
 			"name": "Library, Information Science &amp; Technology Abstracts",
 			"vendor": "EBSCO",
@@ -664,19 +688,6 @@
 				"ebooks"
 			]
 		},
-		{
-			"name": "Flipster",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=eon"],
-			"proxy": "ez",
-			"ssl": true,
-			"col": "s",
-			"description": "Popular magazines presented in a browseable interface.",
-			"category": [
-			]
-		},
-
 		{
 			"name": "Ebook Collection",
 			"vendor": "EBSCO",
@@ -894,18 +905,6 @@
 			"description": "Scholarly journals, ebooks, abstracts, patents and legal research from academic, nonprofit and government sources. Use the Los Rios Full Text link for library-provided content.",
 			"category": [
 				"general", "art", "criminal-justice-&amp;-law", "education", "history", "literature", "music", "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology", "theatre-&amp;-performing-arts"
-			]
-		},
-		{
-			"name": "MasterFILE Complete",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=f6h"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Background information, magazines, biographies, primary source documents, maps, flags and images on different topics. ",
-			"category": [
-				"news-&amp;-magazines"
 			]
 		},
 		{
