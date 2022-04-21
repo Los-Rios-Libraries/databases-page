@@ -242,7 +242,7 @@ $nav_menu .= '<nav id="nav">' . "\r\n";
 $nav_menu .= '<div id="tabs">' . "\r\n";
 $activeClass = 'active';
 $altClass = '';
-$showDB = '<p id="show-db-no" class="d-none">Showing <span id="db-no"> </span> Databases</p>';
+$showDB = '<p class="show-db-no" style="display:none;">Showing <span class="db-no"> </span> Databases</p>';
 
 if (!isset($alpha)) {
 $responMenuLabel = 'subjects';

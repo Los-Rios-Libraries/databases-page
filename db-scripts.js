@@ -28,7 +28,7 @@ var getCookie = function(cname) {
 };
 var showDBNos = function() {
 	var dbNo = $('#main .db-name:visible').length;
-	var numberDisplay = $('#show-db-no');
+	var numberDisplay = $('.show-db-no');
 	if (numberDisplay.length) {
 		if (dbNo < 70) {
 			dbNoS = dbNo.toString();
