@@ -125,7 +125,7 @@ elseif (!isset($_COOKIE['homeLibrary'])) {
 	
 }
 */
-
+$home_identifier = ''; // identifies when page is landing page showing all dbs;
 $alphaShowAll = '<div><a id="show-all" href="index.php?az" class="btn btn-outline-primary">Show All</a></div>' . "\n";
 if (isset($format)) {
 $formatPretty = str_replace('-', ' ', $format);
@@ -153,6 +153,12 @@ elseif ((isset($query)) && (!(empty($query)))) {
 else {
  $metaTitle = '';
  $currentPageTitle = '';
+ if (isset($alpha)) {
+  $home_identifier = '<span id="az-home"></span>';
+ }
+ elseif (($_SERVER['QUERY_STRING']) === '') {
+  $home_identifier = '<span id="cat-home"></span>';
+ }
 }
 // copy file content into a string var
 $json_file = file_get_contents('dbs.json');
@@ -215,7 +221,7 @@ include_once('../resources/shared/components/nav-links.php');
 		<div class="page-header" id="header">
 			<div class="container">
 
-				<h1><?php echo $metaTitle . 'Research Databases'; ?></h1>
+				<h1><?php echo $metaTitle . 'Research Databases' . $home_identifier; ?></h1>
 
 			</div>
 		</div>
