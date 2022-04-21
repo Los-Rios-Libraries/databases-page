@@ -30,18 +30,22 @@ var showDBNos = function() {
 	var dbNo = $('#main .db-name:visible').length;
 	var numberDisplay = $('.show-db-no');
 	if (numberDisplay.length) {
-		if (dbNo < 70) {
-			dbNoS = dbNo.toString();
-			$('#db-no').text(dbNoS);
-			if (dbNo === 1) {
-				numberDisplay.html(numberDisplay.html().replace('Databases', 'Database'));
-			}
-			numberDisplay.removeClass('d-none');
-		} else {
-			numberDisplay.addClass('d-none').attr('aria-hidden', 'true');
+		dbNoS = dbNo.toString();
+		$('.db-no').text(dbNoS);
+		if (dbNo === 1) {
+			numberDisplay.html(numberDisplay.html().replace('Databases', 'Database'));
 		}
+		if ($('#az-home').length) {
+			numberDisplay.each(function (i) {
+				if (i !== 0) {
+					$(this).remove();
+				} else {
+					$(this).prependTo($('#main'));
+				}
+			});
+		}
+		numberDisplay.show();
 	}
-
 };
 var submitSearch = function(kw) {
 	var dbPatterns = /^(ebsco$|proquest|academic search complete|films on demand|cinahl|j( )?stor|ethnologue|gale (virtual|ebook)|gvrl|cq|onesearch|oxford art|grove|art( )?stor|ebooks|kanopy|google scholar|business source|opposing viewpoints|dailies|psycarticles|^eric$|education research complete|greenfile|omnigraphic|health reference series|pubmed|medline|naxos|newsbank|ovid|oxford english|oed|science( )?direct|kanopy|digital theat|masterfile|wiley|sage)/i;
@@ -232,8 +236,9 @@ $('#main-nav li a').each(function() {
 	if ($('#trial-dbs .db-entry:visible').length === 0) {
 		$('#trial-dbs').hide();
 	}
-
+if (!($('#cat-home').length)) {
 	showDBNos();
+}
 
 
 
