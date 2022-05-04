@@ -62,18 +62,6 @@
 			]
 		},
 		{
-			"name": "Art Magazine Collection Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Reproductions of the print magazines Antiques, ARTnews, and Art in America, with content spanning from 1902 to 2016.",
-			"category": [
-				"art"
-			]
-		},
-		{
 			"name": "Business Source Complete",
 			"vendor": "EBSCO",
 			"urlRoot": "search.ebscohost.com",
@@ -628,6 +616,18 @@
 			"description": "Full content from 1945 to 2014 from the prominent mass-market magazine targeted to an African-American readership.",
 			"category": [
 				"news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Art Magazine Collection Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Reproductions of the print magazines Antiques, ARTnews, and Art in America, with content spanning from 1902 to 2016.",
+			"category": [
+				"art", "news-&amp;-magazines"
 			]
 		},
 		{
