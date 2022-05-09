@@ -655,6 +655,18 @@
 			]
 		},
 		{
+			"name": "Jet Magazine Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=jar"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Full content from the entertainment and culture magazine focused on African-American entertainment and culture. Coverage is still partial; EBSCO will be completing this archive throughout 2022.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
 			"name": "Time Magazine Archive",
 			"vendor": "EBSCO",
 			"urlRoot": "search.ebscohost.com",
