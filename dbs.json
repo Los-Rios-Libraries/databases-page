@@ -51,7 +51,7 @@
 		},
 		{
 			"name": "Artstor",
-			"vendor": "Artstor",
+			"vendor": "Ithaka",
 			"urlRoot": "library.artstor.org",
 			"urlPath": [""],
 			"proxy": "ez",
@@ -881,8 +881,8 @@
 			"altname": ["GVRL", "Gale Virtual Reference Library"]
 		},
 		{
-			"name": "JSTOR",
-			"vendor": "JSTOR",
+			"name": "Jstor",
+			"vendor": "Ithaka",
 			"urlRoot": "www.jstor.org",
 			"urlPath": ["action/showAdvancedSearch"],
 			"proxy": "ez",
