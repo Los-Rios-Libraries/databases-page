@@ -862,7 +862,7 @@
 			"urlPath": ["PortalPlayLists.aspx?wid=240535", "PortalPlayLists.aspx?wid=237206", "PortalPlayLists.aspx?wid=237742", "PortalPlayLists.aspx?wid=106093"],
 			"proxy": "ez",
 			"ssl": true,
-			"description": "Documentaries in the humanities, history, health, technical education, archival films, and much more.",
+			"description": "Documentaries in the humanities, history, health, technical education, archival films, and much more. <strong><a href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQvc_74PmwYFhOjrZ1OY-fqRJet2GPYmxU0xAldeOgcu-YwK0aOAdMTPnUuAm1YNV7yfnI-SzrRq8FK/pubhtml\">View expiring titles</a></strong>",
 			"category": [
 				"general", "art", "business", "communication", "criminal-justice-&amp;-law", "education", "environmental-science", "geography", "history", "health-&amp;-medicine", "literature", "music", "philosophy-&amp;-religion", "political-science", "psychology", "sociology", "theatre-&amp;-performing-arts", "video"
 			]
