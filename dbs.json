@@ -79,7 +79,7 @@
 			"urlRoot": "ovidsp.ovid.com",
 			"urlPath": ["ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=y&DBC=y&D=yrovft"],
 			"proxy": "ez",
-			"description": "Scholarly journals in nursing and allied health fields.",
+			"description": "Scholarly journals in nursing and allied   fields.",
 			"category": [
 				"health-&amp;-medicine"
 			]
