@@ -710,19 +710,6 @@
 			"category": ["video", "theatre-&amp;-performing-arts"]
 		},
 		{
-			"name": "Drama Online",
-			"vendor": "Bloomsbury Publishing",
-			"urlRoot": "www.dramaonlinelibrary.com",
-			"urlPath": [""],
-			"proxy": "ez",
-			"ssl": true,
-			"exp": "2022-06-30",
-			"description": "Streaming video and audio of dramatic performances, including the National Theatre and Royal Shakespeare Company, film adaptations, published plays, and scholarly books on theatre. <em>Key videos from Drama Online may also be found in the National Theatre Collection database, which is not expiring.</em>",
-			"category": [
-				"theatre-&amp;-performing-arts", "video", "ebooks"
-			]
-		},
-		{
 			"name": "National Theatre Collection",
 			"vendor": "Bloomsbury Publishing",
 			"urlRoot": "www.dramaonlinelibrary.com",
