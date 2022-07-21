@@ -576,10 +576,8 @@
 			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
-			"trial": true,
 			"description": "Scripts of plays by living playwrights, with the ability to filter by race/ethnicity, gender, and age.",
-			"category": ["theatre-&amp;-performing-arts"],
-			"exp": "2022-03-19"
+			"category": ["theatre-&amp;-performing-arts"]
 		},
 		{
 			"name": "Ebony Magazine Archive",
