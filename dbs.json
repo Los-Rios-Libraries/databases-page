@@ -732,6 +732,18 @@
 			]
 		},
 		{
+			"name": "Aurora Metro Books",
+			"vendor": "Bloomsbury Publishing",
+			"urlRoot": "www.dramaonlinelibrary.com",
+			"urlPath": ["aurora-metro-books"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Contemporary drama, with an emphasis on Black, Asian, and women playwrights.",
+			"category": [
+				"ebooks","theatre-&amp;-performing-arts"
+			]
+		},
+		{
 			"name": "Swank Digital Campus",
 			"vendor": "Swank Motion Pictures, Inc.",
 			"urlRoot": "digitalcampus.swankmp.net",
