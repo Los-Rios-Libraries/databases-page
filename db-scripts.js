@@ -443,7 +443,8 @@ function showNote(obj) {
 	 end: '2018-05-26' // this is the beginning of the day, so if you want it to show that day, must set to the next day
 	 });
 	 */
-	var cName = 'dbHideAlert';
+	var cookieID = obj.cid || '';
+	var cName = 'dbHideAlert_' + cookieID;
 	if (getCookie(cName) !== 'hide') {
 		var d = new Date(); // time when page is viewed
 		var parseDate = function(str) {
