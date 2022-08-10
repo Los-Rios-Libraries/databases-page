@@ -153,10 +153,11 @@ elseif ((isset($query)) && (!(empty($query)))) {
 else {
  $metaTitle = '';
  $currentPageTitle = '';
+ $q_str = $_SERVER['QUERY_STRING'];
  if (isset($alpha)) {
   $home_identifier = '<span id="az-home"></span>';
  }
- elseif (($_SERVER['QUERY_STRING']) === '') {
+ elseif  (($q_str === '') || (preg_match('/^college=(ar|cr|fl|sc)c$/', $q_str) === 1)) {
   $home_identifier = '<span id="cat-home"></span>';
  }
 }
