@@ -676,8 +676,8 @@
 		{
 			"name": "Very Short Introductions",
 			"vendor": "Oxford University Press",
-			"urlRoot": "www.veryshortintroductions.com",
-			"urlPath": [""],
+			"urlRoot": "academic.oup.com",
+			"urlPath": ["pages/very-short-introductions"],
 			"proxy": "ez",
 			"ssl": true,
 			"description": "Ebooks providing an overview of complex topics.",
