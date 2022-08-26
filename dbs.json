@@ -292,6 +292,18 @@
 			]
 		},
 		{
+			"name": "Ethnic NewsWatch",
+			"vendor": "ProQuest",
+			"urlRoot": "www.proquest.com",
+			"urlPath": ["ethnicnewswatch"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Newspapers, magazines, and scholarly journals published by and about various racial and ethnic groups in the United States.",
+			"category": [
+				"geography", "history", "sociology", "news"
+			]
+		},
+		{
 			"name": "Black Thought and Culture",
 			"vendor": "Alexander Street Press",
 			"urlRoot": "search.alexanderstreet.com",
