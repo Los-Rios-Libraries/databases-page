@@ -667,7 +667,7 @@
 			"name": "Vogue Archive",
 			"vendor": "ProQuest",
 			"urlRoot": "www.proquest.com",
-			"urlPath": ["hnpnewyorktimeswindex"],
+			"urlPath": ["vogue"],
 			"proxy": "ez",
 			"ssl": true,
 			"description": "Cover-to-cover page images of the prominent fashion magazine from 1892 to the current issue.",
