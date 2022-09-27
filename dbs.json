@@ -778,6 +778,18 @@
 			"category": ["video"]
 		},
 		{
+			"name": "JoVE",
+			"vendor": "MyJoVE Corporation",
+			"urlRoot": "www.jove.com",
+			"urlPath": ["education/core"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Educational videos on science and math topics.",
+			"category": ["health-&amp;-medicine", "video"],
+			"trial" : true,
+			"exp": "2022-12-16"
+		},
+		{
 			"name": "Global Environmental Justice Collection",
 			"vendor": "Docuseek",
 			"urlRoot": "gej.docuseek2.com",

@@ -223,6 +223,10 @@ $dbs = array(
 											array(
 												'dbname' => 'new-play-exchange',
 												'queryUrl' => 'https://newplayexchange.org/search/plays?search_text_box=' . $query
+											),
+											array(
+												'dbname' => 'jove',
+												'queryUrl' => 'https://www.jove.com/search?q=' . $query
 											)
          );
 
