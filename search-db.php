@@ -206,7 +206,7 @@ $dbs = array(
 											),
 										 array(
 												'dbname' => 'black-thought',
-												'queryUrl' => 'https://search.alexanderstreet.com/bltc/search?searchstring=' . $query
+												'queryUrl' => $ezpStr . 'https://search.alexanderstreet.com/bltc/search?searchstring=' . $query
 																	),
 											array(
 												'dbname' => 'north-american',
