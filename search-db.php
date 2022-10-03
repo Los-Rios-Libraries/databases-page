@@ -209,6 +209,10 @@ $dbs = array(
 												'queryUrl' => $ezpStr . 'https://search.alexanderstreet.com/bltc/search?searchstring=' . $query
 																	),
 											array(
+												'dbname' => 'black-freedom',
+												'queryUrl' => 'https://blackfreedom.proquest.com/?s=' . $query
+											),
+											array(
 												'dbname' => 'north-american',
 												'queryUrl' => 'https://search.alexanderstreet.com/ibio/search?searchstring=' . $query
 											),

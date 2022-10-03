@@ -316,6 +316,18 @@
 			]
 		},
 		{
+			"name": "Black Freedom Struggle in the United States",
+			"vendor": "ProQuest",
+			"urlRoot": "blackfreedom.proquest.com",
+			"urlPath": [""],
+			"proxy": false,
+			"ssl": true,
+			"description": "Primary source documents on Black and African American experiences, racial injustice, and antiracist activism in the United States from 1790 to 2000.",
+			"category": [
+				"primary-sources"
+			]
+		},
+		{
 			"name": "Debates over Slavery and Abolition",
 			"vendor": "Gale",
 			"urlRoot": "go.gale.com",
