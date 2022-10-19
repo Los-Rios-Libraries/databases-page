@@ -292,18 +292,6 @@
 			]
 		},
 		{
-			"name": "Ethnic NewsWatch",
-			"vendor": "ProQuest",
-			"urlRoot": "www.proquest.com",
-			"urlPath": ["ethnicnewswatch"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Newspapers, magazines, and scholarly journals published by and about various racial and ethnic groups in the United States.",
-			"category": [
-				"geography", "history", "sociology", "news-&amp;-magazines"
-			]
-		},
-		{
 			"name": "Black Thought and Culture",
 			"vendor": "Alexander Street Press",
 			"urlRoot": "search.alexanderstreet.com",
@@ -604,88 +592,6 @@
 			"category": ["theatre-&amp;-performing-arts"]
 		},
 		{
-			"name": "Ebony Magazine Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ear"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Full content from 1945 to 2014 from the prominent mass-market magazine targeted to an African-American readership.",
-			"category": [
-				"news-&amp;-magazines"
-			]
-		},
-		{
-			"name": "Art Magazine Collection Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Reproductions of the print magazines Antiques, ARTnews, and Art in America, with content spanning from 1902 to 2016.",
-			"category": [
-				"art", "news-&amp;-magazines"
-			]
-		},
-		{
-			"name": "Atlantic Magazine Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ama"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Full content from 1857 to 2014 from the renowned American magazine.",
-			"category": [
-				"news-&amp;-magazines"
-			]
-		},
-		{
-			"name": "Life Magazine Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lma"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Complete coverage of the photojournalism magazine from its beginning in 1936 through 2000.",
-			"category": [
-				"news-&amp;-magazines"
-			]
-		},
-		{
-			"name": "Jet Magazine Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=jar"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Full content from the entertainment and culture magazine focused on African-American entertainment and culture. Coverage is still partial; EBSCO will be completing this archive throughout 2022.",
-			"category": [
-				"news-&amp;-magazines"
-			]
-		},
-		{
-			"name": "Time Magazine Archive",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tma"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Page images of all issues of the prominent US news weekly magazine, from its beginning in 1923 through 2000.",
-			"category": [
-				"news-&amp;-magazines"
-			]
-		},
-		{
-			"name": "Vogue Archive",
-			"vendor": "ProQuest",
-			"urlRoot": "www.proquest.com",
-			"urlPath": ["vogue"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Cover-to-cover page images of the prominent fashion magazine from 1892 to the current issue.",
-			"category": ["news-&amp;-magazines"]
-		},
-		{
 			"name": "Very Short Introductions",
 			"vendor": "Oxford University Press",
 			"urlRoot": "academic.oup.com",
@@ -874,7 +780,100 @@
 				"general", "controversial-topics"
 			]
 		},
+		{
+			"name": "Ethnic NewsWatch",
+			"vendor": "ProQuest",
+			"urlRoot": "www.proquest.com",
+			"urlPath": ["ethnicnewswatch"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Newspapers, magazines, and scholarly journals published by and about various racial and ethnic groups in the United States.",
+			"category": [
 				"general", "geography", "history", "sociology", "news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Ebony Magazine Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ear"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Full content from 1945 to 2014 from the prominent mass-market magazine targeted to an African-American readership.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Art Magazine Collection Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ara"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Reproductions of the print magazines Antiques, ARTnews, and Art in America, with content spanning from 1902 to 2016.",
+			"category": [
+				"art", "news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Atlantic Magazine Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=ama"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Full content from 1857 to 2014 from the renowned American magazine.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Life Magazine Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=lma"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Complete coverage of the photojournalism magazine from its beginning in 1936 through 2000.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Jet Magazine Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=jar"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Full content from the entertainment and culture magazine focused on African-American entertainment and culture. Coverage is still partial; EBSCO will be completing this archive throughout 2022.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Time Magazine Archive",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=tma"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Page images of all issues of the prominent US news weekly magazine, from its beginning in 1923 through 2000.",
+			"category": [
+				"news-&amp;-magazines"
+			]
+		},
+		{
+			"name": "Vogue Archive",
+			"vendor": "ProQuest",
+			"urlRoot": "www.proquest.com",
+			"urlPath": ["vogue"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Cover-to-cover page images of the prominent fashion magazine from 1892 to the current issue.",
+			"category": ["news-&amp;-magazines"]
+		},
 		{
 			"name": "Films on Demand",
 			"vendor": "Infobase",
