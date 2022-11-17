@@ -460,6 +460,10 @@ function showNote(obj) {
 		if (obj.end) {
 			end = parseDate(obj.end);
 		}
+		var exp = 2; // default cookie expiration is two days
+		if (obj.exp) {
+			exp = obj.exp;
+		}
 		//console.log(start);
 		//console.log(end);
 		var text = obj.message || '';
@@ -471,7 +475,7 @@ function showNote(obj) {
 				setCookie({
 					cname: cName,
 					value: 'hide',
-					exp: 2
+					exp: exp
 				}); // cookie expires in just two days
 			});
 		}
