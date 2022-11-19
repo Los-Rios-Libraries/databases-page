@@ -468,8 +468,12 @@ function showNote(obj) {
 		//console.log(end);
 		var text = obj.message || '';
 		if ((d >= start) && (d <= end) && (text !== '')) {
+			var fill = '';
+			if (currentCollege !== 'scc') {
+				fill = 'style=fill:#fff;';
+			}
 			$('#problem-notification').css('margin-top', '-20px');
-			$('<p id="db-alert" role="alert" class="alert alert-warning text-center" style="display:none;">' + text + ' <button class="btn btn-secondary btn-sm float-right" type="button" id="message-dismiss">Hide this message <svg width="14" height="14" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M0.549989 4.44999L4.44999 0.549988L43.45 39.55L39.55 43.45L0.549989 4.44999Z" /><path d="M39.55 0.549988L43.45 4.44999L4.44999 43.45L0.549988 39.55L39.55 0.549988Z" /></svg></button></p>').appendTo($('#problem-notification')).fadeIn();
+			$('<p id="db-alert" role="alert" class="alert alert-warning text-center" style="display:none;">' + text + ' <button class="btn btn-secondary btn-sm float-right" type="button" id="message-dismiss">Hide this message <svg width="14" height="14" viewBox="0 0 44 44" aria-hidden="true" focusable="false" ' + fill + '><path d="M0.549989 4.44999L4.44999 0.549988L43.45 39.55L39.55 43.45L0.549989 4.44999Z" /><path d="M39.55 0.549988L43.45 4.44999L4.44999 43.45L0.549988 39.55L39.55 0.549988Z" /></svg></button></p>').appendTo($('#problem-notification')).fadeIn();
 			$('#message-dismiss').on('click', function() {
 				$('#db-alert').fadeOut();
 				setCookie({
