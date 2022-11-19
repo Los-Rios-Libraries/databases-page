@@ -182,6 +182,8 @@ include_once('../resources/shared/components/head.php');
 <style>
  #header h1 {font-size:2rem;}
  #main {background:#e9e9e9;}
+ .alert-warning {color:#212529;}
+ .alert-warning a {text-decoration:underline;}
  #nav-label {font-size:1.5rem;}
  #trial-dbs ul {padding-left:0;}
  #trial-dbs h2 {font-size:1.1rem;}
