@@ -490,6 +490,7 @@
 			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
+			"exp": "2022-12-31",
 			"description": "Classical and modern music.",
 			"category": [
 				"music"
