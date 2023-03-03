@@ -191,11 +191,6 @@ $dbs = array(
 															'dbname' => 'ovid',
 															'queryUrl' => $ezpStr . 'http://ovidsp.ovid.com/ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=n&DBC=n&D=yrovft&SEARCH=' . $query
 												),
-			
-           array(
-              'dbname' => 'naxos',
-              'queryUrl' => $ezpStr . 'http://losrios.naxosmusiclibrary.com/google/searchgoogle.asp?googletext=' . $query
-           ),
 											array(
 													'dbname' => 'wiley',
 													'queryUrl' => $ezpStr . 'https://www.onlinelibrary.wiley.com/action/doSearch?AllField=' . $query		. '&PubType=journal'			
@@ -229,8 +224,6 @@ $dbs = array(
 												'queryUrl' => 'https://newplayexchange.org/search/plays?search_text_box=' . $query
 											),
 											array(
-												'dbname' => 'jove',
-												'queryUrl' => 'https://www.jove.com/search?q=' . $query
 											)
          );
 

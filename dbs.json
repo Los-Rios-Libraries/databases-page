@@ -484,19 +484,6 @@
 			]
 		},
 		{
-			"name": "Naxos Music Library",
-			"vendor": "Naxos Digital Services ",
-			"urlRoot": "losrios.naxosmusiclibrary.com",
-			"urlPath": [""],
-			"proxy": "ez",
-			"ssl": true,
-			"exp": "2022-12-31",
-			"description": "Classical and modern music.",
-			"category": [
-				"music"
-			]
-		},
-		{
 			"name": "Newspaper Source Plus",
 			"vendor": "EBSCO",
 			"urlRoot": "search.ebscohost.com",
@@ -695,18 +682,6 @@
 			"ssl": true,
 			"description": "Films of various genres from independent and international filmmakers on a variety of topics.",
 			"category": ["video"]
-		},
-		{
-			"name": "JoVE",
-			"vendor": "MyJoVE Corporation",
-			"urlRoot": "www.jove.com",
-			"urlPath": ["education/core"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Educational videos on science and math topics.",
-			"category": ["health-&amp;-medicine", "video"],
-			"trial" : true,
-			"exp": "2022-12-16"
 		},
 		{
 			"name": "Global Environmental Justice Collection",
