@@ -159,6 +159,16 @@
 			]
 		},
 		{
+			"name": "ICE Video Library",
+			"vendor": "International Clinical Educators",
+			"urlRoot": "videos.icelearningcenter.com",
+			"urlPath": ["sacramentocitycollege"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Brief videos illustrating a wide range of diagnoses and treatment settings.",
+			"category": ["health=&amp;-medicine", "video"]
+		},
+		{
 			"name": "US Major Dailies",
 			"vendor": "ProQuest",
 			"urlRoot": "search.proquest.com",

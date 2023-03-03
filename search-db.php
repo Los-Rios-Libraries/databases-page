@@ -224,6 +224,8 @@ $dbs = array(
 												'queryUrl' => 'https://newplayexchange.org/search/plays?search_text_box=' . $query
 											),
 											array(
+												'dbname' => 'ice-video',
+												'queryUrl' => 'https://videos.icelearningcenter.com/sacramentocitycollege/search?q=' . $query
 											)
          );
 
