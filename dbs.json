@@ -25,6 +25,20 @@
 			"altname": ["psycharticles", "psyc articles"]
 		},
 		{
+			"name": "Apa PsycTherapy",
+			"vendor": "American Psychological Association",
+			"urlRoot": "psyctherapy.apa.org",
+			"urlPath": [""],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Videos depicting psychotherapy sessions in clinical settings.",
+			"category": [
+				"psychology", "video"
+			],
+			"trial": true,
+			"exp": "2023-04-22"
+		},
+		{
 			"name": "America: History and Life with Full Text",
 			"vendor": "EBSCO",
 			"urlRoot": "search.ebscohost.com",
