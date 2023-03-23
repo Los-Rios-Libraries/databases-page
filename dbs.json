@@ -779,6 +779,20 @@
 			]
 		},
 		{
+			"name": "Chicano Database",
+			"vendor": "EBSCO",
+			"urlRoot": "search.ebscohost.com",
+			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=ehost&defaultdb=chd"],
+			"proxy": "ez",
+			"ssl": true,
+			"trial": true,
+			"exp": "2023-04-30",
+			"description": "A listing of journal articles, newspaper articles, book chapters, and books that explore class, race, and gender within the Chicano and Latino U.S. experience.",
+			"category": [
+				"sociology"
+			]
+		},
+		{
 			"name": "Ebony Magazine Archive",
 			"vendor": "EBSCO",
 			"urlRoot": "search.ebscohost.com",
