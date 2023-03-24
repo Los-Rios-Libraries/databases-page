@@ -448,6 +448,20 @@
 			]
 		},
 		{
+			"name": "Credo Reference",
+			"vendor": "Credo Reference",
+			"urlRoot": "search.credoreference.com",
+			"urlPath": ["institutionId=2972"],
+			"proxy": "ez",
+			"ssl": true,
+			"description": "Encyclopedia articles and dictionary entries on a variety of topics.",
+			"category": [
+				"encyclopedias,-dictionaries,-reference"
+			],
+			"trial": true,
+			"exp": "2023-04-30"
+		},
+		{
 			"name": "Oxford English Dictionary",
 			"vendor": "Oxford University Press",
 			"urlRoot": "www.oed.com",

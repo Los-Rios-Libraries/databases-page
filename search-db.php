@@ -231,6 +231,10 @@ $dbs = array(
                                                 'dbname' => 'psyctherapy',
                                                 'queryUrl' => $ezpStr . 'https://psyctherapy.apa.org/Search/Index?searchString=' . $query
                                              ),
+                                             array(
+                                                'dbname' => 'credo',
+                                                'queryUrl' => $ezpStr . 'https://search.credoreference.com/search/all?institutionId=2972&searchPhrase=' . $query
+                                             )
          );
 
 
