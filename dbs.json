@@ -451,7 +451,7 @@
 			"name": "Credo Reference",
 			"vendor": "Credo Reference",
 			"urlRoot": "search.credoreference.com",
-			"urlPath": ["institutionId=2972"],
+			"urlPath": ["?institutionId=2972"],
 			"proxy": "ez",
 			"ssl": true,
 			"description": "Encyclopedia articles and dictionary entries on a variety of topics.",
