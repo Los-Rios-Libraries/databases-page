@@ -226,15 +226,7 @@ $dbs = array(
 											array(
 												'dbname' => 'ice-video',
 												'queryUrl' => 'https://videos.icelearningcenter.com/sacramentocitycollege/search?q=' . $query
-                                            ),
-                                            array(
-                                                'dbname' => 'psyctherapy',
-                                                'queryUrl' => $ezpStr . 'https://psyctherapy.apa.org/Search/Index?searchString=' . $query
-                                             ),
-                                             array(
-                                                'dbname' => 'credo',
-                                                'queryUrl' => $ezpStr . 'https://search.credoreference.com/search/all?institutionId=2972&searchPhrase=' . $query
-                                             )
+                                            )
          );
 
 

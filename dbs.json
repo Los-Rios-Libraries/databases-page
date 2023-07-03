@@ -25,20 +25,6 @@
 			"altname": ["psycharticles", "psyc articles"]
 		},
 		{
-			"name": "Apa PsycTherapy",
-			"vendor": "American Psychological Association",
-			"urlRoot": "psyctherapy.apa.org",
-			"urlPath": [""],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Videos depicting psychotherapy sessions in clinical settings.",
-			"category": [
-				"psychology", "video"
-			],
-			"trial": true,
-			"exp": "2023-04-19"
-		},
-		{
 			"name": "America: History and Life with Full Text",
 			"vendor": "EBSCO",
 			"urlRoot": "search.ebscohost.com",
@@ -446,20 +432,6 @@
 			"category": [
 				"environmental-science", "health-&amp;-medicine", "psychology"
 			]
-		},
-		{
-			"name": "Credo Reference",
-			"vendor": "Credo Reference",
-			"urlRoot": "search.credoreference.com",
-			"urlPath": ["?institutionId=2972"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Encyclopedia articles and dictionary entries on a variety of topics.",
-			"category": [
-				"encyclopedias,-dictionaries,-reference"
-			],
-			"trial": true,
-			"exp": "2023-04-30"
 		},
 		{
 			"name": "Oxford English Dictionary",
