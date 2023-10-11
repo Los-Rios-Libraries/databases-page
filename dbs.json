@@ -558,18 +558,6 @@
 			]
 		},
 		{
-			"name": "Ahfs Consumer Medication Information",
-			"vendor": "EBSCO",
-			"urlRoot": "search.ebscohost.com",
-			"urlPath": ["login.aspx?authtype=ip,uid&profile=ehost&defaultdb=l0h"],
-			"proxy": "ez",
-			"ssl": true,
-			"description": "Information on medications from the American Society of Health-System Pharmacists.",
-			"category": [
-				"encyclopedias,-dictionaries,-reference", "health-&amp;-medicine"
-			]
-		},
-		{
 			"name": "New Play Exchange",
 			"vendor": "National New Play Network",
 			"urlRoot": "newplayexchange.org",

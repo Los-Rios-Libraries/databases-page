@@ -96,7 +96,7 @@ $('#multi-search').on('submit', function(e) { // if users do not select autocomp
 $('.db-name').each(function() { // correct capitalization while preserving php's sorting
 	var dbName = $(this);
 	var arr = dbName.html().split(' ');
-	var reg = /^Ahfs|^Apa$|^Dsm|^Ebsco|Cinahl|Cq|Eric|Jstor|^Lgbtq|^Mas$|Medline|^Sage/;
+	var reg = /^Apa$|^Dsm|^Ebsco|Cinahl|Cq|Eric|Jstor|^Lgbtq|^Mas$|Medline|^Sage/;
 	for (var i = 0; i < arr.length; i++) {
 		if (reg.test(arr[i])) {
 			arr[i] = arr[i].toUpperCase();
