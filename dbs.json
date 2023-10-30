@@ -161,7 +161,7 @@
 		{
 			"name": "US Major Dailies",
 			"vendor": "ProQuest",
-			"urlRoot": "search.proquest.com",
+			"urlRoot": "www.proquest.com",
 			"urlPath": ["usmajordailies/"],
 			"proxy": "ez",
 			"ssl": true,
