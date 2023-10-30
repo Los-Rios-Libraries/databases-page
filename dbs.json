@@ -745,8 +745,8 @@
 		{
 			"name": "Cq Researcher",
 			"vendor": "CQ Press",
-			"urlRoot": "library.cqpress.com",
-			"urlPath": ["cqresearcher/"],
+			"urlRoot": "cqpress.sagepub.com",
+			"urlPath": [""],
 			"proxy": "ez",
 			"ssl": true,
 			"description": "In-depth reports on current social and political issues.",
