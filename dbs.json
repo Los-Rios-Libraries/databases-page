@@ -42,7 +42,7 @@
 			"urlRoot": "www.oxfordartonline.com",
 			"urlPath": [""],
 			"proxy": "ez",
-			"ssl": false,
+			"ssl": true,
 			"description": "Background information, artist biographies, and images of Western and non-Western art.",
 			"category": [
 				"art", "encyclopedias,-dictionaries,-reference"
@@ -55,7 +55,7 @@
 			"urlRoot": "library.artstor.org",
 			"urlPath": [""],
 			"proxy": "ez",
-			"ssl": false,
+			"ssl": true,
 			"description": "High-resolution images of architecture, painting, sculpture, photography, decorative arts, and other forms of visual and material culture. Register within Artstor to organize images and create presentations.",
 			"category": [
 				"art"
@@ -79,6 +79,7 @@
 			"urlRoot": "ovidsp.ovid.com",
 			"urlPath": ["ovidweb.cgi?T=JS&CSC=y&PAGE=main&NEWS=y&DBC=y&D=yrovft"],
 			"proxy": "ez",
+			"ssl": true,
 			"description": "Scholarly journals in nursing and allied   fields.",
 			"category": [
 				"health-&amp;-medicine"
@@ -440,7 +441,7 @@
 			"urlRoot": "www.oed.com",
 			"urlPath": [""],
 			"proxy": "ez",
-			"ssl": false,
+			"ssl": true,
 			"description": "Definitions, pronunciations and historical background of words in the English language.",
 			"category": [
 				"encyclopedias,-dictionaries,-reference", "literature"
@@ -907,7 +908,7 @@
 			"urlRoot": "scholar.google.com",
 			"urlPath": [""],
 			"proxy": "ez",
-			"ssl": false,
+			"ssl": true,
 			"description": "Scholarly journals, ebooks, abstracts, patents and legal research from academic, nonprofit and government sources. Use the Los Rios Full Text link for library-provided content.",
 			"category": [
 				"general", "art", "criminal-justice-&amp;-law", "education", "history", "literature", "music", "philosophy-&amp;-religion", "physical-sciences", "political-science", "psychology", "sociology", "theatre-&amp;-performing-arts"
@@ -919,7 +920,7 @@
 			"urlRoot": "search.ebscohost.com",
 			"urlPath": ["login.aspx?authtype=ip%2Cuid&profile=src_ic"],
 			"proxy": "ez",
-			"ssl": false,
+			"ssl": true,
 			"description": "Background information, magazines, news, ebooks, primary sources, and scholarly journals on many topics. Teaching and curriculum support for educators.",
 			"category": [
 				""
