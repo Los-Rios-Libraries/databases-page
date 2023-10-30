@@ -156,7 +156,8 @@
 			"description": "Clinical reviews, research instruments, drug information, exercise images, and patient education resources.",
 			"category": [
 				"health-&amp;-medicine"
-			]
+			],
+			"exp" : "2023-12-31"
 		},
 		{
 			"name": "US Major Dailies",
