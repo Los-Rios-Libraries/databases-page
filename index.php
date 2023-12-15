@@ -106,6 +106,13 @@ function setCollegeParams($col) { // set current college parameters
 				);
 }
 if ($college !== '') {
+  $domain = 'researchguides';
+  if ($college === 'arc') {
+    $domain = 'libguides';
+  }
+  $az_url = 'https://' . $domain . '.' . $college . '.losrios.edu/az/databases/';
+  header('Location: ' . $az_url, TRUE, 301);
+  exit();
  $homePage = setCollegeParams($college)['homePage'];
  $chatWidget = setCollegeParams($college)['chatWidget'];
 }
